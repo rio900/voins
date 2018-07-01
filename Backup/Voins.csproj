@@ -1,0 +1,778 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9391F0B0-8C60-4168-A5B2-4EED32A0278E}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Voins</RootNamespace>
+    <AssemblyName>Voins</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>Voins_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <ExpressionBlendVersion>5.0.30924.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AI\AI_EasyAi.cs" />
+    <Compile Include="AI\AI_CoopAi.cs" />
+    <Compile Include="AI\AI_CoopAiRange.cs" />
+    <Compile Include="AI\AI_CoopAiRangeFire.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppCode\Angel.cs" />
+    <Compile Include="AppCode\AnimationHelper.cs" />
+    <Compile Include="AppCode\Buff.cs" />
+    <Compile Include="AppCode\Bullet.cs" />
+    <Compile Include="AppCode\IAnimationControl.cs" />
+    <Compile Include="AppCode\IAura.cs" />
+    <Compile Include="AppCode\IMoveSpell.cs" />
+    <Compile Include="AppCode\Input\EInput.cs" />
+    <Compile Include="AppCode\Input\Input_MainClass.cs" />
+    <Compile Include="AppCode\ItemDescriptionClassInfo.cs" />
+    <Compile Include="AppCode\IUnitControl.cs" />
+    <Compile Include="AppCode\EGameType.cs" />
+    <Compile Include="AppCode\EHeroType.cs" />
+    <Compile Include="AppCode\EMobType.cs" />
+    <Compile Include="AppCode\IAI.cs" />
+    <Compile Include="AppCode\ItemClass.cs" />
+    <Compile Include="AppCode\MapGenerator.cs" />
+    <Compile Include="AppCode\SpellDescriptionInfo.cs" />
+    <Compile Include="AppCode\StaticVaribl.cs" />
+    <Compile Include="AppCode\StatisticData.cs" />
+    <Compile Include="AppCode\UnitGenerator.cs" />
+    <Compile Include="AppCode\EAngel.cs" />
+    <Compile Include="AppCode\EnumCallType.cs" />
+    <Compile Include="AppCode\Game_Object_In_Call.cs" />
+    <Compile Include="AppCode\IGameControl.cs" />
+    <Compile Include="AppCode\ISpell.cs" />
+    <Compile Include="AppCode\IUnit.cs" />
+    <Compile Include="AppCode\Map.cs" />
+    <Compile Include="AppCode\Map_Cell.cs" />
+    <Compile Include="AppCode\Player.cs" />
+    <Compile Include="AppCode\Unit.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Spell\Aurs\SP_Item_AssaultCuirass.cs" />
+    <Compile Include="Spell\Mobs\SP_EasyMobArrowRoket.cs" />
+    <Compile Include="Spell\Mobs\SP_EasyMobArrowStun.cs" />
+    <Compile Include="Spell\Mobs\SP_EasyMobArrowFifeBall.cs" />
+    <Compile Include="Spell\Jinx\SPB_Super_Mega_Death_Rocket.cs" />
+    <Compile Include="Spell\Jakiro\SPB_Jakiro_Liquid_Fire.cs" />
+    <Compile Include="Spell\Jakiro\SPB_Jakiro_Ice_Path.cs" />
+    <Compile Include="Spell\Jakiro\SP_Jakiro_Macropyre.cs" />
+    <Compile Include="Spell\Jakiro\SP_Jakiro_Liquid_Fire.cs" />
+    <Compile Include="Spell\Jakiro\SP_Jakiro_Ice_Path.cs" />
+    <Compile Include="Spell\Jakiro\SP_Jakiro_Dual_Breath.cs" />
+    <Compile Include="Spell\Jinx\SPB_Jinx_Flame_Chompers.cs" />
+    <Compile Include="Spell\Jinx\SP_Super_Mega_Death_Rocket.cs" />
+    <Compile Include="Spell\Jinx\SP_Jinx_Flame_Chompers.cs" />
+    <Compile Include="Spell\Jinx\SP_Jinx_Switcheroo.cs" />
+    <Compile Include="Spell\Jinx\SPB_Jinx_Zap_Roket.cs" />
+    <Compile Include="Spell\Jinx\SP_Jinx_Zap.cs" />
+    <Compile Include="Spell\Mirana\SP_Mirana_MoonlightShadow.cs" />
+    <Compile Include="Spell\Mirana\SP_Mirana_Leap.cs" />
+    <Compile Include="Spell\Mirana\SPB_Mirana_SacredArrow.cs" />
+    <Compile Include="Spell\Mirana\SP_Mirana_SacredArrow.cs" />
+    <Compile Include="Spell\Mirana\SP_Mirana_Starstorm.cs" />
+    <Compile Include="Spell\SPB_EasyMobArrow.cs" />
+    <Compile Include="Spell\Mobs\SP_EasyMobArrow.cs" />
+    <Compile Include="Spell\SP_Item_ShadowBlade.cs" />
+    <Compile Include="Spell\SP_Item_PhaseBoots.cs" />
+    <Compile Include="Spell\SP_Sniper_Assassinate.cs" />
+    <Compile Include="Spell\SP_Sniper_TakeAim.cs" />
+    <Compile Include="Spell\SPB_Sniper_Assassinate.cs" />
+    <Compile Include="Spell\SP_Sniper_Headshot.cs" />
+    <Compile Include="Spell\SPB_Sniper_Shrapnel.cs" />
+    <Compile Include="Spell\SP_Sniper_Shrapnel.cs" />
+    <Compile Include="Spell\SPB_Item_Maelstrom.cs" />
+    <Compile Include="Spell\SP_Item_Maelstrom.cs" />
+    <Compile Include="Spell\Alchemist\SP_Alchemist_ChemicalRage.cs" />
+    <Compile Include="Spell\Alchemist\SP_Alchemist_GreevilsGreed.cs" />
+    <Compile Include="Spell\Alchemist\SPB_Alchemist_UnstableConcoction.cs" />
+    <Compile Include="Spell\Alchemist\SP_Alchemist_UnstableConcoction.cs" />
+    <Compile Include="Spell\Alchemist\SPB_Alchemist_AcidSpray.cs" />
+    <Compile Include="Spell\SPB_FireArrow.cs" />
+    <Compile Include="Spell\Alchemist\SP_Alchemist_AcidSpray.cs" />
+    <Compile Include="Spell\SP_AttackEasyMob.cs" />
+    <Compile Include="Spell\SP_AttackSpeed.cs" />
+    <Compile Include="Spell\SP_BonikUlt.cs" />
+    <Compile Include="Spell\SP_FireArrow.cs" />
+    <Compile Include="Spell\SP_InvisibilitiSpeed.cs" />
+    <Compile Include="Spell\SP_Move.cs" />
+    <Compile Include="Spell\SP_OrchidSilenc.cs" />
+    <Compile Include="UserControlEditor\Editor_Call.xaml.cs">
+      <DependentUpon>Editor_Call.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlEditor\UC_Editor.xaml.cs">
+      <DependentUpon>UC_Editor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Mob_1_Ball_Fire.xaml.cs">
+      <DependentUpon>UC_Mob_1_Ball_Fire.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Mob_1_Ball_Blue.xaml.cs">
+      <DependentUpon>UC_Mob_1_Ball_Blue.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Jakiro\UC_Jakiro_LiquidFire.xaml.cs">
+      <DependentUpon>UC_Jakiro_LiquidFire.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Jakiro\UC_Jakiro_Macropyre.xaml.cs">
+      <DependentUpon>UC_Jakiro_Macropyre.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Jakiro\UC_Jakiro_IcePath.xaml.cs">
+      <DependentUpon>UC_Jakiro_IcePath.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Jakiro\UC_Model_H_Jakiro.xaml.cs">
+      <DependentUpon>UC_Model_H_Jakiro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Jinx\UC_Super_Mega_Death_Rocket.xaml.cs">
+      <DependentUpon>UC_Super_Mega_Death_Rocket.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Jinx\UC_Jinx_Flame_Chompers.xaml.cs">
+      <DependentUpon>UC_Jinx_Flame_Chompers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Jinx\UC_Jinx_Zap_Roket.xaml.cs">
+      <DependentUpon>UC_Jinx_Zap_Roket.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Jinx\UC_Jinx_Zap.xaml.cs">
+      <DependentUpon>UC_Jinx_Zap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Jinx\UC_Model_H_Jinx.xaml.cs">
+      <DependentUpon>UC_Model_H_Jinx.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Mirana\UC_Mirana_SacredArrow.xaml.cs">
+      <DependentUpon>UC_Mirana_SacredArrow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Mirana\UC_Mirana_Starstorm.xaml.cs">
+      <DependentUpon>UC_Mirana_Starstorm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Mirana\UC_Model_H_Mirana.xaml.cs">
+      <DependentUpon>UC_Model_H_Mirana.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_View_Backgroung.xaml.cs">
+      <DependentUpon>UC_View_Backgroung.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Alchemist_AcidSpray.xaml.cs">
+      <DependentUpon>UC_Alchemist_AcidSpray.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Model_H_Sniper.xaml.cs">
+      <DependentUpon>UC_Model_H_Sniper.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Model_H_Alhim.xaml.cs">
+      <DependentUpon>UC_Model_H_Alhim.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Bonik\UC_Model_H_Bonik.xaml.cs">
+      <DependentUpon>UC_Model_H_Bonik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Model_Player.xaml.cs">
+      <DependentUpon>UC_Model_Player.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_EasyMobAttackBall.xaml.cs">
+      <DependentUpon>UC_EasyMobAttackBall.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_EndGame.xaml.cs">
+      <DependentUpon>UC_EndGame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Menu.xaml.cs">
+      <DependentUpon>UC_Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Sniper_Headshot.xaml.cs">
+      <DependentUpon>UC_Sniper_Headshot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Sniper_Shrapnel.xaml.cs">
+      <DependentUpon>UC_Sniper_Shrapnel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Maelstrom.xaml.cs">
+      <DependentUpon>UC_Maelstrom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Alchemist_UnstableConcoction.xaml.cs">
+      <DependentUpon>UC_Alchemist_UnstableConcoction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Jakiro\UC_Jakiro_DualBreath.xaml.cs">
+      <DependentUpon>UC_Jakiro_DualBreath.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Block.xaml.cs">
+      <DependentUpon>UC_Block.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_CrushBlock.xaml.cs">
+      <DependentUpon>UC_CrushBlock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_FireArrow.xaml.cs">
+      <DependentUpon>UC_FireArrow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_GameObjectInCall.xaml.cs">
+      <DependentUpon>UC_GameObjectInCall.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Mob_1_Ball.xaml.cs">
+      <DependentUpon>UC_Mob_1_Ball.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Player.xaml.cs">
+      <DependentUpon>UC_Player.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_View_BuyControl.xaml.cs">
+      <DependentUpon>UC_View_BuyControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_View_ImageTileControl.xaml.cs">
+      <DependentUpon>UC_View_ImageTileControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_View_ItemImage.xaml.cs">
+      <DependentUpon>UC_View_ItemImage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_View_ItemsPanel.xaml.cs">
+      <DependentUpon>UC_View_ItemsPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_View_PlaerPanel.xaml.cs">
+      <DependentUpon>UC_View_PlaerPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_View_SelectHeroy.xaml.cs">
+      <DependentUpon>UC_View_SelectHeroy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_View_SpellControl.xaml.cs">
+      <DependentUpon>UC_View_SpellControl.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="Voins_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\SmallLogo.png" />
+    <Content Include="Assets\SplashScreen.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Image\10_clarity.png" />
+    <Content Include="Image\11_healing_salve.png" />
+    <Content Include="Image\12_tango.png" />
+    <Content Include="Image\13_mithril_hammer.png" />
+    <Content Include="Image\14_maelstrom.png" />
+    <Content Include="Image\15_hyperstone.png" />
+    <Content Include="Image\16_mjollnir.png" />
+    <Content Include="Image\17_demon_edge.png" />
+    <Content Include="Image\18_javelin.png" />
+    <Content Include="Image\19_monkey_king_bar.png" />
+    <Content Include="Image\1_Alchemist_Colb.png" />
+    <Content Include="Image\1_Bum.png" />
+    <Content Include="Image\1_Bum2.png" />
+    <Content Include="Image\1_hero.jpg" />
+    <Content Include="Image\1_maelstrom.png" />
+    <Content Include="Image\1_masc.png" />
+    <Content Include="Image\1_Silence.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\1_skill.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\1_skill_Alchemist.png" />
+    <Content Include="Image\1_skill_Sniper.png" />
+    <Content Include="Image\1_test.png" />
+    <Content Include="Image\1_test2.png" />
+    <Content Include="Image\1_test3.png" />
+    <Content Include="Image\20_vitality_booster.png" />
+    <Content Include="Image\21_reaver.png" />
+    <Content Include="Image\22_heart_of_tarrasque.png" />
+    <Content Include="Image\23_blades_of_attack.png" />
+    <Content Include="Image\24_phase_boots.png" />
+    <Content Include="Image\25_boots_of_elvenskin.png" />
+    <Content Include="Image\26_blade_of_alacrity.png" />
+    <Content Include="Image\27_yasha.png" />
+    <Content Include="Image\28_ogre_club.png" />
+    <Content Include="Image\29_sange.png" />
+    <Content Include="Image\2_Bum_mil.png" />
+    <Content Include="Image\2_hero.jpg" />
+    <Content Include="Image\2_robOfMagi.png" />
+    <Content Include="Image\2_skill.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\2_skill_Alchemist.png" />
+    <Content Include="Image\2_skill_Sniper.png" />
+    <Content Include="Image\2_test.png" />
+    <Content Include="Image\2_test2.png" />
+    <Content Include="Image\2_test3.png" />
+    <Content Include="Image\30_sange_and_yasha.png" />
+    <Content Include="Image\31_shadow_amulet.png" />
+    <Content Include="Image\32_claymore.png" />
+    <Content Include="Image\33_shadow_blade.png" />
+    <Content Include="Image\34_point_booster.png" />
+    <Content Include="Image\35_staff_of_wizardry.png" />
+    <Content Include="Image\36_aghanims_scepter.png" />
+    <Content Include="Image\37_ring_of_regen.png" />
+    <Content Include="Image\38_force_staff.png" />
+    <Content Include="Image\39_desolator.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\3_hero.jpg" />
+    <Content Include="Image\3_skill.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\3_skill_Alchemist.png" />
+    <Content Include="Image\3_skill_Sniper.png" />
+    <Content Include="Image\3_stuff.png" />
+    <Content Include="Image\3_test.png" />
+    <Content Include="Image\3_test2.png" />
+    <Content Include="Image\3_test3.png" />
+    <Content Include="Image\40_platemail.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\41_chainmail.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\42_assaultCuirass.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\4_oStuff.png" />
+    <Content Include="Image\4_skill.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\4_skill_Alchemist.png" />
+    <Content Include="Image\4_skill_Sniper.png" />
+    <Content Include="Image\4_test.png" />
+    <Content Include="Image\4_test2.png" />
+    <Content Include="Image\4_test3.png" />
+    <Content Include="Image\5_orchid.png" />
+    <Content Include="Image\5_skill_Alchemist.png" />
+    <Content Include="Image\6_boots.png" />
+    <Content Include="Image\7_hend.png" />
+    <Content Include="Image\8_str.png" />
+    <Content Include="Image\9_pt.png" />
+    <Content Include="Image\Bomb.png" />
+    <Content Include="Image\Bonik.png" />
+    <Content Include="Image\BoomRoketCenter.png" />
+    <Content Include="Image\BoomRoketLeft.png" />
+    <Content Include="Image\Fire.png" />
+    <Content Include="Image\FireArrow.png" />
+    <Content Include="Image\Gamepad.png" />
+    <Content Include="Image\gold.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Ground.png" />
+    <Content Include="Image\Gruss1.png" />
+    <Content Include="Image\Gruss2.png" />
+    <Content Include="Image\Hero_Alhim_0_1.png" />
+    <Content Include="Image\Hero_Alhim_0_2.png" />
+    <Content Include="Image\Hero_Alhim_0_3.png" />
+    <Content Include="Image\Hero_Alhim_1_1.png" />
+    <Content Include="Image\Hero_Alhim_1_2.png" />
+    <Content Include="Image\Hero_Alhim_1_3.png" />
+    <Content Include="Image\Hero_Alhim_2_1.png" />
+    <Content Include="Image\Hero_Alhim_2_2.png" />
+    <Content Include="Image\Hero_Alhim_2_3.png" />
+    <Content Include="Image\Hero_Alhim_3_1.png" />
+    <Content Include="Image\Hero_Alhim_3_2.png" />
+    <Content Include="Image\Hero_Alhim_3_3.png" />
+    <Content Include="Image\Hero_Bonik_0_1.png" />
+    <Content Include="Image\Hero_Bonik_0_2.png" />
+    <Content Include="Image\Hero_Bonik_0_3.png" />
+    <Content Include="Image\Hero_Bonik_1_1.png" />
+    <Content Include="Image\Hero_Bonik_1_2.png" />
+    <Content Include="Image\Hero_Bonik_1_3.png" />
+    <Content Include="Image\Hero_Bonik_2_1.png" />
+    <Content Include="Image\Hero_Bonik_2_2.png" />
+    <Content Include="Image\Hero_Bonik_2_3.png" />
+    <Content Include="Image\Hero_Bonik_3_1.png" />
+    <Content Include="Image\Hero_Bonik_3_2.png" />
+    <Content Include="Image\Hero_Bonik_3_3.png" />
+    <Content Include="Image\Hero_Jakiro_0_1.png" />
+    <Content Include="Image\Hero_Jakiro_0_2.png" />
+    <Content Include="Image\Hero_Jakiro_0_3.png" />
+    <Content Include="Image\Hero_Jakiro_1_1.png" />
+    <Content Include="Image\Hero_Jakiro_1_2.png" />
+    <Content Include="Image\Hero_Jakiro_1_3.png" />
+    <Content Include="Image\Hero_Jakiro_2_1.png" />
+    <Content Include="Image\Hero_Jakiro_2_2.png" />
+    <Content Include="Image\Hero_Jakiro_2_3.png" />
+    <Content Include="Image\Hero_Jakiro_3_1.png" />
+    <Content Include="Image\Hero_Jakiro_3_2.png" />
+    <Content Include="Image\Hero_Jakiro_3_3.png" />
+    <Content Include="Image\Hero_Jinx_0_1.png" />
+    <Content Include="Image\Hero_Jinx_0_2.png" />
+    <Content Include="Image\Hero_Jinx_0_3.png" />
+    <Content Include="Image\Hero_Jinx_1_1.png" />
+    <Content Include="Image\Hero_Jinx_1_2.png" />
+    <Content Include="Image\Hero_Jinx_1_3.png" />
+    <Content Include="Image\Hero_Jinx_2_1.png" />
+    <Content Include="Image\Hero_Jinx_2_2.png" />
+    <Content Include="Image\Hero_Jinx_2_3.png" />
+    <Content Include="Image\Hero_Jinx_3_1.png" />
+    <Content Include="Image\Hero_Jinx_3_2.png" />
+    <Content Include="Image\Hero_Jinx_3_3.png" />
+    <Content Include="Image\Hero_Mirana_0_1.png" />
+    <Content Include="Image\Hero_Mirana_0_2.png" />
+    <Content Include="Image\Hero_Mirana_0_3.png" />
+    <Content Include="Image\Hero_Mirana_1_1.png" />
+    <Content Include="Image\Hero_Mirana_1_2.png" />
+    <Content Include="Image\Hero_Mirana_1_3.png" />
+    <Content Include="Image\Hero_Mirana_2_1.png" />
+    <Content Include="Image\Hero_Mirana_2_2.png" />
+    <Content Include="Image\Hero_Mirana_2_3.png" />
+    <Content Include="Image\Hero_Mirana_3_1.png" />
+    <Content Include="Image\Hero_Mirana_3_2.png" />
+    <Content Include="Image\Hero_Mirana_3_3.png" />
+    <Content Include="Image\Hero_Sniper_0_1.png" />
+    <Content Include="Image\Hero_Sniper_0_2.png" />
+    <Content Include="Image\Hero_Sniper_0_3.png" />
+    <Content Include="Image\Hero_Sniper_1_1.png" />
+    <Content Include="Image\Hero_Sniper_1_2.png" />
+    <Content Include="Image\Hero_Sniper_1_3.png" />
+    <Content Include="Image\Hero_Sniper_2_1.png" />
+    <Content Include="Image\Hero_Sniper_2_2.png" />
+    <Content Include="Image\Hero_Sniper_2_3.png" />
+    <Content Include="Image\Hero_Sniper_3_1.png" />
+    <Content Include="Image\Hero_Sniper_3_2.png" />
+    <Content Include="Image\Hero_Sniper_3_3.png" />
+    <Content Include="Image\JinxRoket.png" />
+    <Content Include="Image\Keyboard.png" />
+    <Content Include="Image\Laser.png" />
+    <Content Include="Image\Man.png" />
+    <Content Include="Image\Mirana_bot.png" />
+    <Content Include="Image\Mobs\1_test3_blue.png" />
+    <Content Include="Image\Mobs\1_test3_fire.png" />
+    <Content Include="Image\Mobs\2_test3_blue.png" />
+    <Content Include="Image\Mobs\2_test3_fire.png" />
+    <Content Include="Image\Mobs\3_test3_blue.png" />
+    <Content Include="Image\Mobs\3_test3_fire.png" />
+    <Content Include="Image\Mobs\4_test3_blue.png" />
+    <Content Include="Image\Mobs\4_test3_fire.png" />
+    <Content Include="Image\Sk.png" />
+    <Content Include="Image\SkillImage\Jakiro_Bot.png" />
+    <Content Include="Image\SkillImage\Jakiro_IcePass.png" />
+    <Content Include="Image\SkillImage\Jakiro_Left.png" />
+    <Content Include="Image\SkillImage\Jakiro_Rap.png" />
+    <Content Include="Image\SkillImage\Jakiro_Right.png" />
+    <Content Include="Image\SkillImage\Jakiro_skill1_Fire.png" />
+    <Content Include="Image\SkillImage\Jakiro_skill1_Ice.png" />
+    <Content Include="Image\SkillImage\Jakiro_Top.png" />
+    <Content Include="Image\Skill\1_skill_Jakiro.png" />
+    <Content Include="Image\Skill\1_skill_Jinx.png" />
+    <Content Include="Image\Skill\1_skill_Jinx_Reload.png" />
+    <Content Include="Image\Skill\1_skill_Mirana.png" />
+    <Content Include="Image\Skill\2_skill_Jakiro.png" />
+    <Content Include="Image\Skill\2_skill_Jinx.png" />
+    <Content Include="Image\Skill\2_skill_Mirana.png" />
+    <Content Include="Image\Skill\3_skill_Jakiro.png" />
+    <Content Include="Image\Skill\3_skill_Jinx.png" />
+    <Content Include="Image\Skill\3_skill_Mirana.png" />
+    <Content Include="Image\Skill\4_skill_Jakiro.jpg" />
+    <Content Include="Image\Skill\4_skill_Jinx.png" />
+    <Content Include="Image\Skill\4_skill_Mirana.png" />
+    <Content Include="Image\Slice 128.png" />
+    <Content Include="Image\SuperMegaRoket.png" />
+    <Content Include="Image\testUnit_0_1.png" />
+    <Content Include="Image\testUnit_0_2.png" />
+    <Content Include="Image\testUnit_0_3.png" />
+    <Content Include="Image\testUnit_0_3_copy.png" />
+    <Content Include="Image\testUnit_1_1.png" />
+    <Content Include="Image\testUnit_1_2.png" />
+    <Content Include="Image\testUnit_1_3.png" />
+    <Content Include="Image\testUnit_2_1.png" />
+    <Content Include="Image\testUnit_2_2.png" />
+    <Content Include="Image\testUnit_2_3.png" />
+    <Content Include="Image\testUnit_3_1.png" />
+    <Content Include="Image\testUnit_3_2.png" />
+    <Content Include="Image\testUnit_3_3.png" />
+    <Content Include="Image\Toch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Common\StandardStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControlEditor\Editor_Call.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlEditor\UC_Editor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UC_Mob_1_Ball_Fire.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\UC_Mob_1_Ball_Blue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Jakiro\UC_Jakiro_LiquidFire.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Jakiro\UC_Jakiro_Macropyre.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Jakiro\UC_Jakiro_IcePath.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Jakiro\UC_Model_H_Jakiro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Jinx\UC_Super_Mega_Death_Rocket.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Jinx\UC_Jinx_Flame_Chompers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Jinx\UC_Jinx_Zap_Roket.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Jinx\UC_Jinx_Zap.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Jinx\UC_Model_H_Jinx.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Mirana\UC_Mirana_SacredArrow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Mirana\UC_Mirana_Starstorm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Mirana\UC_Model_H_Mirana.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\UC_View_Backgroung.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UC_Alchemist_AcidSpray.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\UC_Model_H_Sniper.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\UC_Model_H_Alhim.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Bonik\UC_Model_H_Bonik.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\UC_Model_Player.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\UC_EasyMobAttackBall.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\UC_EndGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UC_Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UC_Sniper_Headshot.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\UC_Sniper_Shrapnel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\UC_Maelstrom.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\UC_Alchemist_UnstableConcoction.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Jakiro\UC_Jakiro_DualBreath.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\UC_Block.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UC_CrushBlock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UC_FireArrow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UC_GameObjectInCall.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UC_Mob_1_Ball.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UC_Player.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UC_View_BuyControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UC_View_ImageTileControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UC_View_ItemImage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UC_View_ItemsPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UC_View_PlaerPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UC_View_SelectHeroy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UC_View_SpellControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\Windows8\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX">
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\Windows8\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XAudio2">
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\Windows8\SharpDX.XAudio2.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XInput">
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\Windows8\SharpDX.XInput.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

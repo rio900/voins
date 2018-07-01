@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-5EAH9G3</Machine>
+    <WindowsUser>rio90</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>f5985a50-9b2d-4158-a282-de74a048cd0c</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Роман</PackageIdentityPublisher>
+    <IntermediateOutputPath>D:\Unity\Voins\obj\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Unity\Voins\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\Voins.exe">
+      <PackagePath>Voins.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\MonoGame.Framework.dll">
+      <PackagePath>MonoGame.Framework.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\SharpDX.dll">
+      <PackagePath>SharpDX.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\SharpDX.XAudio2.dll">
+      <PackagePath>SharpDX.XAudio2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\SharpDX.XInput.dll">
+      <PackagePath>SharpDX.XInput.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\10_clarity.png">
+      <PackagePath>Image\10_clarity.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\11_healing_salve.png">
+      <PackagePath>Image\11_healing_salve.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\12_tango.png">
+      <PackagePath>Image\12_tango.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\13_mithril_hammer.png">
+      <PackagePath>Image\13_mithril_hammer.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\14_maelstrom.png">
+      <PackagePath>Image\14_maelstrom.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\15_hyperstone.png">
+      <PackagePath>Image\15_hyperstone.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\16_mjollnir.png">
+      <PackagePath>Image\16_mjollnir.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\17_demon_edge.png">
+      <PackagePath>Image\17_demon_edge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\18_javelin.png">
+      <PackagePath>Image\18_javelin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\19_monkey_king_bar.png">
+      <PackagePath>Image\19_monkey_king_bar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_Alchemist_Colb.png">
+      <PackagePath>Image\1_Alchemist_Colb.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_Bum.png">
+      <PackagePath>Image\1_Bum.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_Bum2.png">
+      <PackagePath>Image\1_Bum2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_maelstrom.png">
+      <PackagePath>Image\1_maelstrom.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_masc.png">
+      <PackagePath>Image\1_masc.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_Silence.png">
+      <PackagePath>Image\1_Silence.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_skill.png">
+      <PackagePath>Image\1_skill.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_skill_Alchemist.png">
+      <PackagePath>Image\1_skill_Alchemist.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_skill_Sniper.png">
+      <PackagePath>Image\1_skill_Sniper.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_test.png">
+      <PackagePath>Image\1_test.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_test2.png">
+      <PackagePath>Image\1_test2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_test3.png">
+      <PackagePath>Image\1_test3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\20_vitality_booster.png">
+      <PackagePath>Image\20_vitality_booster.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\21_reaver.png">
+      <PackagePath>Image\21_reaver.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\22_heart_of_tarrasque.png">
+      <PackagePath>Image\22_heart_of_tarrasque.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\23_blades_of_attack.png">
+      <PackagePath>Image\23_blades_of_attack.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\24_phase_boots.png">
+      <PackagePath>Image\24_phase_boots.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\25_boots_of_elvenskin.png">
+      <PackagePath>Image\25_boots_of_elvenskin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\26_blade_of_alacrity.png">
+      <PackagePath>Image\26_blade_of_alacrity.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\27_yasha.png">
+      <PackagePath>Image\27_yasha.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\28_ogre_club.png">
+      <PackagePath>Image\28_ogre_club.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\29_sange.png">
+      <PackagePath>Image\29_sange.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_Bum_mil.png">
+      <PackagePath>Image\2_Bum_mil.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_robOfMagi.png">
+      <PackagePath>Image\2_robOfMagi.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_skill.png">
+      <PackagePath>Image\2_skill.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_skill_Alchemist.png">
+      <PackagePath>Image\2_skill_Alchemist.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_skill_Sniper.png">
+      <PackagePath>Image\2_skill_Sniper.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_test.png">
+      <PackagePath>Image\2_test.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_test2.png">
+      <PackagePath>Image\2_test2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_test3.png">
+      <PackagePath>Image\2_test3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\30_sange_and_yasha.png">
+      <PackagePath>Image\30_sange_and_yasha.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\31_shadow_amulet.png">
+      <PackagePath>Image\31_shadow_amulet.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\32_claymore.png">
+      <PackagePath>Image\32_claymore.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\33_shadow_blade.png">
+      <PackagePath>Image\33_shadow_blade.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\34_point_booster.png">
+      <PackagePath>Image\34_point_booster.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\35_staff_of_wizardry.png">
+      <PackagePath>Image\35_staff_of_wizardry.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\36_aghanims_scepter.png">
+      <PackagePath>Image\36_aghanims_scepter.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\37_ring_of_regen.png">
+      <PackagePath>Image\37_ring_of_regen.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\38_force_staff.png">
+      <PackagePath>Image\38_force_staff.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\39_desolator.png">
+      <PackagePath>Image\39_desolator.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\3_skill.png">
+      <PackagePath>Image\3_skill.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\3_skill_Alchemist.png">
+      <PackagePath>Image\3_skill_Alchemist.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\3_skill_Sniper.png">
+      <PackagePath>Image\3_skill_Sniper.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\3_stuff.png">
+      <PackagePath>Image\3_stuff.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\3_test.png">
+      <PackagePath>Image\3_test.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\3_test2.png">
+      <PackagePath>Image\3_test2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\3_test3.png">
+      <PackagePath>Image\3_test3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\40_platemail.png">
+      <PackagePath>Image\40_platemail.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\41_chainmail.png">
+      <PackagePath>Image\41_chainmail.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\42_assaultCuirass.png">
+      <PackagePath>Image\42_assaultCuirass.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\4_oStuff.png">
+      <PackagePath>Image\4_oStuff.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\4_skill.png">
+      <PackagePath>Image\4_skill.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\4_skill_Alchemist.png">
+      <PackagePath>Image\4_skill_Alchemist.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\4_skill_Sniper.png">
+      <PackagePath>Image\4_skill_Sniper.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\4_test.png">
+      <PackagePath>Image\4_test.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\4_test2.png">
+      <PackagePath>Image\4_test2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\4_test3.png">
+      <PackagePath>Image\4_test3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\5_orchid.png">
+      <PackagePath>Image\5_orchid.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\5_skill_Alchemist.png">
+      <PackagePath>Image\5_skill_Alchemist.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\6_boots.png">
+      <PackagePath>Image\6_boots.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\7_hend.png">
+      <PackagePath>Image\7_hend.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\8_str.png">
+      <PackagePath>Image\8_str.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\9_pt.png">
+      <PackagePath>Image\9_pt.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Bomb.png">
+      <PackagePath>Image\Bomb.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Bonik.png">
+      <PackagePath>Image\Bonik.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\BoomRoketCenter.png">
+      <PackagePath>Image\BoomRoketCenter.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\BoomRoketLeft.png">
+      <PackagePath>Image\BoomRoketLeft.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Fire.png">
+      <PackagePath>Image\Fire.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\FireArrow.png">
+      <PackagePath>Image\FireArrow.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Gamepad.png">
+      <PackagePath>Image\Gamepad.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\gold.png">
+      <PackagePath>Image\gold.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Ground.png">
+      <PackagePath>Image\Ground.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Gruss1.png">
+      <PackagePath>Image\Gruss1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Gruss2.png">
+      <PackagePath>Image\Gruss2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_0_1.png">
+      <PackagePath>Image\Hero_Alhim_0_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_0_2.png">
+      <PackagePath>Image\Hero_Alhim_0_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_0_3.png">
+      <PackagePath>Image\Hero_Alhim_0_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_1_1.png">
+      <PackagePath>Image\Hero_Alhim_1_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_1_2.png">
+      <PackagePath>Image\Hero_Alhim_1_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_1_3.png">
+      <PackagePath>Image\Hero_Alhim_1_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_2_1.png">
+      <PackagePath>Image\Hero_Alhim_2_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_2_2.png">
+      <PackagePath>Image\Hero_Alhim_2_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_2_3.png">
+      <PackagePath>Image\Hero_Alhim_2_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_3_1.png">
+      <PackagePath>Image\Hero_Alhim_3_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_3_2.png">
+      <PackagePath>Image\Hero_Alhim_3_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_3_3.png">
+      <PackagePath>Image\Hero_Alhim_3_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_0_1.png">
+      <PackagePath>Image\Hero_Bonik_0_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_0_2.png">
+      <PackagePath>Image\Hero_Bonik_0_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_0_3.png">
+      <PackagePath>Image\Hero_Bonik_0_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_1_1.png">
+      <PackagePath>Image\Hero_Bonik_1_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_1_2.png">
+      <PackagePath>Image\Hero_Bonik_1_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_1_3.png">
+      <PackagePath>Image\Hero_Bonik_1_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_2_1.png">
+      <PackagePath>Image\Hero_Bonik_2_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_2_2.png">
+      <PackagePath>Image\Hero_Bonik_2_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_2_3.png">
+      <PackagePath>Image\Hero_Bonik_2_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_3_1.png">
+      <PackagePath>Image\Hero_Bonik_3_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_3_2.png">
+      <PackagePath>Image\Hero_Bonik_3_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_3_3.png">
+      <PackagePath>Image\Hero_Bonik_3_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_0_1.png">
+      <PackagePath>Image\Hero_Jakiro_0_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_0_2.png">
+      <PackagePath>Image\Hero_Jakiro_0_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_0_3.png">
+      <PackagePath>Image\Hero_Jakiro_0_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_1_1.png">
+      <PackagePath>Image\Hero_Jakiro_1_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_1_2.png">
+      <PackagePath>Image\Hero_Jakiro_1_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_1_3.png">
+      <PackagePath>Image\Hero_Jakiro_1_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_2_1.png">
+      <PackagePath>Image\Hero_Jakiro_2_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_2_2.png">
+      <PackagePath>Image\Hero_Jakiro_2_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_2_3.png">
+      <PackagePath>Image\Hero_Jakiro_2_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_3_1.png">
+      <PackagePath>Image\Hero_Jakiro_3_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_3_2.png">
+      <PackagePath>Image\Hero_Jakiro_3_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_3_3.png">
+      <PackagePath>Image\Hero_Jakiro_3_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_0_1.png">
+      <PackagePath>Image\Hero_Jinx_0_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_0_2.png">
+      <PackagePath>Image\Hero_Jinx_0_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_0_3.png">
+      <PackagePath>Image\Hero_Jinx_0_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_1_1.png">
+      <PackagePath>Image\Hero_Jinx_1_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_1_2.png">
+      <PackagePath>Image\Hero_Jinx_1_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_1_3.png">
+      <PackagePath>Image\Hero_Jinx_1_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_2_1.png">
+      <PackagePath>Image\Hero_Jinx_2_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_2_2.png">
+      <PackagePath>Image\Hero_Jinx_2_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_2_3.png">
+      <PackagePath>Image\Hero_Jinx_2_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_3_1.png">
+      <PackagePath>Image\Hero_Jinx_3_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_3_2.png">
+      <PackagePath>Image\Hero_Jinx_3_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_3_3.png">
+      <PackagePath>Image\Hero_Jinx_3_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_0_1.png">
+      <PackagePath>Image\Hero_Mirana_0_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_0_2.png">
+      <PackagePath>Image\Hero_Mirana_0_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_0_3.png">
+      <PackagePath>Image\Hero_Mirana_0_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_1_1.png">
+      <PackagePath>Image\Hero_Mirana_1_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_1_2.png">
+      <PackagePath>Image\Hero_Mirana_1_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_1_3.png">
+      <PackagePath>Image\Hero_Mirana_1_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_2_1.png">
+      <PackagePath>Image\Hero_Mirana_2_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_2_2.png">
+      <PackagePath>Image\Hero_Mirana_2_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_2_3.png">
+      <PackagePath>Image\Hero_Mirana_2_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_3_1.png">
+      <PackagePath>Image\Hero_Mirana_3_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_3_2.png">
+      <PackagePath>Image\Hero_Mirana_3_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_3_3.png">
+      <PackagePath>Image\Hero_Mirana_3_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_0_1.png">
+      <PackagePath>Image\Hero_Sniper_0_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_0_2.png">
+      <PackagePath>Image\Hero_Sniper_0_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_0_3.png">
+      <PackagePath>Image\Hero_Sniper_0_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_1_1.png">
+      <PackagePath>Image\Hero_Sniper_1_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_1_2.png">
+      <PackagePath>Image\Hero_Sniper_1_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_1_3.png">
+      <PackagePath>Image\Hero_Sniper_1_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_2_1.png">
+      <PackagePath>Image\Hero_Sniper_2_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_2_2.png">
+      <PackagePath>Image\Hero_Sniper_2_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_2_3.png">
+      <PackagePath>Image\Hero_Sniper_2_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_3_1.png">
+      <PackagePath>Image\Hero_Sniper_3_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_3_2.png">
+      <PackagePath>Image\Hero_Sniper_3_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_3_3.png">
+      <PackagePath>Image\Hero_Sniper_3_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\JinxRoket.png">
+      <PackagePath>Image\JinxRoket.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Keyboard.png">
+      <PackagePath>Image\Keyboard.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Laser.png">
+      <PackagePath>Image\Laser.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Man.png">
+      <PackagePath>Image\Man.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mirana_bot.png">
+      <PackagePath>Image\Mirana_bot.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mobs\1_test3_blue.png">
+      <PackagePath>Image\Mobs\1_test3_blue.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mobs\1_test3_fire.png">
+      <PackagePath>Image\Mobs\1_test3_fire.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mobs\2_test3_blue.png">
+      <PackagePath>Image\Mobs\2_test3_blue.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mobs\2_test3_fire.png">
+      <PackagePath>Image\Mobs\2_test3_fire.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mobs\3_test3_blue.png">
+      <PackagePath>Image\Mobs\3_test3_blue.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mobs\3_test3_fire.png">
+      <PackagePath>Image\Mobs\3_test3_fire.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mobs\4_test3_blue.png">
+      <PackagePath>Image\Mobs\4_test3_blue.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mobs\4_test3_fire.png">
+      <PackagePath>Image\Mobs\4_test3_fire.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Nature\Img_Nature_Sprout.png">
+      <PackagePath>Image\Nature\Img_Nature_Sprout.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Sk.png">
+      <PackagePath>Image\Sk.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SkillImage\Jakiro_Bot.png">
+      <PackagePath>Image\SkillImage\Jakiro_Bot.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SkillImage\Jakiro_IcePass.png">
+      <PackagePath>Image\SkillImage\Jakiro_IcePass.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SkillImage\Jakiro_Left.png">
+      <PackagePath>Image\SkillImage\Jakiro_Left.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SkillImage\Jakiro_Rap.png">
+      <PackagePath>Image\SkillImage\Jakiro_Rap.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SkillImage\Jakiro_Right.png">
+      <PackagePath>Image\SkillImage\Jakiro_Right.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SkillImage\Jakiro_skill1_Fire.png">
+      <PackagePath>Image\SkillImage\Jakiro_skill1_Fire.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SkillImage\Jakiro_skill1_Ice.png">
+      <PackagePath>Image\SkillImage\Jakiro_skill1_Ice.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SkillImage\Jakiro_Top.png">
+      <PackagePath>Image\SkillImage\Jakiro_Top.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\1_skill_Jakiro.png">
+      <PackagePath>Image\Skill\1_skill_Jakiro.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\1_skill_Jinx.png">
+      <PackagePath>Image\Skill\1_skill_Jinx.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\1_skill_Jinx_Reload.png">
+      <PackagePath>Image\Skill\1_skill_Jinx_Reload.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\1_skill_Mirana.png">
+      <PackagePath>Image\Skill\1_skill_Mirana.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\2_skill_Jakiro.png">
+      <PackagePath>Image\Skill\2_skill_Jakiro.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\2_skill_Jinx.png">
+      <PackagePath>Image\Skill\2_skill_Jinx.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\2_skill_Mirana.png">
+      <PackagePath>Image\Skill\2_skill_Mirana.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\3_skill_Jakiro.png">
+      <PackagePath>Image\Skill\3_skill_Jakiro.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\3_skill_Jinx.png">
+      <PackagePath>Image\Skill\3_skill_Jinx.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\3_skill_Mirana.png">
+      <PackagePath>Image\Skill\3_skill_Mirana.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\4_skill_Jinx.png">
+      <PackagePath>Image\Skill\4_skill_Jinx.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\4_skill_Mirana.png">
+      <PackagePath>Image\Skill\4_skill_Mirana.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Slice 128.png">
+      <PackagePath>Image\Slice 128.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SuperMegaRoket.png">
+      <PackagePath>Image\SuperMegaRoket.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_0_1.png">
+      <PackagePath>Image\testUnit_0_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_0_2.png">
+      <PackagePath>Image\testUnit_0_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_0_3.png">
+      <PackagePath>Image\testUnit_0_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_0_3_copy.png">
+      <PackagePath>Image\testUnit_0_3_copy.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_1_1.png">
+      <PackagePath>Image\testUnit_1_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_1_2.png">
+      <PackagePath>Image\testUnit_1_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_1_3.png">
+      <PackagePath>Image\testUnit_1_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_2_1.png">
+      <PackagePath>Image\testUnit_2_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_2_2.png">
+      <PackagePath>Image\testUnit_2_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_2_3.png">
+      <PackagePath>Image\testUnit_2_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_3_1.png">
+      <PackagePath>Image\testUnit_3_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_3_2.png">
+      <PackagePath>Image\testUnit_3_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_3_3.png">
+      <PackagePath>Image\testUnit_3_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Toch.png">
+      <PackagePath>Image\Toch.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_hero.jpg">
+      <PackagePath>Image\1_hero.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_hero.jpg">
+      <PackagePath>Image\2_hero.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\3_hero.jpg">
+      <PackagePath>Image\3_hero.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\4_skill_Jakiro.jpg">
+      <PackagePath>Image\Skill\4_skill_Jakiro.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\Voins.xr.xml">
+      <PackagePath>Voins.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\Common\StandardStyles.xbf">
+      <PackagePath>Common\StandardStyles.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControlEditor\Editor_Call.xbf">
+      <PackagePath>UserControlEditor\Editor_Call.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControlEditor\UC_Editor.xbf">
+      <PackagePath>UserControlEditor\UC_Editor.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Mob_1_Ball_Fire.xbf">
+      <PackagePath>UserControl\UC_Mob_1_Ball_Fire.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Mob_1_Ball_Blue.xbf">
+      <PackagePath>UserControl\UC_Mob_1_Ball_Blue.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jakiro\UC_Jakiro_LiquidFire.xbf">
+      <PackagePath>UserControl\Jakiro\UC_Jakiro_LiquidFire.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jakiro\UC_Jakiro_Macropyre.xbf">
+      <PackagePath>UserControl\Jakiro\UC_Jakiro_Macropyre.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jakiro\UC_Jakiro_IcePath.xbf">
+      <PackagePath>UserControl\Jakiro\UC_Jakiro_IcePath.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jakiro\UC_Model_H_Jakiro.xbf">
+      <PackagePath>UserControl\Jakiro\UC_Model_H_Jakiro.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jinx\UC_Super_Mega_Death_Rocket.xbf">
+      <PackagePath>UserControl\Jinx\UC_Super_Mega_Death_Rocket.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jinx\UC_Jinx_Flame_Chompers.xbf">
+      <PackagePath>UserControl\Jinx\UC_Jinx_Flame_Chompers.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jinx\UC_Jinx_Zap_Roket.xbf">
+      <PackagePath>UserControl\Jinx\UC_Jinx_Zap_Roket.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jinx\UC_Jinx_Zap.xbf">
+      <PackagePath>UserControl\Jinx\UC_Jinx_Zap.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jinx\UC_Model_H_Jinx.xbf">
+      <PackagePath>UserControl\Jinx\UC_Model_H_Jinx.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Mirana\UC_Mirana_SacredArrow.xbf">
+      <PackagePath>UserControl\Mirana\UC_Mirana_SacredArrow.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Mirana\UC_Mirana_Starstorm.xbf">
+      <PackagePath>UserControl\Mirana\UC_Mirana_Starstorm.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Mirana\UC_Model_H_Mirana.xbf">
+      <PackagePath>UserControl\Mirana\UC_Model_H_Mirana.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Nature\UC_Nature_Sprout.xbf">
+      <PackagePath>UserControl\Nature\UC_Nature_Sprout.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_View_Backgroung.xbf">
+      <PackagePath>UserControl\UC_View_Backgroung.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Alchemist_AcidSpray.xbf">
+      <PackagePath>UserControl\UC_Alchemist_AcidSpray.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Model_H_Sniper.xbf">
+      <PackagePath>UserControl\UC_Model_H_Sniper.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Model_H_Alhim.xbf">
+      <PackagePath>UserControl\UC_Model_H_Alhim.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Bonik\UC_Model_H_Bonik.xbf">
+      <PackagePath>UserControl\Bonik\UC_Model_H_Bonik.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Model_Player.xbf">
+      <PackagePath>UserControl\UC_Model_Player.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_EasyMobAttackBall.xbf">
+      <PackagePath>UserControl\UC_EasyMobAttackBall.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_EndGame.xbf">
+      <PackagePath>UserControl\UC_EndGame.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Menu.xbf">
+      <PackagePath>UserControl\UC_Menu.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Sniper_Headshot.xbf">
+      <PackagePath>UserControl\UC_Sniper_Headshot.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Sniper_Shrapnel.xbf">
+      <PackagePath>UserControl\UC_Sniper_Shrapnel.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Maelstrom.xbf">
+      <PackagePath>UserControl\UC_Maelstrom.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Alchemist_UnstableConcoction.xbf">
+      <PackagePath>UserControl\UC_Alchemist_UnstableConcoction.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jakiro\UC_Jakiro_DualBreath.xbf">
+      <PackagePath>UserControl\Jakiro\UC_Jakiro_DualBreath.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Block.xbf">
+      <PackagePath>UserControl\UC_Block.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_CrushBlock.xbf">
+      <PackagePath>UserControl\UC_CrushBlock.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_FireArrow.xbf">
+      <PackagePath>UserControl\UC_FireArrow.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_GameObjectInCall.xbf">
+      <PackagePath>UserControl\UC_GameObjectInCall.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Mob_1_Ball.xbf">
+      <PackagePath>UserControl\UC_Mob_1_Ball.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Player.xbf">
+      <PackagePath>UserControl\UC_Player.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_View_BuyControl.xbf">
+      <PackagePath>UserControl\UC_View_BuyControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_View_ImageTileControl.xbf">
+      <PackagePath>UserControl\UC_View_ImageTileControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_View_ItemImage.xbf">
+      <PackagePath>UserControl\UC_View_ItemImage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_View_ItemsPanel.xbf">
+      <PackagePath>UserControl\UC_View_ItemsPanel.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_View_PlaerPanel.xbf">
+      <PackagePath>UserControl\UC_View_PlaerPanel.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_View_SelectHeroy.xbf">
+      <PackagePath>UserControl\UC_View_SelectHeroy.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_View_SpellControl.xbf">
+      <PackagePath>UserControl\UC_View_SpellControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

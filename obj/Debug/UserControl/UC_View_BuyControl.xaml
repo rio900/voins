@@ -1,0 +1,214 @@
+﻿<UserControl
+    x:Class="Voins.UC_View_BuyControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Voins"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignWidth="400" Height="500" Width="600">
+    <UserControl.Resources>
+      
+
+    </UserControl.Resources>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="500" VerticalAlignment="Top" Width="600" CornerRadius="10" Background="#FF555555">
+		<Grid Margin="-10,0,-1,-1">
+			<ListView x:Name="C_Items" HorizontalAlignment="Left" Height="254" Margin="22,54,0,0" VerticalAlignment="Top" Width="200" SelectedIndex="-1">
+				<ListView.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapGrid ItemWidth="50" ItemHeight="50" MaximumRowsOrColumns="7" VerticalAlignment="Center" HorizontalAlignment="Left" />
+					</ItemsPanelTemplate>
+				</ListView.ItemsPanel>
+				<ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Padding" Value="0"/>
+                    <Setter Property="Margin" Value="0"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+			</ListView>
+			<Button x:ConnectionId='1' Content="Buy" Margin="499,456,0,0" Width="100" VerticalAlignment="Top"                      />
+			<Button x:ConnectionId='2' Content="Close" Margin="22,456,0,0" VerticalAlignment="Top" Width="100"                    />
+			<TextBlock HorizontalAlignment="Left" Margin="22,10,0,0" TextWrapping="Wrap" Text="Shop" VerticalAlignment="Top" FontSize="16"/>
+			<TextBlock HorizontalAlignment="Left" Margin="89,36,0,0" TextWrapping="Wrap" Text="Easy items" VerticalAlignment="Top"/>
+			<ListView x:Name="C_ItemsNormal" HorizontalAlignment="Left" Height="254" Margin="229,54,0,0" VerticalAlignment="Top" Width="170" Foreground="{x:Null}">
+				<ListView.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapGrid ItemWidth="50" ItemHeight="50" MaximumRowsOrColumns="7" VerticalAlignment="Center" HorizontalAlignment="Center" />
+					</ItemsPanelTemplate>
+				</ListView.ItemsPanel>
+					<ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Padding" Value="0"/>
+                    <Setter Property="Margin" Value="0"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+			</ListView>
+			<TextBlock HorizontalAlignment="Left" Margin="279,36,0,0" TextWrapping="Wrap" Text="Normal items" VerticalAlignment="Top"/>
+			<ListView x:Name="C_ItemsStrong" HorizontalAlignment="Left" Height="254" Margin="414,54,0,0" VerticalAlignment="Top" Width="170">
+				<ListView.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapGrid ItemWidth="50" ItemHeight="50" MaximumRowsOrColumns="7" VerticalAlignment="Center" HorizontalAlignment="Center" />
+					</ItemsPanelTemplate>
+				</ListView.ItemsPanel>
+					<ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Padding" Value="0"/>
+                    <Setter Property="Margin" Value="0"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+			</ListView>
+			<TextBlock HorizontalAlignment="Left" Margin="469,36,0,0" TextWrapping="Wrap" Text="Strong items" VerticalAlignment="Top"/>
+			<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="143" Margin="22,313,0,0" VerticalAlignment="Top" Width="577">
+				<Grid Margin="-1">
+					<Grid Background="#FFA6A6A6" Margin="10,10,527,83" Width="40" Height="40">
+						<local:UC_View_ItemImage x:Name="UC_View_ItemImage" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="40"/>
+					</Grid>
+					<StackPanel Margin="57,10,280,107" Orientation="Horizontal">
+						<TextBlock x:Name="C_Name" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Название" VerticalAlignment="Top" FontSize="13.333"/>
+						<Image Source="ms-appx:///Image/gold.png" Stretch="Fill" Width="14" Margin="20,0,0,10"/>
+						<TextBlock x:Name="C_Price" HorizontalAlignment="Left" TextWrapping="Wrap" Text="1000" VerticalAlignment="Top" FontSize="13.333" Margin="5,0,0,0"/>
+					</StackPanel>
+					<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Parts" VerticalAlignment="Top" FontSize="13.333" Margin="452,10,0,0"/>
+					<TextBlock x:Name="C_DescriptionInfo" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13.333" Margin="56,31,0,0" Width="280" Height="30">
+						<Run Text="Небольшое описание"/>
+						<LineBreak/>
+						<Run Text="sadsadsasd"/>
+					</TextBlock>
+					<StackPanel x:Name="C_ItemStats" Margin="17,66,415,0" Orientation="Vertical">
+						<Grid x:Name="C_DemageView" Height="15">
+							<TextBlock HorizontalAlignment="Left" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Text="Demage:"/>
+							<TextBlock x:Name="C_Demage" HorizontalAlignment="Right" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Margin="0" TextAlignment="Right">
+								<Run Text="0"/>
+								<LineBreak/>
+								<Run/>
+							</TextBlock>
+						</Grid>
+						<Grid x:Name="C_AttackSpeedView" Height="15">
+							<TextBlock HorizontalAlignment="Left" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Text="Attack speed:"/>
+							<TextBlock x:Name="C_AttackSpeed" HorizontalAlignment="Right" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Margin="0" TextAlignment="Right">
+								<Run Text="0"/>
+								<LineBreak/>
+								<Run/>
+							</TextBlock>
+						</Grid>
+						<Grid x:Name="C_SpeedView" Height="15">
+							<TextBlock HorizontalAlignment="Left" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" Text="Speed:"/>
+							<TextBlock x:Name="C_Speed" HorizontalAlignment="Right" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Margin="0" TextAlignment="Right">
+								<Run Text="0"/>
+								<LineBreak/>
+								<Run/>
+							</TextBlock>
+						</Grid>
+						<Grid x:Name="C_ManaRegenerationView" Height="15">
+							<TextBlock HorizontalAlignment="Left" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" Text="Mana Regeneration:"/>
+							<TextBlock x:Name="C_ManaRegeneration" HorizontalAlignment="Right" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Margin="0" TextAlignment="Right">
+								<Run Text="0"/>
+								<LineBreak/>
+								<Run/>
+							</TextBlock>
+						</Grid>
+						<Grid x:Name="C_HealthRegenerationView" Height="15">
+							<TextBlock HorizontalAlignment="Left" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" Text="Health Regeneration:" FontFamily="Global User Interface"/>
+							<TextBlock x:Name="C_HealthRegeneration" HorizontalAlignment="Right" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Margin="0" TextAlignment="Right">
+								<Run Text="0"/>
+								<LineBreak/>
+								<Run/>
+							</TextBlock>
+						</Grid>
+						<Grid x:Name="C_ManaBonusView" Height="15">
+							<TextBlock HorizontalAlignment="Left" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" Text="Mana Bonus:"/>
+							<TextBlock x:Name="C_ManaBonus" HorizontalAlignment="Right" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Margin="0" TextAlignment="Right">
+								<Run Text="0"/>
+								<LineBreak/>
+								<Run/>
+							</TextBlock>
+						</Grid>
+						<Grid x:Name="C_HealthBonusView" Height="15">
+							<TextBlock HorizontalAlignment="Left" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" Text="Health Bonus:"/>
+							<TextBlock x:Name="C_HealthBonus" HorizontalAlignment="Right" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Margin="0" TextAlignment="Right">
+								<Run Text="0"/>
+								<LineBreak/>
+								<Run/>
+							</TextBlock>
+						</Grid>
+						<Grid x:Name="C_StrengthView" Height="15">
+							<TextBlock HorizontalAlignment="Left" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" Text="Strength:"/>
+							<TextBlock x:Name="C_Strength" HorizontalAlignment="Right" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Margin="0" TextAlignment="Right">
+								<Run Text="0"/>
+								<LineBreak/>
+								<Run/>
+							</TextBlock>
+						</Grid>
+						<Grid x:Name="C_AgilityView" Height="15">
+							<TextBlock HorizontalAlignment="Left" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" Text="Agility:"/>
+							<TextBlock x:Name="C_Agility" HorizontalAlignment="Right" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Margin="0" TextAlignment="Right">
+								<Run Text="0"/>
+								<LineBreak/>
+								<Run/>
+							</TextBlock>
+						</Grid>
+						<Grid x:Name="C_IntelligenceView" Height="15">
+							<TextBlock HorizontalAlignment="Left" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" Text="Intelligence:"/>
+							<TextBlock x:Name="C_Intelligence" HorizontalAlignment="Right" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Margin="0" TextAlignment="Right">
+								<Run Text="0"/>
+								<LineBreak/>
+								<Run/>
+							</TextBlock>
+						</Grid>
+						<Grid x:Name="C_ArmorView" Height="15">
+							<TextBlock HorizontalAlignment="Left" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" Text="Armor:" FontFamily="Global User Interface"/>
+							<TextBlock x:Name="C_Armor" HorizontalAlignment="Right" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Margin="0" TextAlignment="Right">
+								<Run Text="0"/>
+								<LineBreak/>
+								<Run/>
+							</TextBlock>
+						</Grid>
+					</StackPanel>
+					<TextBlock x:Name="C_BuffInfo" HorizontalAlignment="Left" Height="57" Margin="197,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139">
+						<Run Text="Bonus buff:"/>
+						<LineBreak/>
+						<Run/>
+					</TextBlock>
+					<ListView x:Name="C_ItemsParts" HorizontalAlignment="Left" Height="92" Margin="367,31,0,0" VerticalAlignment="Top" Width="200">
+						<ListView.ItemsPanel>
+							<ItemsPanelTemplate>
+								<WrapGrid ItemWidth="50" ItemHeight="70" MaximumRowsOrColumns="7" VerticalAlignment="Center" HorizontalAlignment="Left" />
+							</ItemsPanelTemplate>
+						</ListView.ItemsPanel>
+						<ListView.ItemContainerStyle>
+							<Style TargetType="ListViewItem">
+								<Setter Property="Padding" Value="0"/>
+								<Setter Property="Margin" Value="0"/>
+							</Style>
+						</ListView.ItemContainerStyle>
+					</ListView>
+				</Grid>
+			</Border>
+			<Button x:ConnectionId='3' Content="Sell" Margin="150,456,0,0" Width="100" VerticalAlignment="Top"                     />
+			<Grid x:Name="C_SaleGrid" HorizontalAlignment="Left" Height="499" VerticalAlignment="Top" Width="599" Margin="10,0,0,0" Visibility="Collapsed">
+				<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="195" Margin="134,119,0,0" VerticalAlignment="Top" Width="300" Background="#FF363636">
+					<Grid Margin="-1">
+						<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Your  items" VerticalAlignment="Top" FontSize="16" Margin="0,5,0,0"/>
+						<ListView x:Name="C_SellItems" HorizontalAlignment="Center" Height="110" Margin="23,29,27,0" VerticalAlignment="Top" Width="250">
+							<ListView.ItemsPanel>
+								<ItemsPanelTemplate>
+									<WrapGrid ItemWidth="60" ItemHeight="80" MaximumRowsOrColumns="7" VerticalAlignment="Center" HorizontalAlignment="Left" />
+								</ItemsPanelTemplate>
+							</ListView.ItemsPanel>
+							<ListView.ItemContainerStyle>
+								<Style TargetType="ListViewItem">
+									<Setter Property="Padding" Value="0"/>
+									<Setter Property="Margin" Value="0"/>
+								</Style>
+							</ListView.ItemContainerStyle>
+						</ListView>
+						<Button x:ConnectionId='4' Content="Close" Margin="23,144,0,0" VerticalAlignment="Top"                        />
+						<Button x:ConnectionId='5' Content="Sell" Margin="212,144,0,0" Width="61" VerticalAlignment="Top"                       />
+					</Grid>
+				</Border>
+			</Grid>
+
+		</Grid>
+	</Border>
+</UserControl>
+

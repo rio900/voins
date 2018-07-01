@@ -1,0 +1,111 @@
+﻿<UserControl
+    x:Class="Voins.UC_Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Voins"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400" Width="1350" Height="766">
+	<UserControl.Resources>
+		<ControlTemplate x:Key="ButtonControlTemplate_MainManu" TargetType="Button">
+			<Grid>
+				<VisualStateManager.VisualStateGroups>
+					<VisualStateGroup x:Name="CommonStates">
+						<VisualStateGroup.Transitions>
+							<VisualTransition From="Normal" GeneratedDuration="0:0:0.1" To="Pressed"/>
+							<VisualTransition From="PointerOver" GeneratedDuration="0:0:0.1" To="Pressed"/>
+							<VisualTransition From="Pressed" GeneratedDuration="0:0:0.1" To="Normal"/>
+						</VisualStateGroup.Transitions>
+						<VisualState x:Name="Pressed">
+							<Storyboard>
+								<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Offset)" Storyboard.TargetName="path" d:IsOptimized="True">
+									<DoubleAnimation.EasingFunction>
+										<BackEase/>
+									</DoubleAnimation.EasingFunction>
+								</DoubleAnimation>
+								<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="path" d:IsOptimized="True">
+									<DoubleAnimation.EasingFunction>
+										<BackEase/>
+									</DoubleAnimation.EasingFunction>
+								</DoubleAnimation>
+								<DoubleAnimation Duration="0" To="-25" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationX)" Storyboard.TargetName="path" d:IsOptimized="True">
+									<DoubleAnimation.EasingFunction>
+										<BackEase/>
+									</DoubleAnimation.EasingFunction>
+								</DoubleAnimation>
+							</Storyboard>
+						</VisualState>
+						<VisualState x:Name="Disabled"/>
+						<VisualState x:Name="PointerOver"/>
+					</VisualStateGroup>
+					<VisualStateGroup x:Name="FocusStates">
+						<VisualState x:Name="Focused"/>
+						<VisualState x:Name="PointerFocused"/>
+					</VisualStateGroup>
+				</VisualStateManager.VisualStateGroups>
+				<Path x:Name="path" Stretch="Fill" Data="F1 M -2317.47,-254.022L -1898.49,-254.022C -1887.44,-254.022 -1878.49,-245.068 -1878.49,-234.022L -1878.49,-131.629C -1878.49,-120.584 -1887.44,-111.629 -1898.49,-111.629L -2317.47,-111.629C -2328.51,-111.629 -2337.47,-120.584 -2337.47,-131.629L -2337.47,-234.022C -2337.47,-245.068 -2328.51,-254.022 -2317.47,-254.022 Z " Margin="3.01,-1.504,2.015,-5.869" UseLayoutRounding="False" StrokeThickness="5">
+					<Path.Projection>
+						<PlaneProjection/>
+					</Path.Projection>
+					<Path.Stroke>
+						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+							<GradientStop Color="Transparent"/>
+							<GradientStop Color="Transparent" Offset="1"/>
+							<GradientStop Color="#FF0092A0" Offset="0.506"/>
+						</LinearGradientBrush>
+					</Path.Stroke>
+					<Path.Fill>
+						<LinearGradientBrush StartPoint="0.437907,0.0737357" EndPoint="1.31698,0.0737357">
+							<LinearGradientBrush.RelativeTransform>
+								<TransformGroup>
+									<SkewTransform CenterX="0.437907" CenterY="0.0737357" AngleX="41.4221" AngleY="0"/>
+									<RotateTransform CenterX="0.437907" CenterY="0.0737357" Angle="84.0252"/>
+								</TransformGroup>
+							</LinearGradientBrush.RelativeTransform>
+							<GradientStop Color="#FF63F8FF" Offset="0"/>
+							<GradientStop Color="#FF003C93" Offset="1"/>
+						</LinearGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Stretch="Fill" Fill="#1AFFFFFF" Data="F1 M -1926.48,-214.518L -1967.48,-239.518L -2001.48,-206.518L -2040.48,-174.518L -2058.48,-168.518L -2103.48,-195.518L -2166.48,-206.518L -2200.48,-235.518L -2239.48,-242.518L -2290.48,-223.518L -2315.48,-198.518L -2306.48,-159.518L -2293.48,-145.518L -2271.48,-128.518L -2187.48,-140.518L -2128.48,-125.518L -2082.48,-118.518L -1989.48,-132.518L -1940.48,-139.518L -1897.48,-135.518L -1898.48,-170.518L -1919.48,-188.518L -1926.48,-213.518L -1943.1,-166.268" Margin="21.742,7.171,18.187,-0.674" UseLayoutRounding="False"/>
+				<ContentPresenter HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center"/>
+			</Grid>
+		</ControlTemplate>
+		
+	</UserControl.Resources>
+    
+    <Grid>
+    	<Grid HorizontalAlignment="Left" Height="768" VerticalAlignment="Top" Width="1366" Margin="0,0,-966,-468">
+    		<Grid x:Name="C_Buttons" Margin="83,230,321,10">
+    			<Grid x:Name="grid1" Margin="557,0,75,323" RenderTransformOrigin="0.5,0.5">
+    				<Grid.RenderTransform>
+    					<CompositeTransform/>
+    				</Grid.RenderTransform>
+    				<Button x:ConnectionId='3' Content="Campaning"                        HorizontalAlignment="Center" VerticalAlignment="Top" Height="75" Width="330" FontSize="32" Template="{StaticResource ButtonControlTemplate_MainManu}" Background="#FF000859" Foreground="#FF000859"/>
+    				<Button x:ConnectionId='4' Content="Last Fight"                          HorizontalAlignment="Center" Margin="0,105,0,0" VerticalAlignment="Top" Height="75" Width="330" FontSize="32" Template="{StaticResource ButtonControlTemplate_MainManu}" Foreground="#FF000859"/>
+    			</Grid>
+    			<Grid x:Name="grid" Margin="0,0,560,0" RenderTransformOrigin="0.5,0.5">
+    				<Grid.RenderTransform>
+    					<CompositeTransform/>
+    				</Grid.RenderTransform>
+    				<Button Content="1 Player" HorizontalAlignment="Center" Margin="4,0,2,0" VerticalAlignment="Top" Height="75" Width="300" FontSize="32" Template="{StaticResource ButtonControlTemplate_MainManu}" Background="#FF000859" Foreground="#FF002668" FontFamily="Segoe UI" />
+    				<Button Content="2 Player" HorizontalAlignment="Center" Margin="2,105,0,0" VerticalAlignment="Top" Height="75" Width="300" FontSize="32" Template="{StaticResource ButtonControlTemplate_MainManu}" Background="#FF000859" Foreground="#FF002668"/>
+    				<Button Content="Achievements" HorizontalAlignment="Center" Margin="2,210,0,0" VerticalAlignment="Top" Height="75" Width="300" FontSize="32" Template="{StaticResource ButtonControlTemplate_MainManu}" Background="#FF000859" Foreground="#FF002668"/>
+    				<Button Content="Viki" HorizontalAlignment="Center" Margin="0,315,2,0" VerticalAlignment="Top" Height="75" Width="300" FontSize="32" Template="{StaticResource ButtonControlTemplate_MainManu}" Background="#FF000859" Foreground="#FF002668"/>
+    				<Button Content="Exit" HorizontalAlignment="Center" Margin="50,420,52,0" VerticalAlignment="Top" Height="75" Width="300" FontSize="32" Template="{StaticResource ButtonControlTemplate_MainManu}" Background="#FF000859" Foreground="#FF002668"/>
+    			</Grid>
+    			<Grid x:Name="grid2Player" Margin="557,210,0,123" RenderTransformOrigin="0.5,0.5">
+    				<Grid.RenderTransform>
+    					<CompositeTransform/>
+    				</Grid.RenderTransform>
+    				<Button x:ConnectionId='1' Content="2 Players vs CP"                          HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Width="400" FontSize="32" Template="{StaticResource ButtonControlTemplate_MainManu}" Background="#FF000859" Foreground="#FF000859" Margin="0"/>
+    				<Button x:ConnectionId='2' Content="Player vs Player" HorizontalAlignment="Left" Margin="0,105,0,0" VerticalAlignment="Top" Height="75" Width="400" FontSize="32" Template="{StaticResource ButtonControlTemplate_MainManu}" Foreground="#FF000859"                           />
+    			</Grid>
+    		</Grid>
+    	</Grid>
+
+    </Grid>
+</UserControl>
+

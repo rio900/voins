@@ -1,0 +1,1119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-5EAH9G3</Machine>
+    <WindowsUser>rio90</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>f5985a50-9b2d-4158-a282-de74a048cd0c</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Роман</PackageIdentityPublisher>
+    <IntermediateOutputPath>D:\Unity\Voins\obj\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <RegisteredManifestChecksum>0976EA1E942E74F011F690B78A0F7FA5B9A92659F7B2C4BA199ECE0F48941933</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>f5985a50-9b2d-4158-a282-de74a048cd0c_1.1.0.0_neutral__1m319f4zdbjkj</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>f5985a50-9b2d-4158-a282-de74a048cd0c_1m319f4zdbjkj!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>f5985a50-9b2d-4158-a282-de74a048cd0c</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Роман</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Unity\Voins\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-07-01T08:17:04.500</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\Voins.exe">
+      <PackagePath>Voins.exe</PackagePath>
+      <Modified>2018-07-01T08:21:57.187</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\MonoGame.Framework.dll">
+      <PackagePath>MonoGame.Framework.dll</PackagePath>
+      <Modified>2013-02-25T17:44:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\SharpDX.dll">
+      <PackagePath>SharpDX.dll</PackagePath>
+      <Modified>2012-12-28T17:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\SharpDX.XAudio2.dll">
+      <PackagePath>SharpDX.XAudio2.dll</PackagePath>
+      <Modified>2012-12-28T17:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\SharpDX.XInput.dll">
+      <PackagePath>SharpDX.XInput.dll</PackagePath>
+      <Modified>2012-12-28T17:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T19:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T19:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T19:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T19:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\10_clarity.png">
+      <PackagePath>Image\10_clarity.png</PackagePath>
+      <Modified>2013-10-26T18:26:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\11_healing_salve.png">
+      <PackagePath>Image\11_healing_salve.png</PackagePath>
+      <Modified>2013-10-26T18:26:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\12_tango.png">
+      <PackagePath>Image\12_tango.png</PackagePath>
+      <Modified>2013-10-26T18:26:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\13_mithril_hammer.png">
+      <PackagePath>Image\13_mithril_hammer.png</PackagePath>
+      <Modified>2013-10-29T16:32:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\14_maelstrom.png">
+      <PackagePath>Image\14_maelstrom.png</PackagePath>
+      <Modified>2013-10-29T16:32:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\15_hyperstone.png">
+      <PackagePath>Image\15_hyperstone.png</PackagePath>
+      <Modified>2013-10-29T22:37:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\16_mjollnir.png">
+      <PackagePath>Image\16_mjollnir.png</PackagePath>
+      <Modified>2013-10-29T22:37:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\17_demon_edge.png">
+      <PackagePath>Image\17_demon_edge.png</PackagePath>
+      <Modified>2013-10-29T22:37:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\18_javelin.png">
+      <PackagePath>Image\18_javelin.png</PackagePath>
+      <Modified>2013-10-29T22:37:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\19_monkey_king_bar.png">
+      <PackagePath>Image\19_monkey_king_bar.png</PackagePath>
+      <Modified>2013-10-29T22:37:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_Alchemist_Colb.png">
+      <PackagePath>Image\1_Alchemist_Colb.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_Bum.png">
+      <PackagePath>Image\1_Bum.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_Bum2.png">
+      <PackagePath>Image\1_Bum2.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_maelstrom.png">
+      <PackagePath>Image\1_maelstrom.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_masc.png">
+      <PackagePath>Image\1_masc.png</PackagePath>
+      <Modified>2013-10-22T09:15:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_Silence.png">
+      <PackagePath>Image\1_Silence.png</PackagePath>
+      <Modified>2013-10-24T10:03:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_skill.png">
+      <PackagePath>Image\1_skill.png</PackagePath>
+      <Modified>2013-10-22T09:15:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_skill_Alchemist.png">
+      <PackagePath>Image\1_skill_Alchemist.png</PackagePath>
+      <Modified>2013-10-28T18:32:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_skill_Sniper.png">
+      <PackagePath>Image\1_skill_Sniper.png</PackagePath>
+      <Modified>2013-10-31T21:34:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_test.png">
+      <PackagePath>Image\1_test.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_test2.png">
+      <PackagePath>Image\1_test2.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_test3.png">
+      <PackagePath>Image\1_test3.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\20_vitality_booster.png">
+      <PackagePath>Image\20_vitality_booster.png</PackagePath>
+      <Modified>2013-10-29T23:57:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\21_reaver.png">
+      <PackagePath>Image\21_reaver.png</PackagePath>
+      <Modified>2013-10-29T23:57:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\22_heart_of_tarrasque.png">
+      <PackagePath>Image\22_heart_of_tarrasque.png</PackagePath>
+      <Modified>2013-10-29T23:57:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\23_blades_of_attack.png">
+      <PackagePath>Image\23_blades_of_attack.png</PackagePath>
+      <Modified>2013-11-01T13:23:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\24_phase_boots.png">
+      <PackagePath>Image\24_phase_boots.png</PackagePath>
+      <Modified>2013-11-01T13:23:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\25_boots_of_elvenskin.png">
+      <PackagePath>Image\25_boots_of_elvenskin.png</PackagePath>
+      <Modified>2013-11-01T13:23:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\26_blade_of_alacrity.png">
+      <PackagePath>Image\26_blade_of_alacrity.png</PackagePath>
+      <Modified>2013-11-01T13:23:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\27_yasha.png">
+      <PackagePath>Image\27_yasha.png</PackagePath>
+      <Modified>2013-11-01T13:23:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\28_ogre_club.png">
+      <PackagePath>Image\28_ogre_club.png</PackagePath>
+      <Modified>2013-11-01T13:23:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\29_sange.png">
+      <PackagePath>Image\29_sange.png</PackagePath>
+      <Modified>2013-11-01T13:23:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_Bum_mil.png">
+      <PackagePath>Image\2_Bum_mil.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_robOfMagi.png">
+      <PackagePath>Image\2_robOfMagi.png</PackagePath>
+      <Modified>2013-10-22T09:15:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_skill.png">
+      <PackagePath>Image\2_skill.png</PackagePath>
+      <Modified>2013-10-22T09:15:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_skill_Alchemist.png">
+      <PackagePath>Image\2_skill_Alchemist.png</PackagePath>
+      <Modified>2013-10-28T18:32:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_skill_Sniper.png">
+      <PackagePath>Image\2_skill_Sniper.png</PackagePath>
+      <Modified>2013-10-31T21:34:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_test.png">
+      <PackagePath>Image\2_test.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_test2.png">
+      <PackagePath>Image\2_test2.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_test3.png">
+      <PackagePath>Image\2_test3.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\30_sange_and_yasha.png">
+      <PackagePath>Image\30_sange_and_yasha.png</PackagePath>
+      <Modified>2013-11-01T13:23:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\31_shadow_amulet.png">
+      <PackagePath>Image\31_shadow_amulet.png</PackagePath>
+      <Modified>2013-11-01T17:46:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\32_claymore.png">
+      <PackagePath>Image\32_claymore.png</PackagePath>
+      <Modified>2013-11-01T17:46:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\33_shadow_blade.png">
+      <PackagePath>Image\33_shadow_blade.png</PackagePath>
+      <Modified>2013-11-01T17:46:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\34_point_booster.png">
+      <PackagePath>Image\34_point_booster.png</PackagePath>
+      <Modified>2013-11-18T22:10:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\35_staff_of_wizardry.png">
+      <PackagePath>Image\35_staff_of_wizardry.png</PackagePath>
+      <Modified>2013-11-18T22:10:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\36_aghanims_scepter.png">
+      <PackagePath>Image\36_aghanims_scepter.png</PackagePath>
+      <Modified>2013-11-18T22:10:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\37_ring_of_regen.png">
+      <PackagePath>Image\37_ring_of_regen.png</PackagePath>
+      <Modified>2013-11-18T22:10:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\38_force_staff.png">
+      <PackagePath>Image\38_force_staff.png</PackagePath>
+      <Modified>2013-11-18T22:10:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\39_desolator.png">
+      <PackagePath>Image\39_desolator.png</PackagePath>
+      <Modified>2014-03-23T19:16:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\3_skill.png">
+      <PackagePath>Image\3_skill.png</PackagePath>
+      <Modified>2013-10-22T09:15:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\3_skill_Alchemist.png">
+      <PackagePath>Image\3_skill_Alchemist.png</PackagePath>
+      <Modified>2013-10-28T18:32:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\3_skill_Sniper.png">
+      <PackagePath>Image\3_skill_Sniper.png</PackagePath>
+      <Modified>2013-10-31T21:34:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\3_stuff.png">
+      <PackagePath>Image\3_stuff.png</PackagePath>
+      <Modified>2013-10-22T09:15:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\3_test.png">
+      <PackagePath>Image\3_test.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\3_test2.png">
+      <PackagePath>Image\3_test2.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\3_test3.png">
+      <PackagePath>Image\3_test3.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\40_platemail.png">
+      <PackagePath>Image\40_platemail.png</PackagePath>
+      <Modified>2014-03-26T09:11:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\41_chainmail.png">
+      <PackagePath>Image\41_chainmail.png</PackagePath>
+      <Modified>2014-03-26T09:13:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\42_assaultCuirass.png">
+      <PackagePath>Image\42_assaultCuirass.png</PackagePath>
+      <Modified>2014-03-26T09:16:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\4_oStuff.png">
+      <PackagePath>Image\4_oStuff.png</PackagePath>
+      <Modified>2013-10-22T09:15:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\4_skill.png">
+      <PackagePath>Image\4_skill.png</PackagePath>
+      <Modified>2013-10-22T09:15:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\4_skill_Alchemist.png">
+      <PackagePath>Image\4_skill_Alchemist.png</PackagePath>
+      <Modified>2013-10-28T18:32:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\4_skill_Sniper.png">
+      <PackagePath>Image\4_skill_Sniper.png</PackagePath>
+      <Modified>2013-10-31T21:34:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\4_test.png">
+      <PackagePath>Image\4_test.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\4_test2.png">
+      <PackagePath>Image\4_test2.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\4_test3.png">
+      <PackagePath>Image\4_test3.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\5_orchid.png">
+      <PackagePath>Image\5_orchid.png</PackagePath>
+      <Modified>2013-10-22T09:15:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\5_skill_Alchemist.png">
+      <PackagePath>Image\5_skill_Alchemist.png</PackagePath>
+      <Modified>2013-10-28T21:53:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\6_boots.png">
+      <PackagePath>Image\6_boots.png</PackagePath>
+      <Modified>2013-10-22T09:15:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\7_hend.png">
+      <PackagePath>Image\7_hend.png</PackagePath>
+      <Modified>2013-10-22T09:15:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\8_str.png">
+      <PackagePath>Image\8_str.png</PackagePath>
+      <Modified>2013-10-22T09:15:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\9_pt.png">
+      <PackagePath>Image\9_pt.png</PackagePath>
+      <Modified>2013-10-22T09:15:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Bomb.png">
+      <PackagePath>Image\Bomb.png</PackagePath>
+      <Modified>2013-11-22T21:26:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Bonik.png">
+      <PackagePath>Image\Bonik.png</PackagePath>
+      <Modified>2013-10-19T08:17:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\BoomRoketCenter.png">
+      <PackagePath>Image\BoomRoketCenter.png</PackagePath>
+      <Modified>2013-11-21T23:07:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\BoomRoketLeft.png">
+      <PackagePath>Image\BoomRoketLeft.png</PackagePath>
+      <Modified>2013-11-21T23:07:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Fire.png">
+      <PackagePath>Image\Fire.png</PackagePath>
+      <Modified>2013-11-08T22:59:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\FireArrow.png">
+      <PackagePath>Image\FireArrow.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Gamepad.png">
+      <PackagePath>Image\Gamepad.png</PackagePath>
+      <Modified>2013-11-23T15:22:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\gold.png">
+      <PackagePath>Image\gold.png</PackagePath>
+      <Modified>2013-10-24T21:55:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Ground.png">
+      <PackagePath>Image\Ground.png</PackagePath>
+      <Modified>2013-11-06T22:25:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Gruss1.png">
+      <PackagePath>Image\Gruss1.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Gruss2.png">
+      <PackagePath>Image\Gruss2.png</PackagePath>
+      <Modified>2013-10-25T20:53:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_0_1.png">
+      <PackagePath>Image\Hero_Alhim_0_1.png</PackagePath>
+      <Modified>2013-11-08T10:39:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_0_2.png">
+      <PackagePath>Image\Hero_Alhim_0_2.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_0_3.png">
+      <PackagePath>Image\Hero_Alhim_0_3.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_1_1.png">
+      <PackagePath>Image\Hero_Alhim_1_1.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_1_2.png">
+      <PackagePath>Image\Hero_Alhim_1_2.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_1_3.png">
+      <PackagePath>Image\Hero_Alhim_1_3.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_2_1.png">
+      <PackagePath>Image\Hero_Alhim_2_1.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_2_2.png">
+      <PackagePath>Image\Hero_Alhim_2_2.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_2_3.png">
+      <PackagePath>Image\Hero_Alhim_2_3.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_3_1.png">
+      <PackagePath>Image\Hero_Alhim_3_1.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_3_2.png">
+      <PackagePath>Image\Hero_Alhim_3_2.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Alhim_3_3.png">
+      <PackagePath>Image\Hero_Alhim_3_3.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_0_1.png">
+      <PackagePath>Image\Hero_Bonik_0_1.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_0_2.png">
+      <PackagePath>Image\Hero_Bonik_0_2.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_0_3.png">
+      <PackagePath>Image\Hero_Bonik_0_3.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_1_1.png">
+      <PackagePath>Image\Hero_Bonik_1_1.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_1_2.png">
+      <PackagePath>Image\Hero_Bonik_1_2.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_1_3.png">
+      <PackagePath>Image\Hero_Bonik_1_3.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_2_1.png">
+      <PackagePath>Image\Hero_Bonik_2_1.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_2_2.png">
+      <PackagePath>Image\Hero_Bonik_2_2.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_2_3.png">
+      <PackagePath>Image\Hero_Bonik_2_3.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_3_1.png">
+      <PackagePath>Image\Hero_Bonik_3_1.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_3_2.png">
+      <PackagePath>Image\Hero_Bonik_3_2.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Bonik_3_3.png">
+      <PackagePath>Image\Hero_Bonik_3_3.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_0_1.png">
+      <PackagePath>Image\Hero_Jakiro_0_1.png</PackagePath>
+      <Modified>2013-11-09T12:24:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_0_2.png">
+      <PackagePath>Image\Hero_Jakiro_0_2.png</PackagePath>
+      <Modified>2013-11-09T12:24:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_0_3.png">
+      <PackagePath>Image\Hero_Jakiro_0_3.png</PackagePath>
+      <Modified>2013-11-09T12:24:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_1_1.png">
+      <PackagePath>Image\Hero_Jakiro_1_1.png</PackagePath>
+      <Modified>2013-11-09T12:24:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_1_2.png">
+      <PackagePath>Image\Hero_Jakiro_1_2.png</PackagePath>
+      <Modified>2013-11-09T12:24:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_1_3.png">
+      <PackagePath>Image\Hero_Jakiro_1_3.png</PackagePath>
+      <Modified>2013-11-09T12:24:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_2_1.png">
+      <PackagePath>Image\Hero_Jakiro_2_1.png</PackagePath>
+      <Modified>2013-11-09T12:24:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_2_2.png">
+      <PackagePath>Image\Hero_Jakiro_2_2.png</PackagePath>
+      <Modified>2013-11-09T12:24:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_2_3.png">
+      <PackagePath>Image\Hero_Jakiro_2_3.png</PackagePath>
+      <Modified>2013-11-09T12:24:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_3_1.png">
+      <PackagePath>Image\Hero_Jakiro_3_1.png</PackagePath>
+      <Modified>2013-11-09T12:24:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_3_2.png">
+      <PackagePath>Image\Hero_Jakiro_3_2.png</PackagePath>
+      <Modified>2013-11-09T12:24:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jakiro_3_3.png">
+      <PackagePath>Image\Hero_Jakiro_3_3.png</PackagePath>
+      <Modified>2013-11-09T12:24:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_0_1.png">
+      <PackagePath>Image\Hero_Jinx_0_1.png</PackagePath>
+      <Modified>2013-11-19T22:50:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_0_2.png">
+      <PackagePath>Image\Hero_Jinx_0_2.png</PackagePath>
+      <Modified>2013-11-19T22:50:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_0_3.png">
+      <PackagePath>Image\Hero_Jinx_0_3.png</PackagePath>
+      <Modified>2013-11-19T22:50:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_1_1.png">
+      <PackagePath>Image\Hero_Jinx_1_1.png</PackagePath>
+      <Modified>2013-11-20T02:08:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_1_2.png">
+      <PackagePath>Image\Hero_Jinx_1_2.png</PackagePath>
+      <Modified>2013-11-20T02:08:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_1_3.png">
+      <PackagePath>Image\Hero_Jinx_1_3.png</PackagePath>
+      <Modified>2013-11-20T02:08:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_2_1.png">
+      <PackagePath>Image\Hero_Jinx_2_1.png</PackagePath>
+      <Modified>2013-11-20T02:08:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_2_2.png">
+      <PackagePath>Image\Hero_Jinx_2_2.png</PackagePath>
+      <Modified>2013-11-20T02:08:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_2_3.png">
+      <PackagePath>Image\Hero_Jinx_2_3.png</PackagePath>
+      <Modified>2013-11-20T02:08:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_3_1.png">
+      <PackagePath>Image\Hero_Jinx_3_1.png</PackagePath>
+      <Modified>2013-11-19T22:50:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_3_2.png">
+      <PackagePath>Image\Hero_Jinx_3_2.png</PackagePath>
+      <Modified>2013-11-19T22:50:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Jinx_3_3.png">
+      <PackagePath>Image\Hero_Jinx_3_3.png</PackagePath>
+      <Modified>2013-11-19T22:50:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_0_1.png">
+      <PackagePath>Image\Hero_Mirana_0_1.png</PackagePath>
+      <Modified>2013-11-16T01:03:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_0_2.png">
+      <PackagePath>Image\Hero_Mirana_0_2.png</PackagePath>
+      <Modified>2013-11-16T01:03:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_0_3.png">
+      <PackagePath>Image\Hero_Mirana_0_3.png</PackagePath>
+      <Modified>2013-11-16T01:03:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_1_1.png">
+      <PackagePath>Image\Hero_Mirana_1_1.png</PackagePath>
+      <Modified>2013-11-16T01:03:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_1_2.png">
+      <PackagePath>Image\Hero_Mirana_1_2.png</PackagePath>
+      <Modified>2013-11-16T01:03:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_1_3.png">
+      <PackagePath>Image\Hero_Mirana_1_3.png</PackagePath>
+      <Modified>2013-11-16T01:03:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_2_1.png">
+      <PackagePath>Image\Hero_Mirana_2_1.png</PackagePath>
+      <Modified>2013-11-16T01:03:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_2_2.png">
+      <PackagePath>Image\Hero_Mirana_2_2.png</PackagePath>
+      <Modified>2013-11-16T01:03:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_2_3.png">
+      <PackagePath>Image\Hero_Mirana_2_3.png</PackagePath>
+      <Modified>2013-11-16T01:03:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_3_1.png">
+      <PackagePath>Image\Hero_Mirana_3_1.png</PackagePath>
+      <Modified>2013-11-16T01:03:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_3_2.png">
+      <PackagePath>Image\Hero_Mirana_3_2.png</PackagePath>
+      <Modified>2013-11-16T01:03:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Mirana_3_3.png">
+      <PackagePath>Image\Hero_Mirana_3_3.png</PackagePath>
+      <Modified>2013-11-16T01:03:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_0_1.png">
+      <PackagePath>Image\Hero_Sniper_0_1.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_0_2.png">
+      <PackagePath>Image\Hero_Sniper_0_2.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_0_3.png">
+      <PackagePath>Image\Hero_Sniper_0_3.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_1_1.png">
+      <PackagePath>Image\Hero_Sniper_1_1.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_1_2.png">
+      <PackagePath>Image\Hero_Sniper_1_2.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_1_3.png">
+      <PackagePath>Image\Hero_Sniper_1_3.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_2_1.png">
+      <PackagePath>Image\Hero_Sniper_2_1.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_2_2.png">
+      <PackagePath>Image\Hero_Sniper_2_2.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_2_3.png">
+      <PackagePath>Image\Hero_Sniper_2_3.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_3_1.png">
+      <PackagePath>Image\Hero_Sniper_3_1.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_3_2.png">
+      <PackagePath>Image\Hero_Sniper_3_2.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Hero_Sniper_3_3.png">
+      <PackagePath>Image\Hero_Sniper_3_3.png</PackagePath>
+      <Modified>2013-11-08T10:39:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\JinxRoket.png">
+      <PackagePath>Image\JinxRoket.png</PackagePath>
+      <Modified>2013-11-22T20:51:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Keyboard.png">
+      <PackagePath>Image\Keyboard.png</PackagePath>
+      <Modified>2013-11-23T15:22:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Laser.png">
+      <PackagePath>Image\Laser.png</PackagePath>
+      <Modified>2013-11-22T08:48:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Man.png">
+      <PackagePath>Image\Man.png</PackagePath>
+      <Modified>2013-11-06T15:16:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mirana_bot.png">
+      <PackagePath>Image\Mirana_bot.png</PackagePath>
+      <Modified>2013-11-14T21:09:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mobs\1_test3_blue.png">
+      <PackagePath>Image\Mobs\1_test3_blue.png</PackagePath>
+      <Modified>2013-11-24T00:39:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mobs\1_test3_fire.png">
+      <PackagePath>Image\Mobs\1_test3_fire.png</PackagePath>
+      <Modified>2013-11-24T00:39:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mobs\2_test3_blue.png">
+      <PackagePath>Image\Mobs\2_test3_blue.png</PackagePath>
+      <Modified>2013-11-24T00:39:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mobs\2_test3_fire.png">
+      <PackagePath>Image\Mobs\2_test3_fire.png</PackagePath>
+      <Modified>2013-11-24T00:39:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mobs\3_test3_blue.png">
+      <PackagePath>Image\Mobs\3_test3_blue.png</PackagePath>
+      <Modified>2013-11-24T00:39:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mobs\3_test3_fire.png">
+      <PackagePath>Image\Mobs\3_test3_fire.png</PackagePath>
+      <Modified>2013-11-24T00:39:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mobs\4_test3_blue.png">
+      <PackagePath>Image\Mobs\4_test3_blue.png</PackagePath>
+      <Modified>2013-11-24T00:39:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Mobs\4_test3_fire.png">
+      <PackagePath>Image\Mobs\4_test3_fire.png</PackagePath>
+      <Modified>2013-11-24T00:39:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Nature\Img_Nature_Sprout.png">
+      <PackagePath>Image\Nature\Img_Nature_Sprout.png</PackagePath>
+      <Modified>2018-06-29T12:09:11.647</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Sk.png">
+      <PackagePath>Image\Sk.png</PackagePath>
+      <Modified>2013-10-31T04:55:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SkillImage\Jakiro_Bot.png">
+      <PackagePath>Image\SkillImage\Jakiro_Bot.png</PackagePath>
+      <Modified>2013-11-09T12:49:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SkillImage\Jakiro_IcePass.png">
+      <PackagePath>Image\SkillImage\Jakiro_IcePass.png</PackagePath>
+      <Modified>2013-11-09T12:49:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SkillImage\Jakiro_Left.png">
+      <PackagePath>Image\SkillImage\Jakiro_Left.png</PackagePath>
+      <Modified>2013-11-09T12:49:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SkillImage\Jakiro_Rap.png">
+      <PackagePath>Image\SkillImage\Jakiro_Rap.png</PackagePath>
+      <Modified>2013-11-09T12:49:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SkillImage\Jakiro_Right.png">
+      <PackagePath>Image\SkillImage\Jakiro_Right.png</PackagePath>
+      <Modified>2013-11-09T12:49:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SkillImage\Jakiro_skill1_Fire.png">
+      <PackagePath>Image\SkillImage\Jakiro_skill1_Fire.png</PackagePath>
+      <Modified>2013-11-09T12:49:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SkillImage\Jakiro_skill1_Ice.png">
+      <PackagePath>Image\SkillImage\Jakiro_skill1_Ice.png</PackagePath>
+      <Modified>2013-11-09T12:49:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SkillImage\Jakiro_Top.png">
+      <PackagePath>Image\SkillImage\Jakiro_Top.png</PackagePath>
+      <Modified>2013-11-09T12:49:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\1_skill_Jakiro.png">
+      <PackagePath>Image\Skill\1_skill_Jakiro.png</PackagePath>
+      <Modified>2013-11-08T22:30:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\1_skill_Jinx.png">
+      <PackagePath>Image\Skill\1_skill_Jinx.png</PackagePath>
+      <Modified>2013-11-19T22:09:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\1_skill_Jinx_Reload.png">
+      <PackagePath>Image\Skill\1_skill_Jinx_Reload.png</PackagePath>
+      <Modified>2013-11-20T01:13:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\1_skill_Mirana.png">
+      <PackagePath>Image\Skill\1_skill_Mirana.png</PackagePath>
+      <Modified>2013-11-08T22:30:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\2_skill_Jakiro.png">
+      <PackagePath>Image\Skill\2_skill_Jakiro.png</PackagePath>
+      <Modified>2013-11-08T22:30:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\2_skill_Jinx.png">
+      <PackagePath>Image\Skill\2_skill_Jinx.png</PackagePath>
+      <Modified>2013-11-19T22:09:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\2_skill_Mirana.png">
+      <PackagePath>Image\Skill\2_skill_Mirana.png</PackagePath>
+      <Modified>2013-11-08T22:30:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\3_skill_Jakiro.png">
+      <PackagePath>Image\Skill\3_skill_Jakiro.png</PackagePath>
+      <Modified>2013-11-08T22:30:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\3_skill_Jinx.png">
+      <PackagePath>Image\Skill\3_skill_Jinx.png</PackagePath>
+      <Modified>2013-11-19T22:09:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\3_skill_Mirana.png">
+      <PackagePath>Image\Skill\3_skill_Mirana.png</PackagePath>
+      <Modified>2013-11-08T22:30:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\4_skill_Jinx.png">
+      <PackagePath>Image\Skill\4_skill_Jinx.png</PackagePath>
+      <Modified>2013-11-19T22:09:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\4_skill_Mirana.png">
+      <PackagePath>Image\Skill\4_skill_Mirana.png</PackagePath>
+      <Modified>2013-11-08T22:30:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Slice 128.png">
+      <PackagePath>Image\Slice 128.png</PackagePath>
+      <Modified>2013-11-22T08:48:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\SuperMegaRoket.png">
+      <PackagePath>Image\SuperMegaRoket.png</PackagePath>
+      <Modified>2013-11-22T08:48:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_0_1.png">
+      <PackagePath>Image\testUnit_0_1.png</PackagePath>
+      <Modified>2013-11-08T10:39:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_0_2.png">
+      <PackagePath>Image\testUnit_0_2.png</PackagePath>
+      <Modified>2013-11-08T10:39:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_0_3.png">
+      <PackagePath>Image\testUnit_0_3.png</PackagePath>
+      <Modified>2013-11-08T10:39:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_0_3_copy.png">
+      <PackagePath>Image\testUnit_0_3_copy.png</PackagePath>
+      <Modified>2013-11-08T10:39:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_1_1.png">
+      <PackagePath>Image\testUnit_1_1.png</PackagePath>
+      <Modified>2013-11-08T10:39:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_1_2.png">
+      <PackagePath>Image\testUnit_1_2.png</PackagePath>
+      <Modified>2013-11-08T10:39:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_1_3.png">
+      <PackagePath>Image\testUnit_1_3.png</PackagePath>
+      <Modified>2013-11-08T10:39:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_2_1.png">
+      <PackagePath>Image\testUnit_2_1.png</PackagePath>
+      <Modified>2013-11-08T10:39:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_2_2.png">
+      <PackagePath>Image\testUnit_2_2.png</PackagePath>
+      <Modified>2013-11-08T10:39:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_2_3.png">
+      <PackagePath>Image\testUnit_2_3.png</PackagePath>
+      <Modified>2013-11-08T10:39:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_3_1.png">
+      <PackagePath>Image\testUnit_3_1.png</PackagePath>
+      <Modified>2013-11-08T10:39:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_3_2.png">
+      <PackagePath>Image\testUnit_3_2.png</PackagePath>
+      <Modified>2013-11-08T10:39:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\testUnit_3_3.png">
+      <PackagePath>Image\testUnit_3_3.png</PackagePath>
+      <Modified>2013-11-08T10:39:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Toch.png">
+      <PackagePath>Image\Toch.png</PackagePath>
+      <Modified>2013-11-23T15:22:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\1_hero.jpg">
+      <PackagePath>Image\1_hero.jpg</PackagePath>
+      <Modified>2013-11-02T17:56:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\2_hero.jpg">
+      <PackagePath>Image\2_hero.jpg</PackagePath>
+      <Modified>2013-11-02T17:56:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\3_hero.jpg">
+      <PackagePath>Image\3_hero.jpg</PackagePath>
+      <Modified>2013-11-02T17:56:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\Image\Skill\4_skill_Jakiro.jpg">
+      <PackagePath>Image\Skill\4_skill_Jakiro.jpg</PackagePath>
+      <Modified>2013-11-08T22:30:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\Voins.xr.xml">
+      <PackagePath>Voins.xr.xml</PackagePath>
+      <Modified>2018-06-29T11:55:39.629</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.487</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\Common\StandardStyles.xbf">
+      <PackagePath>Common\StandardStyles.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.487</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.488</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControlEditor\Editor_Call.xbf">
+      <PackagePath>UserControlEditor\Editor_Call.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.488</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControlEditor\UC_Editor.xbf">
+      <PackagePath>UserControlEditor\UC_Editor.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.489</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Mob_1_Ball_Fire.xbf">
+      <PackagePath>UserControl\UC_Mob_1_Ball_Fire.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.489</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Mob_1_Ball_Blue.xbf">
+      <PackagePath>UserControl\UC_Mob_1_Ball_Blue.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.490</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jakiro\UC_Jakiro_LiquidFire.xbf">
+      <PackagePath>UserControl\Jakiro\UC_Jakiro_LiquidFire.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.491</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jakiro\UC_Jakiro_Macropyre.xbf">
+      <PackagePath>UserControl\Jakiro\UC_Jakiro_Macropyre.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.491</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jakiro\UC_Jakiro_IcePath.xbf">
+      <PackagePath>UserControl\Jakiro\UC_Jakiro_IcePath.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.492</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jakiro\UC_Model_H_Jakiro.xbf">
+      <PackagePath>UserControl\Jakiro\UC_Model_H_Jakiro.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.492</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jinx\UC_Super_Mega_Death_Rocket.xbf">
+      <PackagePath>UserControl\Jinx\UC_Super_Mega_Death_Rocket.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.493</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jinx\UC_Jinx_Flame_Chompers.xbf">
+      <PackagePath>UserControl\Jinx\UC_Jinx_Flame_Chompers.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.493</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jinx\UC_Jinx_Zap_Roket.xbf">
+      <PackagePath>UserControl\Jinx\UC_Jinx_Zap_Roket.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.494</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jinx\UC_Jinx_Zap.xbf">
+      <PackagePath>UserControl\Jinx\UC_Jinx_Zap.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.494</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jinx\UC_Model_H_Jinx.xbf">
+      <PackagePath>UserControl\Jinx\UC_Model_H_Jinx.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.495</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Mirana\UC_Mirana_SacredArrow.xbf">
+      <PackagePath>UserControl\Mirana\UC_Mirana_SacredArrow.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.495</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Mirana\UC_Mirana_Starstorm.xbf">
+      <PackagePath>UserControl\Mirana\UC_Mirana_Starstorm.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.496</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Mirana\UC_Model_H_Mirana.xbf">
+      <PackagePath>UserControl\Mirana\UC_Model_H_Mirana.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.496</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Nature\UC_Nature_Sprout.xbf">
+      <PackagePath>UserControl\Nature\UC_Nature_Sprout.xbf</PackagePath>
+      <Modified>2018-06-29T14:23:29.999</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_View_Backgroung.xbf">
+      <PackagePath>UserControl\UC_View_Backgroung.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Alchemist_AcidSpray.xbf">
+      <PackagePath>UserControl\UC_Alchemist_AcidSpray.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Model_H_Sniper.xbf">
+      <PackagePath>UserControl\UC_Model_H_Sniper.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.498</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Model_H_Alhim.xbf">
+      <PackagePath>UserControl\UC_Model_H_Alhim.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.498</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Bonik\UC_Model_H_Bonik.xbf">
+      <PackagePath>UserControl\Bonik\UC_Model_H_Bonik.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.499</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Model_Player.xbf">
+      <PackagePath>UserControl\UC_Model_Player.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.499</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_EasyMobAttackBall.xbf">
+      <PackagePath>UserControl\UC_EasyMobAttackBall.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.500</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_EndGame.xbf">
+      <PackagePath>UserControl\UC_EndGame.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.500</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Menu.xbf">
+      <PackagePath>UserControl\UC_Menu.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.501</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Sniper_Headshot.xbf">
+      <PackagePath>UserControl\UC_Sniper_Headshot.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.501</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Sniper_Shrapnel.xbf">
+      <PackagePath>UserControl\UC_Sniper_Shrapnel.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.502</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Maelstrom.xbf">
+      <PackagePath>UserControl\UC_Maelstrom.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.502</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Alchemist_UnstableConcoction.xbf">
+      <PackagePath>UserControl\UC_Alchemist_UnstableConcoction.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.503</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\Jakiro\UC_Jakiro_DualBreath.xbf">
+      <PackagePath>UserControl\Jakiro\UC_Jakiro_DualBreath.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.503</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Block.xbf">
+      <PackagePath>UserControl\UC_Block.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.504</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_CrushBlock.xbf">
+      <PackagePath>UserControl\UC_CrushBlock.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.504</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_FireArrow.xbf">
+      <PackagePath>UserControl\UC_FireArrow.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.505</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_GameObjectInCall.xbf">
+      <PackagePath>UserControl\UC_GameObjectInCall.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.505</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Mob_1_Ball.xbf">
+      <PackagePath>UserControl\UC_Mob_1_Ball.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.506</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_Player.xbf">
+      <PackagePath>UserControl\UC_Player.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.506</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_View_BuyControl.xbf">
+      <PackagePath>UserControl\UC_View_BuyControl.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.507</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_View_ImageTileControl.xbf">
+      <PackagePath>UserControl\UC_View_ImageTileControl.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.508</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_View_ItemImage.xbf">
+      <PackagePath>UserControl\UC_View_ItemImage.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.508</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_View_ItemsPanel.xbf">
+      <PackagePath>UserControl\UC_View_ItemsPanel.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.509</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_View_PlaerPanel.xbf">
+      <PackagePath>UserControl\UC_View_PlaerPanel.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.509</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_View_SelectHeroy.xbf">
+      <PackagePath>UserControl\UC_View_SelectHeroy.xbf</PackagePath>
+      <Modified>2018-06-29T10:49:42.539</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\UserControl\UC_View_SpellControl.xbf">
+      <PackagePath>UserControl\UC_View_SpellControl.xbf</PackagePath>
+      <Modified>2018-06-29T10:39:01.510</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\Voins\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-07-01T08:19:29.570</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
