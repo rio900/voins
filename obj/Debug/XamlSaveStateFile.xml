@@ -1,9 +1,9 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="d:\unity\voins\obj\debug\intermediatexaml\voins.exe" HashGuid="dc45b55b-6ee2-4a6a-7f11-58dbe36befd2" />
-    <ReferenceAssembly PathName="d:\unity\voins\bin\debug\monogame.framework.dll" HashGuid="fcd5ff8a-ba5a-1854-254b-174509c667df" />
-    <ReferenceAssembly PathName="d:\unity\voins\bin\debug\sharpdx.dll" HashGuid="92b0861c-6062-4994-12d7-143af6f7a3a0" />
-    <ReferenceAssembly PathName="d:\unity\voins\bin\debug\sharpdx.xaudio2.dll" HashGuid="2f3cfc95-1f78-3c5d-9ab4-c977809b83df" />
-    <ReferenceAssembly PathName="d:\unity\voins\bin\debug\sharpdx.xinput.dll" HashGuid="6d6625cd-965e-9914-e288-be5381f7ce65" />
+    <ReferenceAssembly PathName="d:\unity\voingit\voins\bin\debug\monogame.framework.dll" HashGuid="fcd5ff8a-ba5a-1854-254b-174509c667df" />
+    <ReferenceAssembly PathName="d:\unity\voingit\voins\bin\debug\sharpdx.dll" HashGuid="92b0861c-6062-4994-12d7-143af6f7a3a0" />
+    <ReferenceAssembly PathName="d:\unity\voingit\voins\bin\debug\sharpdx.xaudio2.dll" HashGuid="2f3cfc95-1f78-3c5d-9ab4-c977809b83df" />
+    <ReferenceAssembly PathName="d:\unity\voingit\voins\bin\debug\sharpdx.xinput.dll" HashGuid="6d6625cd-965e-9914-e288-be5381f7ce65" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

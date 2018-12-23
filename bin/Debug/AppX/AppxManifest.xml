@@ -39,7 +39,7 @@
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v4.5.1" />
     <build:Item Name="VisualStudio" Version="14.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Enterprise 2015" />
-    <build:Item Name="OperatingSystem" Version="10.0.17134.161 (WinBuild.160101.0800)" />
+    <build:Item Name="OperatingSystem" Version="10.0.17134.466 (WinBuild.160101.0800)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.25431.1" />
     <build:Item Name="ProjectGUID" Value="{9391F0B0-8C60-4168-A5B2-4EED32A0278E}" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.81.Build.Tasks.dll" Version="14.0.22705.1" />

@@ -286,8 +286,8 @@ namespace Voins.Input
                         if (_gamepadeState.Triggers.Left > 0.5)
                             _player.UseItemSpall(0, null);
 
-                        if (_gamepadeState.IsButtonDown(Buttons.Start))
-                            StaticVaribl.MainPage.Start2PlayrGame(null, null);
+                       // if (_gamepadeState.IsButtonDown(Buttons.Start))
+                       //     StaticVaribl.MainPage.Start2PlayrGame(null, null);
 
                         if (_gamepadeState.IsButtonDown(Buttons.Back))
                             Bay.Show(_player);

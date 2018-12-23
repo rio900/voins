@@ -170,6 +170,7 @@ namespace Voins.Spell
             if (_bullet.Exept == true)
             {
                 if (_bullet.SproutHealth > 0 &&
+                    newCall != null &&
                     newCall.IUnits.Count(p => p.UnitType != EUnitType.Grass) > 0)// Значет нужно создать куст
                     CreateSprout(newCall);
 
@@ -194,19 +195,21 @@ namespace Voins.Spell
 
         private void CreateSprout(Map_Cell newCall)
         {
-         
-                int posX = _bullet.PositionX;
-                int posY = _bullet.PositionY;
 
-                CalculatePos(_bullet, ref posX, ref posY);
+            int posX = _bullet.PositionX;
+            int posY = _bullet.PositionY;
+
+            CalculatePos(_bullet, ref posX, ref posY);
 
 
-                Map_Cell sproutCall = _map.Calls.FirstOrDefault(p => p.IndexLeft == posX &&
-                     p.IndexTop == posY);
+            Map_Cell sproutCall = _map.Calls.FirstOrDefault(p => p.IndexLeft == posX &&
+                 p.IndexTop == posY);
 
+            if (sproutCall != null)
+            {
                 Unit unit = UnitGenerator.GrassBlock(posX, posY);
                 _map.CreateObjectUnitInCall(sproutCall, unit);
-         
+            }
         }
 
         private void Exept()
@@ -227,6 +230,8 @@ namespace Voins.Spell
                     }
                 }
                 #endregion
+
+              
 
                 if (!call.Block)
                 {

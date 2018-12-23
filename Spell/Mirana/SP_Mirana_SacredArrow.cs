@@ -74,6 +74,7 @@ namespace Voins.Spell
 
             if (unit.UnitFrozen == false &&
                 !_culdaunBool && LevelCast != 0 &&
+                !unit.Hexed &&
                 !upSpell &&
                 !Paused)
             {

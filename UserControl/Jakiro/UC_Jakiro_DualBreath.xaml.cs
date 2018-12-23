@@ -61,6 +61,11 @@ namespace Voins
 
         }
 
+        public void Hexed(bool visibilityHex)
+        {
+
+        }
+
         public void ChengeFire()
         {
             if (C_Fire.Visibility == Windows.UI.Xaml.Visibility.Visible)

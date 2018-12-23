@@ -29,7 +29,7 @@ namespace Voins.Spell
         };
         public SpellDescriptionInfo SpellDescriptionInfo { get { return _spellDescriptionInfo; } set { _spellDescriptionInfo = value; } }
 
-        int _manaCost = 3;
+        int _manaCost = 20;
         public int ManaCost { get { return _manaCost; } set { _manaCost = value; } }
 
         double _culdaun = 20;
@@ -40,7 +40,7 @@ namespace Voins.Spell
         double _speed = 0.3;
         public double Speed { get { return _speed; } set { _speed = value; } }
 
-        double _duration = 2;
+        double _duration = 1;
 
         public double Duration { get { return _duration; } set { _duration = value; } }
 
@@ -69,12 +69,10 @@ namespace Voins.Spell
 
         public SP_Nature_Teleport()
         {
-            _imageTile = new UC_View_ImageTileControl("SP_Mirana_Leap", this);
+            _imageTile = new UC_View_ImageTileControl("SP_Nature_Teleport", this);
         }
 
-        /// <summary>
-        /// Запуск стрелы
-        /// </summary>
+       
         public void UseSpall(Map map, Game_Object_In_Call obj, IUnit unit, object property)
         {
             _unit = unit;
@@ -84,6 +82,7 @@ namespace Voins.Spell
             if (unit.UnitFrozen == false &&
                 !_culdaunBool && LevelCast != 0 &&
                 !upSpell && !unit.Silenced &&
+                !unit.Hexed &&
                 !Paused)
             {
                 if (unit.Mana >= ManaCost)
@@ -108,11 +107,6 @@ namespace Voins.Spell
                         _culdaun = 10;
                     }
 
-                    _unit.OrijSpeed -= _bonusSpeed;
-
-                    ///Бонусная скорость атаки
-                    _unit.OrijAttackSpeed -= _bonusAttackSpeed;
-
                     ///Выбираем клетку куда прыгнуть
                     ///Тут кординаты ячеек в которых действует тучка
                     _callsPoints = new List<Point>();
@@ -126,12 +120,7 @@ namespace Voins.Spell
                         for (int i = 0; i <= _size; i++)
                         {
                             xNew = xNew - 1;
-                            if (!_unit.Buffs.Any(p => p.Name == "SP_Mirana_MoonlightShadow"))
-                            {
-                                Map_Cell call = map.Calls.FirstOrDefault(p => p.IndexLeft == xNew && p.IndexTop == yNew);
-                                if (call == null || call != null && call.Block)
-                                    break;
-                            }
+
                             _callsPoints.Add(new Point(xNew, yNew));
                         }
                     }
@@ -140,12 +129,7 @@ namespace Voins.Spell
                         for (int i = 0; i <= _size; i++)
                         {
                             xNew = xNew + 1;
-                            if (!_unit.Buffs.Any(p => p.Name == "SP_Mirana_MoonlightShadow"))
-                            {
-                                Map_Cell call = map.Calls.FirstOrDefault(p => p.IndexLeft == xNew && p.IndexTop == yNew);
-                                if (call == null || call != null && call.Block)
-                                    break;
-                            }
+
                             _callsPoints.Add(new Point(xNew, yNew));
                         }
                     }
@@ -154,12 +138,7 @@ namespace Voins.Spell
                         for (int i = 0; i <= _size; i++)
                         {
                             yNew = yNew - 1;
-                            if (!_unit.Buffs.Any(p => p.Name == "SP_Mirana_MoonlightShadow"))
-                            {
-                                Map_Cell call = map.Calls.FirstOrDefault(p => p.IndexLeft == xNew && p.IndexTop == yNew);
-                                if (call == null || call != null && call.Block)
-                                    break;
-                            }
+
                             _callsPoints.Add(new Point(xNew, yNew));
                         }
                     }
@@ -168,12 +147,7 @@ namespace Voins.Spell
                         for (int i = 0; i <= _size; i++)
                         {
                             yNew = yNew + 1;
-                            if (!_unit.Buffs.Any(p => p.Name == "SP_Mirana_MoonlightShadow"))
-                            {
-                                Map_Cell call = map.Calls.FirstOrDefault(p => p.IndexLeft == xNew && p.IndexTop == yNew);
-                                if (call == null || call != null && call.Block)
-                                    break;
-                            }
+
                             _callsPoints.Add(new Point(xNew, yNew));
                         }
                     }
@@ -235,26 +209,32 @@ namespace Voins.Spell
             _storyboard.Completed -= _storyboard_Completed;
             _storyboard = null;
 
-            var callOld = _map.Calls.Single(p => p.IndexLeft == _unit.PositionX && p.IndexTop == _unit.PositionY);
-            ///Удаляем из старой ячейки ссылку на юнит
-            callOld.IUnits.Remove(_unit);
-
-            if (!callOld.IUnits.Any(p => p.GameObject.EnumCallType == EnumCallType.UnitBlock))
+            if (!_unit.Dead &&
+                !_unit.Silenced &&
+                !_unit.Hexed)
             {
-                ///Делаем ячейку пустой
-                callOld.Used = false;
+                var callOld = _map.Calls.Single(p => p.IndexLeft == _unit.PositionX && p.IndexTop == _unit.PositionY);
+                ///Удаляем из старой ячейки ссылку на юнит
+                callOld.IUnits.Remove(_unit);
+
+                if (!callOld.IUnits.Any(p => p.GameObject.EnumCallType == EnumCallType.UnitBlock))
+                {
+                    ///Делаем ячейку пустой
+                    callOld.Used = false;
+                }
+
+                _unit.PositionX = _activeCall.IndexLeft;
+                _unit.PositionY = _activeCall.IndexTop;
+                if (!_unit.Dead)
+                {
+                    ///Добавляем в нее ссылку на юнит
+                    _activeCall.IUnits.Add(_unit);
+                    _activeCall.Using = false;
+                    ///Убераем то что колонка использывалась, теперь ставим что она все время используется
+                    _activeCall.Used = true;
+                }
             }
 
-            _unit.PositionX = _activeCall.IndexLeft;
-            _unit.PositionY = _activeCall.IndexTop;
-            if (!_unit.Dead)
-            {
-                ///Добавляем в нее ссылку на юнит
-                _activeCall.IUnits.Add(_unit);
-                _activeCall.Using = false;
-                ///Убераем то что колонка использывалась, теперь ставим что она все время используется
-                _activeCall.Used = true;
-            }
             _unit.UnitFrozen = false;
         }
 
@@ -263,7 +243,10 @@ namespace Voins.Spell
             _firstTimer.Completed -= _firstTimer_Completed;
             _firstTimer = null;
 
-            if (!_unit.Dead)
+            if (!_unit.Dead &&
+                _activeCall != null &&
+                !_unit.Silenced &&
+                !_unit.Hexed)
             {
                 string animationType = "(Canvas.Left)";
                 double mouvePos = 0;

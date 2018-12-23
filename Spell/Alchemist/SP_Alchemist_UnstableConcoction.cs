@@ -80,7 +80,9 @@ namespace Voins.Spell
 
             if (unit.UnitFrozen == false &&
                 !_culdaunBool && LevelCast != 0 &&
-                !upSpell && !unit.Silenced &&
+                !upSpell && 
+                !unit.Silenced &&
+                !unit.Hexed &&
                 !Paused)
             {
                 if (unit.Mana >= ManaCost)
@@ -128,6 +130,7 @@ namespace Voins.Spell
                 }
             }
             else if (!_startShut && CuldaunBool && unit.UnitFrozen == false && !unit.Silenced &&
+                !_unit.Hexed &&
                 !Paused && !unit.Dead)
             {///Если банка набирает силу, но не была запущена 
                 ShutUnstableConcoction();
@@ -155,7 +158,8 @@ namespace Voins.Spell
             {
                 ///Максимум накачки, запускаем банку
                 if (!_startShut && _unit.UnitFrozen == false && !_unit.Silenced &&
-                !Paused && !_unit.Dead)
+                    !_unit.Hexed &&
+                    !Paused && !_unit.Dead)
                     ShutUnstableConcoction();
                 else
                     _imageTile.ChengImage("SP_Alchemist_UnstableConcoction");

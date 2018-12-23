@@ -1,1 +1,1 @@
-D:\Unity\Voins\Voins.csproj;neutral
+D:\Unity\VoinGit\voins\Voins.csproj;neutral

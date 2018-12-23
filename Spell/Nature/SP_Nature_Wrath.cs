@@ -22,10 +22,10 @@ namespace Voins.Spell
 
         public string Name { get; set; }
 
-        int _manaCost = 20;
+        int _manaCost = 40;
         public int ManaCost { get { return _manaCost; } set { _manaCost = value; } }
 
-        double _culdaun = 3;
+        double _culdaun = 10;
         public double Culdaun { get { return _culdaun; } set { _culdaun = value; } }
 
         public int HelthCost { get; set; }
@@ -54,7 +54,7 @@ namespace Voins.Spell
         IUnit _unit;
         public SP_Nature_Wrath()
         {
-            _imageTile = new UC_View_ImageTileControl("SP_BonikUlt", this);
+            _imageTile = new UC_View_ImageTileControl("SP_Nature_Wrath", this);
         }
 
         /// <summary>
@@ -63,9 +63,12 @@ namespace Voins.Spell
         public void UseSpall(Map map, Game_Object_In_Call obj, IUnit unit, object property)
         {
             _unit = unit;
+            bool upSpell = UnitGenerator.UpPlayerSpell(unit, this);
 
             if (unit.UnitFrozen == false &&
                 !_culdaunBool && LevelCast != 0 &&
+                !upSpell && !unit.Silenced &&
+                !unit.Hexed &&
                 !Paused)
             {
                 if (unit.Mana >= ManaCost)
@@ -80,7 +83,7 @@ namespace Voins.Spell
                     unit.Mana -= ManaCost;
 
                     ///Создаем визуальный объект молния
-                    UC_Maelstrom arrow = new UC_Maelstrom();
+                    UC_Nature_Wrath arrow = new UC_Nature_Wrath();
                     arrow.ChengAngel(unit.Angel);
 
                     Bullet bullArrow = new Bullet();
@@ -99,13 +102,13 @@ namespace Voins.Spell
                     bullArrow.CurrentMap = map;
                     bullArrow.Angel = unit.Angel;
 
-                    SPB_Item_Maelstrom male = new SPB_Item_Maelstrom() { Name = "Fly" };
+                    SPB_Item_Maelstrom male = new SPB_Item_Maelstrom(1) { Name = "Fly" };
                     bullArrow.Spells.Add(male);
 
                     bullArrow.Range = map.Width * 2;
                     male.HitCount = 10;
-                    male.Multiply = 10;
-                    bullArrow.DemageMagic = 35;
+                    male.Multiply = 15;
+                    bullArrow.DemageMagic = 40;
 
                     ///И его же добавим в масив всех объектов
                     map.GameObjectInCall.Add(bullArrow.GameObject);

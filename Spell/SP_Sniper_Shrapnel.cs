@@ -83,7 +83,9 @@ namespace Voins.Spell
             bool upSpell = UnitGenerator.UpPlayerSpell(unit, this);
             _unit = unit;
             if (unit.UnitFrozen == false &&
-                !_culdaunBool && LevelCast != 0 && !upSpell && !unit.Silenced && !Paused)
+                !_culdaunBool && LevelCast != 0 && !upSpell && !unit.Silenced &&
+                !unit.Hexed &&
+                !Paused)
             {
                 if (unit.Mana >= ManaCost)
                 ///Проверка есть ли мана на каст

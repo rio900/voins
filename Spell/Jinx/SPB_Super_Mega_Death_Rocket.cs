@@ -153,11 +153,12 @@ namespace Voins.Spell
             _firstTimer.Completed -= _firstTimer_Completed;
             _firstTimer = null;
 
-            if (_power == 3 ||
-                _power == 5 ||
-                _power == 7)
+            if (_power == 2 ||
+                _power == 4 ||
+                _power == 6 ||
+                _power == 8)
             {
-                _bullet.DemagePhys += _bullet.BonusDemage;
+                _bullet.DemageMagic += _bullet.BonusDemage;
                 _bullet.Speed -= 0.06;
             }
 

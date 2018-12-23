@@ -221,5 +221,6 @@ namespace Voins.AppCode
         public bool IsRoket { get; set; }
 
         public int SproutHealth { get; set; }
+        public int GrassDamage { get; internal set; }
     }
 }

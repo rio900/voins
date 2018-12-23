@@ -134,6 +134,11 @@ namespace Voins
             else
                 C_Silenc.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
 
+            if (CurrentPlayer.Hexed)
+                C_Hex.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            else
+                C_Hex.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+
             if (CurrentPlayer.Buffs.Any(p => p.Stun))
                 C_Stun.Visibility = Windows.UI.Xaml.Visibility.Visible;
             else

@@ -55,7 +55,8 @@ namespace Voins
              UnitGenerator.I31_Claymore(),
              UnitGenerator.I33_Point_Booster(),
              UnitGenerator.I34_Staff_Of_Wizardry(),
-             UnitGenerator.I37_Chainmail()
+             UnitGenerator.I37_Chainmail(),
+             UnitGenerator.I39_VoidStone()
             };
 
             _itemsNormal = new List<ItemClass>() { 
@@ -67,8 +68,11 @@ namespace Voins
              UnitGenerator.I19_Reaver(),
              UnitGenerator.I25_Yasha(),
              UnitGenerator.I27_Sange(),
-              UnitGenerator.I13_Hyperstone(),
-              UnitGenerator.I38_Platemail()
+             UnitGenerator.I13_Hyperstone(),
+             UnitGenerator.I38_Platemail(),
+            UnitGenerator.I40_Ultimate_Orb(),
+            UnitGenerator.I41_Mystic_Staff()
+
             };
 
             _itemsStrong = new List<ItemClass>() { 
@@ -80,7 +84,8 @@ namespace Voins
              UnitGenerator.I32_ShadowBlade(),
              UnitGenerator.I35_Aghanims_Scepter(),
              UnitGenerator.I36_Desolator(),
-             UnitGenerator.I38_AssaultCuirass()
+             UnitGenerator.I38_AssaultCuirass(),
+             UnitGenerator.I42_Scythe_Of_Vyse()
             };
 
             foreach (var item in _itemsEasy)
@@ -407,6 +412,7 @@ namespace Voins
                         case 15: itemBuing = UnitGenerator.I33_Point_Booster(); break;
                         case 16: itemBuing = UnitGenerator.I34_Staff_Of_Wizardry(); break;
                         case 17: itemBuing = UnitGenerator.I37_Chainmail(); break;
+                        case 18: itemBuing = UnitGenerator.I39_VoidStone(); break;
                     }
                 }
                 else if (C_ItemsNormal.SelectedIndex != -1)
@@ -423,6 +429,8 @@ namespace Voins
                         case 7: itemBuing = UnitGenerator.I27_Sange(); break;
                         case 8: itemBuing = UnitGenerator.I13_Hyperstone(); break;
                         case 9: itemBuing = UnitGenerator.I38_Platemail(); break;
+                        case 11: itemBuing = UnitGenerator.I41_Mystic_Staff(); break;
+                        case 10: itemBuing = UnitGenerator.I40_Ultimate_Orb(); break;
                     }
 
                 }
@@ -439,6 +447,7 @@ namespace Voins
                         case 6: itemBuing = UnitGenerator.I35_Aghanims_Scepter(); break;
                         case 7: itemBuing = UnitGenerator.I36_Desolator(); break;
                         case 8: itemBuing = UnitGenerator.I38_AssaultCuirass(); break;
+                        case 9: itemBuing = UnitGenerator.I42_Scythe_Of_Vyse(); break;
                     }
                 }
 

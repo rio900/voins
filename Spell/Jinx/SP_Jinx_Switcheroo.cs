@@ -82,6 +82,7 @@ namespace Voins.Spell
                 LevelCast != 0 &&
              //   !upSpell &&
                 !unit.Silenced &&
+                !unit.Hexed &&
                 !Paused)
             {
 
@@ -121,13 +122,13 @@ namespace Voins.Spell
 
                         if (LevelCast == 1)
                         {
-                            activeSpell.Splash = 0.5;
+                            activeSpell.Splash = 1;
                             activeSpell.BonusRange = 1;
                             activeSpell.BonusDemage = 5;
                         }
                         else if (LevelCast == 2)
                         {
-                            activeSpell.Splash = 0.75;
+                            activeSpell.Splash = 1;
                             activeSpell.BonusRange = 2;
                             activeSpell.BonusDemage = 10;
 

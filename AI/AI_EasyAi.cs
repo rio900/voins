@@ -82,7 +82,7 @@ namespace Voins.AI
                     if (!Rotation)
                         ///Выбираем рандомный угол, проверяем или он пустой и перемещпемся туда
                         _call = UnitGenerator.RandonCell((int)DateTime.Now.Ticks,
-                            CurrentUnit.PositionX, CurrentUnit.PositionY, CurrentMap, CurrentUnit.GroupType, CurrentUnit.Way, Farm);
+                            CurrentUnit.PositionX, CurrentUnit.PositionY, CurrentMap, CurrentUnit.GroupType, CurrentUnit.Way, false, Farm);
                     else
                         Rotation = false;
 

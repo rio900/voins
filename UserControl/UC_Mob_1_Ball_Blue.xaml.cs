@@ -91,7 +91,13 @@ namespace Voins
             else
                 C_Silence.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
         }
-
+        public void Hexed(bool visibilityHex)
+        {
+            if (visibilityHex)
+                C_Hex.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            else
+                C_Hex.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+        }
 
         public void Remove(Canvas rootCanvas) { }
         public void ShowAttack(EAngel angel, double attackSpeed) { }

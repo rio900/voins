@@ -17,6 +17,8 @@ namespace Voins.AppCode
         void GetDemage(string value);
         void ShowAttack(EAngel angel, double attackSpeed);
         void Silenced(bool visibilitySilenc);
+        void Hexed(bool visibilityHex);
+
         void Remove(Canvas rootCanvas);
     }
 }

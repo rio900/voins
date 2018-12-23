@@ -60,7 +60,10 @@ namespace Voins
         {
 
         }
+        public void Hexed(bool visibilityHex)
+        {
 
+        }
         public void Remove(Canvas rootCanvas)
         {
             RootCanvas = rootCanvas;

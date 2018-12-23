@@ -76,6 +76,7 @@ namespace Voins.Spell
             if (unit.UnitFrozen == false &&
                 !_culdaunBool && LevelCast != 0 && 
                 !upSpell &&
+                !unit.Hexed &&
                 !Paused)
             {
                 if (unit.Mana >= ManaCost)
@@ -100,7 +101,8 @@ namespace Voins.Spell
                     bullArrow.PositionX = unit.PositionX;
                     bullArrow.PositionY = unit.PositionY;
                     bullArrow.Speed = Speed;
-                    bullArrow.DemagePhys = unit.Demage + 20;
+
+                    bullArrow.DemageMagic = 30;
                     ///Магический урон зависит от прокача стрел
                     //bullArrow.DemageMagic = 5 * (int)property;
 

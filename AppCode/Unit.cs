@@ -169,7 +169,7 @@ namespace Voins.AppCode
 
         private void lifeTimer_Completed(object sender, object e)
         {
-           GatDamage(Health * 2, 0, 0, this);
+           GatDamage(Health * 2, 0, 0, null);
         }
 
         /// <summary>
@@ -395,6 +395,18 @@ namespace Voins.AppCode
                 (GameObject.View as IGameControl).Silenced(_silenced);
             }
         }
+
+        private bool _hexed;
+        public bool Hexed
+        {
+            get { return _hexed; }
+            set
+            {
+                _hexed = value;
+                (GameObject.View as IGameControl).Hexed(_hexed);
+            }
+        }
+
         private bool _invisibility;
         public bool Invisibility
         {
@@ -497,7 +509,7 @@ namespace Voins.AppCode
 
             Player player = demagedUnit as Player;
 
-            if (player == null)
+            if (player == null && demagedUnit is Unit)
                 player = (demagedUnit as Unit).MasterPlayer;
 
             if (player != null)

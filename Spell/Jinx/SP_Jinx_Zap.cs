@@ -90,7 +90,7 @@ namespace Voins.Spell
             if (unit.UnitFrozen == false &&
                 !_culdaunBool && LevelCast != 0 &&
                 !upSpell &&
-
+                !unit.Hexed &&
                 !Paused)
             {
 

@@ -66,6 +66,7 @@ namespace Voins.Spell
 
             if (unit.UnitFrozen == false &&
                 !_culdaunBool && !unit.Silenced &&
+                !unit.Hexed &&
                 !Paused)
             {
                 if (unit.Mana >= ManaCost)

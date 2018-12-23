@@ -176,6 +176,7 @@
     <Compile Include="Spell\SP_Item_ShadowBlade.cs" />
     <Compile Include="Spell\SP_Item_PhaseBoots.cs" />
     <Compile Include="Spell\Nature\SP_Nature_Trent.cs" />
+    <Compile Include="Spell\SP_Hex.cs" />
     <Compile Include="Spell\SP_Sniper_Assassinate.cs" />
     <Compile Include="Spell\Nature\SP_Nature_Sprout.cs" />
     <Compile Include="Spell\SP_Sniper_TakeAim.cs" />
@@ -204,6 +205,12 @@
     </Compile>
     <Compile Include="UserControlEditor\UC_Editor.xaml.cs">
       <DependentUpon>UC_Editor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Nature_Wrath.xaml.cs">
+      <DependentUpon>UC_Nature_Wrath.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Mob_1_Trent.xaml.cs">
+      <DependentUpon>UC_Mob_1_Trent.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\UC_Mob_1_Ball_Fire.xaml.cs">
       <DependentUpon>UC_Mob_1_Ball_Fire.xaml</DependentUpon>
@@ -357,6 +364,7 @@
     <Content Include="Image\1_Bum.png" />
     <Content Include="Image\1_Bum2.png" />
     <Content Include="Image\1_hero.jpg" />
+    <Content Include="Image\1_Hex.png" />
     <Content Include="Image\1_maelstrom.png" />
     <Content Include="Image\1_masc.png" />
     <Content Include="Image\1_Silence.png">
@@ -370,6 +378,8 @@
     <Content Include="Image\1_test.png" />
     <Content Include="Image\1_test2.png" />
     <Content Include="Image\1_test3.png" />
+    <Content Include="Image\1_Trent_Bottom.png" />
+    <Content Include="Image\1_Wrath.png" />
     <Content Include="Image\20_vitality_booster.png" />
     <Content Include="Image\21_reaver.png" />
     <Content Include="Image\22_heart_of_tarrasque.png" />
@@ -391,6 +401,7 @@
     <Content Include="Image\2_test.png" />
     <Content Include="Image\2_test2.png" />
     <Content Include="Image\2_test3.png" />
+    <Content Include="Image\2_Trent_Left.png" />
     <Content Include="Image\30_sange_and_yasha.png" />
     <Content Include="Image\31_shadow_amulet.png" />
     <Content Include="Image\32_claymore.png" />
@@ -413,6 +424,7 @@
     <Content Include="Image\3_test.png" />
     <Content Include="Image\3_test2.png" />
     <Content Include="Image\3_test3.png" />
+    <Content Include="Image\3_Trent_Top.png" />
     <Content Include="Image\40_platemail.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -422,6 +434,10 @@
     <Content Include="Image\42_assaultCuirass.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Image\43_void_stone.png" />
+    <Content Include="Image\44_ultimate_orb.png" />
+    <Content Include="Image\45_mystic_staff.png" />
+    <Content Include="Image\46_skythe_of_vyse.png" />
     <Content Include="Image\4_oStuff.png" />
     <Content Include="Image\4_skill.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -431,6 +447,7 @@
     <Content Include="Image\4_test.png" />
     <Content Include="Image\4_test2.png" />
     <Content Include="Image\4_test3.png" />
+    <Content Include="Image\4_Trent_Right.png" />
     <Content Include="Image\5_orchid.png" />
     <Content Include="Image\5_skill_Alchemist.png" />
     <Content Include="Image\6_boots.png" />
@@ -549,15 +566,19 @@
     <Content Include="Image\Skill\1_skill_Jinx.png" />
     <Content Include="Image\Skill\1_skill_Jinx_Reload.png" />
     <Content Include="Image\Skill\1_skill_Mirana.png" />
+    <Content Include="Image\Skill\1_skill_Nature.png" />
     <Content Include="Image\Skill\2_skill_Jakiro.png" />
     <Content Include="Image\Skill\2_skill_Jinx.png" />
     <Content Include="Image\Skill\2_skill_Mirana.png" />
+    <Content Include="Image\Skill\2_skill_Nature.png" />
     <Content Include="Image\Skill\3_skill_Jakiro.png" />
     <Content Include="Image\Skill\3_skill_Jinx.png" />
     <Content Include="Image\Skill\3_skill_Mirana.png" />
+    <Content Include="Image\Skill\3_skill_Nature.png" />
     <Content Include="Image\Skill\4_skill_Jakiro.jpg" />
     <Content Include="Image\Skill\4_skill_Jinx.png" />
     <Content Include="Image\Skill\4_skill_Mirana.png" />
+    <Content Include="Image\Skill\4_skill_Nature.png" />
     <Content Include="Image\Slice 128.png" />
     <Content Include="Image\SuperMegaRoket.png" />
     <Content Include="Image\testUnit_0_1.png" />
@@ -595,6 +616,14 @@
     <Page Include="UserControlEditor\UC_Editor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UC_Nature_Wrath.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\UC_Mob_1_Trent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="UserControl\UC_Mob_1_Ball_Fire.xaml">
       <Generator>MSBuild:Compile</Generator>

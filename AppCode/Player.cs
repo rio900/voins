@@ -562,6 +562,18 @@ namespace Voins.AppCode
             }
         }
 
+        private bool _hexed;
+        public bool Hexed
+        {
+            get { return _hexed; }
+            set
+            {
+                _hexed = value;
+                (GameObject.View as IGameControl).Hexed(_hexed);
+                UnitGenerator.UpdatePlayerView(this);
+            }
+        }
+
         private IAI _aI;
         /// <summary>
         /// Искуствленный интелект

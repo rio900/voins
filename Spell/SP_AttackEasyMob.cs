@@ -78,12 +78,15 @@ namespace Voins.Spell
                 CurrentCall = property as Map_Cell;
                 if (CurrentCall != null)
                 {
-                    Bullet bullet = new Bullet()
+                    if (!unit.Hexed)
                     {
-                        UnitUsed = unit,
-                        DemagePhys = unit.Demage
-                    };
-                    UnitGenerator.AddDamage(CurrentCall, bullet);
+                        Bullet bullet = new Bullet()
+                        {
+                            UnitUsed = unit,
+                            DemagePhys = unit.Demage
+                        };
+                        UnitGenerator.AddDamage(CurrentCall, bullet);
+                    }
 
                     _firstTimer = new Storyboard() { Duration = TimeSpan.FromSeconds(unit.AttackSpeed) };
                     _firstTimer.Completed += _firstTimer_Completed;
@@ -148,7 +151,7 @@ namespace Voins.Spell
 
             if (PausedEvent != null)
                 PausedEvent(this, null);
-        } 
+        }
         #endregion
     }
 }

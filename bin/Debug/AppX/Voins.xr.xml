@@ -161,10 +161,10 @@
       <RootProperty Name="Stretch" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Visibility" />
-      <RootProperty Name="Opacity" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="RenderTransform" />
       <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="Opacity" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Windows.UI.Xaml.Controls.ToolTip">
@@ -316,6 +316,18 @@
       <RootProperty Name="CenterY" />
       <RootProperty Name="Angle" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Viewbox">
+      <RootProperty Name="Child" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="UseLayoutRounding" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
@@ -388,18 +400,6 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="Name" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Viewbox">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Child" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Visibility" />
-      <RootProperty Name="RenderTransformOrigin" />
-      <RootProperty Name="RenderTransform" />
-      <RootProperty Name="UseLayoutRounding" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />
@@ -474,6 +474,10 @@
       <RootProperty Name="Value" />
       <RootProperty Name="EasingFunction" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ExponentialEase">
+      <RootProperty Name="EasingMode" />
+    </RootType>
+    <RootType FullName="Voins.UC_Nature_Wrath" />
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
@@ -483,12 +487,10 @@
       <RootProperty Name="Opacity" />
       <RootProperty Name="Foreground" />
     </RootType>
+    <RootType FullName="Voins.UC_Mob_1_Trent" />
     <RootType FullName="Voins.UC_Mob_1_Fire" />
     <RootType FullName="Voins.UC_Mob_1_Ball_Blue" />
     <RootType FullName="Voins.UC_Jakiro_LiquidFire" />
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.ExponentialEase">
-      <RootProperty Name="EasingMode" />
-    </RootType>
     <RootType FullName="Voins.UC_Jakiro_Macropyre" />
     <RootType FullName="Voins.UC_Jakiro_IcePath" />
     <RootType FullName="Voins.UC_Model_H_Jakiro">

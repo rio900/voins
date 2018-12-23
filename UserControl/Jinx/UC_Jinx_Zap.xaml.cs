@@ -75,7 +75,10 @@ namespace Voins
         public void Silenced(bool visibilitySilenc)
         {
         }
+        public void Hexed(bool visibilityHex)
+        {
 
+        }
         public void Remove(Canvas rootCanvas)
         {
             RootCanvas = rootCanvas;

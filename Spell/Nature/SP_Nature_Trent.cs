@@ -23,7 +23,7 @@ namespace Voins.Spell
 
         public string Name { get; set; }
 
-        int _manaCost = 15;
+        int _manaCost = 30;
         public int ManaCost { get { return _manaCost; } set { _manaCost = value; } }
 
         double _culdaun = 20;
@@ -39,7 +39,7 @@ namespace Voins.Spell
 
         public double Duration { get { return _duration; } set { _duration = value; } }
 
-        int _levelCast = 1;
+        int _levelCast = 0;
         public int LevelCast { get { return _levelCast; } set { _levelCast = value; } }
         int _maxLevelCast = 3;
         public int MaxLevelCast { get { return _maxLevelCast; } set { _maxLevelCast = value; } }
@@ -64,13 +64,18 @@ namespace Voins.Spell
 
         public SP_Nature_Trent()
         {
-            _imageTile = new UC_View_ImageTileControl("SP_AttackSpeed", this);
+            _imageTile = new UC_View_ImageTileControl("SP_Nature_Trent", this);
         }
 
         public void UseSpall(Map map, Game_Object_In_Call obj, IUnit unit, object property)
         {
+            bool upSpell = UnitGenerator.UpPlayerSpell(unit, this);
+
             if (unit.UnitFrozen == false &&
-                !_culdaunBool && LevelCast != 0)
+                !_culdaunBool && LevelCast != 0 &&
+                !upSpell && !unit.Silenced &&
+                !unit.Hexed &&
+                !Paused)
             {
                 if (unit.Mana >= ManaCost)
                 ///Проверка есть ли мана на каст
@@ -82,19 +87,23 @@ namespace Voins.Spell
                     {
                         _culdaun = 9;
                         trentHealth = 5;
-                        lifeTime = 8;
+                        lifeTime = 10;
                     }
                     else if (LevelCast == 2)
                     {
                         _culdaun = 7;
-                        trentHealth = 25;
-                        lifeTime = 10;
+                        trentHealth = 5;
+                        lifeTime = 15;
+
+                        ManaCost = 35;
                     }
                     else if (LevelCast == 3)
                     {
-                        _culdaun = 7;
-                        trentHealth = 50;
-                        lifeTime = 15;
+                        _culdaun = 6;
+                        trentHealth = 5;
+                        lifeTime = 21;
+
+                        ManaCost = 40;
                     }
 
                     ///Проверка диагонали по которой будет запущено сало

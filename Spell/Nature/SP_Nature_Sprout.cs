@@ -62,7 +62,7 @@ namespace Voins.Spell
         IUnit _unit;
         public SP_Nature_Sprout()
         {
-            _imageTile = new UC_View_ImageTileControl("SP_Sniper_Headshot", this);
+            _imageTile = new UC_View_ImageTileControl("SP_Nature_Sprout", this);
         }
 
         /// <summary>
@@ -77,6 +77,7 @@ namespace Voins.Spell
             if (unit.UnitFrozen == false &&
                 !_culdaunBool && LevelCast != 0 &&
                 !upSpell &&
+                !unit.Hexed &&
                 !Paused)
             {
                 if (unit.Mana >= ManaCost)
@@ -98,6 +99,10 @@ namespace Voins.Spell
                     UC_Nature_Sprout arrow = new UC_Nature_Sprout();
                     arrow.ChengAngel(unit.Angel);
                     Bullet bullArrow = new Bullet();
+
+                    // Бонус удар по кустам
+                    bullArrow.GrassDamage = 10;
+
                     bullArrow.GameObject = new Game_Object_In_Call()
                     {
                         EnumCallType = EnumCallType.Bullet,
@@ -112,26 +117,26 @@ namespace Voins.Spell
                     ///Магический урон зависит от прокача стрел
                     //bullArrow.DemageMagic = 5 * (int)property;
 
-                    int bonusDemagePerBushHit = 5;
-                    int chans = 25;
+                    int bonusDemagePerBushHit = 0;
+                    int chans = 30;
 
                     if (LevelCast == 1)
                     {
-                        bonusDemagePerBushHit = 5;
-                        chans = 100; //25
+                        //bonusDemagePerBushHit = 5;
+                        chans = 30;
                     }
                     else if (LevelCast == 2)
                     {
-                        bonusDemagePerBushHit = 10;
-                        chans = 30;
+                        //bonusDemagePerBushHit = 10;
+                        chans = 50;
                     }
                     else if (LevelCast == 3)
                     {
-                        bonusDemagePerBushHit = 15;
-                        chans = 35;
+                        //bonusDemagePerBushHit = 15;
+                        chans = 80;
                     }
 
-                    ///Мкб микробаши не стакаются со снайперовыми
+                    
                     Random rand = new Random((int)DateTime.Now.Ticks);
                     if (chans > rand.Next(0, 100))
                     {

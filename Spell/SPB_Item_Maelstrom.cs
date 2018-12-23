@@ -59,7 +59,7 @@ namespace Voins.Spell
         public int MaxLevelCast { get { return _maxLevelCast; } set { _maxLevelCast = value; } }
         bool _isUlt = false;
         public bool IsUlt { get { return _isUlt; } set { _isUlt = value; } }
-        
+
         /// <summary>
         /// На сколько увеличить урон после отбивания магии
         /// </summary>
@@ -77,6 +77,16 @@ namespace Voins.Spell
         public SPB_Item_Maelstrom()
         {
             _imageTile = new UC_View_ImageTileControl("SPB_Item_Maelstrom", this);
+        }
+
+        public SPB_Item_Maelstrom(int viewType)
+        {
+            if (viewType == 1)
+            {
+                _imageTile = new UC_View_ImageTileControl("SPB_Nature_Wrath", this);
+            }
+            else
+                _imageTile = new UC_View_ImageTileControl("SPB_Item_Maelstrom", this);
         }
 
         public void UseSpall(Map map, Game_Object_In_Call obj, IUnit unit, object property)
@@ -136,7 +146,7 @@ namespace Voins.Spell
                     if (_bullet.Angel == (EAngel)0)
                         _bullet.Angel = (EAngel)3;
                     else
-                       _bullet.Angel = _bullet.Angel - 1;
+                        _bullet.Angel = _bullet.Angel - 1;
 
                     _bullet.DemageMagic += Multiply;
 
@@ -185,7 +195,7 @@ namespace Voins.Spell
             _storyboard.Begin();
             ///Таймер половины перемещения пули
             ///Необходим чтобы проверить попадание
-            _firstTimer = new Storyboard() { Duration = TimeSpan.FromSeconds(bullet.Speed/ 2) };
+            _firstTimer = new Storyboard() { Duration = TimeSpan.FromSeconds(bullet.Speed / 2) };
             _firstTimer.Completed += _firstTimer_Completed;
             _firstTimer.Begin();
 
@@ -206,7 +216,7 @@ namespace Voins.Spell
             _bullet.PositionX = _xNew;
             _bullet.PositionY = _yNew;
             Exept();
-           
+
             ///Проверяем или молния попала
             if (_bullet.Exept == true)
                 _hitCount--;
@@ -214,7 +224,7 @@ namespace Voins.Spell
             Map_Cell newCall = _map.Calls.FirstOrDefault(p => p.IndexLeft == _bullet.PositionX &&
              p.IndexTop == _bullet.PositionY);
 
-            if (_hitCount == 0 || newCall == null || 
+            if (_hitCount == 0 || newCall == null ||
                 ///Или новая ячейка блок
                 newCall != null && newCall.Block)
             {
@@ -266,7 +276,7 @@ namespace Voins.Spell
             _storyboard.Completed -= storyboard_Completed;
             _storyboard = null;
 
-            if ( _hitCount == 0 ||
+            if (_hitCount == 0 ||
                 _bullet.Range == 0 ||
                 _exept)
             {
@@ -280,7 +290,7 @@ namespace Voins.Spell
                 ///Было попадение стрела исчезает
                 ///Удаляем из масива всех объектов
                 _map.GameObjectInCall.Remove(_bullet.GameObject);
-               
+
 
                 if (_map.Calls.Any(p => p.IndexLeft == _bullet.PositionX &&
                     p.IndexTop == _bullet.PositionY))

@@ -270,12 +270,12 @@ namespace Voins
 
             _player = C_View_SelectHeroy1.ReturnHero();
             _player2 = C_View_SelectHeroy2.ReturnHero();
-           // _player3 = C_View_SelectHeroy4.ReturnHero();
+            //_player3 = C_View_SelectHeroy4.ReturnHero();
            // _player4 = C_View_SelectHeroy5.ReturnHero();
 
             _player.Gold = 100;
             _player2.Gold = 100;
-          //  _player3.Gold = 10000;
+            //_player3.Gold = 100;
            // _player4.Gold = 100;
 
             _player.CurrentMap = _map;
@@ -302,8 +302,8 @@ namespace Voins
             
             if (_gameType == EGameType.FurmGame)
             {
-                _map.KillLimit = 25;
-               // _player3.GroupType = 1;// C_View_SelectHeroy4.GroupNumber;
+                _map.KillLimit = 10;
+                //_player3.GroupType = 1;// C_View_SelectHeroy4.GroupNumber;
               //  _player4.GroupType = 2;// C_View_SelectHeroy5.GroupNumber;
                 _player2.GroupType = 2;//C_View_SelectHeroy2.GroupNumber;
                 _player.GroupType = 3;// C_View_SelectHeroy1.GroupNumber;
@@ -315,7 +315,7 @@ namespace Voins
             {
                 _map.KillLimit = 10;
                 _player2.GroupType = 1;
-               // _player3.GroupType = 1;
+                //_player3.GroupType = 1;
               //  _player4.GroupType = 1;
                 _player.GroupType = 1;
                 _map.CreateNewCooperative();
@@ -323,32 +323,34 @@ namespace Voins
 
             _player.StartRegenerationTimers_NewObject();
             _player2.StartRegenerationTimers_NewObject();
-           // _player3.StartRegenerationTimers_NewObject();
+            //_player3.StartRegenerationTimers_NewObject();
            // _player4.StartRegenerationTimers_NewObject();
 
             C_View_Player1.CurrentPlayer = _player;
             C_View_Player1.Show();
 
-           // C_View_Player2.CurrentPlayer = _player3;
-          //  C_View_Player2.Show();
+            C_View_Player2.CurrentPlayer = _player2;
+            C_View_Player2.Show();
 
-           // C_View_Player3.CurrentPlayer = _player4;
-            //C_View_Player3.Show();
+           // C_View_Player3.CurrentPlayer = _player3;
+          //  C_View_Player3.Show();
 
-            C_View_Player4.CurrentPlayer = _player2;
-            C_View_Player4.Show();
+            //C_View_Player4.CurrentPlayer = _player2;
+            //C_View_Player4.Show();
 
             Voins.Input.Input_MainClass player1_input = new Input.Input_MainClass();
-            player1_input.StartTimer(_player, AppCode.Input.EInput.Player2Keys, C_Buy);
+            player1_input.StartTimer(_player, AppCode.Input.EInput.Player1Keys, C_Buy);
+           //  player1_input.StartTimer(_player, AppCode.Input.EInput.Player1Keys, C_Buy);
             _inputArr.Add(player1_input);
 
             Voins.Input.Input_MainClass player2_input = new Input.Input_MainClass();
-            player2_input.StartTimer(_player2, AppCode.Input.EInput.Player1Keys, C_Buy);
+            //player2_input.StartTimer(_player2, AppCode.Input.EInput.Player1Keys, C_Buy);
+            player2_input.StartTimer(_player2, AppCode.Input.EInput.Player2Keys, C_Buy);
             _inputArr.Add(player2_input);
 
            // Voins.Input.Input_MainClass player3_input = new Input.Input_MainClass();
-           // player3_input.StartTimer(_player3, AppCode.Input.EInput.Joist1, C_Buy);
-           // _inputArr.Add(player3_input);
+          //  player3_input.StartTimer(_player3, AppCode.Input.EInput.Joist1, C_Buy);
+         //   _inputArr.Add(player3_input);
 
           //  Voins.Input.Input_MainClass player4_input = new Input.Input_MainClass();
           //  player4_input.StartTimer(_player4, AppCode.Input.EInput.Joist1, C_Buy);

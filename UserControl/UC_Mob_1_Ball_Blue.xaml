@@ -50,6 +50,7 @@
     			<CompositeTransform/>
     		</TextBlock.RenderTransform>
     	</TextBlock>
+        <Image x:Name="C_Hex" Margin="8,0,9,6" Source="ms-appx:///Image/1_Hex.png" Stretch="Fill" d:LayoutOverrides="VerticalAlignment" Opacity="0.75" Visibility="Collapsed"/>
 
     </Grid>
 </UserControl>

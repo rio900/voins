@@ -200,6 +200,7 @@
         </Grid>
         <Image x:Name="C_Silence" Margin="13,0,15,20" Source="ms-appx:///Image/1_Silence.png" Stretch="Fill" Opacity="0.645" Visibility="Collapsed"/>
         <TextBlock x:Name="C_DemageView" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Margin="25,0" FontSize="16"/>
+        <Image x:Name="C_Hex" Margin="8,0,9,6" Source="ms-appx:///Image/1_Hex.png" Stretch="Fill" d:LayoutOverrides="VerticalAlignment" Opacity="0.75" Visibility="Collapsed"/>
     </Grid>
 </UserControl>
 

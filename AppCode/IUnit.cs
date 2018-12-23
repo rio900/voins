@@ -25,6 +25,7 @@ namespace Voins.AppCode
         
         bool Invisibility { get; set; }
         bool Silenced { get; set; }
+        bool Hexed { get; set; }
         int Health { get; set; }
         int MaxHealth { get; set; }
         int OrijHealth { get; set; }

@@ -32,7 +32,7 @@ namespace Voins.AppCode
                 AddIntelligence = 1,
                 AddStrength = 2,
                 Gold = 100,
-                OrijAttackSpeed = 1.0 - 6 * StaticVaribl.AgilityAttackSpeed,
+                OrijAttackSpeed = 1.0 - 14 * StaticVaribl.AgilityAttackSpeed,
                 Angel = EAngel.Bottom,
                 NExp = 100,
                 Range = 6
@@ -85,7 +85,7 @@ namespace Voins.AppCode
                 AddIntelligence = 1,
                 AddStrength = 2,
                 Gold = 100,
-                OrijAttackSpeed = 1.0 - 6 * StaticVaribl.AgilityAttackSpeed,
+                OrijAttackSpeed = 1.0 - 14 * StaticVaribl.AgilityAttackSpeed,
                 Angel = EAngel.Bottom,
                 NExp = 100,
                 Range = 6
@@ -138,7 +138,7 @@ namespace Voins.AppCode
                 AddIntelligence = 3,
                 AddStrength = 2,
                 Gold = 100,
-                OrijAttackSpeed = 1.0 - 6 * StaticVaribl.AgilityAttackSpeed,
+                OrijAttackSpeed = 1.0 - 6 * StaticVaribl.AgilityAttackSpeed,//0.95
                 Angel = EAngel.Bottom,
                 NExp = 100,
                 Range = 6
@@ -192,7 +192,7 @@ namespace Voins.AppCode
                 AddIntelligence = 3,
                 AddStrength = 2,
                 Gold = 100,
-                OrijAttackSpeed = 1.0 - 6 * StaticVaribl.AgilityAttackSpeed,
+                OrijAttackSpeed = 1.0 - 11 * StaticVaribl.AgilityAttackSpeed,
                 Angel = EAngel.Bottom,
                 NExp = 100,
                 Range = 6
@@ -207,15 +207,15 @@ namespace Voins.AppCode
 
             SP_Nature_Teleport natureTeleport = new SP_Nature_Teleport() { Name = "NatureTeleport" };
             nature.Spells.Add(natureTeleport);
-            natureTeleport.UpSpell(nature);
+            // natureTeleport.UpSpell(nature);
 
             SP_Nature_Trent natureTrent = new SP_Nature_Trent() { Name = "NatureTrent" };
             nature.Spells.Add(natureTrent);
-            natureTrent.UpSpell(nature);
+            // natureTrent.UpSpell(nature);
 
             SP_Nature_Wrath natureWrath = new SP_Nature_Wrath() { Name = "NatureWrath" };
             nature.Spells.Add(natureWrath);
-            natureWrath.UpSpell(nature);
+            // natureWrath.UpSpell(nature);
 
             //SP_Jakiro_Ice_Path icePath = new SP_Jakiro_Ice_Path() { Name = "IcePath" };
             //nature.Spells.Add(icePath);
@@ -433,7 +433,7 @@ namespace Voins.AppCode
             return unit;
         }
 
-        public static Unit M_Trent(int x, int y,Map map, Player player)
+        public static Unit M_Trent(int x, int y, Map map, Player player)
         {
             Random rand = new Random(x + y);
             Unit unit = new Unit()
@@ -458,10 +458,10 @@ namespace Voins.AppCode
             SP_AttackEasyMob attackEasyMob = new SP_AttackEasyMob() { Name = "Attack Easy Mob" };
             unit.Spells.Add(attackEasyMob);
 
-            AI_EasyAi ai = new AI_EasyAi() { CurrentMap = map, CurrentUnit = unit };
+            AI_CoopAi ai = new AI_CoopAi() { CurrentMap = map, CurrentUnit = unit };
             unit.AI = ai;
 
-            UC_Mob_1_Ball view = new UC_Mob_1_Ball();
+            UC_Mob_1_Trent view = new UC_Mob_1_Trent();
             Canvas.SetLeft(view, x * 50);
             Canvas.SetTop(view, y * 50);
             view.ChengAngel(EAngel.Bottom);
@@ -1454,6 +1454,78 @@ namespace Voins.AppCode
             return item;
         }
 
+        public static ItemClass I39_VoidStone()
+        {
+            ItemClass item = new ItemClass()
+            {
+                Name = "Void Stone",
+                ManaRegen = 7,
+                Price = 120
+            };
+            item.Info.ShortDescription = "Void Stone Description";
+
+            item.View = new UC_View_ItemImage(43);
+            return item;
+        }
+
+        public static ItemClass I40_Ultimate_Orb()
+        {
+            ItemClass item = new ItemClass()
+            {
+                Name = "Ultimate Orb",
+                Intelligence = 6,
+                Strength = 6,
+                Agility = 6,
+                Price = 210
+            };
+            item.Info.ShortDescription = "Ultimate Orb Description";
+
+            item.View = new UC_View_ItemImage(44);
+            return item;
+        }
+
+        public static ItemClass I41_Mystic_Staff()
+        {
+            ItemClass item = new ItemClass()
+            {
+                Name = "Mystic Staff",
+                Intelligence = 15,
+                Price = 270
+            };
+            item.Info.ShortDescription = "Mystic Staff Description";
+
+            item.View = new UC_View_ItemImage(45);
+            return item;
+        }
+
+        public static ItemClass I42_Scythe_Of_Vyse()
+        {
+            ItemClass item = new ItemClass()
+            {
+                Name = "Scythe Of Vyse",
+                Intelligence = 20,
+                Strength = 6,
+                Agility = 6,
+                ManaRegen = 7,
+                Price = 600
+            };
+
+            item.Info.ShortDescription = "Scythe Of Vyse Description";
+
+            SP_Hex hex = new SP_Hex() { Name = "Scythe Of Vyse Hex" };
+            item.SpellItem = hex;
+
+            item.Parts = new List<ItemClass>() {
+            I39_VoidStone(),
+            I40_Ultimate_Orb(),
+            I41_Mystic_Staff()
+            };
+
+            item.View = new UC_View_ItemImage(46);
+            item.View.UsingItem(item.SpellItem);
+            return item;
+        }
+
         #region Power items
         /// <summary>
         /// Итемы разового использования
@@ -1704,6 +1776,19 @@ namespace Voins.AppCode
             }
 
 
+            ///I42_Scythe_Of_Vyse
+            if (player.Items.Any(p => p.Name == "Void Stone") &&
+                player.Items.Any(p => p.Name == "Ultimate Orb") &&
+                player.Items.Any(p => p.Name == "Mystic Staff")
+               )
+            {
+                player.RemoveItem(player.Items.First(p => p.Name == "Void Stone"), true);
+                player.RemoveItem(player.Items.First(p => p.Name == "Ultimate Orb"), true);
+                player.RemoveItem(player.Items.First(p => p.Name == "Mystic Staff"), true);
+
+                retItem = I42_Scythe_Of_Vyse();
+            }
+
             ///Если новы предмет сложен не был, то удаляем предмет добавленный в инвинтарь
             if (retItem == null)
                 player.Items.Remove(itemNew);
@@ -1881,8 +1966,8 @@ namespace Voins.AppCode
         /// Если там пусто или есть игрок оставим ее
         /// </summary>
         /// <returns></returns>
-        public static Map_Cell RandonCell(int random, int xOld, int yOld, Map map, 
-            int groupType, List<Map_Cell> lastCall, bool farm = false)
+        public static Map_Cell RandonCell(int random, int xOld, int yOld, Map map,
+            int groupType, List<Map_Cell> lastCall, bool playerAttacker, bool farm = false)
         {
             ///Ячейки куда можно походить
             List<Map_Cell> allowCall = new List<Map_Cell>();
@@ -1932,6 +2017,19 @@ namespace Voins.AppCode
                 if (lastCall != null && lastCall.Count > 0 && allowCall.Count > 1)
                     allowCall.Remove(lastCall.Last());
 
+              
+
+                if (playerAttacker)
+                {
+                    Map_Cell withPlayer = allowCall.FirstOrDefault(p =>
+                            p.IUnits.Any(k => k.GroupType != groupType));
+
+                    if (withPlayer != null)
+                    {
+                        return withPlayer;
+                    }
+                }
+
                 Random randomOb = new Random(random);
                 return allowCall[randomOb.Next(0, allowCall.Count - 1)];
             }
@@ -1959,6 +2057,15 @@ namespace Voins.AppCode
                     call.IUnits[i].GroupType != bullet.UnitUsed.GroupType)
                 {
                     exept = true;
+
+                    #region Nature_Sprout
+                    if (call.IUnits[i].UnitType == EUnitType.Grass &&
+                        bullet.GrassDamage != 0)
+                    {
+                        bullet.DemageMagic += bullet.GrassDamage;
+                    }
+                    #endregion
+
                     ///Объект был унечтожен
                     IUnit unitRmoved = call.IUnits[i].GatDamage(bullet.DemagePhys, bullet.DemageMagic, bullet.DemagePure, bullet.UnitUsed);
 
