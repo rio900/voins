@@ -209,9 +209,7 @@ namespace Voins.Spell
             _storyboard.Completed -= _storyboard_Completed;
             _storyboard = null;
 
-            if (!_unit.Dead &&
-                !_unit.Silenced &&
-                !_unit.Hexed)
+            if (!_unit.Dead)
             {
                 var callOld = _map.Calls.Single(p => p.IndexLeft == _unit.PositionX && p.IndexTop == _unit.PositionY);
                 ///Удаляем из старой ячейки ссылку на юнит
@@ -235,6 +233,7 @@ namespace Voins.Spell
                 }
             }
 
+            _activeCall.Using = false;
             _unit.UnitFrozen = false;
         }
 
@@ -279,6 +278,8 @@ namespace Voins.Spell
                 _storyboard.Completed += _storyboard_Completed;
                 _storyboard.Begin();
             }
+            else
+                _unit.UnitFrozen = false;
 
 
             UnitGenerator.UpdatePlayerView(_unit);

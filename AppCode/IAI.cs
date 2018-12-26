@@ -12,6 +12,7 @@ namespace Voins.AppCode
         IUnit CurrentUnit { get; set; }
         bool Stoped { get; set; }
         bool Farm { get; set; }
+        bool Hunt { get; set; }
 
         void StartAI();
         void StopAI();

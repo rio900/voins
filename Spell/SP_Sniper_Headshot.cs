@@ -92,18 +92,31 @@ namespace Voins.Spell
                     unit.Mana -= ManaCost;
 
                     Culdaun = unit.AttackSpeed * 2;
-                    if (Culdaun < 0.4)
-                        Culdaun = 0.4;
+                    if (Culdaun < StaticVaribl.AttackSpeedRangeMaximum)
+                        Culdaun = StaticVaribl.AttackSpeedRangeMaximum;
 
-                    ///Создаем визуальный объект стрела
-                    UC_Sniper_Headshot arrow = new UC_Sniper_Headshot();
-                    arrow.ChengAngel(unit.Angel);
+                   
                     Bullet bullArrow = new Bullet();
                     bullArrow.GameObject = new Game_Object_In_Call()
                     {
                         EnumCallType = EnumCallType.Bullet,
-                        View = arrow
                     };
+
+                    /// Если есть скади
+                    if (UnitGenerator.HasSkadi(unit))
+                    {
+                        UC_Skadi skadiArrow = new UC_Skadi();
+                        skadiArrow.ChengAngel(unit.Angel);
+                        bullArrow.GameObject.View = skadiArrow;
+                    }
+                    else
+                    {
+                        ///Создаем визуальный объект стрела
+                        UC_Sniper_Headshot arrow = new UC_Sniper_Headshot();
+                        arrow.ChengAngel(unit.Angel);
+                        bullArrow.GameObject.View = arrow;
+                    }
+
                     bullArrow.UnitUsed = unit;
                     bullArrow.PositionX = unit.PositionX;
                     bullArrow.PositionY = unit.PositionY;

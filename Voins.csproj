@@ -148,6 +148,8 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Spell\Aurs\SP_Item_AssaultCuirass.cs" />
+    <Compile Include="Spell\Items\SP_Aghanim.cs" />
+    <Compile Include="Spell\Mobs\SP_HunterBoss.cs" />
     <Compile Include="Spell\Nature\SP_Nature_Teleport.cs" />
     <Compile Include="Spell\Mobs\SP_EasyMobArrowRoket.cs" />
     <Compile Include="Spell\Mobs\SP_EasyMobArrowStun.cs" />
@@ -205,6 +207,18 @@
     </Compile>
     <Compile Include="UserControlEditor\UC_Editor.xaml.cs">
       <DependentUpon>UC_Editor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Nature\UC_Model_H_Nature.xaml.cs">
+      <DependentUpon>UC_Model_H_Nature.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Items\UC_Skadi.xaml.cs">
+      <DependentUpon>UC_Skadi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Mob_BlackHunterBoss.xaml.cs">
+      <DependentUpon>UC_Mob_BlackHunterBoss.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Mob_BlackHunter.xaml.cs">
+      <DependentUpon>UC_Mob_BlackHunter.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\UC_Nature_Wrath.xaml.cs">
       <DependentUpon>UC_Nature_Wrath.xaml</DependentUpon>
@@ -370,6 +384,7 @@
     <Content Include="Image\1_Silence.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Image\1_skadiArrow.png" />
     <Content Include="Image\1_skill.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -438,6 +453,7 @@
     <Content Include="Image\44_ultimate_orb.png" />
     <Content Include="Image\45_mystic_staff.png" />
     <Content Include="Image\46_skythe_of_vyse.png" />
+    <Content Include="Image\47_skadi.png" />
     <Content Include="Image\4_oStuff.png" />
     <Content Include="Image\4_skill.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -456,6 +472,8 @@
     <Content Include="Image\9_pt.png" />
     <Content Include="Image\Bomb.png" />
     <Content Include="Image\Bonik.png" />
+    <Content Include="Image\BoomBlackCenter.png" />
+    <Content Include="Image\BoomBlackLeft.png" />
     <Content Include="Image\BoomRoketCenter.png" />
     <Content Include="Image\BoomRoketLeft.png" />
     <Content Include="Image\Fire.png" />
@@ -544,15 +562,35 @@
     <Content Include="Image\Laser.png" />
     <Content Include="Image\Man.png" />
     <Content Include="Image\Mirana_bot.png" />
+    <Content Include="Image\Mobs\1_hunter.png" />
+    <Content Include="Image\Mobs\1_hunter_boss.png" />
     <Content Include="Image\Mobs\1_test3_blue.png" />
     <Content Include="Image\Mobs\1_test3_fire.png" />
+    <Content Include="Image\Mobs\2_hunter.png" />
+    <Content Include="Image\Mobs\2_hunter_boss.png" />
     <Content Include="Image\Mobs\2_test3_blue.png" />
     <Content Include="Image\Mobs\2_test3_fire.png" />
+    <Content Include="Image\Mobs\3_hunter.png" />
+    <Content Include="Image\Mobs\3_hunter_boss.png" />
     <Content Include="Image\Mobs\3_test3_blue.png" />
     <Content Include="Image\Mobs\3_test3_fire.png" />
+    <Content Include="Image\Mobs\4_hunter.png" />
+    <Content Include="Image\Mobs\4_hunter_boss.png" />
     <Content Include="Image\Mobs\4_test3_blue.png" />
     <Content Include="Image\Mobs\4_test3_fire.png" />
     <Content Include="Image\Nature\Img_Nature_Sprout.png" />
+    <Content Include="Image\Nature\Kust13.PNG" />
+    <Content Include="Image\Nature\Kust14.PNG" />
+    <Content Include="Image\Nature\Kust15.PNG" />
+    <Content Include="Image\Nature\Kust16.PNG" />
+    <Content Include="Image\Nature\Kust17.PNG" />
+    <Content Include="Image\Nature\Kust18.PNG" />
+    <Content Include="Image\Nature\Kust_0_11.PNG" />
+    <Content Include="Image\Nature\Kust_0_12.PNG" />
+    <Content Include="Image\Nature\Kust_0_2.PNG" />
+    <Content Include="Image\Nature\Kust_31.PNG" />
+    <Content Include="Image\Nature\Kust_32.PNG" />
+    <Content Include="Image\Nature\Kust_33.PNG" />
     <Content Include="Image\Sk.png" />
     <Content Include="Image\SkillImage\Jakiro_Bot.png" />
     <Content Include="Image\SkillImage\Jakiro_IcePass.png" />
@@ -616,6 +654,22 @@
     <Page Include="UserControlEditor\UC_Editor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\Nature\UC_Model_H_Nature.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Items\UC_Skadi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\UC_Mob_BlackHunterBoss.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\UC_Mob_BlackHunter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="UserControl\UC_Nature_Wrath.xaml">
       <Generator>MSBuild:Compile</Generator>

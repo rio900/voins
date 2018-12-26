@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Unity\VoinGit\voins\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-22T22:04:43.273</Modified>
+      <Modified>2018-12-26T23:00:11.984</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\Voins.exe">
       <PackagePath>Voins.exe</PackagePath>
-      <Modified>2018-12-23T00:12:41.557</Modified>
+      <Modified>2018-12-26T23:26:33.130</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\MonoGame.Framework.dll">
       <PackagePath>MonoGame.Framework.dll</PackagePath>
@@ -139,6 +139,10 @@
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\1_Silence.png">
       <PackagePath>Image\1_Silence.png</PackagePath>
       <Modified>2013-10-24T10:03:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\1_skadiArrow.png">
+      <PackagePath>Image\1_skadiArrow.png</PackagePath>
+      <Modified>2018-12-26T22:50:54.196</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\1_skill.png">
       <PackagePath>Image\1_skill.png</PackagePath>
@@ -348,6 +352,10 @@
       <PackagePath>Image\46_skythe_of_vyse.png</PackagePath>
       <Modified>2018-12-22T19:45:58.030</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\47_skadi.png">
+      <PackagePath>Image\47_skadi.png</PackagePath>
+      <Modified>2018-12-26T21:51:16.131</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\4_oStuff.png">
       <PackagePath>Image\4_oStuff.png</PackagePath>
       <Modified>2013-10-22T09:15:52.000</Modified>
@@ -411,6 +419,14 @@
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Bonik.png">
       <PackagePath>Image\Bonik.png</PackagePath>
       <Modified>2013-10-19T08:17:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\BoomBlackCenter.png">
+      <PackagePath>Image\BoomBlackCenter.png</PackagePath>
+      <Modified>2018-12-24T20:58:09.223</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\BoomBlackLeft.png">
+      <PackagePath>Image\BoomBlackLeft.png</PackagePath>
+      <Modified>2018-12-24T20:58:59.807</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\BoomRoketCenter.png">
       <PackagePath>Image\BoomRoketCenter.png</PackagePath>
@@ -756,6 +772,14 @@
       <PackagePath>Image\Mirana_bot.png</PackagePath>
       <Modified>2013-11-14T21:09:20.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\1_hunter.png">
+      <PackagePath>Image\Mobs\1_hunter.png</PackagePath>
+      <Modified>2018-12-24T16:38:48.252</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\1_hunter_boss.png">
+      <PackagePath>Image\Mobs\1_hunter_boss.png</PackagePath>
+      <Modified>2018-12-24T16:54:04.503</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\1_test3_blue.png">
       <PackagePath>Image\Mobs\1_test3_blue.png</PackagePath>
       <Modified>2013-11-24T00:39:00.000</Modified>
@@ -763,6 +787,14 @@
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\1_test3_fire.png">
       <PackagePath>Image\Mobs\1_test3_fire.png</PackagePath>
       <Modified>2013-11-24T00:39:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\2_hunter.png">
+      <PackagePath>Image\Mobs\2_hunter.png</PackagePath>
+      <Modified>2018-12-24T16:39:02.064</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\2_hunter_boss.png">
+      <PackagePath>Image\Mobs\2_hunter_boss.png</PackagePath>
+      <Modified>2018-12-24T16:54:41.425</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\2_test3_blue.png">
       <PackagePath>Image\Mobs\2_test3_blue.png</PackagePath>
@@ -772,6 +804,14 @@
       <PackagePath>Image\Mobs\2_test3_fire.png</PackagePath>
       <Modified>2013-11-24T00:39:00.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\3_hunter.png">
+      <PackagePath>Image\Mobs\3_hunter.png</PackagePath>
+      <Modified>2018-12-24T16:39:17.891</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\3_hunter_boss.png">
+      <PackagePath>Image\Mobs\3_hunter_boss.png</PackagePath>
+      <Modified>2018-12-24T16:55:00.276</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\3_test3_blue.png">
       <PackagePath>Image\Mobs\3_test3_blue.png</PackagePath>
       <Modified>2013-11-24T00:39:00.000</Modified>
@@ -779,6 +819,14 @@
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\3_test3_fire.png">
       <PackagePath>Image\Mobs\3_test3_fire.png</PackagePath>
       <Modified>2013-11-24T00:39:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\4_hunter.png">
+      <PackagePath>Image\Mobs\4_hunter.png</PackagePath>
+      <Modified>2018-12-24T16:44:56.560</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\4_hunter_boss.png">
+      <PackagePath>Image\Mobs\4_hunter_boss.png</PackagePath>
+      <Modified>2018-12-24T16:56:48.681</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\4_test3_blue.png">
       <PackagePath>Image\Mobs\4_test3_blue.png</PackagePath>
@@ -791,6 +839,54 @@
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Img_Nature_Sprout.png">
       <PackagePath>Image\Nature\Img_Nature_Sprout.png</PackagePath>
       <Modified>2018-06-29T12:09:11.647</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust13.PNG">
+      <PackagePath>Image\Nature\Kust13.PNG</PackagePath>
+      <Modified>2018-12-25T12:08:42.231</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust14.PNG">
+      <PackagePath>Image\Nature\Kust14.PNG</PackagePath>
+      <Modified>2018-12-25T12:13:20.791</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust15.PNG">
+      <PackagePath>Image\Nature\Kust15.PNG</PackagePath>
+      <Modified>2018-12-25T20:17:11.680</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust16.PNG">
+      <PackagePath>Image\Nature\Kust16.PNG</PackagePath>
+      <Modified>2018-12-25T20:18:35.204</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust17.PNG">
+      <PackagePath>Image\Nature\Kust17.PNG</PackagePath>
+      <Modified>2018-12-25T20:53:10.009</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust18.PNG">
+      <PackagePath>Image\Nature\Kust18.PNG</PackagePath>
+      <Modified>2018-12-25T20:54:28.670</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust_0_11.PNG">
+      <PackagePath>Image\Nature\Kust_0_11.PNG</PackagePath>
+      <Modified>2018-12-24T21:45:33.268</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust_0_12.PNG">
+      <PackagePath>Image\Nature\Kust_0_12.PNG</PackagePath>
+      <Modified>2018-12-24T21:55:14.822</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust_0_2.PNG">
+      <PackagePath>Image\Nature\Kust_0_2.PNG</PackagePath>
+      <Modified>2018-12-24T21:01:10.255</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust_31.PNG">
+      <PackagePath>Image\Nature\Kust_31.PNG</PackagePath>
+      <Modified>2018-12-25T21:15:46.651</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust_32.PNG">
+      <PackagePath>Image\Nature\Kust_32.PNG</PackagePath>
+      <Modified>2018-12-25T21:35:03.165</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust_33.PNG">
+      <PackagePath>Image\Nature\Kust_33.PNG</PackagePath>
+      <Modified>2018-12-25T21:37:07.482</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sk.png">
       <PackagePath>Image\Sk.png</PackagePath>
@@ -974,7 +1070,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\Voins.xr.xml">
       <PackagePath>Voins.xr.xml</PackagePath>
-      <Modified>2018-12-16T22:37:32.947</Modified>
+      <Modified>2018-12-26T22:45:29.835</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -995,6 +1091,22 @@
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControlEditor\UC_Editor.xbf">
       <PackagePath>UserControlEditor\UC_Editor.xbf</PackagePath>
       <Modified>2018-06-29T10:39:01.489</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\Nature\UC_Model_H_Nature.xbf">
+      <PackagePath>UserControl\Nature\UC_Model_H_Nature.xbf</PackagePath>
+      <Modified>2018-12-25T23:30:10.827</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\Items\UC_Skadi.xbf">
+      <PackagePath>UserControl\Items\UC_Skadi.xbf</PackagePath>
+      <Modified>2018-12-26T23:00:10.700</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\UC_Mob_BlackHunterBoss.xbf">
+      <PackagePath>UserControl\UC_Mob_BlackHunterBoss.xbf</PackagePath>
+      <Modified>2018-12-24T17:06:40.672</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\UC_Mob_BlackHunter.xbf">
+      <PackagePath>UserControl\UC_Mob_BlackHunter.xbf</PackagePath>
+      <Modified>2018-12-24T17:06:40.673</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\UC_Nature_Wrath.xbf">
       <PackagePath>UserControl\UC_Nature_Wrath.xbf</PackagePath>
@@ -1030,7 +1142,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\Jinx\UC_Super_Mega_Death_Rocket.xbf">
       <PackagePath>UserControl\Jinx\UC_Super_Mega_Death_Rocket.xbf</PackagePath>
-      <Modified>2018-06-29T10:39:01.493</Modified>
+      <Modified>2018-12-25T23:30:10.828</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\Jinx\UC_Jinx_Flame_Chompers.xbf">
       <PackagePath>UserControl\Jinx\UC_Jinx_Flame_Chompers.xbf</PackagePath>
@@ -1038,7 +1150,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\Jinx\UC_Jinx_Zap_Roket.xbf">
       <PackagePath>UserControl\Jinx\UC_Jinx_Zap_Roket.xbf</PackagePath>
-      <Modified>2018-06-29T10:39:01.494</Modified>
+      <Modified>2018-12-24T21:10:42.275</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\Jinx\UC_Jinx_Zap.xbf">
       <PackagePath>UserControl\Jinx\UC_Jinx_Zap.xbf</PackagePath>
@@ -1142,7 +1254,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\UC_Player.xbf">
       <PackagePath>UserControl\UC_Player.xbf</PackagePath>
-      <Modified>2018-12-22T22:58:28.484</Modified>
+      <Modified>2018-12-25T23:30:10.829</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\UC_View_BuyControl.xbf">
       <PackagePath>UserControl\UC_View_BuyControl.xbf</PackagePath>
@@ -1154,7 +1266,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\UC_View_ItemImage.xbf">
       <PackagePath>UserControl\UC_View_ItemImage.xbf</PackagePath>
-      <Modified>2018-12-22T13:29:08.786</Modified>
+      <Modified>2018-12-26T22:17:03.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\UC_View_ItemsPanel.xbf">
       <PackagePath>UserControl\UC_View_ItemsPanel.xbf</PackagePath>
@@ -1166,7 +1278,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\UC_View_SelectHeroy.xbf">
       <PackagePath>UserControl\UC_View_SelectHeroy.xbf</PackagePath>
-      <Modified>2018-06-29T10:49:42.539</Modified>
+      <Modified>2018-12-25T23:30:10.831</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\UC_View_SpellControl.xbf">
       <PackagePath>UserControl\UC_View_SpellControl.xbf</PackagePath>
@@ -1175,7 +1287,7 @@
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-23T00:12:41.786</Modified>
+      <Modified>2018-12-26T23:26:33.394</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

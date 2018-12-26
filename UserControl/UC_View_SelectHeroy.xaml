@@ -7,91 +7,91 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
      Width="635" Height="600">
-    
+
     <Grid Background="#E6000C5B">
-    	<Border HorizontalAlignment="Left" Height="103" Margin="10,100,0,0" VerticalAlignment="Top" Width="615" CornerRadius="10">
-    		<Border.Background>
-    			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-    				<GradientStop Color="#7FFFFFFF"/>
-    				<GradientStop Color="#7E000000" Offset="1"/>
-    			</LinearGradientBrush>
-    		</Border.Background>
-    		<ListView SelectedIndex="0" Name="C_HeroList" 
+        <Border HorizontalAlignment="Left" Height="103" Margin="10,100,0,0" VerticalAlignment="Top" Width="615" CornerRadius="10">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#7FFFFFFF"/>
+                    <GradientStop Color="#7E000000" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <ListView SelectedIndex="0" Name="C_HeroList" 
                       ScrollViewer.HorizontalScrollBarVisibility="Visible"
                       ScrollViewer.HorizontalScrollMode="Enabled">
-    			<ListView.ItemsPanel>
-    				<ItemsPanelTemplate>
-    					<WrapGrid ItemWidth="90" ItemHeight="90" MaximumRowsOrColumns="7" VerticalAlignment="Center" HorizontalAlignment="Left" />
-    				</ItemsPanelTemplate>
-    			</ListView.ItemsPanel>
-    			<ListView.ItemContainerStyle>
-    				<Style TargetType="ListViewItem">
-    					<Setter Property="Padding" Value="0"/>
-    					<Setter Property="Margin" Value="0"/>
-    				</Style>
-    			</ListView.ItemContainerStyle>
-    			<Border BorderThickness="5,1" Height="75" Width="75" CornerRadius="10" Background="#FF4F006C">
-    				<Border.BorderBrush>
-    					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-    						<GradientStop Color="#FFAC00BD" Offset="0.416"/>
-    						<GradientStop Color="White"/>
-    						<GradientStop Color="#FFD200DC" Offset="1"/>
-    					</LinearGradientBrush>
-    				</Border.BorderBrush>
-    				<Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Alhim_0_1.png" Stretch="Fill"/>
-    			</Border>
-    			<Border BorderThickness="5,1" Height="75" Width="75" CornerRadius="10" Background="#FFC1C15C">
-    				<Border.BorderBrush>
-    					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-    						<GradientStop Color="#FF9BBD00" Offset="0.416"/>
-    						<GradientStop Color="White"/>
-    						<GradientStop Color="#FFDC6400" Offset="1"/>
-    					</LinearGradientBrush>
-    				</Border.BorderBrush>
-    				<Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Bonik_0_1.png" Stretch="Fill" Height="64" Width="38"/>
-    			</Border>
-    			<Border BorderThickness="5,1" Height="75" Width="75" CornerRadius="10" Background="#FFF1F1F1">
-    				<Border.BorderBrush>
-    					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-    						<GradientStop Color="#FF747474" Offset="0.416"/>
-    						<GradientStop Color="White"/>
-    						<GradientStop Color="#FFACACAC" Offset="1"/>
-    					</LinearGradientBrush>
-    				</Border.BorderBrush>
-    				<Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Sniper_0_1.png" Stretch="Fill" Width="38" Height="64"/>
-    			</Border>
-    			<Border BorderThickness="5,1" Height="75" Width="75" CornerRadius="10" Background="#FF812020">
-    				<Border.BorderBrush>
-    					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-    						<GradientStop Color="#FF747474" Offset="0.416"/>
-    						<GradientStop Color="White"/>
-    						<GradientStop Color="#FFACACAC" Offset="1"/>
-    					</LinearGradientBrush>
-    				</Border.BorderBrush>
-    				<Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Jakiro_0_1.png" Width="38" Height="64"/>
-    			</Border>
-    			<Border BorderThickness="5,1" Height="75" Width="75" CornerRadius="10" Background="#FFCDF6FF">
-    				<Border.BorderBrush>
-    					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-    						<GradientStop Color="#FF747474" Offset="0.416"/>
-    						<GradientStop Color="White"/>
-    						<GradientStop Color="#FFACACAC" Offset="1"/>
-    					</LinearGradientBrush>
-    				</Border.BorderBrush>
-    				<Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Mirana_0_1.png" Width="38" Height="64"/>
-    			</Border>
-    			<Border BorderThickness="5,1" Height="75" Width="75" CornerRadius="10" Background="#FFBD7CBB">
-    				<Border.BorderBrush>
-    					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-    						<GradientStop Color="#FF740074" Offset="0.416"/>
-    						<GradientStop Color="White"/>
-    						<GradientStop Color="#FFE000E0" Offset="1"/>
-    					</LinearGradientBrush>
-    				</Border.BorderBrush>
-    				<Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Jinx_0_1.png" Width="38" Height="64"/>
-    			</Border>
-                
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapGrid ItemWidth="90" ItemHeight="90" MaximumRowsOrColumns="7" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="Padding" Value="0"/>
+                        <Setter Property="Margin" Value="0"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <Border BorderThickness="5,1" Height="75" Width="75" CornerRadius="10" Background="#FF4F006C">
+                    <Border.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFAC00BD" Offset="0.416"/>
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFD200DC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+                    <Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Alhim_0_1.png" Stretch="Fill"/>
+                </Border>
+                <Border BorderThickness="5,1" Height="75" Width="75" CornerRadius="10" Background="#FFC1C15C">
+                    <Border.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF9BBD00" Offset="0.416"/>
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFDC6400" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+                    <Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Bonik_0_1.png" Stretch="Fill" Height="64" Width="38"/>
+                </Border>
+                <Border BorderThickness="5,1" Height="75" Width="75" CornerRadius="10" Background="#FFF1F1F1">
+                    <Border.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF747474" Offset="0.416"/>
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFACACAC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+                    <Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Sniper_0_1.png" Stretch="Fill" Width="38" Height="64"/>
+                </Border>
                 <Border BorderThickness="5,1" Height="75" Width="75" CornerRadius="10" Background="#FF812020">
+                    <Border.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF747474" Offset="0.416"/>
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFACACAC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+                    <Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Jakiro_0_1.png" Width="38" Height="64"/>
+                </Border>
+                <Border BorderThickness="5,1" Height="75" Width="75" CornerRadius="10" Background="#FFCDF6FF">
+                    <Border.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF747474" Offset="0.416"/>
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFACACAC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+                    <Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Mirana_0_1.png" Width="38" Height="64"/>
+                </Border>
+                <Border BorderThickness="5,1" Height="75" Width="75" CornerRadius="10" Background="#FFBD7CBB">
+                    <Border.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF740074" Offset="0.416"/>
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFE000E0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+                    <Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Jinx_0_1.png" Width="38" Height="64"/>
+                </Border>
+
+                <Border BorderThickness="5,1" Height="75" Width="75" CornerRadius="10" Background="#FF228120">
                     <Border.BorderBrush>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="#FF747474" Offset="0.416"/>
@@ -99,156 +99,156 @@
                             <GradientStop Color="#FFACACAC" Offset="1"/>
                         </LinearGradientBrush>
                     </Border.BorderBrush>
-                    <Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Jakiro_0_1.png" Width="38" Height="64"/>
+                    <Image Margin="8,4,10,4" Source="ms-appx:///Image/Nature/Kust_0_2.PNG"/>
                 </Border>
             </ListView>
-    	</Border>
-    	<TextBox Name="C_NameTextBox" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Player1" VerticalAlignment="Top" FontSize="24" Height="48" Width="261"/>
-    	<TextBlock HorizontalAlignment="Left" Margin="276,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="21.333" Height="25" Foreground="Black">
+        </Border>
+        <TextBox Name="C_NameTextBox" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Player1" VerticalAlignment="Top" FontSize="24" Height="48" Width="261"/>
+        <TextBlock HorizontalAlignment="Left" Margin="276,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="21.333" Height="25" Foreground="Black">
     		<Run Text="Input:"/>
     		<LineBreak/>
     		<Run/>
-    	</TextBlock>
-    	<ComboBox SelectionChanged="InputChanged" Name="C_Input" HorizontalAlignment="Left" Margin="335,10,0,0" VerticalAlignment="Top" Width="125" Height="48" SelectedIndex="1">
-    		<Image Source="ms-appx:///Image/Keyboard.png" Width="75"/>
-    		<Image Source="ms-appx:///Image/Gamepad.png" Width="75"/>
-    		<Image Source="ms-appx:///Image/Toch.png" Width="75"/>
-    	</ComboBox>
-    	<TextBlock HorizontalAlignment="Left" Margin="477,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="21.333" Height="25" Foreground="Black">
+        </TextBlock>
+        <ComboBox SelectionChanged="InputChanged" Name="C_Input" HorizontalAlignment="Left" Margin="335,10,0,0" VerticalAlignment="Top" Width="125" Height="48" SelectedIndex="1">
+            <Image Source="ms-appx:///Image/Keyboard.png" Width="75"/>
+            <Image Source="ms-appx:///Image/Gamepad.png" Width="75"/>
+            <Image Source="ms-appx:///Image/Toch.png" Width="75"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="477,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="21.333" Height="25" Foreground="Black">
     		<Run Text="Group:"/>
     		<LineBreak/>
     		<Run/>
-    	</TextBlock>
-    	<ComboBox SelectionChanged="C_Group_SelectionChanged" Name="C_Group" HorizontalAlignment="Left" Margin="546,10,0,0" VerticalAlignment="Top" Width="79" Height="48" SelectedIndex="1">
-    		<Grid Height="20" Width="20" Background="#FF001D80"/>
-    		<Grid Height="20" Width="20" Background="#FF781600"/>
-    		<Grid Height="20" Width="20" Background="#FF008B06"/>
-    		<Grid Height="20" Width="20" Background="Yellow"/>
-    	</ComboBox>
-    	<Border HorizontalAlignment="Left" Height="340" Margin="10,250,0,0" VerticalAlignment="Top" Width="615" CornerRadius="10" Opacity="0.995" >
-				<Border.Background>
-    			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-    				<GradientStop Color="Black"/>
-    				<GradientStop Color="#BF000000" Offset="1"/>
-    			</LinearGradientBrush>
-    		</Border.Background>
-    		<Grid>
-    			<Grid x:Name="C_ViewGrid">
-    				<Border x:Name="C_View0" BorderThickness="5,1" CornerRadius="10" Background="#FF4F006C" Margin="10,10,515,245">
-    					<Border.BorderBrush>
-    						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-    							<GradientStop Color="#FFAC00BD" Offset="0.416"/>
-    							<GradientStop Color="White"/>
-    							<GradientStop Color="#FFD200DC" Offset="1"/>
-    						</LinearGradientBrush>
-    					</Border.BorderBrush>
-    					<Image Margin="20,14,25,5" Source="ms-appx:///Image/Hero_Alhim_0_1.png" Stretch="UniformToFill"/>
-    				</Border>
-    				<Border x:Name="C_View1" BorderThickness="5,1" CornerRadius="10" Background="#FFC1C15C" Margin="10,10,515,245" d:IsHidden="True">
-    					<Border.BorderBrush>
-    						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-    							<GradientStop Color="#FF9BBD00" Offset="0.416"/>
-    							<GradientStop Color="White"/>
-    							<GradientStop Color="#FFDC6400" Offset="1"/>
-    						</LinearGradientBrush>
-    					</Border.BorderBrush>
-    					<Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Bonik_0_1.png" Stretch="Fill" Height="64" Width="38"/>
-    				</Border>
-    				<Border x:Name="C_View2" BorderThickness="5,1" CornerRadius="10" Background="#FFF1F1F1" Margin="10,10,515,245" d:IsHidden="True">
-    					<Border.BorderBrush>
-    						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-    							<GradientStop Color="#FF747474" Offset="0.416"/>
-    							<GradientStop Color="White"/>
-    							<GradientStop Color="#FFACACAC" Offset="1"/>
-    						</LinearGradientBrush>
-    					</Border.BorderBrush>
-    					<Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Sniper_0_1.png" Stretch="Fill" Width="38" Height="64"/>
-    				</Border>
-    				<Border x:Name="C_View3" BorderThickness="5,1" CornerRadius="10" Background="#FF812020" Margin="10,10,515,245" d:IsHidden="True">
-    					<Border.BorderBrush>
-    						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-    							<GradientStop Color="#FF747474" Offset="0.416"/>
-    							<GradientStop Color="White"/>
-    							<GradientStop Color="#FFACACAC" Offset="1"/>
-    						</LinearGradientBrush>
-    					</Border.BorderBrush>
-    					<Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Jakiro_0_1.png" Width="38" Height="64"/>
-    				</Border>
-    				<Border x:Name="C_View4" BorderThickness="5,1" CornerRadius="10" Background="#FFCDF6FF" Margin="10,10,515,245" d:IsHidden="True">
-    					<Border.BorderBrush>
-    						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-    							<GradientStop Color="#FF747474" Offset="0.416"/>
-    							<GradientStop Color="White"/>
-    							<GradientStop Color="#FFACACAC" Offset="1"/>
-    						</LinearGradientBrush>
-    					</Border.BorderBrush>
-    					<Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Mirana_0_1.png" Width="38" Height="64"/>
-    				</Border>
-    				<Border x:Name="C_View5" BorderThickness="5,1" CornerRadius="10" Background="#FFBD7CBB" Margin="10,10,515,245" d:IsHidden="True">
-    					<Border.BorderBrush>
-    						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-    							<GradientStop Color="#FF7B007B" Offset="0.416"/>
-    							<GradientStop Color="White"/>
-    							<GradientStop Color="#FFD300D3" Offset="1"/>
-    						</LinearGradientBrush>
-    					</Border.BorderBrush>
-    					<Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Jinx_0_1.png" Width="38" Height="64"/>
-    				</Border>
-    			</Grid>
-    			<TextBlock x:Name="C_StrengthView" HorizontalAlignment="Left" Margin="42,121,0,0" TextWrapping="Wrap" Text="Strength:" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock x:Name="C_IntelligenceView" HorizontalAlignment="Left" Margin="21,145,0,0" TextWrapping="Wrap" Text="Intelligence:" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock x:Name="C_AgilityView" HorizontalAlignment="Left" Margin="58,169,0,0" TextWrapping="Wrap" Text="Agility:" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock x:Name="C_Strength" HorizontalAlignment="Left" Margin="111,121,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock x:Name="C_Intelligence" HorizontalAlignment="Left" Margin="111,145,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock x:Name="C_Agility" HorizontalAlignment="Left" Margin="111,169,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock x:Name="C_AgilityView_Copy" HorizontalAlignment="Left" Margin="10,209,0,0" TextWrapping="Wrap" Text="Spels:" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock HorizontalAlignment="Left" Margin="155,121,0,0" TextWrapping="Wrap" Text="+" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock HorizontalAlignment="Left" Margin="155,145,0,0" TextWrapping="Wrap" Text="+" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock HorizontalAlignment="Left" Margin="155,169,0,0" TextWrapping="Wrap" Text="+" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock x:Name="C_Strength_Plus" HorizontalAlignment="Left" Margin="171,121,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock x:Name="C_Intelligence_Plus" HorizontalAlignment="Left" Margin="171,145,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock x:Name="C_Agility_Plus" HorizontalAlignment="Left" Margin="171,169,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock HorizontalAlignment="Left" Margin="111,43,0,0" TextWrapping="Wrap" Text="Health:" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock HorizontalAlignment="Left" Margin="111,62,0,0" TextWrapping="Wrap" Text="Mana:" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock x:Name="C_Health" HorizontalAlignment="Left" Margin="166,43,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock x:Name="C_Mana" HorizontalAlignment="Left" Margin="166,62,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock HorizontalAlignment="Left" Margin="210,43,0,0" TextWrapping="Wrap" Text="Armor:" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<TextBlock x:Name="C_Armor" HorizontalAlignment="Left" Margin="265,43,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
-    			<Border BorderBrush="Black" BorderThickness="0" HorizontalAlignment="Left" Height="294" Margin="320,9,0,0" VerticalAlignment="Top" Width="285" CornerRadius="10" Background="#FF323232">
-    				<Grid>
-    					<TextBlock x:Name="C_SpallName" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Spall Name" VerticalAlignment="Top" Margin="10,10,0,0" FontSize="16"/>
-    					<TextBlock x:Name="C_SpallDescription" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,34,0,0" FontSize="13.333" Height="35">
+        </TextBlock>
+        <ComboBox SelectionChanged="C_Group_SelectionChanged" Name="C_Group" HorizontalAlignment="Left" Margin="546,10,0,0" VerticalAlignment="Top" Width="79" Height="48" SelectedIndex="1">
+            <Grid Height="20" Width="20" Background="#FF001D80"/>
+            <Grid Height="20" Width="20" Background="#FF781600"/>
+            <Grid Height="20" Width="20" Background="#FF008B06"/>
+            <Grid Height="20" Width="20" Background="Yellow"/>
+        </ComboBox>
+        <Border HorizontalAlignment="Left" Height="340" Margin="10,250,0,0" VerticalAlignment="Top" Width="615" CornerRadius="10" Opacity="0.995" >
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#BF000000" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                <Grid x:Name="C_ViewGrid">
+                    <Border x:Name="C_View0" BorderThickness="5,1" CornerRadius="10" Background="#FF4F006C" Margin="10,10,515,245">
+                        <Border.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFAC00BD" Offset="0.416"/>
+                                <GradientStop Color="White"/>
+                                <GradientStop Color="#FFD200DC" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.BorderBrush>
+                        <Image Margin="20,14,25,5" Source="ms-appx:///Image/Hero_Alhim_0_1.png" Stretch="UniformToFill"/>
+                    </Border>
+                    <Border x:Name="C_View1" BorderThickness="5,1" CornerRadius="10" Background="#FFC1C15C" Margin="10,10,515,245" d:IsHidden="True">
+                        <Border.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF9BBD00" Offset="0.416"/>
+                                <GradientStop Color="White"/>
+                                <GradientStop Color="#FFDC6400" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.BorderBrush>
+                        <Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Bonik_0_1.png" Stretch="Fill" Height="64" Width="38"/>
+                    </Border>
+                    <Border x:Name="C_View2" BorderThickness="5,1" CornerRadius="10" Background="#FFF1F1F1" Margin="10,10,515,245" d:IsHidden="True">
+                        <Border.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF747474" Offset="0.416"/>
+                                <GradientStop Color="White"/>
+                                <GradientStop Color="#FFACACAC" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.BorderBrush>
+                        <Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Sniper_0_1.png" Stretch="Fill" Width="38" Height="64"/>
+                    </Border>
+                    <Border x:Name="C_View3" BorderThickness="5,1" CornerRadius="10" Background="#FF812020" Margin="10,10,515,245" d:IsHidden="True">
+                        <Border.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF747474" Offset="0.416"/>
+                                <GradientStop Color="White"/>
+                                <GradientStop Color="#FFACACAC" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.BorderBrush>
+                        <Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Jakiro_0_1.png" Width="38" Height="64"/>
+                    </Border>
+                    <Border x:Name="C_View4" BorderThickness="5,1" CornerRadius="10" Background="#FFCDF6FF" Margin="10,10,515,245" d:IsHidden="True">
+                        <Border.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF747474" Offset="0.416"/>
+                                <GradientStop Color="White"/>
+                                <GradientStop Color="#FFACACAC" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.BorderBrush>
+                        <Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Mirana_0_1.png" Width="38" Height="64"/>
+                    </Border>
+                    <Border x:Name="C_View5" BorderThickness="5,1" CornerRadius="10" Background="#FFBD7CBB" Margin="10,10,515,245" d:IsHidden="True">
+                        <Border.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF7B007B" Offset="0.416"/>
+                                <GradientStop Color="White"/>
+                                <GradientStop Color="#FFD300D3" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.BorderBrush>
+                        <Image Margin="13,9,14,0" Source="ms-appx:///Image/Hero_Jinx_0_1.png" Width="38" Height="64"/>
+                    </Border>
+                </Grid>
+                <TextBlock x:Name="C_StrengthView" HorizontalAlignment="Left" Margin="42,121,0,0" TextWrapping="Wrap" Text="Strength:" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock x:Name="C_IntelligenceView" HorizontalAlignment="Left" Margin="21,145,0,0" TextWrapping="Wrap" Text="Intelligence:" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock x:Name="C_AgilityView" HorizontalAlignment="Left" Margin="58,169,0,0" TextWrapping="Wrap" Text="Agility:" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock x:Name="C_Strength" HorizontalAlignment="Left" Margin="111,121,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock x:Name="C_Intelligence" HorizontalAlignment="Left" Margin="111,145,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock x:Name="C_Agility" HorizontalAlignment="Left" Margin="111,169,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock x:Name="C_AgilityView_Copy" HorizontalAlignment="Left" Margin="10,209,0,0" TextWrapping="Wrap" Text="Spels:" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock HorizontalAlignment="Left" Margin="155,121,0,0" TextWrapping="Wrap" Text="+" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock HorizontalAlignment="Left" Margin="155,145,0,0" TextWrapping="Wrap" Text="+" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock HorizontalAlignment="Left" Margin="155,169,0,0" TextWrapping="Wrap" Text="+" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock x:Name="C_Strength_Plus" HorizontalAlignment="Left" Margin="171,121,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock x:Name="C_Intelligence_Plus" HorizontalAlignment="Left" Margin="171,145,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock x:Name="C_Agility_Plus" HorizontalAlignment="Left" Margin="171,169,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock HorizontalAlignment="Left" Margin="111,43,0,0" TextWrapping="Wrap" Text="Health:" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock HorizontalAlignment="Left" Margin="111,62,0,0" TextWrapping="Wrap" Text="Mana:" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock x:Name="C_Health" HorizontalAlignment="Left" Margin="166,43,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock x:Name="C_Mana" HorizontalAlignment="Left" Margin="166,62,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock HorizontalAlignment="Left" Margin="210,43,0,0" TextWrapping="Wrap" Text="Armor:" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <TextBlock x:Name="C_Armor" HorizontalAlignment="Left" Margin="265,43,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+                <Border BorderBrush="Black" BorderThickness="0" HorizontalAlignment="Left" Height="294" Margin="320,9,0,0" VerticalAlignment="Top" Width="285" CornerRadius="10" Background="#FF323232">
+                    <Grid>
+                        <TextBlock x:Name="C_SpallName" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Spall Name" VerticalAlignment="Top" Margin="10,10,0,0" FontSize="16"/>
+                        <TextBlock x:Name="C_SpallDescription" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,34,0,0" FontSize="13.333" Height="35">
     						<Run Text="Description"/>
     						<LineBreak/>
     						<Run/>
-    					</TextBlock>
-    					<TextBlock x:Name="C_SpallLevels" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,69,0,0" FontSize="13.333" Height="54">
+                        </TextBlock>
+                        <TextBlock x:Name="C_SpallLevels" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,69,0,0" FontSize="13.333" Height="54">
     						<Run Text="Level1:"/>
     						<LineBreak/>
     						<Run Text="Level2:"/>
     						<LineBreak/>
     						<Run Text="Level3:"/>
-    					</TextBlock>
-    				</Grid>
-    			</Border>
-    			<ListView x:Name="C_SpallList" Margin="10,233,300,10">
-    				<ListView.ItemsPanel>
-    					<ItemsPanelTemplate>
-    						<WrapGrid ItemWidth="60" ItemHeight="60" MaximumRowsOrColumns="7" VerticalAlignment="Center" HorizontalAlignment="Left" />
-    					</ItemsPanelTemplate>
-    				</ListView.ItemsPanel>
-    				<ListView.ItemContainerStyle>
-    					<Style TargetType="ListViewItem">
-    						<Setter Property="Padding" Value="0"/>
-    						<Setter Property="Margin" Value="0"/>
-    					</Style>
-    				</ListView.ItemContainerStyle>
-    				
-    			</ListView>
-    			<TextBlock x:Name="C_Name" HorizontalAlignment="Left" Margin="110,9,0,0" TextWrapping="Wrap" Text="Hero Name" VerticalAlignment="Top" FontSize="26.667"/>
-    		</Grid>
-    	</Border>
-    	<Button Content="Info" HorizontalAlignment="Left" Height="37" Margin="10,208,0,0" VerticalAlignment="Top" Width="186" Visibility="Collapsed"/>
+                        </TextBlock>
+                    </Grid>
+                </Border>
+                <ListView x:Name="C_SpallList" Margin="10,233,300,10">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapGrid ItemWidth="60" ItemHeight="60" MaximumRowsOrColumns="7" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="Padding" Value="0"/>
+                            <Setter Property="Margin" Value="0"/>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+
+                </ListView>
+                <TextBlock x:Name="C_Name" HorizontalAlignment="Left" Margin="110,9,0,0" TextWrapping="Wrap" Text="Hero Name" VerticalAlignment="Top" FontSize="26.667"/>
+            </Grid>
+        </Border>
+        <Button Content="Info" HorizontalAlignment="Left" Height="37" Margin="10,208,0,0" VerticalAlignment="Top" Width="186" Visibility="Collapsed"/>
 
     </Grid>
 </UserControl>

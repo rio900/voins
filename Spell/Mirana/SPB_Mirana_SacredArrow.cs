@@ -168,7 +168,7 @@ namespace Voins.Spell
             if (_bullet.Exept == true)
             {
                 if (newCall != null && !newCall.Block)
-                    UnitGenerator.AddStuneTwo(newCall, _bullet, _bullet.StunDuration,5);
+                    UnitGenerator.AddStuneTwo(newCall, _bullet, _bullet.StunDuration, 5);
 
                 (_bullet.GameObject.View as IGameControl).Remove(_map.MapCanvas);
                 ///Было попадение, анимация исчезновения стрелы
@@ -189,15 +189,22 @@ namespace Voins.Spell
         private void Exept()
         {
             int stunDuration = 0;
+            int bonusDamsge = 0;
             if (_power >= 2 && _power <= 3)
                 stunDuration = 1;
             else if (_power >= 4 && _power <= 5)
+            {
                 stunDuration = 2;
-            else if (_power >= 6 && _power <= 8)
+                bonusDamsge = _bullet.BonusDemage / 2;
+            }
+            else if (_power >= 6)
+            {
                 stunDuration = 3;
-            
+                bonusDamsge = _bullet.BonusDemage;
+            }
+
             _bullet.StunDuration = stunDuration;
-            _bullet.DemagePhys = _bullet.DemagePhys + _bullet.BonusDemage;
+            _bullet.DemagePhys = _bullet.DemagePhys + bonusDamsge;
 
             //!_exept
             if (_map.Calls.Any(p => p.IndexLeft == _bullet.PositionX && p.IndexTop == _bullet.PositionY))
@@ -205,7 +212,7 @@ namespace Voins.Spell
                 ///Получим ячейку куда попала пуля
                 var call = _map.Calls.Single(p => p.IndexLeft == _bullet.PositionX && p.IndexTop == _bullet.PositionY);
 
-             
+
 
                 if (!call.Block)
                 {
@@ -216,6 +223,7 @@ namespace Voins.Spell
                             call.IUnits[i].GroupType != _bullet.UnitUsed.GroupType)
                         {
                             UnitGenerator.Desolator(_bullet.UnitUsed, call.IUnits[i]);
+                            UnitGenerator.Skadi(_bullet.UnitUsed, call.IUnits[i]);
                         }
                     }
                     #endregion

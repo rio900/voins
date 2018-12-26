@@ -20,6 +20,8 @@ namespace Voins.Spell
         public event EventHandler StartUseSpell;
         public event EventHandler CompletedUseSpell;
 
+        public int ExplosionStyle { get; set; }
+
         public string Name { get; set; }
         Bullet _bullet;
         IUnit _unit;
@@ -197,7 +199,7 @@ namespace Voins.Spell
 
         }
 
-     
+
         /// <summary>
         /// Банка не наносит урон, урон наносит взрыв
         /// </summary>
@@ -233,68 +235,76 @@ namespace Voins.Spell
         /// <summary>
         /// Этот метод наносит урон
         /// </summary>
-        private void BoomMethod(int x,int y)
+        private void BoomMethod(int x, int y)
         {
-             ///Если колба попала или должна исчезнуть
-                ///Берем все ячейки вокруг колбы
-                List<Point> roundPoint = UnitGenerator.RoundNumber(x, y);
-                roundPoint.Add(new Point(x, y));
-                ///Теперь рисуем взрыв
-                for (int i = 0; i < roundPoint.Count; i++)
+            ///Если колба попала или должна исчезнуть
+            ///Берем все ячейки вокруг колбы
+            List<Point> roundPoint = UnitGenerator.RoundNumber(x, y);
+            roundPoint.Add(new Point(x, y));
+            ///Теперь рисуем взрыв
+            for (int i = 0; i < roundPoint.Count; i++)
+            {
+                Map_Cell callBoom = _map.Calls.FirstOrDefault(p => p.IndexLeft == roundPoint[i].X && p.IndexTop == roundPoint[i].Y);
+                if (callBoom != null && !callBoom.Block)
                 {
-                    Map_Cell callBoom = _map.Calls.FirstOrDefault(p => p.IndexLeft == roundPoint[i].X && p.IndexTop == roundPoint[i].Y);
-                    if (callBoom != null && !callBoom.Block)
+                    UC_Jinx_Zap_Roket arrow = new UC_Jinx_Zap_Roket();
+                    arrow.LoadStyle(ExplosionStyle);
+
+                    if (i == 0)
+                        arrow.ChengAngel(EAngel.Left);
+                    else if (i == 1)
+                        arrow.ChengAngel(EAngel.Right);
+                    else if (i == 2)
+                        arrow.ChengAngel(EAngel.Top);
+                    else if (i == 3)
+                        arrow.ChengAngel(EAngel.Bottom);
+                    else if (i == 4)
+                        ///Центральная ячейка
+                        arrow.ChengAngelCenter();
+
+                    Bullet bullArrow = new Bullet();
+                    bullArrow.GameObject = new Game_Object_In_Call()
                     {
-                        UC_Jinx_Zap_Roket arrow = new UC_Jinx_Zap_Roket();
-                        if (i == 0)
-                            arrow.ChengAngel(EAngel.Left);
-                        else if (i == 1)
-                            arrow.ChengAngel(EAngel.Right);
-                        else if (i == 2)
-                            arrow.ChengAngel(EAngel.Top);
-                        else if (i == 3)
-                            arrow.ChengAngel(EAngel.Bottom);
-                        else if (i == 4)
-                            ///Центральная ячейка
-                            arrow.ChengAngelCenter();
+                        EnumCallType = EnumCallType.Bullet,
+                        View = arrow
+                    };
+                    bullArrow.UnitUsed = _bullet.UnitUsed;
+                    bullArrow.PositionX = (int)roundPoint[i].X;
+                    bullArrow.PositionY = (int)roundPoint[i].Y;
+                    bullArrow.Speed = 0;
 
-                        Bullet bullArrow = new Bullet();
-                        bullArrow.GameObject = new Game_Object_In_Call()
-                        {
-                            EnumCallType = EnumCallType.Bullet,
-                            View = arrow
-                        };
-                        bullArrow.UnitUsed = _bullet.UnitUsed;
-                        bullArrow.PositionX = (int)roundPoint[i].X;
-                        bullArrow.PositionY = (int)roundPoint[i].Y;
-                        bullArrow.Speed = 0;
-                        
-                        if (i != 4)
-                            bullArrow.DemageMagic = (int)(_bullet.DemageMagic * _bullet.Splash);
-                        else
-                            bullArrow.DemageMagic = _bullet.DemageMagic;
-
-                        bullArrow.CurrentMap = _map;
-                        bullArrow.Angel = _bullet.UnitUsed.Angel;
-                        bullArrow.Range = 0;
-
-                        ///И его же добавим в масив всех объектов
-                        _map.GameObjectInCall.Add(bullArrow.GameObject);
-                        Canvas.SetLeft(bullArrow.GameObject.View, bullArrow.PositionX * 50);
-                        Canvas.SetTop(bullArrow.GameObject.View, bullArrow.PositionY * 50);
-                        ///Отображение
-                        _map.MapCanvas.Children.Add(bullArrow.GameObject.View);
-
-                        UnitGenerator.AddDamage(callBoom, bullArrow);
-                        UnitGenerator.AddStune(callBoom, bullArrow,_bullet.StunDuration);
-
-                        _boom.Add(bullArrow);
+                    if (i != 4)
+                    {
+                        bullArrow.DemageMagic = (int)(_bullet.DemageMagic * _bullet.Splash);
+                        bullArrow.DemagePhys = (int)(_bullet.DemagePhys * _bullet.Splash);
                     }
-                }
+                    else
+                    {
+                        bullArrow.DemageMagic = _bullet.DemageMagic;
+                        bullArrow.DemagePhys = _bullet.DemagePhys;
+                    }
 
-                _secondTimer = new Storyboard() { Duration = TimeSpan.FromSeconds(0.35) };
-                _secondTimer.Completed += _secondTimer_Completed;
-                _secondTimer.Begin();
+                    bullArrow.CurrentMap = _map;
+                    bullArrow.Angel = _bullet.UnitUsed.Angel;
+                    bullArrow.Range = 0;
+
+                    ///И его же добавим в масив всех объектов
+                    _map.GameObjectInCall.Add(bullArrow.GameObject);
+                    Canvas.SetLeft(bullArrow.GameObject.View, bullArrow.PositionX * 50);
+                    Canvas.SetTop(bullArrow.GameObject.View, bullArrow.PositionY * 50);
+                    ///Отображение
+                    _map.MapCanvas.Children.Add(bullArrow.GameObject.View);
+
+                    UnitGenerator.AddDamage(callBoom, bullArrow);
+                    UnitGenerator.AddStune(callBoom, bullArrow, _bullet.StunDuration);
+
+                    _boom.Add(bullArrow);
+                }
+            }
+
+            _secondTimer = new Storyboard() { Duration = TimeSpan.FromSeconds(0.35) };
+            _secondTimer.Completed += _secondTimer_Completed;
+            _secondTimer.Begin();
         }
         /// <summary>
         /// Таймер исчезновения взрыва
@@ -315,7 +325,7 @@ namespace Voins.Spell
                 _boom.Clear();
             }
         }
-       
+
 
         /// <summary>
         /// Анимация перемещения закончена
@@ -346,7 +356,7 @@ namespace Voins.Spell
                 }
 
                 if (!_boomTrue)///Если взрыва еще не было
-                BoomMethod(_bullet.PositionX, _bullet.PositionY);
+                    BoomMethod(_bullet.PositionX, _bullet.PositionY);
             }
             else
             {

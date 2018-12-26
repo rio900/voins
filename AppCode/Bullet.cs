@@ -222,5 +222,9 @@ namespace Voins.AppCode
 
         public int SproutHealth { get; set; }
         public int GrassDamage { get; internal set; }
+        public IUnit RemoveUnit { get; internal set; }
+        public int TrentDamage { get; internal set; }
+        public int TrentArmor { get; internal set; }
+        public int LifeTime { get; internal set; }
     }
 }

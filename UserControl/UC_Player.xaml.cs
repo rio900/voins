@@ -90,6 +90,8 @@ namespace Voins
                 C_Model_H_Mirana.ChengAngel(angel);
             else if (PlayerNumber == 6)
                 C_Model_H_Jinx.ChengAngel(angel);
+            else if (PlayerNumber == 7)
+                C_Model_H_Nature.ChengAngel(angel);
             else
                 C_Model_Player1.ChengAngel(angel);
 
@@ -110,6 +112,8 @@ namespace Voins
                 C_Model_H_Mirana.StartMuveAnimation(duration);
             else if (PlayerNumber == 6)
                 C_Model_H_Jinx.StartMuveAnimation(duration);
+            else if (PlayerNumber == 7)
+                C_Model_H_Nature.StartMuveAnimation(duration);
             else
                 C_Model_Player1.StartMuveAnimation(duration);
         }

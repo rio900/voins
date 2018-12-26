@@ -352,8 +352,11 @@ namespace Voins.AppCode
 
             CreateBlock();
             MapGenerator.CreateMobsCoopEasyMob(this, 8, EMobType.Ball);
-            //MapGenerator.CreateMobsCoopEasyMob(this, 1, EMobType.RedBall);
             CreateDroppedItems();
+
+            // Mob test mode
+            // MapGenerator.CreateMobsCoopEasyMob(this, 1, EMobType.BlackHunterBoss);
+
             _farmGameDispatcherTimer = new DispatcherTimer() { Interval = TimeSpan.FromSeconds(1) };
             _farmGameDispatcherTimer.Tick += farmGameDispatcherTimer_Tick;
             _farmGameDispatcherTimer.Start();
@@ -527,6 +530,7 @@ namespace Voins.AppCode
                     CreateBlock();
 
                     CoopTimer+=1;
+
                     if (CoopTimer == 2)
                     {
                         MapGenerator.CreateMobsCoopEasyMob(this, 5, EMobType.RangeBall);
@@ -542,24 +546,36 @@ namespace Voins.AppCode
                     }
                     else if (CoopTimer == 4)
                     {
-                        MapGenerator.CreateMobsCoopEasyMob(this, 3, EMobType.RangeBall);
-                        MapGenerator.CreateMobsCoopEasyMob(this, 3, EMobType.Ball);
-                        MapGenerator.CreateMobsCoopEasyMob(this, 2, EMobType.BlueBall);
-                        MapGenerator.CreateMobsCoopEasyMob(this, 2, EMobType.RedBall);
+                        MapGenerator.CreateMobsCoopEasyMob(this, 1, EMobType.RangeBall);
+                        MapGenerator.CreateMobsCoopEasyMob(this, 3, EMobType.BlackHunter);
+                        MapGenerator.CreateMobsCoopEasyMob(this, 3, EMobType.BlueBall);
+                        MapGenerator.CreateMobsCoopEasyMob(this, 1, EMobType.RedBall);
+
                     }
                     else if (CoopTimer == 5)
                     {
-                        MapGenerator.CreateMobsCoopEasyMob(this, 3, EMobType.RangeBall);
-                        MapGenerator.CreateMobsCoopEasyMob(this, 1, EMobType.Ball);
-                        MapGenerator.CreateMobsCoopEasyMob(this, 4, EMobType.BlueBall);
-                        MapGenerator.CreateMobsCoopEasyMob(this, 3, EMobType.RedBall);
+                        MapGenerator.CreateMobsCoopEasyMob(this, 3, EMobType.BlackHunter);
+                        MapGenerator.CreateMobsCoopEasyMob(this, 3, EMobType.BlueBall);
+                        MapGenerator.CreateMobsCoopEasyMob(this, 1, EMobType.RedBall);
+                    }
+                    else if (CoopTimer == 6)
+                    {
+                        MapGenerator.CreateMobsCoopEasyMob(this, 5, EMobType.BlackHunter);
+                        MapGenerator.CreateMobsCoopEasyMob(this, 2, EMobType.BlueBall);
+                        MapGenerator.CreateMobsCoopEasyMob(this, 2, EMobType.RedBall);
+                    }
+                    else if (CoopTimer == 7)
+                    {
+                        MapGenerator.CreateMobsCoopEasyMob(this, 2, EMobType.BlueBall);
+                        MapGenerator.CreateMobsCoopEasyMob(this, 5, EMobType.BlackHunter);
+                        MapGenerator.CreateMobsCoopEasyMob(this, 1, EMobType.BlackHunterBoss);
                     }
                     else
                     {
-                        MapGenerator.CreateMobsCoopEasyMob(this, 7, EMobType.RangeBall);
-                        MapGenerator.CreateMobsCoopEasyMob(this, 1, EMobType.Ball);
+                        MapGenerator.CreateMobsCoopEasyMob(this, 3, EMobType.RangeBall);
+                        MapGenerator.CreateMobsCoopEasyMob(this, 3, EMobType.BlackHunter);
                         MapGenerator.CreateMobsCoopEasyMob(this, 3, EMobType.BlueBall);
-                        MapGenerator.CreateMobsCoopEasyMob(this, 2, EMobType.RedBall);
+                        MapGenerator.CreateMobsCoopEasyMob(this, 1, EMobType.RedBall);
                     }
 
                     CreateCoopDroppedItems();

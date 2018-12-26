@@ -152,7 +152,7 @@ namespace Voins
                     case 3: retPlayer = UnitGenerator.Player_Jakiro("Jakiro", 4, null); break;
                     case 4: retPlayer = UnitGenerator.Player_Mirana("Mirana", 5, null); break;
                     case 5: retPlayer = UnitGenerator.Player_Jinx("Jinx", 6, null); break;
-                    case 6: retPlayer = UnitGenerator.Player_Nature("Nature", 0, null); break;
+                    case 6: retPlayer = UnitGenerator.Player_Nature("Nature", 7, null); break;
                 }
             }
 

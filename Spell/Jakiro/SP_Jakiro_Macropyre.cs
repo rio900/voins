@@ -16,10 +16,11 @@ namespace Voins.Spell
         public event EventHandler StartUseSpell;
         public event EventHandler CompletedUseSpell;
 
-        SpellDescriptionInfo _spellDescriptionInfo = new SpellDescriptionInfo() {
+        SpellDescriptionInfo _spellDescriptionInfo = new SpellDescriptionInfo()
+        {
             Description = "Alchemist Acid Spray, Culdaun 8 sec. Duration 6 sec., Demage type: physical",
-            LevelDescription = 
-            "Level1: Demage per second - 15, Mana cost - 15"+Environment.NewLine
+            LevelDescription =
+            "Level1: Demage per second - 15, Mana cost - 15" + Environment.NewLine
         };
         public SpellDescriptionInfo SpellDescriptionInfo { get { return _spellDescriptionInfo; } set { _spellDescriptionInfo = value; } }
 
@@ -37,7 +38,7 @@ namespace Voins.Spell
         /// Время действия способности
         /// </summary>
         public double AbilityAction { get { return _abilityAction; } set { _abilityAction = value; } }
-      
+
         public string Name { get; set; }
 
         int _manaCost = 50;
@@ -81,7 +82,7 @@ namespace Voins.Spell
             bool upSpell = UnitGenerator.UpPlayerSpell(unit, this);
             _unit = unit;
             if (unit.UnitFrozen == false &&
-                !_culdaunBool && LevelCast != 0 && !upSpell && 
+                !_culdaunBool && LevelCast != 0 && !upSpell &&
                 !unit.Silenced &&
                 !unit.Hexed &&
                 !Paused)
@@ -94,7 +95,7 @@ namespace Voins.Spell
 
                     ///Отнимаем нужное количество
                     unit.Mana -= ManaCost;
-                    
+
                     ///Тут кординаты ячеек в которых действует тучка
                     List<Point> callsPoint = new List<Point>();
                     ///Получаем ячейки которые находятся перед героем
@@ -163,13 +164,20 @@ namespace Voins.Spell
                             bullAcidSpray.PositionX = (int)item.X;
                             bullAcidSpray.PositionY = (int)item.Y;
                             bullAcidSpray.Speed = Speed;
-                          
-                            bullAcidSpray.DemageMagic = 25;
+
+                            bullAcidSpray.DemageMagic = 30;
+                            bullAcidSpray.Duration = Duration;
 
                             bullAcidSpray.CurrentMap = map;
                             bullAcidSpray.Angel = unit.Angel;
                             bullAcidSpray.Range = _unit.Range;
-                            bullAcidSpray.Duration = Duration;
+
+                            /// Если есть аганим
+                            if (UnitGenerator.HasAghanim(unit))
+                            {
+                                bullAcidSpray.DemageMagic += 20; // 50
+                                bullAcidSpray.Duration += 2;
+                            }
 
                             bullAcidSpray.Spells.Add(new SPB_Alchemist_AcidSpray() { Name = "AcidSpray" });
 
@@ -192,14 +200,14 @@ namespace Voins.Spell
 
                     ///Таймер кулдауна заклинания
                     _firstTimer = new Storyboard() { Duration = TimeSpan.FromSeconds(Culdaun) };
-                    _firstTimer.Completed += _firstTimer_Completed; 
+                    _firstTimer.Completed += _firstTimer_Completed;
                     _firstTimer.Begin();
-                  
+
 
                     if (Paused)
                         Pause();
 
-                 
+
 
                     UnitGenerator.UpdatePlayerView(unit);
                 }
@@ -233,7 +241,7 @@ namespace Voins.Spell
                         (unit.GameObject.View as IGameControl).ShowAttack(unit.Angel, unit.AttackSpeed);
 
                         _secondTimer = new Storyboard() { Duration = TimeSpan.FromSeconds(unit.AttackSpeed) };
-                        _secondTimer.Completed += _secondTimer_Completed; 
+                        _secondTimer.Completed += _secondTimer_Completed;
                         _secondTimer.Begin();
 
                         if (Paused)

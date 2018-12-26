@@ -66,7 +66,7 @@ namespace Voins.Spell
 
             if (unit.UnitFrozen == false &&
                 !_culdaunBool && LevelCast != 0 &&
-                !Paused)
+                !Paused && !_unit.Hexed)
             {
                 if (unit.Mana >= ManaCost)
                 ///Проверка есть ли мана на каст

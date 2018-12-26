@@ -35,7 +35,7 @@ namespace Voins.Spell
 
         public double Speed { get { return _speed; } set { _speed = value; } }
 
-        double _duration = 3;
+        double _duration = 4;
 
         public double Duration { get { return _duration; } set { _duration = value; } }
 
@@ -69,8 +69,11 @@ namespace Voins.Spell
 
         public void UseSpall(Map map, Game_Object_In_Call obj, IUnit unit, object property)
         {
+            _unit = unit;
+
             if (unit.UnitFrozen == false &&
-                !_culdaunBool && LevelCast != 0)
+                !_culdaunBool && LevelCast != 0 &&
+                !_unit.Hexed)
             {
                 if (unit.Mana >= ManaCost)
                 ///Проверка есть ли мана на каст

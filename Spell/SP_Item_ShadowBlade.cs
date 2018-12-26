@@ -61,9 +61,10 @@ namespace Voins.Spell
         public void UseSpall(Map map, Game_Object_In_Call obj, IUnit unit, object property)
         {
             bool upSpell = UnitGenerator.UpPlayerSpell(unit, this);
+            _unit = unit;
 
             if (unit.UnitFrozen == false &&
-                !_culdaunBool)
+                !_culdaunBool && !_unit.Hexed)
             {
                 if (unit.Mana >= ManaCost)
                 ///Проверка есть ли мана на каст
@@ -76,7 +77,6 @@ namespace Voins.Spell
 
                     ///Отнимаем нужное количество
                     unit.Mana -= ManaCost;
-                    _unit = unit;
 
                     ///Проверка не собъет ли какойто каст нам инвиз
                     foreach (var item in unit.Spells)

@@ -85,7 +85,8 @@ namespace Voins
              UnitGenerator.I35_Aghanims_Scepter(),
              UnitGenerator.I36_Desolator(),
              UnitGenerator.I38_AssaultCuirass(),
-             UnitGenerator.I42_Scythe_Of_Vyse()
+             UnitGenerator.I42_Scythe_Of_Vyse(),
+             UnitGenerator.I43_Skadi()
             };
 
             foreach (var item in _itemsEasy)
@@ -448,6 +449,7 @@ namespace Voins
                         case 7: itemBuing = UnitGenerator.I36_Desolator(); break;
                         case 8: itemBuing = UnitGenerator.I38_AssaultCuirass(); break;
                         case 9: itemBuing = UnitGenerator.I42_Scythe_Of_Vyse(); break;
+                        case 10: itemBuing = UnitGenerator.I43_Skadi(); break;
                     }
                 }
 

@@ -172,14 +172,14 @@ namespace Voins.AppCode
             set { _orijDemage = value; }
         }
 
-        private double _orijSpeed = 1.0;
+        private double _orijSpeed = StaticVaribl.StartSpeed;
         public double OrijSpeed
         {
             get { return _orijSpeed; }
             set
             {
-                    _orijSpeed = value;
-                    Speed = _orijSpeed;
+                _orijSpeed = value;
+                Speed = _orijSpeed;
             }
         }
         private int _arrmor = 0;
@@ -241,14 +241,15 @@ namespace Voins.AppCode
             set { _magicArrmor = value; }
         }
 
-        private double _speed = 1;
+        private double _speed = StaticVaribl.StartSpeed;
         /// <summary>
-        /// Множетель на одну секунду
-        /// стандартный 1
+        /// При изминении этого параметра также нужно менять 
+        /// и этот OrijSpeed
         /// </summary>
         public double Speed
         {
-            get {
+            get
+            {
                 if (_speed > StaticVaribl.SpeedMaximum)
                     return _speed;
                 else
@@ -308,10 +309,10 @@ namespace Voins.AppCode
             {
                 if (Range > 1)
                 {
-                    if (_attackSpeed > StaticVaribl.AttackSpeedMaximum)
+                    if (_attackSpeed > StaticVaribl.AttackSpeedRangeMaximum)
                         return _attackSpeed;
                     else
-                        return StaticVaribl.AttackSpeedMaximum;
+                        return StaticVaribl.AttackSpeedRangeMaximum;
                 }
                 else
                 {
@@ -545,8 +546,10 @@ namespace Voins.AppCode
         public int Gold
         {
             get { return _gold; }
-            set { _gold = value;
-        
+            set
+            {
+                _gold = value;
+
             }
         }
 
@@ -1021,22 +1024,28 @@ namespace Voins.AppCode
                 OrijAttackSpeed -= item.AttackSpeed;
 
                 DemageItem += item.Demage;
+
                 OrijHealth += item.HealthBonus;
                 MaxHealth += item.HealthBonus;
+                Health += item.HealthBonus;
+
                 OrijHealthRegeneration += item.HealthRegen;
 
                 OrijMana += item.ManaBonus;
                 MaxMana += item.ManaBonus;
                 OrijManaRegeneration += (int)item.ManaRegen;
+                Mana += item.ManaBonus;
 
+                if ((item.Boots && Items.Count(p => p.Boots) > 1) ||
 
-                if (item.Boots && Items.Count(p => p.Boots) > 1)
+                   (item.Name == "Sange And Yasha" && Items.Count(p => p.Name == "Sange And Yasha") > 1) ||
+                   (item.Name == "Yasha" && Items.Count(p => p.Name == "Yasha") > 1))
                 { }
                 else
                 {
-               
-                        OrijSpeed -= item.Speed;
-                 
+
+                    OrijSpeed -= item.Speed;
+
                 }
 
                 if (item.Buff != null)
@@ -1044,7 +1053,7 @@ namespace Voins.AppCode
 
                 IAura aura = item.AuraItem as IAura;
                 if (aura != null)
-                    aura.StartUseAura(CurrentMap,null,this,null);
+                    aura.StartUseAura(CurrentMap, null, this, null);
 
                 #endregion
                 item.ItemUsed = true;
@@ -1093,18 +1102,33 @@ namespace Voins.AppCode
                 DemageItem -= item.Demage;
                 OrijHealth -= item.HealthBonus;
                 MaxHealth -= item.HealthBonus;
+
+                int health = Health - item.HealthBonus;
+                if (health <= 0)
+                    health = 1;
+                Health = health;
+
                 OrijHealthRegeneration -= item.HealthRegen;
 
                 OrijMana -= item.ManaBonus;
                 MaxMana -= item.ManaBonus;
+
+                int mana = Mana - item.ManaBonus;
+                if (mana <= 0)
+                    mana = 1;
+                Mana = mana;
+
+
                 OrijManaRegeneration -= (int)item.ManaRegen;
 
-                if (item.Boots && Items.Count(p => p.Boots) > 1)
+                if ((item.Boots && Items.Count(p => p.Boots) > 1) ||
+                    (item.Name == "Sange And Yasha" && Items.Count(p => p.Name == "Sange And Yasha") > 1) ||
+                    (item.Name == "Yasha" && Items.Count(p => p.Name == "Yasha") > 1))
                 { }
                 else
                 {
-                 
-                        OrijSpeed += item.Speed;
+
+                    OrijSpeed += item.Speed;
                 }
 
 
@@ -1119,7 +1143,7 @@ namespace Voins.AppCode
                 if (aura != null)
                     aura.StopUseAura();
             }
-                #endregion
+            #endregion
             Items.Remove(item);
 
 
@@ -1182,7 +1206,7 @@ namespace Voins.AppCode
             }
         }
 
-        public bool PlayerInShopPoint() 
+        public bool PlayerInShopPoint()
         {
             if (PositionX == 0 && PositionY == 0)
                 return true;
@@ -1316,14 +1340,14 @@ namespace Voins.AppCode
                 ItemArrmor += curentBuff.MinusArmor;
                 ItemArrmor -= curentBuff.Armor;
 
-               
+
                 OrijSpeed -= curentBuff.SpeedSlow;
-                    //Speed -= Buffs[i].SpeedSlow;
-               
+                //Speed -= Buffs[i].SpeedSlow;
+
                 // if (OrijAttackSpeed == AttackSpeed - Buffs[i].AttackSpeedSlow)
                 ///Значит нет никаких воздействий на героя
-                OrijAttackSpeed -=  curentBuff.AttackSpeedSlow;
-                OrijAttackSpeed +=  curentBuff.AttackSpeed;
+                OrijAttackSpeed -= curentBuff.AttackSpeedSlow;
+                OrijAttackSpeed += curentBuff.AttackSpeed;
 
                 curentBuff.BuffUsed = false;
             }
@@ -1361,11 +1385,11 @@ namespace Voins.AppCode
         /// Удалить баф по имени
         /// </summary>
         /// <param name="buff">Название бафа</param>
-     public  void RemoveBuff(string buff)
+        public void RemoveBuff(string buff)
         {
             Buff buffRemov = Buffs.FirstOrDefault(p => p.Name == buff);
-            if (buffRemov!= null)
-            StopAndRemoveBuff(buffRemov);
+            if (buffRemov != null)
+                StopAndRemoveBuff(buffRemov);
         }
         public void SpellUpedEventCall()
         {

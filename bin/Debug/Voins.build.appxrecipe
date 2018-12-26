@@ -104,6 +104,9 @@
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\1_Silence.png">
       <PackagePath>Image\1_Silence.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\1_skadiArrow.png">
+      <PackagePath>Image\1_skadiArrow.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\1_skill.png">
       <PackagePath>Image\1_skill.png</PackagePath>
     </AppxPackagedFile>
@@ -260,6 +263,9 @@
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\46_skythe_of_vyse.png">
       <PackagePath>Image\46_skythe_of_vyse.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\47_skadi.png">
+      <PackagePath>Image\47_skadi.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\4_oStuff.png">
       <PackagePath>Image\4_oStuff.png</PackagePath>
     </AppxPackagedFile>
@@ -307,6 +313,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Bonik.png">
       <PackagePath>Image\Bonik.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\BoomBlackCenter.png">
+      <PackagePath>Image\BoomBlackCenter.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\BoomBlackLeft.png">
+      <PackagePath>Image\BoomBlackLeft.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\BoomRoketCenter.png">
       <PackagePath>Image\BoomRoketCenter.png</PackagePath>
@@ -566,11 +578,23 @@
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mirana_bot.png">
       <PackagePath>Image\Mirana_bot.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\1_hunter.png">
+      <PackagePath>Image\Mobs\1_hunter.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\1_hunter_boss.png">
+      <PackagePath>Image\Mobs\1_hunter_boss.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\1_test3_blue.png">
       <PackagePath>Image\Mobs\1_test3_blue.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\1_test3_fire.png">
       <PackagePath>Image\Mobs\1_test3_fire.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\2_hunter.png">
+      <PackagePath>Image\Mobs\2_hunter.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\2_hunter_boss.png">
+      <PackagePath>Image\Mobs\2_hunter_boss.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\2_test3_blue.png">
       <PackagePath>Image\Mobs\2_test3_blue.png</PackagePath>
@@ -578,11 +602,23 @@
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\2_test3_fire.png">
       <PackagePath>Image\Mobs\2_test3_fire.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\3_hunter.png">
+      <PackagePath>Image\Mobs\3_hunter.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\3_hunter_boss.png">
+      <PackagePath>Image\Mobs\3_hunter_boss.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\3_test3_blue.png">
       <PackagePath>Image\Mobs\3_test3_blue.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\3_test3_fire.png">
       <PackagePath>Image\Mobs\3_test3_fire.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\4_hunter.png">
+      <PackagePath>Image\Mobs\4_hunter.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\4_hunter_boss.png">
+      <PackagePath>Image\Mobs\4_hunter_boss.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Mobs\4_test3_blue.png">
       <PackagePath>Image\Mobs\4_test3_blue.png</PackagePath>
@@ -592,6 +628,42 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Img_Nature_Sprout.png">
       <PackagePath>Image\Nature\Img_Nature_Sprout.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust13.PNG">
+      <PackagePath>Image\Nature\Kust13.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust14.PNG">
+      <PackagePath>Image\Nature\Kust14.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust15.PNG">
+      <PackagePath>Image\Nature\Kust15.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust16.PNG">
+      <PackagePath>Image\Nature\Kust16.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust17.PNG">
+      <PackagePath>Image\Nature\Kust17.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust18.PNG">
+      <PackagePath>Image\Nature\Kust18.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust_0_11.PNG">
+      <PackagePath>Image\Nature\Kust_0_11.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust_0_12.PNG">
+      <PackagePath>Image\Nature\Kust_0_12.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust_0_2.PNG">
+      <PackagePath>Image\Nature\Kust_0_2.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust_31.PNG">
+      <PackagePath>Image\Nature\Kust_31.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust_32.PNG">
+      <PackagePath>Image\Nature\Kust_32.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust_33.PNG">
+      <PackagePath>Image\Nature\Kust_33.PNG</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sk.png">
       <PackagePath>Image\Sk.png</PackagePath>
@@ -745,6 +817,18 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControlEditor\UC_Editor.xbf">
       <PackagePath>UserControlEditor\UC_Editor.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\Nature\UC_Model_H_Nature.xbf">
+      <PackagePath>UserControl\Nature\UC_Model_H_Nature.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\Items\UC_Skadi.xbf">
+      <PackagePath>UserControl\Items\UC_Skadi.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\UC_Mob_BlackHunterBoss.xbf">
+      <PackagePath>UserControl\UC_Mob_BlackHunterBoss.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\UC_Mob_BlackHunter.xbf">
+      <PackagePath>UserControl\UC_Mob_BlackHunter.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\UC_Nature_Wrath.xbf">
       <PackagePath>UserControl\UC_Nature_Wrath.xbf</PackagePath>

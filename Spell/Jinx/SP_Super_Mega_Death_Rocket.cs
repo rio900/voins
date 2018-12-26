@@ -74,7 +74,7 @@ namespace Voins.Spell
             bool upSpell = UnitGenerator.UpPlayerSpell(unit, this);
 
             if (unit.UnitFrozen == false &&
-                !_culdaunBool && LevelCast != 0 && 
+                !_culdaunBool && LevelCast != 0 &&
                 !upSpell &&
                 !unit.Hexed &&
                 !Paused)
@@ -84,16 +84,19 @@ namespace Voins.Spell
                 {
                     ///Флаг кулдауна
                     _culdaunBool = true;
-                   
+
                     ///Отнимаем нужное количество
                     unit.Mana -= ManaCost;
-                    
+
                     ///Создаем визуальный объект стрела
                     UC_Super_Mega_Death_Rocket arrow = new UC_Super_Mega_Death_Rocket();
                     arrow.ChengAngelArrow(_unit.Angel);
 
+
+
                     Bullet bullArrow = new Bullet();
-                    bullArrow.GameObject = new Game_Object_In_Call() {  
+                    bullArrow.GameObject = new Game_Object_In_Call()
+                    {
                         EnumCallType = EnumCallType.Bullet,
                         View = arrow
                     };
@@ -102,13 +105,17 @@ namespace Voins.Spell
                     bullArrow.PositionY = unit.PositionY;
                     bullArrow.Speed = Speed;
 
-                    bullArrow.DemageMagic = 30;
+                    bullArrow.DemageMagic = 20;
                     ///Магический урон зависит от прокача стрел
                     //bullArrow.DemageMagic = 5 * (int)property;
 
-                    if (LevelCast == 1)
+                    bullArrow.BonusDemage = 30;
+
+                    /// Если есть аганим
+                    if (UnitGenerator.HasAghanim(unit))
                     {
-                        bullArrow.BonusDemage = 20;
+                        bullArrow.BonusDemage += 10;
+                        arrow.Opacity = 0.5;
                     }
 
                     bullArrow.CurrentMap = map;
@@ -126,9 +133,9 @@ namespace Voins.Spell
                     Canvas.SetTop(bullArrow.GameObject.View, bullArrow.PositionY * 50);
                     ///Отображение
                     map.MapCanvas.Children.Add(bullArrow.GameObject.View);
-                    
+
                     bullArrow.UseSpall("Fly");
-                   
+
                     ///Таймер кулдауна заклинания
                     _secondTimer = new Storyboard() { Duration = TimeSpan.FromSeconds(Culdaun) };
                     _secondTimer.Completed += _secondTimer_Completed;
@@ -146,13 +153,13 @@ namespace Voins.Spell
                 }
                 else
                 ///Маны нету
-                { 
-                
+                {
+
                 }
             }
         }
 
-      
+
 
         void _secondTimer_Completed(object sender, object e)
         {

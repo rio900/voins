@@ -267,6 +267,7 @@ namespace Voins.Spell
                                 attackCallCall.IUnits[i].GroupType != bullet.UnitUsed.GroupType)
                             {
                                 UnitGenerator.Desolator(_unit, attackCallCall.IUnits[i]);
+                                UnitGenerator.Skadi(_unit, attackCallCall.IUnits[i]);
                             }
                         }
                         #endregion

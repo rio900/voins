@@ -93,7 +93,7 @@ namespace Voins.Spell
         {
             _bullet = property as Bullet;
             _map = map;
-            _unit = unit;
+            _unit = _bullet.UnitUsed;
 
             Map_Cell oldCall = map.Calls.Single(p => p.IndexLeft == _bullet.PositionX &&
                 p.IndexTop == _bullet.PositionY);
@@ -217,12 +217,19 @@ namespace Voins.Spell
             _bullet.PositionY = _yNew;
             Exept();
 
+
+
             ///Проверяем или молния попала
             if (_bullet.Exept == true)
                 _hitCount--;
 
             Map_Cell newCall = _map.Calls.FirstOrDefault(p => p.IndexLeft == _bullet.PositionX &&
              p.IndexTop == _bullet.PositionY);
+
+            /// Если есть аганим
+            if (Name == "SP_Nature_Wrath" && UnitGenerator.HasAghanim(_unit)
+                && _bullet.RemoveUnit != null)
+                CreateTrent(newCall, _bullet.RemoveUnit);
 
             if (_hitCount == 0 || newCall == null ||
                 ///Или новая ячейка блок
@@ -243,6 +250,27 @@ namespace Voins.Spell
                 newCall.Bullet.Add(_bullet);
             }
 
+        }
+
+        private void CreateTrent(Map_Cell newCall, IUnit target)
+        {
+            if (newCall == null)
+                return;
+
+            Unit trent = UnitGenerator.M_Trent(_bullet.PositionX, _bullet.PositionY, _map, _unit as Player);
+            _map.CreateObjectUnitInCall(newCall, trent);
+
+            trent.Health += target.MaxHealth / 3;
+            trent.Demage += _bullet.TrentDamage;
+            trent.Arrmor += _bullet.TrentArmor;
+
+            trent.AI.Farm = true;
+            trent.AI.Hunt = true;
+            trent.LifeTime(_bullet.LifeTime);
+
+            trent.AI.StartAI();
+
+            _bullet.RemoveUnit = null;
         }
 
         private void Exept()

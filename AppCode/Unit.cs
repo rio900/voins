@@ -505,7 +505,7 @@ namespace Voins.AppCode
             Dead = true;
             IsUnitStun = false;
 
-            IUnit returnUnit = null;
+            IUnit returnUnit = this;
 
             Player player = demagedUnit as Player;
 

@@ -24,7 +24,7 @@ namespace Voins.Spell
         };
         public SpellDescriptionInfo SpellDescriptionInfo { get { return _spellDescriptionInfo; } set { _spellDescriptionInfo = value; } }
 
-        int _size = 3;
+        int _size = 5;
         double _oldCuldaun;
         IUnit _unit;
         bool _culdaunBool;

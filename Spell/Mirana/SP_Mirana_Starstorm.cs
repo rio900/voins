@@ -70,6 +70,7 @@ namespace Voins.Spell
 
         public Storyboard _firstTimer;
         public Storyboard _secondTimer;
+        public Storyboard _therdTimer;
         IAnimationControl _animationControl;
         List<Point> _callsPointl;
         List<UC_Mirana_Starstorm> _attackView;
@@ -86,6 +87,15 @@ namespace Voins.Spell
         {
             bool upSpell = UnitGenerator.UpPlayerSpell(unit, this);
             _unit = unit;
+            _map = map;
+
+            if (LevelCast == 1)
+                ManaCost = 10;
+            else if (LevelCast == 2)
+                ManaCost = 13;
+            else if (LevelCast == 3)
+                ManaCost = 15;
+
             if (unit.UnitFrozen == false &&
                 !_culdaunBool && LevelCast != 0 && !upSpell && !unit.Silenced &&
                 !unit.Hexed &&
@@ -97,7 +107,7 @@ namespace Voins.Spell
                     if (!_unit.Buffs.Any(p => p.Name == "SP_Mirana_MoonlightShadow"))
                         Culdaun = 5;
                     else
-                        Culdaun = 3;
+                        Culdaun = 4;
 
                     ///Флаг кулдауна
                     _culdaunBool = true;
@@ -106,68 +116,9 @@ namespace Voins.Spell
                     unit.Mana -= ManaCost;
                     _map = map;
 
-                    ///Тут кординаты ячеек в которых действует тучка
+                    ///Тут кординаты ячеек в которые упадут звездочки
                     _callsPointl = new List<Point>();
-                    ///Получаем ячейки которые находятся перед героем
-                    ///использывавшим тучку
-                    ///Сначала добавляем ячеку с героем
-                    int xNew = unit.PositionX;
-                    int yNew = unit.PositionY;
-
-                    for (int i = 0; i <= _size; i++)
-                    {
-                        xNew = xNew - 1;
-                        if (!_unit.Buffs.Any(p => p.Name == "SP_Mirana_MoonlightShadow"))
-                        {
-                            Map_Cell call = map.Calls.FirstOrDefault(p => p.IndexLeft == xNew && p.IndexTop == yNew);
-                            if (call == null || call != null && call.Block)
-                                break;
-                        }
-                        _callsPointl.Add(new Point(xNew, yNew));
-                    }
-                    xNew = unit.PositionX;
-                    yNew = unit.PositionY;
-
-                    for (int i = 0; i <= _size; i++)
-                    {
-                        xNew = xNew + 1;
-                        if (!_unit.Buffs.Any(p => p.Name == "SP_Mirana_MoonlightShadow"))
-                        {
-                            Map_Cell call = map.Calls.FirstOrDefault(p => p.IndexLeft == xNew && p.IndexTop == yNew);
-                            if (call == null || call != null && call.Block)
-                                break;
-                        }
-                        _callsPointl.Add(new Point(xNew, yNew));
-                    }
-                    xNew = unit.PositionX;
-                    yNew = unit.PositionY;
-                    for (int i = 0; i <= _size; i++)
-                    {
-                        yNew = yNew - 1;
-                        if (!_unit.Buffs.Any(p => p.Name == "SP_Mirana_MoonlightShadow"))
-                        {
-                            Map_Cell call = map.Calls.FirstOrDefault(p => p.IndexLeft == xNew && p.IndexTop == yNew);
-                            if (call == null || call != null && call.Block)
-                                break;
-                        }
-                        _callsPointl.Add(new Point(xNew, yNew));
-                    }
-                    xNew = unit.PositionX;
-                    yNew = unit.PositionY;
-                    for (int i = 0; i <= _size; i++)
-                    {
-                        yNew = yNew + 1;
-                        if (!_unit.Buffs.Any(p => p.Name == "SP_Mirana_MoonlightShadow"))
-                        {
-                            Map_Cell call = map.Calls.FirstOrDefault(p => p.IndexLeft == xNew && p.IndexTop == yNew);
-                            if (call == null || call != null && call.Block)
-                                break;
-                        }
-                        _callsPointl.Add(new Point(xNew, yNew));
-                    }
-
-
-
+                    Starfall(map, unit);
 
                     _attackView = new List<UC_Mirana_Starstorm>();
                     _removeFire = false;
@@ -178,6 +129,14 @@ namespace Voins.Spell
                     _secondTimer.Completed += _secondTimer_Completed;
                     _secondTimer.Begin();
 
+                    /// Если есть аганим
+                    if (UnitGenerator.HasAghanim(unit))
+                    {
+                        ///Таймер второго дыхания, замедляющего
+                        _therdTimer = new Storyboard() { Duration = TimeSpan.FromSeconds(1.25) };
+                        _therdTimer.Completed += _therdTimer_Completed; ;
+                        _therdTimer.Begin();
+                    }
 
                     if (StartUseSpell != null)
                         StartUseSpell(this, null);
@@ -193,6 +152,79 @@ namespace Voins.Spell
 
                     UnitGenerator.UpdatePlayerView(unit);
                 }
+            }
+        }
+
+        private void _therdTimer_Completed(object sender, object e)
+        {
+            if (!_unit.Dead)
+            {
+                _callsPointl = new List<Point>();
+                Starfall(_map, _unit);
+
+                _attackView = new List<UC_Mirana_Starstorm>();
+                AttackUnits(_map, _unit, true);
+            }
+        }
+
+        private void Starfall(Map map, IUnit unit)
+        {
+            ///Получаем ячейки которые находятся перед героем
+            ///использывавшим тучку
+            ///Сначала добавляем ячеку с героем
+            int xNew = unit.PositionX;
+            int yNew = unit.PositionY;
+
+            for (int i = 0; i <= _size; i++)
+            {
+                xNew = xNew - 1;
+                if (!_unit.Buffs.Any(p => p.Name == "SP_Mirana_MoonlightShadow"))
+                {
+                    Map_Cell call = map.Calls.FirstOrDefault(p => p.IndexLeft == xNew && p.IndexTop == yNew);
+                    if (call == null || call != null && call.Block)
+                        break;
+                }
+                _callsPointl.Add(new Point(xNew, yNew));
+            }
+            xNew = unit.PositionX;
+            yNew = unit.PositionY;
+
+            for (int i = 0; i <= _size; i++)
+            {
+                xNew = xNew + 1;
+                if (!_unit.Buffs.Any(p => p.Name == "SP_Mirana_MoonlightShadow"))
+                {
+                    Map_Cell call = map.Calls.FirstOrDefault(p => p.IndexLeft == xNew && p.IndexTop == yNew);
+                    if (call == null || call != null && call.Block)
+                        break;
+                }
+                _callsPointl.Add(new Point(xNew, yNew));
+            }
+            xNew = unit.PositionX;
+            yNew = unit.PositionY;
+            for (int i = 0; i <= _size; i++)
+            {
+                yNew = yNew - 1;
+                if (!_unit.Buffs.Any(p => p.Name == "SP_Mirana_MoonlightShadow"))
+                {
+                    Map_Cell call = map.Calls.FirstOrDefault(p => p.IndexLeft == xNew && p.IndexTop == yNew);
+                    if (call == null || call != null && call.Block)
+                        break;
+                }
+                _callsPointl.Add(new Point(xNew, yNew));
+            }
+            xNew = unit.PositionX;
+            yNew = unit.PositionY;
+            for (int i = 0; i <= _size; i++)
+            {
+                yNew = yNew + 1;
+                if (!_unit.Buffs.Any(p => p.Name == "SP_Mirana_MoonlightShadow"))
+                {
+                    Map_Cell call = map.Calls.FirstOrDefault(p => p.IndexLeft == xNew && p.IndexTop == yNew);
+                    if (call == null || call != null && call.Block)
+                        break;
+                }
+                _callsPointl.Add(new Point(xNew, yNew));
             }
         }
 
@@ -226,14 +258,17 @@ namespace Voins.Spell
                     if (LevelCast == 1)
                     {
                         _bullDualBreath.DemageMagic = 16;
+               
                     }
                     else if (LevelCast == 2)
                     {
                         _bullDualBreath.DemageMagic = 26;
+                     
                     }
                     else if (LevelCast == 3)
                     {
                         _bullDualBreath.DemageMagic = 36;
+                     
                     }
 
                     if (!attackCount)
@@ -372,6 +407,8 @@ namespace Voins.Spell
                 _firstTimer.Pause();
             if (_secondTimer != null)
                 _secondTimer.Pause();
+            if (_therdTimer != null)
+                _therdTimer.Pause();
 
             if (PausedEvent != null)
                 PausedEvent(this, null);
@@ -386,6 +423,8 @@ namespace Voins.Spell
                 _firstTimer.Resume();
             if (_secondTimer != null)
                 _secondTimer.Resume();
+            if (_therdTimer != null)
+                _therdTimer.Resume();
 
             if (PausedEvent != null)
                 PausedEvent(this, null);

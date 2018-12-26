@@ -15,6 +15,7 @@ namespace Voins.AI
     public class AI_CoopAiRange : IAI
     {
         public bool Farm { get; set; }
+        public bool Hunt { get; set; }
 
         public AI_CoopAiRange()
         {
@@ -83,8 +84,8 @@ namespace Voins.AI
                 {
                     if (!Rotation)
                         ///Выбираем рандомный угол, проверяем или он пустой и перемещпемся туда
-                        _call = UnitGenerator.RandonCell((int)DateTime.Now.Ticks,
-                            CurrentUnit.PositionX, CurrentUnit.PositionY, CurrentMap, CurrentUnit.GroupType, CurrentUnit.Way,false);
+                        _call = UnitGenerator.RandonCell(CurrentUnit,
+                                                         CurrentMap, false, false, Hunt);
                     else
                         Rotation = false;
 
@@ -115,9 +116,12 @@ namespace Voins.AI
 
                                 if (arrow == null)
                                     arrow = CurrentUnit.Spells.FirstOrDefault(p => p.GetType() == typeof(SP_EasyMobArrowFifeBall)) as SP_EasyMobArrowFifeBall;
-
+                                
                                 if (arrow == null)
                                     arrow = CurrentUnit.Spells.FirstOrDefault(p => p.GetType() == typeof(SP_EasyMobArrowStun)) as SP_EasyMobArrowStun;
+
+                                if (arrow == null)
+                                    arrow = CurrentUnit.Spells.FirstOrDefault(p => p.GetType() == typeof(SP_HunterBoss)) as SP_HunterBoss;
 
                                 arrow.UseSpall(CurrentMap, null, CurrentUnit, CurrentUnit.Angel);
 

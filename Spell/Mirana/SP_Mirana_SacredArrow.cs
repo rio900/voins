@@ -25,14 +25,14 @@ namespace Voins.Spell
             Description = "",
             LevelDescription =
             "" + Environment.NewLine
-           
+
         };
         public SpellDescriptionInfo SpellDescriptionInfo { get { return _spellDescriptionInfo; } set { _spellDescriptionInfo = value; } }
 
-        int _manaCost = 3;
+        int _manaCost = 5;
         public int ManaCost { get { return _manaCost; } set { _manaCost = value; } }
 
-        double _culdaun = 2;
+        double _culdaun = 1;
         public double Culdaun { get { return _culdaun; } set { _culdaun = value; } }
 
         public int HelthCost { get; set; }
@@ -81,49 +81,51 @@ namespace Voins.Spell
                 if (unit.Mana >= ManaCost)
                 ///Проверка есть ли мана на каст
                 {
+                    Speed = unit.AttackSpeed;
+
                     ///Флаг кулдауна
                     _culdaunBool = true;
-                    
-                    Culdaun = unit.AttackSpeed * 2;
-                    if (Culdaun < 0.4)
-                        Culdaun = 0.4;
-                        
+
+                    //Culdaun = unit.AttackSpeed * 2;
+                    //if (Culdaun < StaticVaribl.AttackSpeedRangeMaximum)
+                    //    Culdaun = StaticVaribl.AttackSpeedRangeMaximum;
+
                     ///Отнимаем нужное количество
                     unit.Mana -= ManaCost;
-
-                    ///Создаем визуальный объект стрела
-                    UC_Mirana_SacredArrow arrow = new UC_Mirana_SacredArrow();
-                    arrow.ChengAngel(unit.Angel);
 
                     Bullet bullArrow = new Bullet();
                     bullArrow.Name = "Mirana SacredArrow";
                     bullArrow.GameObject = new Game_Object_In_Call()
                     {
                         EnumCallType = EnumCallType.Bullet,
-                        View = arrow
                     };
+
+                    ///Создаем визуальный объект стрела
+                    UC_Mirana_SacredArrow arrow = new UC_Mirana_SacredArrow();
+                    arrow.ChengAngel(unit.Angel);
+                    bullArrow.GameObject.View = arrow;
+
                     bullArrow.UnitUsed = unit;
+                    bullArrow.Speed = Speed / 2;
                     bullArrow.PositionX = unit.PositionX;
                     bullArrow.PositionY = unit.PositionY;
-                   
-                    bullArrow.Speed = Speed;
+
                     bullArrow.DemagePhys = unit.Demage;
-                    //0.3
 
                     if (LevelCast == 1)
                     {
-                        bullArrow.Speed = 0.35;
-                        bullArrow.BonusDemage = 1;
+                        bullArrow.DemagePhys += 4;
+                        bullArrow.BonusDemage = 5;
                     }
                     else if (LevelCast == 2)
                     {
-                        bullArrow.Speed = 0.30;
-                        bullArrow.BonusDemage = 2;
+                        bullArrow.DemagePhys += 8;
+                        bullArrow.BonusDemage = 10;
                     }
                     else if (LevelCast == 3)
                     {
-                        bullArrow.Speed = 0.25;
-                        bullArrow.BonusDemage = 3;
+                        bullArrow.DemagePhys += 12;
+                        bullArrow.BonusDemage = 15;
                     }
 
                     bullArrow.CurrentMap = map;

@@ -157,7 +157,7 @@ namespace Voins.AppCode
 
             SP_Jakiro_Liquid_Fire liquidFire = new SP_Jakiro_Liquid_Fire() { Name = "LiquidFire" };
             jakiro.Spells.Add(liquidFire);
-            //    liquidFire.UpSpell(jakiro);
+//               liquidFire.UpSpell(jakiro);
 
             SP_Jakiro_Macropyre macropyre = new SP_Jakiro_Macropyre() { Name = "Macropyre" };
             jakiro.Spells.Add(macropyre);
@@ -216,18 +216,6 @@ namespace Voins.AppCode
             SP_Nature_Wrath natureWrath = new SP_Nature_Wrath() { Name = "NatureWrath" };
             nature.Spells.Add(natureWrath);
             // natureWrath.UpSpell(nature);
-
-            //SP_Jakiro_Ice_Path icePath = new SP_Jakiro_Ice_Path() { Name = "IcePath" };
-            //nature.Spells.Add(icePath);
-            //  icePath.UpSpell(nature);
-
-            //SP_Jakiro_Liquid_Fire liquidFire = new SP_Jakiro_Liquid_Fire() { Name = "LiquidFire" };
-            //nature.Spells.Add(liquidFire);
-            //    liquidFire.UpSpell(nature);
-
-            //SP_Jakiro_Macropyre macropyre = new SP_Jakiro_Macropyre() { Name = "Macropyre" };
-            //nature.Spells.Add(macropyre);
-            // macropyre.UpSpell(nature);
 
             UC_Player ucPlayer = new UC_Player();
             ucPlayer.PlayerNumber = number;
@@ -514,6 +502,90 @@ namespace Voins.AppCode
             return unit;
         }
 
+        public static Unit M1_BlackHunter(int x, int y, Map map)
+        {
+            Random rand = new Random(x + y);
+            Unit unit = new Unit()
+            {
+                UnitType = EUnitType.Enemy,
+                PositionX = x,
+                PositionY = y,
+                MaxHealth = 170,
+                Health = 170,
+                NExp = 70,
+                NGold = rand.Next(150, 250),
+                Angel = EAngel.Bottom,
+                CurrentMap = map,
+                GroupType = 100,
+                Demage = 30,
+                Speed = 0.6
+            };
+
+            SP_Move move = new SP_Move() { Name = "Move" };
+            unit.Spells.Add(move);
+            SP_AttackEasyMob attackEasyMob = new SP_AttackEasyMob() { Name = "Attack Easy Mob" };
+            unit.Spells.Add(attackEasyMob);
+
+            AI_EasyAi ai = new AI_EasyAi() { CurrentMap = map, CurrentUnit = unit };
+            unit.AI = ai;
+
+            UC_Mob_BlackHunter view = new UC_Mob_BlackHunter();
+            Canvas.SetLeft(view, x * 50);
+            Canvas.SetTop(view, y * 50);
+            view.ChengAngel(EAngel.Bottom);
+
+            unit.GameObject = new Game_Object_In_Call()
+            {
+                EnumCallType = EnumCallType.Unit,
+                View = view
+            };
+            return unit;
+        }
+
+        public static Unit M1_BlackHunterBoss(int x, int y, Map map)
+        {
+            Random rand = new Random(x + y);
+            Unit unit = new Unit()
+            {
+                UnitType = EUnitType.Boss,
+                PositionX = x,
+                PositionY = y,
+                MaxHealth = 400,
+                Health = 400,
+                NExp = 100,
+                NGold = rand.Next(500, 700),
+                Angel = EAngel.Bottom,
+                CurrentMap = map,
+                GroupType = 100,
+                Arrmor = 10,
+                Demage = 50,
+                Speed = 0.6,
+                Range = 5
+            };
+
+            SP_Move move = new SP_Move() { Name = "Move" };
+            unit.Spells.Add(move);
+            SP_AttackEasyMob attackEasyMob = new SP_AttackEasyMob() { Name = "Attack Easy Mob" };
+            unit.Spells.Add(attackEasyMob);
+            SP_HunterBoss attackEasyMobRange = new SP_HunterBoss() { Name = " Hunter Boss" };
+            unit.Spells.Add(attackEasyMobRange);
+
+            AI_EasyAi ai = new AI_EasyAi() { CurrentMap = map, CurrentUnit = unit };
+            unit.AI = ai;
+
+            UC_Mob_BlackHunterBoss view = new UC_Mob_BlackHunterBoss();
+            Canvas.SetLeft(view, x * 50);
+            Canvas.SetTop(view, y * 50);
+            view.ChengAngel(EAngel.Bottom);
+
+            unit.GameObject = new Game_Object_In_Call()
+            {
+                EnumCallType = EnumCallType.Unit,
+                View = view
+            };
+            return unit;
+        }
+
         public static Unit M1_BallRange(int x, int y, Map map)
         {
             Random rand = new Random(x + y);
@@ -522,8 +594,8 @@ namespace Voins.AppCode
                 UnitType = EUnitType.Enemy,
                 PositionX = x,
                 PositionY = y,
-                MaxHealth = 120,
-                Health = 120,
+                MaxHealth = 200,
+                Health = 200,
                 NExp = 40,
                 NGold = rand.Next(50, 80),
                 Angel = EAngel.Bottom,
@@ -601,8 +673,8 @@ namespace Voins.AppCode
                 UnitType = EUnitType.Boss,
                 PositionX = x,
                 PositionY = y,
-                MaxHealth = 200,
-                Health = 200,
+                MaxHealth = 250,
+                Health = 250,
                 Arrmor = 10,
                 NExp = 100,
                 NGold = rand.Next(300, 400),
@@ -749,7 +821,7 @@ namespace Voins.AppCode
             ItemClass item = new ItemClass()
             {
                 Name = "Boots Of Speed",
-                Speed = 0.35,
+                Speed = 0.25, //0.35
                 Boots = true,
                 Price = 75
             };
@@ -793,7 +865,7 @@ namespace Voins.AppCode
             {
                 Name = "Power Treads",
                 Strength = 5,
-                Speed = 0.40,
+                Speed = 0.30,
                 AttackSpeed = 0.15,
                 Boots = true,
                 Price = 225
@@ -1071,7 +1143,7 @@ namespace Voins.AppCode
                 Name = "Phase Boots",
                 Demage = 8,
                 Boots = true,
-                Speed = 0.40,
+                Speed = 0.30,
                 Price = 195
             };
             item.Info.ShortDescription = "Phase Boots Description";
@@ -1286,13 +1358,13 @@ namespace Voins.AppCode
             ItemClass item = new ItemClass()
             {
                 Name = "Point Booster",
-                BonusMagicDemage = 0.15,
-                HealthBonus = 25,
-                ManaBonus = 20,
-                Price = 200
+                // BonusMagicDemage = 0.15,
+                HealthBonus = 18,
+                ManaBonus = 18,
+                Price = 120
             };
             item.Info.ShortDescription = "Point Booster Description";
-            item.Info.BuffDescription = "Magick attack +15%";
+            item.Info.BuffDescription = "";
             item.View = new UC_View_ItemImage(34);
             return item;
         }
@@ -1316,16 +1388,27 @@ namespace Voins.AppCode
             ItemClass item = new ItemClass()
             {
                 Name = "Aghanims Scepter",
-                BonusMagicDemage = 0.30,
-                HealthBonus = 25,
+                // BonusMagicDemage = 0.30,
+                HealthBonus = 18,
                 Intelligence = 6,
                 Strength = 6,
                 Agility = 6,
-                ManaBonus = 20,
-                Price = 500
+                ManaBonus = 18,
+                Price = 420
             };
             item.Info.ShortDescription = "Aghanims Scepter Description";
-            item.Info.BuffDescription = "Magick attack +30%";
+            item.Info.BuffDescription = "Update hero skills.";
+
+            SP_Aghanim aghanim = new SP_Aghanim() { Name = "Aghanim" };
+            item.SpellItem = aghanim;
+
+            // Alchemist
+            // Jakiro
+            // Jinx
+            // Mirana
+            // Nature
+            // Bonik
+            // Sniper
 
             item.Parts = new List<ItemClass>() {
             I33_Point_Booster(),
@@ -1523,6 +1606,45 @@ namespace Voins.AppCode
 
             item.View = new UC_View_ItemImage(46);
             item.View.UsingItem(item.SpellItem);
+            return item;
+        }
+
+        public static ItemClass I43_Skadi()
+        {
+            ItemClass item = new ItemClass()
+            {
+                Name = "Skadi",
+                Intelligence = 15,
+                Strength = 15,
+                Agility = 15,
+                ManaBonus = 25,
+                HealthBonus = 20,
+                Price = 540
+            };
+
+            item.Info.ShortDescription = "Skadi Description";
+
+            item.Info.BuffDescription = "Speed/Attack slow: 0.2";
+
+            Buff skadiBuff = new Buff()
+            {
+                Passive = true,
+                SpeedSlow = 0.2,
+                AttackSpeedSlow = 0.2,
+                Duration = 3,
+                Name = "SkadiSelf"
+            };
+
+            ///Баф замедления
+            item.Buff = skadiBuff;
+
+            item.Parts = new List<ItemClass>() {
+            I40_Ultimate_Orb(),
+            I40_Ultimate_Orb(),
+            I33_Point_Booster()
+            };
+
+            item.View = new UC_View_ItemImage(47);
             return item;
         }
 
@@ -1789,6 +1911,18 @@ namespace Voins.AppCode
                 retItem = I42_Scythe_Of_Vyse();
             }
 
+            ///I43_Skadi
+            if (player.Items.Count(p => p.Name == "Ultimate Orb") > 1 &&
+                player.Items.Any(p => p.Name == "Point Booster")
+               )
+            {
+                player.RemoveItem(player.Items.First(p => p.Name == "Ultimate Orb"), true);
+                player.RemoveItem(player.Items.First(p => p.Name == "Ultimate Orb"), true);
+                player.RemoveItem(player.Items.First(p => p.Name == "Point Booster"), true);
+
+                retItem = I43_Skadi();
+            }
+
             ///Если новы предмет сложен не был, то удаляем предмет добавленный в инвинтарь
             if (retItem == null)
                 player.Items.Remove(itemNew);
@@ -1966,17 +2100,18 @@ namespace Voins.AppCode
         /// Если там пусто или есть игрок оставим ее
         /// </summary>
         /// <returns></returns>
-        public static Map_Cell RandonCell(int random, int xOld, int yOld, Map map,
-            int groupType, List<Map_Cell> lastCall, bool playerAttacker, bool farm = false)
+        /// CurrentUnit.PositionX, CurrentUnit.PositionY, CurrentMap, CurrentUnit.GroupType, CurrentUnit.Way, true
+        public static Map_Cell RandonCell(IUnit unit, Map map,
+                                          bool playerAttacker, bool farm, bool hunt)
         {
             ///Ячейки куда можно походить
             List<Map_Cell> allowCall = new List<Map_Cell>();
 
             List<Point> points = new List<Point>(){
-            new Point(xOld-1,yOld),
-            new Point(xOld+1,yOld),
-            new Point(xOld,yOld-1),
-            new Point(xOld,yOld+1)
+            new Point(unit.PositionX-1,unit.PositionY),
+            new Point(unit.PositionX+1,unit.PositionY),
+            new Point(unit.PositionX,unit.PositionY-1),
+            new Point(unit.PositionX,unit.PositionY+1)
             };
 
 
@@ -1989,19 +2124,19 @@ namespace Voins.AppCode
                     call != null &&
                     ///Если в ячейке нету блоков
                     !call.IUnits.Any(p => p.GameObject.EnumCallType == EnumCallType.Block ||
-                    p.GroupType == groupType)
+                    p.GroupType == unit.GroupType)
                     ||
                     !farm &&
                     call != null &&
-                    ///Если в ячейке нету блоков
+                    /// Тут еще проверка кустов
                     !call.IUnits.Any(p => p.GameObject.EnumCallType == EnumCallType.UnitBlock ||
                     p.GameObject.EnumCallType == EnumCallType.Block ||
-                    p.GroupType == groupType)
+                    p.GroupType == unit.GroupType)
                     ||   ///Если есть блоки на которые залез юнит(инвизер)
                     call != null &&
                     call.IUnits.Any(p => p.GameObject.EnumCallType == EnumCallType.UnitBlock) &&
                     call.IUnits.Any(p => p.GameObject.EnumCallType == EnumCallType.Player &&
-                    p.GroupType != groupType)
+                    p.GroupType != unit.GroupType)
                     )
                 {
                     ///Под каким углом должен быть повернуть юнит чтобы переместится сюда
@@ -2012,17 +2147,105 @@ namespace Voins.AppCode
                 }
             }
 
+
+            /// Проверим есть ли на горизонте игрок, чтобы на него охотится
+            if (hunt)
+            {
+                #region Find enemyes
+                ///Поиск цели
+
+                int xNew = unit.PositionX;
+                int yNew = unit.PositionY;
+
+                if (allowCall.Any(p => p.Angel == EAngel.Left))
+                {
+                    for (int i = 0; i <= map.Width / 50; i++)
+                    {
+                        xNew = xNew - 1;
+                        Map_Cell call = map.Calls.FirstOrDefault(p => p.IndexLeft == xNew && p.IndexTop == yNew);
+                        if (call != null && !call.Block)
+                        {
+                            if (call.IUnits.Any(p => p.GameObject.EnumCallType == EnumCallType.Player && p.GroupType != unit.GroupType))
+                            {
+                                return allowCall.FirstOrDefault(p => p.Angel == EAngel.Left);
+                                //break;
+                            }
+                        }
+                    }
+                }
+
+                if (allowCall.Any(p => p.Angel == EAngel.Right))
+                {
+                    xNew = unit.PositionX;
+                    yNew = unit.PositionY;
+                    for (int i = 0; i <= map.Width / 50; i++)
+                    {
+                        xNew = xNew + 1;
+                        Map_Cell call = map.Calls.FirstOrDefault(p => p.IndexLeft == xNew && p.IndexTop == yNew);
+                        if (call != null && !call.Block)
+                        {
+                            if (call.IUnits.Any(p => p.GameObject.EnumCallType == EnumCallType.Player && p.GroupType != unit.GroupType))
+                            {
+                                return allowCall.FirstOrDefault(p => p.Angel == EAngel.Right);
+                                // break;
+                            }
+                        }
+                    }
+                }
+                if (allowCall.Any(p => p.Angel == EAngel.Top))
+                {
+                    xNew = unit.PositionX;
+                    yNew = unit.PositionY;
+                    for (int i = 0; i <= map.Height / 50; i++)
+                    {
+                        yNew = yNew - 1;
+                        Map_Cell call = map.Calls.FirstOrDefault(p => p.IndexLeft == xNew && p.IndexTop == yNew);
+                        if (call != null && !call.Block)
+                        {
+                            if (call.IUnits.Any(p => p.GameObject.EnumCallType == EnumCallType.Player && p.GroupType != unit.GroupType))
+                            {
+                                return allowCall.FirstOrDefault(p => p.Angel == EAngel.Top);
+                                // break;
+                            }
+                        }
+                    }
+                }
+
+                if (allowCall.Any(p => p.Angel == EAngel.Bottom))
+                {
+                    xNew = unit.PositionX;
+                    yNew = unit.PositionY;
+                    for (int i = 0; i <= map.Height / 50; i++)
+                    {
+                        yNew = yNew + 1;
+                        Map_Cell call = map.Calls.FirstOrDefault(p => p.IndexLeft == xNew && p.IndexTop == yNew);
+                        if (call != null && !call.Block)
+                        {
+                            if (call.IUnits.Any(p => p.GameObject.EnumCallType == EnumCallType.Player && p.GroupType != unit.GroupType))
+                            {
+                                return allowCall.FirstOrDefault(p => p.Angel == EAngel.Bottom);
+                                // break;
+                            }
+                        }
+                    }
+                }
+
+                #endregion
+
+
+
+            }
+
+
             if (allowCall.Count != 0)
             {
-                if (lastCall != null && lastCall.Count > 0 && allowCall.Count > 1)
-                    allowCall.Remove(lastCall.Last());
-
-              
+                if (unit.Way != null && unit.Way.Count > 0 && allowCall.Count > 1)
+                    allowCall.Remove(unit.Way.Last());
 
                 if (playerAttacker)
                 {
                     Map_Cell withPlayer = allowCall.FirstOrDefault(p =>
-                            p.IUnits.Any(k => k.GroupType != groupType));
+                            p.IUnits.Any(k => k.GroupType != unit.GroupType));
 
                     if (withPlayer != null)
                     {
@@ -2030,8 +2253,9 @@ namespace Voins.AppCode
                     }
                 }
 
-                Random randomOb = new Random(random);
-                return allowCall[randomOb.Next(0, allowCall.Count - 1)];
+                Random randomOb = new Random();
+                int randomNumber = randomOb.Next(0, allowCall.Count);
+                return allowCall[randomNumber];
             }
             else
                 return null;
@@ -2069,7 +2293,7 @@ namespace Voins.AppCode
                     ///Объект был унечтожен
                     IUnit unitRmoved = call.IUnits[i].GatDamage(bullet.DemagePhys, bullet.DemageMagic, bullet.DemagePure, bullet.UnitUsed);
 
-
+                    bullet.RemoveUnit = unitRmoved;
                 }
             }
             return exept;
@@ -2316,6 +2540,36 @@ namespace Voins.AppCode
         }
 
         /// <summary>
+        /// Скади
+        /// </summary>
+        public static void Skadi(IUnit unit, IUnit goal)
+        {
+            Buff buff = unit.Buffs.FirstOrDefault(p => p.Name == "SkadiSelf");
+            if (buff != null)
+            {
+                Buff buffGoal = goal.Buffs.FirstOrDefault(p => p.Name == "Skadi");
+                if (buffGoal != null)
+                {
+                    buffGoal.Duration = buff.Duration;
+                }
+                else
+                {
+                    Buff alchBuff = new Buff()
+                    {
+                        Duration = buff.Duration,
+                        AttackSpeedSlow = buff.AttackSpeedSlow,
+                        SpeedSlow = buff.SpeedSlow,
+                        Name = "Skadi"
+                    };
+                    // goal.Buffs.Add(alchBuff);
+                    goal.UseBuff(alchBuff);
+                }
+            }
+        }
+
+
+
+        /// <summary>
         /// Добавить баф c использованием
         /// </summary>
         public static void AddEasyBuff(IUnit unit, Buff buff)
@@ -2440,6 +2694,35 @@ namespace Voins.AppCode
             return false;
         }
 
+        /// <summary>
+        /// Проверка на наличие аганима
+        /// </summary>
+        /// <param name="unit">У кого проверяем</param>
+        /// <returns>Есть/Нет</returns>
+        public static bool HasAghanim(IUnit unit)
+        {
+            Player player = unit as Player;
+            if (player != null)
+            {
+                foreach (var item in player.Items)
+                    if (item.Name == "Aghanims Scepter")
+                        return true;
+            }
 
+            return false;
+        }
+
+        public static bool HasSkadi(IUnit unit)
+        {
+            Player player = unit as Player;
+            if (player != null)
+            {
+                foreach (var item in player.Items)
+                    if (item.Name == "Skadi")
+                        return true;
+            }
+
+            return false;
+        }
     }
 }

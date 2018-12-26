@@ -20,6 +20,8 @@ namespace Voins
 {
     public sealed partial class UC_Jinx_Zap_Roket : UserControl, IGameControl
     {
+        public int ExplosionStyle { get; set; }
+
         Canvas _rootCanvas;
         public Canvas RootCanvas
         {
@@ -54,7 +56,31 @@ namespace Voins
         public void ChengAngel(EAngel angel)
         {
             Angel = angel;
-            FrameworkElement[] all = { C_Left ,
+
+            if (ExplosionStyle == 1)
+            {
+
+                FrameworkElement[] all = { C_Left1 ,
+                                           C_Right1,
+                                           C_Top1,
+                                           C_Bottom1
+                };
+                foreach (var item in all)
+                    item.Visibility = Visibility.Collapsed;
+
+                if (angel == EAngel.Top)
+                    C_Top1.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                else if (angel == EAngel.Left)
+                    C_Left1.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                else if (angel == EAngel.Right)
+                    C_Right1.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                else if (angel == EAngel.Bottom)
+                    C_Bottom1.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            }
+            else
+            {
+
+                FrameworkElement[] all = { C_Left ,
                                      C_Right,
                                      C_Top,
                                      C_Bottom,
@@ -62,22 +88,38 @@ namespace Voins
                                      C_RoketLeft,
                                      C_RoketRight,
                                      C_RoketTop};
-            foreach (var item in all)
-            item.Visibility = Visibility.Collapsed;
+                foreach (var item in all)
+                    item.Visibility = Visibility.Collapsed;
 
-            if (angel == EAngel.Top)
-                C_Top.Visibility = Windows.UI.Xaml.Visibility.Visible;
-            else if (angel == EAngel.Left)
-                C_Left.Visibility = Windows.UI.Xaml.Visibility.Visible;
-            else if (angel == EAngel.Right)
-                C_Right.Visibility = Windows.UI.Xaml.Visibility.Visible;
-            else if (angel == EAngel.Bottom)
-                C_Bottom.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                if (angel == EAngel.Top)
+                    C_Top.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                else if (angel == EAngel.Left)
+                    C_Left.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                else if (angel == EAngel.Right)
+                    C_Right.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                else if (angel == EAngel.Bottom)
+                    C_Bottom.Visibility = Windows.UI.Xaml.Visibility.Visible;
+
+            }
         }
 
         public void ChengAngelCenter()
         {
-            FrameworkElement[] all = { C_Left ,
+            if (ExplosionStyle == 1)
+            {
+                FrameworkElement[] all = { C_Left1 ,
+                                           C_Right1,
+                                           C_Top1,
+                                           C_Bottom1
+                };
+                foreach (var item in all)
+                    item.Visibility = Visibility.Collapsed;
+
+                C_Center1.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            }
+            else
+            {
+                FrameworkElement[] all = { C_Left ,
                                        C_Right,
                                        C_Top,
                                        C_Bottom,
@@ -86,10 +128,11 @@ namespace Voins
                                        C_RoketRight,
                                        C_RoketTop};
 
-            foreach (var item in all)
-                item.Visibility = Visibility.Collapsed;
+                foreach (var item in all)
+                    item.Visibility = Visibility.Collapsed;
 
-            C_Center.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                C_Center.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            }
         }
 
         public void ChengAngelArrow(EAngel angel)
@@ -138,5 +181,20 @@ namespace Voins
             RootCanvas.Children.Remove(this);
         }
 
+        internal void LoadStyle(int explosionStyle)
+        {
+            ExplosionStyle = explosionStyle;
+            if (explosionStyle == 1)
+            {
+                C_Jinx.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                C_Black.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            }
+            else
+            {
+                C_Jinx.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                C_Black.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            }
+
+        }
     }
 }

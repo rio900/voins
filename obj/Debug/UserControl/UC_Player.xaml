@@ -75,6 +75,7 @@
         <local:UC_Model_H_Jinx x:Name="C_Model_H_Jinx" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
         <local:UC_Model_H_Jakiro x:Name="C_Model_H_Jakiro" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <local:UC_Model_H_Nature x:Name="C_Model_H_Nature" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <StackPanel HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="50" Orientation="Horizontal" Margin="0,-16,0,0">
             <Ellipse x:Name="C_Stun" Width="16" Visibility="Collapsed">
                 <Ellipse.Fill>

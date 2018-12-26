@@ -8,9 +8,11 @@ namespace Voins.AppCode
 {
    public enum EMobType
     {
-        Ball,
+       Ball,
        RangeBall,
        BlueBall,
-       RedBall
+       RedBall,
+       BlackHunter,
+       BlackHunterBoss
     }
 }

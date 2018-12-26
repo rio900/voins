@@ -198,6 +198,8 @@ namespace Voins.Spell
                             call.IUnits[i].GroupType != _bullet.UnitUsed.GroupType)
                         {
                             UnitGenerator.Desolator(_bullet.UnitUsed, call.IUnits[i]);
+                            UnitGenerator.Skadi(_bullet.UnitUsed, call.IUnits[i]);
+
                         }
                     }
                     #endregion
@@ -235,6 +237,7 @@ namespace Voins.Spell
                             }
 
                             UnitGenerator.Desolator(_bullet.UnitUsed, item);
+                            UnitGenerator.Skadi(_bullet.UnitUsed, item);
                         }
                     }
                 }

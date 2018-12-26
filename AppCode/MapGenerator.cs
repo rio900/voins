@@ -66,7 +66,9 @@ namespace Voins.AppCode
 
                         unit.MaxHealth = unit.MaxHealth * map.CoopTimer;
                         unit.Health = unit.Health * map.CoopTimer;
-                        unit.Demage = unit.Demage * map.CoopTimer / 2;
+
+                        if (map.CoopTimer != 1)
+                            unit.Demage = unit.Demage * map.CoopTimer / 2;
 
                         ///И его же добавим в масив всех объектов
                         map.GameObjectInCall.Add(unit.GameObject);
@@ -121,16 +123,33 @@ namespace Voins.AppCode
                     unit = UnitGenerator.M1_Ball_FireRange(call[rand].IndexLeft, call[rand].IndexTop, map);
                     unit.AI = new AI_CoopAiRange() { CurrentMap = map, CurrentUnit = unit };
                 }
+                else if (mobType == EMobType.BlackHunter)
+                {
+                    unit = UnitGenerator.M1_BlackHunter(call[rand].IndexLeft, call[rand].IndexTop, map);
+                    unit.AI = new AI_CoopAi() { CurrentMap = map, CurrentUnit = unit, Hunt = true };
+                }
+                else if (mobType == EMobType.BlackHunterBoss)
+                {
+                    unit = UnitGenerator.M1_BlackHunterBoss(call[rand].IndexLeft, call[rand].IndexTop, map);
+                    unit.AI = new AI_CoopAiRange() { CurrentMap = map, CurrentUnit = unit, Hunt = true };
+                }
                 else
                 {
                     unit = UnitGenerator.M1_Ball(call[rand].IndexLeft, call[rand].IndexTop, map);
                     unit.AI = new AI_CoopAi() { CurrentMap = map, CurrentUnit = unit };
                 }
 
-                unit.MaxHealth = unit.MaxHealth * map.CoopTimer;
-                unit.Health = unit.Health * map.CoopTimer;
-                unit.Demage = unit.Demage * map.CoopTimer / 2;
-                unit.NGold = unit.NGold;
+                if (map.CoopTimer != 1)
+                {
+                    unit.MaxHealth = unit.MaxHealth + unit.MaxHealth * (map.CoopTimer / 2);
+                    unit.Health = unit.Health + unit.Health * (map.CoopTimer / 2);
+                    unit.Demage = unit.Demage * map.CoopTimer / 2;
+
+                    double playerCount = map.Players.Count;
+                    double gold = unit.NGold * (playerCount / 2);
+
+                    unit.NGold = (int)gold;
+                }
 
                 ///И его же добавим в масив всех объектов
                 map.GameObjectInCall.Add(unit.GameObject);
@@ -237,7 +256,7 @@ namespace Voins.AppCode
                     map.CreateObjectUnitInCall(map.Calls[item], mob1);
                 }
             }
-            else if (mapNumber == 3) 
+            else if (mapNumber == 3)
             {
                 unitIndex1 = new List<int>() { 2, 6, 10, 19, 27, 28, 29, 32, 35, 36, 37, 41, 45, 49, 54, 58, 62, 67, 71, 75, 80, 84, 88, 93, 95, 97, 99, 101, 104, 105, 106, 109, 111, 114, 115, 116, 119, 121, 123, 125, 127, 132, 136, 140, 145, 149, 153, 158, 162, 166, 171, 175, 179, 183, 184, 185, 188, 191, 192, 193, 201, 210, 214, 218 };
                 unitIndex3 = new List<int>() { 31, 33, 83, 85, 135, 137, 187, 189 };
@@ -259,7 +278,7 @@ namespace Voins.AppCode
             else if (mapNumber == 4)
             {
                 unitIndex1 = new List<int>() { 6, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 53, 55, 56, 57, 58, 59, 60, 61, 63, 79, 81, 83, 84, 85, 87, 89, 104, 105, 107, 109, 111, 113, 115, 116, 131, 133, 135, 136, 137, 139, 141, 157, 159, 160, 161, 162, 163, 165, 167, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 214 };
-                unitIndex3 = new List<int>() { 54, 62,  108, 112, 158, 166 };
+                unitIndex3 = new List<int>() { 54, 62, 108, 112, 158, 166 };
                 List<int> unitIndex2 = new List<int>() { 110 };
                 CreateBlock(map, mod, unitIndex1);
                 foreach (var item in unitIndex2)
@@ -289,7 +308,7 @@ namespace Voins.AppCode
                     map.CreateObjectUnitInCall(map.Calls[item], mob1);
                 }
             }
-           
+
             CreateMobs(map, mod, unitIndex3);
             //for (int i = 0; i < mopCount; i++)
             //{
@@ -365,15 +384,15 @@ namespace Voins.AppCode
             }
             else if (mapNumber == 2)
             {
-           
+
             }
             else if (mapNumber == 3)
             {
-             
+
             }
             else if (mapNumber == 4)
             {
-             
+
             }
 
             CreateMobs(map, mod, unitIndex3);

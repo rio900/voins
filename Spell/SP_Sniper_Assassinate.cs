@@ -27,10 +27,10 @@ namespace Voins.Spell
 
         public string Name { get; set; }
 
-        int _manaCost = 20;
+        int _manaCost = 30;
         public int ManaCost { get { return _manaCost; } set { _manaCost = value; } }
 
-        double _culdaun = 5;
+        double _culdaun = 10;
         public double Culdaun { get { return _culdaun; } set { _culdaun = value; } }
 
         public int HelthCost { get; set; }
@@ -70,6 +70,15 @@ namespace Voins.Spell
         {
             _unit = unit;
             bool upSpell = UnitGenerator.UpPlayerSpell(unit, this);
+
+
+            /// Если есть аганим
+            if (UnitGenerator.HasAghanim(unit))
+            {
+                /// То ульт у снайпера быстрее востанавливается
+                _culdaun = _culdaun / 2;
+            }
+
 
             if (unit.UnitFrozen == false &&
                 !_culdaunBool && LevelCast != 0 &&

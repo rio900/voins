@@ -25,7 +25,7 @@ namespace Voins.Spell
         int _manaCost = 40;
         public int ManaCost { get { return _manaCost; } set { _manaCost = value; } }
 
-        double _culdaun = 10;
+        double _culdaun = 20;
         public double Culdaun { get { return _culdaun; } set { _culdaun = value; } }
 
         public int HelthCost { get; set; }
@@ -102,13 +102,17 @@ namespace Voins.Spell
                     bullArrow.CurrentMap = map;
                     bullArrow.Angel = unit.Angel;
 
-                    SPB_Item_Maelstrom male = new SPB_Item_Maelstrom(1) { Name = "Fly" };
+                    SPB_Item_Maelstrom male = new SPB_Item_Maelstrom(1) { Name = "SP_Nature_Wrath" };
                     bullArrow.Spells.Add(male);
+
+                    bullArrow.TrentDamage = 10;
+                    bullArrow.TrentArmor = 2;
+                    bullArrow.LifeTime = 15;
 
                     bullArrow.Range = map.Width * 2;
                     male.HitCount = 10;
-                    male.Multiply = 15;
-                    bullArrow.DemageMagic = 40;
+                    male.Multiply = 30;
+                    bullArrow.DemageMagic = 30;
 
                     ///И его же добавим в масив всех объектов
                     map.GameObjectInCall.Add(bullArrow.GameObject);
@@ -118,7 +122,7 @@ namespace Voins.Spell
                     ///Отображение
                     map.MapCanvas.Children.Add(bullArrow.GameObject.View);
 
-                    bullArrow.UseSpall("Fly");
+                    bullArrow.UseSpall("SP_Nature_Wrath");
 
                     ///Таймер кулдауна заклинания
                     _secondTimer = new Storyboard() { Duration = TimeSpan.FromSeconds(Culdaun) };

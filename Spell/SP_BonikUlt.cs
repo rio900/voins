@@ -60,7 +60,7 @@ namespace Voins.Spell
 
         public SP_BonikUlt()
         {
-            _imageTile = new UC_View_ImageTileControl("SP_BonikUlt",this);
+            _imageTile = new UC_View_ImageTileControl("SP_BonikUlt", this);
         }
 
         /// <summary>
@@ -73,9 +73,16 @@ namespace Voins.Spell
         {
             bool upSpell = UnitGenerator.UpPlayerSpell(unit, this);
 
+            /// Если есть аганим
+            if (UnitGenerator.HasAghanim(unit))
+            {
+                /// То ульт у боника работает столько же сколько и кулдаун спела
+                _culdaun = _duration;
+            }
+
             if (unit.UnitFrozen == false &&
-                !_culdaunBool && LevelCast != 0 && !upSpell && !unit.Silenced &&
-                !unit.Hexed)
+            !_culdaunBool && LevelCast != 0 && !upSpell && !unit.Silenced &&
+            !unit.Hexed)
             {
                 if (unit.Mana >= ManaCost)
                 ///Проверка есть ли мана на каст
@@ -88,7 +95,7 @@ namespace Voins.Spell
                         var call = map.Calls.Single(p => p.IndexLeft == newPos.X && p.IndexTop == newPos.Y);
                         ///Теперь проверим содержит ли колонка юнит который можно съесть
                         if (call.IUnits.Any(p => p.GameObject.EnumCallType == EnumCallType.UnitBlock ||
-                            p.GameObject.EnumCallType == EnumCallType.Unit))
+                            p.GameObject.EnumCallType == EnumCallType.Unit && p.UnitType != EUnitType.Boss))
                         {
                             ///Флаг кулдауна
                             _culdaunBool = true;
@@ -102,7 +109,7 @@ namespace Voins.Spell
                             p.GameObject.EnumCallType == EnumCallType.Unit);
                             ///Юнит который подвергся спелу унечтожен
                             unitCrush.RemoveUnit(unit);
-                          
+
                             double[] prop = new double[] { 1, 0.3 };
 
                             _oldMaxHelth = unit.OrijHealth;

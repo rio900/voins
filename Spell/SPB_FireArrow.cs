@@ -205,9 +205,11 @@ namespace Voins.Spell
             Map_Cell sproutCall = _map.Calls.FirstOrDefault(p => p.IndexLeft == posX &&
                  p.IndexTop == posY);
 
-            if (sproutCall != null)
+            if (sproutCall != null && sproutCall.IUnits.Count <= 1)
             {
                 Unit unit = UnitGenerator.GrassBlock(posX, posY);
+                unit.NGold = 0;
+
                 _map.CreateObjectUnitInCall(sproutCall, unit);
             }
         }
@@ -227,6 +229,7 @@ namespace Voins.Spell
                         call.IUnits[i].GroupType != _bullet.UnitUsed.GroupType)
                     {
                         UnitGenerator.Desolator(_bullet.UnitUsed, call.IUnits[i]);
+                        UnitGenerator.Skadi(_bullet.UnitUsed, call.IUnits[i]);
                     }
                 }
                 #endregion

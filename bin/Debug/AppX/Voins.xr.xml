@@ -161,10 +161,10 @@
       <RootProperty Name="Stretch" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Visibility" />
+      <RootProperty Name="Opacity" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="RenderTransform" />
       <RootProperty Name="UseLayoutRounding" />
-      <RootProperty Name="Opacity" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Windows.UI.Xaml.Controls.ToolTip">
@@ -323,10 +323,10 @@
       <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Visibility" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="RenderTransform" />
       <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootProperty Name="HorizontalAlignment" />
@@ -466,6 +466,11 @@
       <RootProperty Name="ItemContainerStyle" />
       <RootProperty Name="Foreground" />
     </RootType>
+    <RootType FullName="Voins.UC_Model_H_Nature">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Voins.UC_Skadi" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimationUsingKeyFrames">
       <RootProperty Name="KeyFrames" />
     </RootType>
@@ -474,10 +479,6 @@
       <RootProperty Name="Value" />
       <RootProperty Name="EasingFunction" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.ExponentialEase">
-      <RootProperty Name="EasingMode" />
-    </RootType>
-    <RootType FullName="Voins.UC_Nature_Wrath" />
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
@@ -487,6 +488,12 @@
       <RootProperty Name="Opacity" />
       <RootProperty Name="Foreground" />
     </RootType>
+    <RootType FullName="Voins.UC_Mob_BlackHunterBoss" />
+    <RootType FullName="Voins.UC_Mob_BlackHunter" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ExponentialEase">
+      <RootProperty Name="EasingMode" />
+    </RootType>
+    <RootType FullName="Voins.UC_Nature_Wrath" />
     <RootType FullName="Voins.UC_Mob_1_Trent" />
     <RootType FullName="Voins.UC_Mob_1_Fire" />
     <RootType FullName="Voins.UC_Mob_1_Ball_Blue" />

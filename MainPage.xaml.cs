@@ -90,7 +90,7 @@ namespace Voins
         {
             C_GameOver.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             C_OnePlayerGrid.Visibility = Windows.UI.Xaml.Visibility.Visible;
-       
+
         }
 
         void C_Menu_PlayeVsPlayerStart(object sender, EventArgs e)
@@ -261,6 +261,8 @@ namespace Voins
 
         public void Start2PlayrGame(object sender, RoutedEventArgs e)
         {
+            int playerCount = 3;
+
             ResetInput();
             C_Backgroung.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             C_TwoPlayerGrid.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
@@ -268,96 +270,152 @@ namespace Voins
             if (_map != null)
                 _map.DeleteCurrentMap();
 
-            _player = C_View_SelectHeroy1.ReturnHero();
-            _player2 = C_View_SelectHeroy2.ReturnHero();
-            //_player3 = C_View_SelectHeroy4.ReturnHero();
-           // _player4 = C_View_SelectHeroy5.ReturnHero();
+            if (playerCount >= 1)
+                _player = C_View_SelectHeroy1.ReturnHero();
+            if (playerCount >= 2)
+                _player2 = C_View_SelectHeroy2.ReturnHero();
+            if (playerCount >= 3)
+                _player3 = C_View_SelectHeroy4.ReturnHero();
+            if (playerCount >= 4)
+                _player4 = C_View_SelectHeroy5.ReturnHero();
 
-            _player.Gold = 100;
-            _player2.Gold = 100;
-            //_player3.Gold = 100;
-           // _player4.Gold = 100;
+            if (playerCount >= 1)
+                _player.Gold = 100;
+            if (playerCount >= 2)
+                _player2.Gold = 100;
+            if (playerCount >= 3)
+                _player3.Gold = 100;
+            if (playerCount >= 4)
+                _player4.Gold = 100;
 
-            _player.CurrentMap = _map;
-            _player2.CurrentMap = _map;
-            //_player3.CurrentMap = _map;
-           // _player4.CurrentMap = _map;
+            if (playerCount >= 1)
+                _player.CurrentMap = _map;
+            if (playerCount >= 2)
+                _player2.CurrentMap = _map;
+            if (playerCount >= 3)
+                _player3.CurrentMap = _map;
+            if (playerCount >= 4)
+                _player4.CurrentMap = _map;
 
             _map.CreateRandomMap(false);
 
-            _player.ShowShop += _player_ShowShop;
-            _player2.ShowShop += _player_ShowShop;
-            //_player3.ShowShop += _player_ShowShop;
-           // _player4.ShowShop += _player_ShowShop;
+            if (playerCount >= 1)
+                _player.ShowShop += _player_ShowShop;
+            if (playerCount >= 2)
+                _player2.ShowShop += _player_ShowShop;
+            if (playerCount >= 3)
+                _player3.ShowShop += _player_ShowShop;
+            if (playerCount >= 4)
+                _player4.ShowShop += _player_ShowShop;
 
-            _player.StatisticData = new StatisticData();
-            _player2.StatisticData = new StatisticData();
-            //_player3.StatisticData = new StatisticData();
-            //_player4.StatisticData = new StatisticData();
+            if (playerCount >= 1)
+                _player.StatisticData = new StatisticData();
+            if (playerCount >= 2)
+                _player2.StatisticData = new StatisticData();
+            if (playerCount >= 3)
+                _player3.StatisticData = new StatisticData();
+            if (playerCount >= 4)
+                _player4.StatisticData = new StatisticData();
 
-            _map.CreatePlayer(_player);
-            _map.CreatePlayer(_player2);
-           // _map.CreatePlayer(_player3);
-           // _map.CreatePlayer(_player4);
-            
+            if (playerCount >= 1)
+                _map.CreatePlayer(_player);
+            if (playerCount >= 2)
+                _map.CreatePlayer(_player2);
+            if (playerCount >= 3)
+                _map.CreatePlayer(_player3);
+            if (playerCount >= 4)
+                _map.CreatePlayer(_player4);
+
             if (_gameType == EGameType.FurmGame)
             {
                 _map.KillLimit = 10;
-                //_player3.GroupType = 1;// C_View_SelectHeroy4.GroupNumber;
-              //  _player4.GroupType = 2;// C_View_SelectHeroy5.GroupNumber;
-                _player2.GroupType = 2;//C_View_SelectHeroy2.GroupNumber;
-                _player.GroupType = 3;// C_View_SelectHeroy1.GroupNumber;
-               _map.CreateNewFarmGame(0,1);
-               // _map.CreateNewFarmGame(4,2);
+
+                if (playerCount >= 1)
+                    _player.GroupType = 3;// C_View_SelectHeroy1.GroupNumber;
+                if (playerCount >= 2)
+                    _player2.GroupType = 2;//C_View_SelectHeroy2.GroupNumber;
+                if (playerCount >= 3)
+                    _player3.GroupType = 1;// C_View_SelectHeroy4.GroupNumber;
+                if (playerCount >= 4)
+                    _player4.GroupType = 2;// C_View_SelectHeroy5.GroupNumber;
+
+                _map.CreateNewFarmGame(0, 1);
+                // _map.CreateNewFarmGame(4,2);
 
             }
             else if (_gameType == EGameType.Coop)
             {
                 _map.KillLimit = 10;
-                _player2.GroupType = 1;
-                //_player3.GroupType = 1;
-              //  _player4.GroupType = 1;
-                _player.GroupType = 1;
+
+                if (playerCount >= 1)
+                    _player.GroupType = 1;
+                if (playerCount >= 2)
+                    _player2.GroupType = 1;
+                if (playerCount >= 3)
+                    _player3.GroupType = 1;
+                if (playerCount >= 4)
+                    _player4.GroupType = 1;
                 _map.CreateNewCooperative();
             }
 
-            _player.StartRegenerationTimers_NewObject();
-            _player2.StartRegenerationTimers_NewObject();
-            //_player3.StartRegenerationTimers_NewObject();
-           // _player4.StartRegenerationTimers_NewObject();
+            if (playerCount >= 1)
+                _player.StartRegenerationTimers_NewObject();
+            if (playerCount >= 2)
+                _player2.StartRegenerationTimers_NewObject();
+            if (playerCount >= 3)
+                _player3.StartRegenerationTimers_NewObject();
+            if (playerCount >= 4)
+                _player4.StartRegenerationTimers_NewObject();
 
-            C_View_Player1.CurrentPlayer = _player;
-            C_View_Player1.Show();
+            if (playerCount >= 1)
+            {
+                C_View_Player1.CurrentPlayer = _player;
+                C_View_Player1.Show();
+            }
+            if (playerCount >= 2)
+            {
+                C_View_Player2.CurrentPlayer = _player2;
+                C_View_Player2.Show();
+            }
+            if (playerCount >= 3)
+            {
+                C_View_Player3.CurrentPlayer = _player3;
+                C_View_Player3.Show();
+            }
+            if (playerCount >= 4)
+            {
+                C_View_Player4.CurrentPlayer = _player4;
+                C_View_Player4.Show();
+            }
+            if (playerCount >= 1)
+            {
+                Voins.Input.Input_MainClass player1_input = new Input.Input_MainClass();
+                //player1_input.StartTimer(_player, AppCode.Input.EInput.Joist1, C_Buy);
+                  player1_input.StartTimer(_player, AppCode.Input.EInput.Player1Keys, C_Buy);
+                _inputArr.Add(player1_input);
+            }
 
-            C_View_Player2.CurrentPlayer = _player2;
-            C_View_Player2.Show();
+            if (playerCount >= 2)
+            {
+                Voins.Input.Input_MainClass player2_input = new Input.Input_MainClass();
+                //player2_input.StartTimer(_player2, AppCode.Input.EInput.Player1Keys, C_Buy);
+                player2_input.StartTimer(_player2, AppCode.Input.EInput.Joist2, C_Buy);
+                _inputArr.Add(player2_input);
+            }
 
-           // C_View_Player3.CurrentPlayer = _player3;
-          //  C_View_Player3.Show();
+            if (playerCount >= 3)
+            {
+                Voins.Input.Input_MainClass player3_input = new Input.Input_MainClass();
+                player3_input.StartTimer(_player3, AppCode.Input.EInput.Joist3, C_Buy);
+                _inputArr.Add(player3_input);
+            }
 
-            //C_View_Player4.CurrentPlayer = _player2;
-            //C_View_Player4.Show();
-
-            Voins.Input.Input_MainClass player1_input = new Input.Input_MainClass();
-            player1_input.StartTimer(_player, AppCode.Input.EInput.Player1Keys, C_Buy);
-           //  player1_input.StartTimer(_player, AppCode.Input.EInput.Player1Keys, C_Buy);
-            _inputArr.Add(player1_input);
-
-            Voins.Input.Input_MainClass player2_input = new Input.Input_MainClass();
-            //player2_input.StartTimer(_player2, AppCode.Input.EInput.Player1Keys, C_Buy);
-            player2_input.StartTimer(_player2, AppCode.Input.EInput.Player2Keys, C_Buy);
-            _inputArr.Add(player2_input);
-
-           // Voins.Input.Input_MainClass player3_input = new Input.Input_MainClass();
-          //  player3_input.StartTimer(_player3, AppCode.Input.EInput.Joist1, C_Buy);
-         //   _inputArr.Add(player3_input);
-
-          //  Voins.Input.Input_MainClass player4_input = new Input.Input_MainClass();
-          //  player4_input.StartTimer(_player4, AppCode.Input.EInput.Joist1, C_Buy);
-          //  _inputArr.Add(player4_input);
+            if (playerCount >= 4)
+            {
+                Voins.Input.Input_MainClass player4_input = new Input.Input_MainClass();
+                player4_input.StartTimer(_player4, AppCode.Input.EInput.Joist4, C_Buy);
+                _inputArr.Add(player4_input);
+            }
         }
-
-
-
     }
 }

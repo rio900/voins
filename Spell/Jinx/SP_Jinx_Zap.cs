@@ -108,17 +108,30 @@ namespace Voins.Spell
 
                     if (!AttackType)
                     {
-                        ///Создаем визуальный объект стрела
-                        UC_Jinx_Zap arrow = new UC_Jinx_Zap();
-                        arrow.ChengAngel(unit.Angel);
-
+                       
                         Bullet bullArrow = new Bullet();
                         bullArrow.GameObject = new Game_Object_In_Call()
                         {
                             EnumCallType = EnumCallType.Bullet,
-                            View = arrow
-                            
                         };
+
+                        /// Если есть скади
+                        if (UnitGenerator.HasSkadi(unit))
+                        {
+                            UC_Skadi skadiArrow = new UC_Skadi();
+                            skadiArrow.ChengAngel(unit.Angel);
+                            bullArrow.GameObject.View = skadiArrow;
+                        }
+                        else
+                        {
+                            ///Создаем визуальный объект стрела
+                            UC_Jinx_Zap arrow = new UC_Jinx_Zap();
+                            arrow.ChengAngel(unit.Angel);
+                            bullArrow.GameObject.View = arrow;
+                        }
+
+
+
                         bullArrow.UnitUsed = unit;
                         bullArrow.PositionX = unit.PositionX;
                         bullArrow.PositionY = unit.PositionY;

@@ -75,7 +75,7 @@ namespace Voins.Spell
             bool upSpell = UnitGenerator.UpPlayerSpell(unit, this);
 
             if (unit.UnitFrozen == false &&
-                !_culdaunBool && LevelCast != 0 && 
+                !_culdaunBool && LevelCast != 0 &&
                 !upSpell &&
                 !unit.Hexed &&
                 !Paused)
@@ -88,19 +88,22 @@ namespace Voins.Spell
                     ///Флаг кулдауна
                     _culdaunBool = true;
 
-                   
+
                     ///Отнимаем нужное количество
                     unit.Mana -= ManaCost;
-                    
+
+                    Bullet bullArrow = new Bullet();
+                    bullArrow.GameObject = new Game_Object_In_Call()
+                    {
+                        EnumCallType = EnumCallType.Bullet,
+                    };
+
                     ///Создаем визуальный объект стрела
                     UC_FireArrow arrow = new UC_FireArrow();
                     arrow.ChengAngel(unit.Angel);
+                    bullArrow.GameObject.View = arrow;
 
-                    Bullet bullArrow = new Bullet();
-                    bullArrow.GameObject = new Game_Object_In_Call() {  
-                        EnumCallType = EnumCallType.Bullet,
-                        View = arrow
-                    };
+
                     bullArrow.UnitUsed = unit;
                     bullArrow.PositionX = unit.PositionX;
                     bullArrow.PositionY = unit.PositionY;
@@ -138,9 +141,9 @@ namespace Voins.Spell
                     Canvas.SetTop(bullArrow.GameObject.View, bullArrow.PositionY * 50);
                     ///Отображение
                     map.MapCanvas.Children.Add(bullArrow.GameObject.View);
-                    
+
                     bullArrow.UseSpall("Fly");
-                   
+
                     ///Таймер кулдауна заклинания
                     _secondTimer = new Storyboard() { Duration = TimeSpan.FromSeconds(Culdaun) };
                     _secondTimer.Completed += _secondTimer_Completed;
@@ -158,13 +161,13 @@ namespace Voins.Spell
                 }
                 else
                 ///Маны нету
-                { 
-                
+                {
+
                 }
             }
         }
 
-      
+
 
         void _secondTimer_Completed(object sender, object e)
         {

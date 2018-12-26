@@ -82,18 +82,24 @@ namespace Voins.Spell
                 {
                     int lifeTime = 10;
                     int trentHealth = 5;
+                    int trentArmor = 0;
+                    int trentDamage = 0;
 
                     if (LevelCast == 1)
                     {
                         _culdaun = 9;
                         trentHealth = 5;
                         lifeTime = 10;
+                        trentArmor = 0;
+                        trentDamage = 0;
                     }
                     else if (LevelCast == 2)
                     {
                         _culdaun = 7;
                         trentHealth = 5;
                         lifeTime = 15;
+                        trentArmor = 2;
+                        trentDamage = 5;
 
                         ManaCost = 35;
                     }
@@ -102,12 +108,12 @@ namespace Voins.Spell
                         _culdaun = 6;
                         trentHealth = 5;
                         lifeTime = 21;
-
+                        trentDamage = 10;
+                        trentArmor = 4;
                         ManaCost = 40;
                     }
 
-                    ///Проверка диагонали по которой будет запущено сало
-                    ///метод проверки вернет ячейку в которой произошло столкновение
+                    ///Метод проверки вернет ячейку в которой произошло столкновение
                     Map_Cell call = UnitGenerator.FiratCollisionOnlyGrass(unit.PositionX, unit.PositionY,
                         unit.Range, map, unit.Angel);
 
@@ -125,8 +131,11 @@ namespace Voins.Spell
                         Unit trent = UnitGenerator.M_Trent(call.IndexLeft, call.IndexTop, map, _unit as Player);
                         map.CreateObjectUnitInCall(call, trent);
                         trent.Health = trent.Health + trentHealth;
+                        trent.Demage += trentDamage;
+                        trent.Arrmor += trentArmor;
 
                         trent.AI.Farm = true;
+                        trent.AI.Hunt = true;
                         trent.LifeTime(lifeTime);
 
                         trent.AI.StartAI();

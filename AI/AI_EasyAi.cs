@@ -12,6 +12,8 @@ namespace Voins.AI
 
     public class AI_EasyAi : IAI
     {
+        public bool Hunt { get; set; }
+
         public AI_EasyAi()
         {
             
@@ -81,8 +83,8 @@ namespace Voins.AI
                 {
                     if (!Rotation)
                         ///Выбираем рандомный угол, проверяем или он пустой и перемещпемся туда
-                        _call = UnitGenerator.RandonCell((int)DateTime.Now.Ticks,
-                            CurrentUnit.PositionX, CurrentUnit.PositionY, CurrentMap, CurrentUnit.GroupType, CurrentUnit.Way, false, Farm);
+                        _call = UnitGenerator.RandonCell(CurrentUnit,
+                                                         CurrentMap, false, Farm, Hunt);
                     else
                         Rotation = false;
 

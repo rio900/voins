@@ -70,7 +70,8 @@ namespace Voins.Spell
         public void UseSpall(Map map, Game_Object_In_Call obj, IUnit unit, object property)
         {
             if (unit.UnitFrozen == false &&
-                !_culdaunBool && LevelCast != 0)
+                !_culdaunBool && LevelCast != 0 &&
+                !unit.Hexed)
             {
                 if (unit.Mana >= ManaCost)
                 ///Проверка есть ли мана на каст

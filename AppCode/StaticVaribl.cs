@@ -33,15 +33,15 @@ namespace Voins.AppCode
         public static double AgilityAttackSpeed = 0.008;
         
         /// <summary>
-        /// Константа, максимальная скорость атаки
-        /// </summary>
-        public static double AttackSpeedMaximum = 0.20;
-      
-        /// <summary>
         /// Константа, максимальная скорость атаки для милишных атак
         /// </summary>
         public static double AttackSpeedMeleMaximum = 0.30;
+        /// <summary>
+        /// Константа, максимальная скорость атаки для ренжовых атак
+        /// </summary>
+        public static double AttackSpeedRangeMaximum = 0.25;
 
+        public static double StartSpeed = 0.85;
         public static double SpeedMaximum = 0.3;
 
         public static int DemageAndArmor(int phisic, int arrmor)

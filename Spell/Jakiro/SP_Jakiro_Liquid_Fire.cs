@@ -91,16 +91,18 @@ namespace Voins.Spell
                     ///Отнимаем нужное количество
                     unit.Mana -= ManaCost;
 
-                    ///Создаем визуальный объект стрела
-                    UC_Jakiro_LiquidFire arrow = new UC_Jakiro_LiquidFire();
-                    arrow.ChengAngel(unit.Angel);
-
                     Bullet bullLiquidFire = new Bullet();
                     bullLiquidFire.GameObject = new Game_Object_In_Call()
                     {
                         EnumCallType = EnumCallType.Bullet,
-                        View = arrow
                     };
+
+                    ///Создаем визуальный объект стрела
+                    UC_Jakiro_LiquidFire arrow = new UC_Jakiro_LiquidFire();
+                    arrow.ChengAngel(unit.Angel);
+                    bullLiquidFire.GameObject.View = arrow;
+
+
                     bullLiquidFire.UnitUsed = unit;
                     bullLiquidFire.PositionX = unit.PositionX;
                     bullLiquidFire.PositionY = unit.PositionY;

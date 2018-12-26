@@ -124,7 +124,7 @@ namespace Voins.Voins_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[83];
+            _typeNameTable = new string[87];
             _typeNameTable[0] = "Voins.UC_View_PlaerPanel";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[2] = "Voins.AppCode.Player";
@@ -169,47 +169,51 @@ namespace Voins.Voins_XamlTypeInfo
             _typeNameTable[41] = "Voins.MainPage";
             _typeNameTable[42] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[43] = "Voins.UserControlEditor.Editor_Call";
-            _typeNameTable[44] = "Voins.UC_Nature_Wrath";
-            _typeNameTable[45] = "Voins.UC_Mob_1_Trent";
-            _typeNameTable[46] = "Voins.UC_Mob_1_Fire";
-            _typeNameTable[47] = "Voins.UC_Mob_1_Ball_Blue";
-            _typeNameTable[48] = "Voins.UC_Jakiro_LiquidFire";
-            _typeNameTable[49] = "Voins.UC_Jakiro_Macropyre";
-            _typeNameTable[50] = "Voins.UC_Jakiro_IcePath";
-            _typeNameTable[51] = "Voins.UC_Model_H_Jakiro";
-            _typeNameTable[52] = "Voins.UC_Super_Mega_Death_Rocket";
-            _typeNameTable[53] = "Voins.UC_Jinx_Flame_Chompers";
-            _typeNameTable[54] = "Voins.UC_Jinx_Zap_Roket";
-            _typeNameTable[55] = "Voins.UC_Jinx_Zap";
-            _typeNameTable[56] = "Voins.UC_Model_H_Jinx";
-            _typeNameTable[57] = "Voins.UC_Mirana_SacredArrow";
-            _typeNameTable[58] = "Voins.UC_Mirana_Starstorm";
-            _typeNameTable[59] = "Voins.UC_Model_H_Mirana";
-            _typeNameTable[60] = "Voins.UC_Nature_Sprout";
-            _typeNameTable[61] = "Voins.UC_View_Backgroung";
-            _typeNameTable[62] = "Voins.UC_Alchemist_AcidSpray";
-            _typeNameTable[63] = "Voins.UC_Model_H_Sniper";
-            _typeNameTable[64] = "Voins.UC_Model_H_Alhim";
-            _typeNameTable[65] = "Voins.UC_Model_H_Bonik";
-            _typeNameTable[66] = "Voins.UC_Model_Player";
-            _typeNameTable[67] = "Voins.UC_EasyMobAttackBall";
-            _typeNameTable[68] = "Voins.UC_Sniper_Headshot";
-            _typeNameTable[69] = "Voins.UC_Sniper_Shrapnel";
-            _typeNameTable[70] = "Voins.UC_Maelstrom";
-            _typeNameTable[71] = "Voins.UC_Alchemist_UnstableConcoction";
-            _typeNameTable[72] = "Voins.UC_Jakiro_DualBreath";
-            _typeNameTable[73] = "Voins.UC_Block";
-            _typeNameTable[74] = "Voins.UC_CrushBlock";
-            _typeNameTable[75] = "Voins.UC_FireArrow";
-            _typeNameTable[76] = "Voins.UC_GameObjectInCall";
-            _typeNameTable[77] = "Voins.UC_Mob_1_Ball";
-            _typeNameTable[78] = "Voins.UC_Player";
-            _typeNameTable[79] = "System.Collections.Generic.List`1<Windows.UI.Xaml.Controls.Image>";
-            _typeNameTable[80] = "Windows.UI.Xaml.Controls.Image";
-            _typeNameTable[81] = "Voins.UC_View_ItemsPanel";
-            _typeNameTable[82] = "Voins.UC_View_SpellControl";
+            _typeNameTable[44] = "Voins.UC_Model_H_Nature";
+            _typeNameTable[45] = "Voins.UC_Skadi";
+            _typeNameTable[46] = "Voins.UC_Mob_BlackHunterBoss";
+            _typeNameTable[47] = "Voins.UC_Mob_BlackHunter";
+            _typeNameTable[48] = "Voins.UC_Nature_Wrath";
+            _typeNameTable[49] = "Voins.UC_Mob_1_Trent";
+            _typeNameTable[50] = "Voins.UC_Mob_1_Fire";
+            _typeNameTable[51] = "Voins.UC_Mob_1_Ball_Blue";
+            _typeNameTable[52] = "Voins.UC_Jakiro_LiquidFire";
+            _typeNameTable[53] = "Voins.UC_Jakiro_Macropyre";
+            _typeNameTable[54] = "Voins.UC_Jakiro_IcePath";
+            _typeNameTable[55] = "Voins.UC_Model_H_Jakiro";
+            _typeNameTable[56] = "Voins.UC_Super_Mega_Death_Rocket";
+            _typeNameTable[57] = "Voins.UC_Jinx_Flame_Chompers";
+            _typeNameTable[58] = "Voins.UC_Jinx_Zap_Roket";
+            _typeNameTable[59] = "Voins.UC_Jinx_Zap";
+            _typeNameTable[60] = "Voins.UC_Model_H_Jinx";
+            _typeNameTable[61] = "Voins.UC_Mirana_SacredArrow";
+            _typeNameTable[62] = "Voins.UC_Mirana_Starstorm";
+            _typeNameTable[63] = "Voins.UC_Model_H_Mirana";
+            _typeNameTable[64] = "Voins.UC_Nature_Sprout";
+            _typeNameTable[65] = "Voins.UC_View_Backgroung";
+            _typeNameTable[66] = "Voins.UC_Alchemist_AcidSpray";
+            _typeNameTable[67] = "Voins.UC_Model_H_Sniper";
+            _typeNameTable[68] = "Voins.UC_Model_H_Alhim";
+            _typeNameTable[69] = "Voins.UC_Model_H_Bonik";
+            _typeNameTable[70] = "Voins.UC_Model_Player";
+            _typeNameTable[71] = "Voins.UC_EasyMobAttackBall";
+            _typeNameTable[72] = "Voins.UC_Sniper_Headshot";
+            _typeNameTable[73] = "Voins.UC_Sniper_Shrapnel";
+            _typeNameTable[74] = "Voins.UC_Maelstrom";
+            _typeNameTable[75] = "Voins.UC_Alchemist_UnstableConcoction";
+            _typeNameTable[76] = "Voins.UC_Jakiro_DualBreath";
+            _typeNameTable[77] = "Voins.UC_Block";
+            _typeNameTable[78] = "Voins.UC_CrushBlock";
+            _typeNameTable[79] = "Voins.UC_FireArrow";
+            _typeNameTable[80] = "Voins.UC_GameObjectInCall";
+            _typeNameTable[81] = "Voins.UC_Mob_1_Ball";
+            _typeNameTable[82] = "Voins.UC_Player";
+            _typeNameTable[83] = "System.Collections.Generic.List`1<Windows.UI.Xaml.Controls.Image>";
+            _typeNameTable[84] = "Windows.UI.Xaml.Controls.Image";
+            _typeNameTable[85] = "Voins.UC_View_ItemsPanel";
+            _typeNameTable[86] = "Voins.UC_View_SpellControl";
 
-            _typeTable = new global::System.Type[83];
+            _typeTable = new global::System.Type[87];
             _typeTable[0] = typeof(global::Voins.UC_View_PlaerPanel);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[2] = typeof(global::Voins.AppCode.Player);
@@ -254,45 +258,49 @@ namespace Voins.Voins_XamlTypeInfo
             _typeTable[41] = typeof(global::Voins.MainPage);
             _typeTable[42] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[43] = typeof(global::Voins.UserControlEditor.Editor_Call);
-            _typeTable[44] = typeof(global::Voins.UC_Nature_Wrath);
-            _typeTable[45] = typeof(global::Voins.UC_Mob_1_Trent);
-            _typeTable[46] = typeof(global::Voins.UC_Mob_1_Fire);
-            _typeTable[47] = typeof(global::Voins.UC_Mob_1_Ball_Blue);
-            _typeTable[48] = typeof(global::Voins.UC_Jakiro_LiquidFire);
-            _typeTable[49] = typeof(global::Voins.UC_Jakiro_Macropyre);
-            _typeTable[50] = typeof(global::Voins.UC_Jakiro_IcePath);
-            _typeTable[51] = typeof(global::Voins.UC_Model_H_Jakiro);
-            _typeTable[52] = typeof(global::Voins.UC_Super_Mega_Death_Rocket);
-            _typeTable[53] = typeof(global::Voins.UC_Jinx_Flame_Chompers);
-            _typeTable[54] = typeof(global::Voins.UC_Jinx_Zap_Roket);
-            _typeTable[55] = typeof(global::Voins.UC_Jinx_Zap);
-            _typeTable[56] = typeof(global::Voins.UC_Model_H_Jinx);
-            _typeTable[57] = typeof(global::Voins.UC_Mirana_SacredArrow);
-            _typeTable[58] = typeof(global::Voins.UC_Mirana_Starstorm);
-            _typeTable[59] = typeof(global::Voins.UC_Model_H_Mirana);
-            _typeTable[60] = typeof(global::Voins.UC_Nature_Sprout);
-            _typeTable[61] = typeof(global::Voins.UC_View_Backgroung);
-            _typeTable[62] = typeof(global::Voins.UC_Alchemist_AcidSpray);
-            _typeTable[63] = typeof(global::Voins.UC_Model_H_Sniper);
-            _typeTable[64] = typeof(global::Voins.UC_Model_H_Alhim);
-            _typeTable[65] = typeof(global::Voins.UC_Model_H_Bonik);
-            _typeTable[66] = typeof(global::Voins.UC_Model_Player);
-            _typeTable[67] = typeof(global::Voins.UC_EasyMobAttackBall);
-            _typeTable[68] = typeof(global::Voins.UC_Sniper_Headshot);
-            _typeTable[69] = typeof(global::Voins.UC_Sniper_Shrapnel);
-            _typeTable[70] = typeof(global::Voins.UC_Maelstrom);
-            _typeTable[71] = typeof(global::Voins.UC_Alchemist_UnstableConcoction);
-            _typeTable[72] = typeof(global::Voins.UC_Jakiro_DualBreath);
-            _typeTable[73] = typeof(global::Voins.UC_Block);
-            _typeTable[74] = typeof(global::Voins.UC_CrushBlock);
-            _typeTable[75] = typeof(global::Voins.UC_FireArrow);
-            _typeTable[76] = typeof(global::Voins.UC_GameObjectInCall);
-            _typeTable[77] = typeof(global::Voins.UC_Mob_1_Ball);
-            _typeTable[78] = typeof(global::Voins.UC_Player);
-            _typeTable[79] = typeof(global::System.Collections.Generic.List<global::Windows.UI.Xaml.Controls.Image>);
-            _typeTable[80] = typeof(global::Windows.UI.Xaml.Controls.Image);
-            _typeTable[81] = typeof(global::Voins.UC_View_ItemsPanel);
-            _typeTable[82] = typeof(global::Voins.UC_View_SpellControl);
+            _typeTable[44] = typeof(global::Voins.UC_Model_H_Nature);
+            _typeTable[45] = typeof(global::Voins.UC_Skadi);
+            _typeTable[46] = typeof(global::Voins.UC_Mob_BlackHunterBoss);
+            _typeTable[47] = typeof(global::Voins.UC_Mob_BlackHunter);
+            _typeTable[48] = typeof(global::Voins.UC_Nature_Wrath);
+            _typeTable[49] = typeof(global::Voins.UC_Mob_1_Trent);
+            _typeTable[50] = typeof(global::Voins.UC_Mob_1_Fire);
+            _typeTable[51] = typeof(global::Voins.UC_Mob_1_Ball_Blue);
+            _typeTable[52] = typeof(global::Voins.UC_Jakiro_LiquidFire);
+            _typeTable[53] = typeof(global::Voins.UC_Jakiro_Macropyre);
+            _typeTable[54] = typeof(global::Voins.UC_Jakiro_IcePath);
+            _typeTable[55] = typeof(global::Voins.UC_Model_H_Jakiro);
+            _typeTable[56] = typeof(global::Voins.UC_Super_Mega_Death_Rocket);
+            _typeTable[57] = typeof(global::Voins.UC_Jinx_Flame_Chompers);
+            _typeTable[58] = typeof(global::Voins.UC_Jinx_Zap_Roket);
+            _typeTable[59] = typeof(global::Voins.UC_Jinx_Zap);
+            _typeTable[60] = typeof(global::Voins.UC_Model_H_Jinx);
+            _typeTable[61] = typeof(global::Voins.UC_Mirana_SacredArrow);
+            _typeTable[62] = typeof(global::Voins.UC_Mirana_Starstorm);
+            _typeTable[63] = typeof(global::Voins.UC_Model_H_Mirana);
+            _typeTable[64] = typeof(global::Voins.UC_Nature_Sprout);
+            _typeTable[65] = typeof(global::Voins.UC_View_Backgroung);
+            _typeTable[66] = typeof(global::Voins.UC_Alchemist_AcidSpray);
+            _typeTable[67] = typeof(global::Voins.UC_Model_H_Sniper);
+            _typeTable[68] = typeof(global::Voins.UC_Model_H_Alhim);
+            _typeTable[69] = typeof(global::Voins.UC_Model_H_Bonik);
+            _typeTable[70] = typeof(global::Voins.UC_Model_Player);
+            _typeTable[71] = typeof(global::Voins.UC_EasyMobAttackBall);
+            _typeTable[72] = typeof(global::Voins.UC_Sniper_Headshot);
+            _typeTable[73] = typeof(global::Voins.UC_Sniper_Shrapnel);
+            _typeTable[74] = typeof(global::Voins.UC_Maelstrom);
+            _typeTable[75] = typeof(global::Voins.UC_Alchemist_UnstableConcoction);
+            _typeTable[76] = typeof(global::Voins.UC_Jakiro_DualBreath);
+            _typeTable[77] = typeof(global::Voins.UC_Block);
+            _typeTable[78] = typeof(global::Voins.UC_CrushBlock);
+            _typeTable[79] = typeof(global::Voins.UC_FireArrow);
+            _typeTable[80] = typeof(global::Voins.UC_GameObjectInCall);
+            _typeTable[81] = typeof(global::Voins.UC_Mob_1_Ball);
+            _typeTable[82] = typeof(global::Voins.UC_Player);
+            _typeTable[83] = typeof(global::System.Collections.Generic.List<global::Windows.UI.Xaml.Controls.Image>);
+            _typeTable[84] = typeof(global::Windows.UI.Xaml.Controls.Image);
+            _typeTable[85] = typeof(global::Voins.UC_View_ItemsPanel);
+            _typeTable[86] = typeof(global::Voins.UC_View_SpellControl);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -353,44 +361,48 @@ namespace Voins.Voins_XamlTypeInfo
         private object Activate_39_SP_Item_AssaultCuirass() { return new global::Voins.Spell.SP_Item_AssaultCuirass(); }
         private object Activate_41_MainPage() { return new global::Voins.MainPage(); }
         private object Activate_43_Editor_Call() { return new global::Voins.UserControlEditor.Editor_Call(); }
-        private object Activate_44_UC_Nature_Wrath() { return new global::Voins.UC_Nature_Wrath(); }
-        private object Activate_45_UC_Mob_1_Trent() { return new global::Voins.UC_Mob_1_Trent(); }
-        private object Activate_46_UC_Mob_1_Fire() { return new global::Voins.UC_Mob_1_Fire(); }
-        private object Activate_47_UC_Mob_1_Ball_Blue() { return new global::Voins.UC_Mob_1_Ball_Blue(); }
-        private object Activate_48_UC_Jakiro_LiquidFire() { return new global::Voins.UC_Jakiro_LiquidFire(); }
-        private object Activate_49_UC_Jakiro_Macropyre() { return new global::Voins.UC_Jakiro_Macropyre(); }
-        private object Activate_50_UC_Jakiro_IcePath() { return new global::Voins.UC_Jakiro_IcePath(); }
-        private object Activate_51_UC_Model_H_Jakiro() { return new global::Voins.UC_Model_H_Jakiro(); }
-        private object Activate_52_UC_Super_Mega_Death_Rocket() { return new global::Voins.UC_Super_Mega_Death_Rocket(); }
-        private object Activate_53_UC_Jinx_Flame_Chompers() { return new global::Voins.UC_Jinx_Flame_Chompers(); }
-        private object Activate_54_UC_Jinx_Zap_Roket() { return new global::Voins.UC_Jinx_Zap_Roket(); }
-        private object Activate_55_UC_Jinx_Zap() { return new global::Voins.UC_Jinx_Zap(); }
-        private object Activate_56_UC_Model_H_Jinx() { return new global::Voins.UC_Model_H_Jinx(); }
-        private object Activate_57_UC_Mirana_SacredArrow() { return new global::Voins.UC_Mirana_SacredArrow(); }
-        private object Activate_58_UC_Mirana_Starstorm() { return new global::Voins.UC_Mirana_Starstorm(); }
-        private object Activate_59_UC_Model_H_Mirana() { return new global::Voins.UC_Model_H_Mirana(); }
-        private object Activate_60_UC_Nature_Sprout() { return new global::Voins.UC_Nature_Sprout(); }
-        private object Activate_61_UC_View_Backgroung() { return new global::Voins.UC_View_Backgroung(); }
-        private object Activate_62_UC_Alchemist_AcidSpray() { return new global::Voins.UC_Alchemist_AcidSpray(); }
-        private object Activate_63_UC_Model_H_Sniper() { return new global::Voins.UC_Model_H_Sniper(); }
-        private object Activate_64_UC_Model_H_Alhim() { return new global::Voins.UC_Model_H_Alhim(); }
-        private object Activate_65_UC_Model_H_Bonik() { return new global::Voins.UC_Model_H_Bonik(); }
-        private object Activate_66_UC_Model_Player() { return new global::Voins.UC_Model_Player(); }
-        private object Activate_67_UC_EasyMobAttackBall() { return new global::Voins.UC_EasyMobAttackBall(); }
-        private object Activate_68_UC_Sniper_Headshot() { return new global::Voins.UC_Sniper_Headshot(); }
-        private object Activate_69_UC_Sniper_Shrapnel() { return new global::Voins.UC_Sniper_Shrapnel(); }
-        private object Activate_70_UC_Maelstrom() { return new global::Voins.UC_Maelstrom(); }
-        private object Activate_71_UC_Alchemist_UnstableConcoction() { return new global::Voins.UC_Alchemist_UnstableConcoction(); }
-        private object Activate_72_UC_Jakiro_DualBreath() { return new global::Voins.UC_Jakiro_DualBreath(); }
-        private object Activate_73_UC_Block() { return new global::Voins.UC_Block(); }
-        private object Activate_74_UC_CrushBlock() { return new global::Voins.UC_CrushBlock(); }
-        private object Activate_75_UC_FireArrow() { return new global::Voins.UC_FireArrow(); }
-        private object Activate_76_UC_GameObjectInCall() { return new global::Voins.UC_GameObjectInCall(); }
-        private object Activate_77_UC_Mob_1_Ball() { return new global::Voins.UC_Mob_1_Ball(); }
-        private object Activate_78_UC_Player() { return new global::Voins.UC_Player(); }
-        private object Activate_79_List() { return new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Controls.Image>(); }
-        private object Activate_81_UC_View_ItemsPanel() { return new global::Voins.UC_View_ItemsPanel(); }
-        private object Activate_82_UC_View_SpellControl() { return new global::Voins.UC_View_SpellControl(); }
+        private object Activate_44_UC_Model_H_Nature() { return new global::Voins.UC_Model_H_Nature(); }
+        private object Activate_45_UC_Skadi() { return new global::Voins.UC_Skadi(); }
+        private object Activate_46_UC_Mob_BlackHunterBoss() { return new global::Voins.UC_Mob_BlackHunterBoss(); }
+        private object Activate_47_UC_Mob_BlackHunter() { return new global::Voins.UC_Mob_BlackHunter(); }
+        private object Activate_48_UC_Nature_Wrath() { return new global::Voins.UC_Nature_Wrath(); }
+        private object Activate_49_UC_Mob_1_Trent() { return new global::Voins.UC_Mob_1_Trent(); }
+        private object Activate_50_UC_Mob_1_Fire() { return new global::Voins.UC_Mob_1_Fire(); }
+        private object Activate_51_UC_Mob_1_Ball_Blue() { return new global::Voins.UC_Mob_1_Ball_Blue(); }
+        private object Activate_52_UC_Jakiro_LiquidFire() { return new global::Voins.UC_Jakiro_LiquidFire(); }
+        private object Activate_53_UC_Jakiro_Macropyre() { return new global::Voins.UC_Jakiro_Macropyre(); }
+        private object Activate_54_UC_Jakiro_IcePath() { return new global::Voins.UC_Jakiro_IcePath(); }
+        private object Activate_55_UC_Model_H_Jakiro() { return new global::Voins.UC_Model_H_Jakiro(); }
+        private object Activate_56_UC_Super_Mega_Death_Rocket() { return new global::Voins.UC_Super_Mega_Death_Rocket(); }
+        private object Activate_57_UC_Jinx_Flame_Chompers() { return new global::Voins.UC_Jinx_Flame_Chompers(); }
+        private object Activate_58_UC_Jinx_Zap_Roket() { return new global::Voins.UC_Jinx_Zap_Roket(); }
+        private object Activate_59_UC_Jinx_Zap() { return new global::Voins.UC_Jinx_Zap(); }
+        private object Activate_60_UC_Model_H_Jinx() { return new global::Voins.UC_Model_H_Jinx(); }
+        private object Activate_61_UC_Mirana_SacredArrow() { return new global::Voins.UC_Mirana_SacredArrow(); }
+        private object Activate_62_UC_Mirana_Starstorm() { return new global::Voins.UC_Mirana_Starstorm(); }
+        private object Activate_63_UC_Model_H_Mirana() { return new global::Voins.UC_Model_H_Mirana(); }
+        private object Activate_64_UC_Nature_Sprout() { return new global::Voins.UC_Nature_Sprout(); }
+        private object Activate_65_UC_View_Backgroung() { return new global::Voins.UC_View_Backgroung(); }
+        private object Activate_66_UC_Alchemist_AcidSpray() { return new global::Voins.UC_Alchemist_AcidSpray(); }
+        private object Activate_67_UC_Model_H_Sniper() { return new global::Voins.UC_Model_H_Sniper(); }
+        private object Activate_68_UC_Model_H_Alhim() { return new global::Voins.UC_Model_H_Alhim(); }
+        private object Activate_69_UC_Model_H_Bonik() { return new global::Voins.UC_Model_H_Bonik(); }
+        private object Activate_70_UC_Model_Player() { return new global::Voins.UC_Model_Player(); }
+        private object Activate_71_UC_EasyMobAttackBall() { return new global::Voins.UC_EasyMobAttackBall(); }
+        private object Activate_72_UC_Sniper_Headshot() { return new global::Voins.UC_Sniper_Headshot(); }
+        private object Activate_73_UC_Sniper_Shrapnel() { return new global::Voins.UC_Sniper_Shrapnel(); }
+        private object Activate_74_UC_Maelstrom() { return new global::Voins.UC_Maelstrom(); }
+        private object Activate_75_UC_Alchemist_UnstableConcoction() { return new global::Voins.UC_Alchemist_UnstableConcoction(); }
+        private object Activate_76_UC_Jakiro_DualBreath() { return new global::Voins.UC_Jakiro_DualBreath(); }
+        private object Activate_77_UC_Block() { return new global::Voins.UC_Block(); }
+        private object Activate_78_UC_CrushBlock() { return new global::Voins.UC_CrushBlock(); }
+        private object Activate_79_UC_FireArrow() { return new global::Voins.UC_FireArrow(); }
+        private object Activate_80_UC_GameObjectInCall() { return new global::Voins.UC_GameObjectInCall(); }
+        private object Activate_81_UC_Mob_1_Ball() { return new global::Voins.UC_Mob_1_Ball(); }
+        private object Activate_82_UC_Player() { return new global::Voins.UC_Player(); }
+        private object Activate_83_List() { return new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Controls.Image>(); }
+        private object Activate_85_UC_View_ItemsPanel() { return new global::Voins.UC_View_ItemsPanel(); }
+        private object Activate_86_UC_View_SpellControl() { return new global::Voins.UC_View_SpellControl(); }
         private void VectorAdd_10_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Voins.AppCode.Player>)instance;
@@ -433,7 +445,7 @@ namespace Voins.Voins_XamlTypeInfo
             var newItem = (global::Voins.AppCode.ItemClass)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_79_List(object instance, object item)
+        private void VectorAdd_83_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Controls.Image>)instance;
             var newItem = (global::Windows.UI.Xaml.Controls.Image)item;
@@ -894,6 +906,10 @@ namespace Voins.Voins_XamlTypeInfo
                 userType.AddMemberName("IsRoket");
                 userType.AddMemberName("SproutHealth");
                 userType.AddMemberName("GrassDamage");
+                userType.AddMemberName("RemoveUnit");
+                userType.AddMemberName("TrentDamage");
+                userType.AddMemberName("TrentArmor");
+                userType.AddMemberName("LifeTime");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -958,72 +974,9 @@ namespace Voins.Voins_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 44:   //  Voins.UC_Nature_Wrath
+            case 44:   //  Voins.UC_Model_H_Nature
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_44_UC_Nature_Wrath;
-                userType.AddMemberName("RootCanvas");
-                userType.AddMemberName("Angel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 45:   //  Voins.UC_Mob_1_Trent
-                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_45_UC_Mob_1_Trent;
-                userType.AddMemberName("RootCanvas");
-                userType.AddMemberName("Angel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 46:   //  Voins.UC_Mob_1_Fire
-                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_46_UC_Mob_1_Fire;
-                userType.AddMemberName("RootCanvas");
-                userType.AddMemberName("Angel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 47:   //  Voins.UC_Mob_1_Ball_Blue
-                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_47_UC_Mob_1_Ball_Blue;
-                userType.AddMemberName("RootCanvas");
-                userType.AddMemberName("Angel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 48:   //  Voins.UC_Jakiro_LiquidFire
-                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_48_UC_Jakiro_LiquidFire;
-                userType.AddMemberName("RootCanvas");
-                userType.AddMemberName("Angel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 49:   //  Voins.UC_Jakiro_Macropyre
-                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_49_UC_Jakiro_Macropyre;
-                userType.AddMemberName("RootCanvas");
-                userType.AddMemberName("Angel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 50:   //  Voins.UC_Jakiro_IcePath
-                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_50_UC_Jakiro_IcePath;
-                userType.AddMemberName("RootCanvas");
-                userType.AddMemberName("Angel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 51:   //  Voins.UC_Model_H_Jakiro
-                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_51_UC_Model_H_Jakiro;
+                userType.Activator = Activate_44_UC_Model_H_Nature;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("PlayerNumber");
                 userType.AddMemberName("Angel");
@@ -1031,108 +984,99 @@ namespace Voins.Voins_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 52:   //  Voins.UC_Super_Mega_Death_Rocket
+            case 45:   //  Voins.UC_Skadi
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_52_UC_Super_Mega_Death_Rocket;
+                userType.Activator = Activate_45_UC_Skadi;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("Angel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 53:   //  Voins.UC_Jinx_Flame_Chompers
+            case 46:   //  Voins.UC_Mob_BlackHunterBoss
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_53_UC_Jinx_Flame_Chompers;
+                userType.Activator = Activate_46_UC_Mob_BlackHunterBoss;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("Angel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 54:   //  Voins.UC_Jinx_Zap_Roket
+            case 47:   //  Voins.UC_Mob_BlackHunter
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_54_UC_Jinx_Zap_Roket;
+                userType.Activator = Activate_47_UC_Mob_BlackHunter;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("Angel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 55:   //  Voins.UC_Jinx_Zap
+            case 48:   //  Voins.UC_Nature_Wrath
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_55_UC_Jinx_Zap;
+                userType.Activator = Activate_48_UC_Nature_Wrath;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("Angel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 56:   //  Voins.UC_Model_H_Jinx
+            case 49:   //  Voins.UC_Mob_1_Trent
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_56_UC_Model_H_Jinx;
-                userType.AddMemberName("RootCanvas");
-                userType.AddMemberName("PlayerNumber");
-                userType.AddMemberName("Angel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 57:   //  Voins.UC_Mirana_SacredArrow
-                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_57_UC_Mirana_SacredArrow;
+                userType.Activator = Activate_49_UC_Mob_1_Trent;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("Angel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 58:   //  Voins.UC_Mirana_Starstorm
+            case 50:   //  Voins.UC_Mob_1_Fire
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_58_UC_Mirana_Starstorm;
+                userType.Activator = Activate_50_UC_Mob_1_Fire;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("Angel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 59:   //  Voins.UC_Model_H_Mirana
+            case 51:   //  Voins.UC_Mob_1_Ball_Blue
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_59_UC_Model_H_Mirana;
-                userType.AddMemberName("RootCanvas");
-                userType.AddMemberName("PlayerNumber");
-                userType.AddMemberName("Angel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 60:   //  Voins.UC_Nature_Sprout
-                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_60_UC_Nature_Sprout;
+                userType.Activator = Activate_51_UC_Mob_1_Ball_Blue;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("Angel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 61:   //  Voins.UC_View_Backgroung
+            case 52:   //  Voins.UC_Jakiro_LiquidFire
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_61_UC_View_Backgroung;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 62:   //  Voins.UC_Alchemist_AcidSpray
-                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_62_UC_Alchemist_AcidSpray;
+                userType.Activator = Activate_52_UC_Jakiro_LiquidFire;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("Angel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 63:   //  Voins.UC_Model_H_Sniper
+            case 53:   //  Voins.UC_Jakiro_Macropyre
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_63_UC_Model_H_Sniper;
+                userType.Activator = Activate_53_UC_Jakiro_Macropyre;
+                userType.AddMemberName("RootCanvas");
+                userType.AddMemberName("Angel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 54:   //  Voins.UC_Jakiro_IcePath
+                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_54_UC_Jakiro_IcePath;
+                userType.AddMemberName("RootCanvas");
+                userType.AddMemberName("Angel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 55:   //  Voins.UC_Model_H_Jakiro
+                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_55_UC_Model_H_Jakiro;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("PlayerNumber");
                 userType.AddMemberName("Angel");
@@ -1140,9 +1084,46 @@ namespace Voins.Voins_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 64:   //  Voins.UC_Model_H_Alhim
+            case 56:   //  Voins.UC_Super_Mega_Death_Rocket
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_64_UC_Model_H_Alhim;
+                userType.Activator = Activate_56_UC_Super_Mega_Death_Rocket;
+                userType.AddMemberName("RootCanvas");
+                userType.AddMemberName("Angel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 57:   //  Voins.UC_Jinx_Flame_Chompers
+                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_57_UC_Jinx_Flame_Chompers;
+                userType.AddMemberName("RootCanvas");
+                userType.AddMemberName("Angel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 58:   //  Voins.UC_Jinx_Zap_Roket
+                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_58_UC_Jinx_Zap_Roket;
+                userType.AddMemberName("ExplosionStyle");
+                userType.AddMemberName("RootCanvas");
+                userType.AddMemberName("Angel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 59:   //  Voins.UC_Jinx_Zap
+                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_59_UC_Jinx_Zap;
+                userType.AddMemberName("RootCanvas");
+                userType.AddMemberName("Angel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 60:   //  Voins.UC_Model_H_Jinx
+                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_60_UC_Model_H_Jinx;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("PlayerNumber");
                 userType.AddMemberName("Angel");
@@ -1150,9 +1131,27 @@ namespace Voins.Voins_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 65:   //  Voins.UC_Model_H_Bonik
+            case 61:   //  Voins.UC_Mirana_SacredArrow
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_65_UC_Model_H_Bonik;
+                userType.Activator = Activate_61_UC_Mirana_SacredArrow;
+                userType.AddMemberName("RootCanvas");
+                userType.AddMemberName("Angel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 62:   //  Voins.UC_Mirana_Starstorm
+                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_62_UC_Mirana_Starstorm;
+                userType.AddMemberName("RootCanvas");
+                userType.AddMemberName("Angel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 63:   //  Voins.UC_Model_H_Mirana
+                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_63_UC_Model_H_Mirana;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("PlayerNumber");
                 userType.AddMemberName("Angel");
@@ -1160,9 +1159,34 @@ namespace Voins.Voins_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 66:   //  Voins.UC_Model_Player
+            case 64:   //  Voins.UC_Nature_Sprout
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_66_UC_Model_Player;
+                userType.Activator = Activate_64_UC_Nature_Sprout;
+                userType.AddMemberName("RootCanvas");
+                userType.AddMemberName("Angel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 65:   //  Voins.UC_View_Backgroung
+                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_65_UC_View_Backgroung;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 66:   //  Voins.UC_Alchemist_AcidSpray
+                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_66_UC_Alchemist_AcidSpray;
+                userType.AddMemberName("RootCanvas");
+                userType.AddMemberName("Angel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 67:   //  Voins.UC_Model_H_Sniper
+                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_67_UC_Model_H_Sniper;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("PlayerNumber");
                 userType.AddMemberName("Angel");
@@ -1170,104 +1194,134 @@ namespace Voins.Voins_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 67:   //  Voins.UC_EasyMobAttackBall
+            case 68:   //  Voins.UC_Model_H_Alhim
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_67_UC_EasyMobAttackBall;
+                userType.Activator = Activate_68_UC_Model_H_Alhim;
+                userType.AddMemberName("RootCanvas");
+                userType.AddMemberName("PlayerNumber");
+                userType.AddMemberName("Angel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 69:   //  Voins.UC_Model_H_Bonik
+                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_69_UC_Model_H_Bonik;
+                userType.AddMemberName("RootCanvas");
+                userType.AddMemberName("PlayerNumber");
+                userType.AddMemberName("Angel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 70:   //  Voins.UC_Model_Player
+                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_70_UC_Model_Player;
+                userType.AddMemberName("RootCanvas");
+                userType.AddMemberName("PlayerNumber");
+                userType.AddMemberName("Angel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 71:   //  Voins.UC_EasyMobAttackBall
+                userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_71_UC_EasyMobAttackBall;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("Angel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 68:   //  Voins.UC_Sniper_Headshot
+            case 72:   //  Voins.UC_Sniper_Headshot
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_68_UC_Sniper_Headshot;
+                userType.Activator = Activate_72_UC_Sniper_Headshot;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("Angel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 69:   //  Voins.UC_Sniper_Shrapnel
+            case 73:   //  Voins.UC_Sniper_Shrapnel
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_69_UC_Sniper_Shrapnel;
+                userType.Activator = Activate_73_UC_Sniper_Shrapnel;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("Angel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 70:   //  Voins.UC_Maelstrom
+            case 74:   //  Voins.UC_Maelstrom
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_70_UC_Maelstrom;
+                userType.Activator = Activate_74_UC_Maelstrom;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("Angel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 71:   //  Voins.UC_Alchemist_UnstableConcoction
+            case 75:   //  Voins.UC_Alchemist_UnstableConcoction
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_71_UC_Alchemist_UnstableConcoction;
+                userType.Activator = Activate_75_UC_Alchemist_UnstableConcoction;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("Angel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 72:   //  Voins.UC_Jakiro_DualBreath
+            case 76:   //  Voins.UC_Jakiro_DualBreath
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_72_UC_Jakiro_DualBreath;
+                userType.Activator = Activate_76_UC_Jakiro_DualBreath;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("Angel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 73:   //  Voins.UC_Block
+            case 77:   //  Voins.UC_Block
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_73_UC_Block;
+                userType.Activator = Activate_77_UC_Block;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 74:   //  Voins.UC_CrushBlock
+            case 78:   //  Voins.UC_CrushBlock
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_74_UC_CrushBlock;
+                userType.Activator = Activate_78_UC_CrushBlock;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("Angel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 75:   //  Voins.UC_FireArrow
+            case 79:   //  Voins.UC_FireArrow
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_75_UC_FireArrow;
+                userType.Activator = Activate_79_UC_FireArrow;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("Angel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 76:   //  Voins.UC_GameObjectInCall
+            case 80:   //  Voins.UC_GameObjectInCall
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_76_UC_GameObjectInCall;
+                userType.Activator = Activate_80_UC_GameObjectInCall;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 77:   //  Voins.UC_Mob_1_Ball
+            case 81:   //  Voins.UC_Mob_1_Ball
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_77_UC_Mob_1_Ball;
+                userType.Activator = Activate_81_UC_Mob_1_Ball;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("Angel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 78:   //  Voins.UC_Player
+            case 82:   //  Voins.UC_Player
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_78_UC_Player;
+                userType.Activator = Activate_82_UC_Player;
                 userType.AddMemberName("RootCanvas");
                 userType.AddMemberName("PlayerNumber");
                 userType.AddMemberName("Angel");
@@ -1276,28 +1330,28 @@ namespace Voins.Voins_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 79:   //  System.Collections.Generic.List`1<Windows.UI.Xaml.Controls.Image>
+            case 83:   //  System.Collections.Generic.List`1<Windows.UI.Xaml.Controls.Image>
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_79_List;
+                userType.CollectionAdd = VectorAdd_83_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 80:   //  Windows.UI.Xaml.Controls.Image
+            case 84:   //  Windows.UI.Xaml.Controls.Image
                 xamlType = new global::Voins.Voins_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 81:   //  Voins.UC_View_ItemsPanel
+            case 85:   //  Voins.UC_View_ItemsPanel
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_81_UC_View_ItemsPanel;
+                userType.Activator = Activate_85_UC_View_ItemsPanel;
                 userType.AddMemberName("CurrentPlayer");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 82:   //  Voins.UC_View_SpellControl
+            case 86:   //  Voins.UC_View_SpellControl
                 userType = new global::Voins.Voins_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_82_UC_View_SpellControl;
+                userType.Activator = Activate_86_UC_View_SpellControl;
                 userType.AddMemberName("CurrentPlayer");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -2882,1392 +2936,1512 @@ namespace Voins.Voins_XamlTypeInfo
             var that = (global::Voins.AppCode.Bullet)instance;
             return that.GrassDamage;
         }
-        private object get_158_Map_Cell_Item(object instance)
+        private object get_158_Bullet_RemoveUnit(object instance)
+        {
+            var that = (global::Voins.AppCode.Bullet)instance;
+            return that.RemoveUnit;
+        }
+        private object get_159_Bullet_TrentDamage(object instance)
+        {
+            var that = (global::Voins.AppCode.Bullet)instance;
+            return that.TrentDamage;
+        }
+        private object get_160_Bullet_TrentArmor(object instance)
+        {
+            var that = (global::Voins.AppCode.Bullet)instance;
+            return that.TrentArmor;
+        }
+        private object get_161_Bullet_LifeTime(object instance)
+        {
+            var that = (global::Voins.AppCode.Bullet)instance;
+            return that.LifeTime;
+        }
+        private object get_162_Map_Cell_Item(object instance)
         {
             var that = (global::Voins.AppCode.Map_Cell)instance;
             return that.Item;
         }
-        private void set_158_Map_Cell_Item(object instance, object Value)
+        private void set_162_Map_Cell_Item(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Map_Cell)instance;
             that.Item = (global::System.Collections.Generic.List<global::Voins.AppCode.ItemClass>)Value;
         }
-        private object get_159_ItemClass_Bonus(object instance)
+        private object get_163_ItemClass_Bonus(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.Bonus;
         }
-        private void set_159_ItemClass_Bonus(object instance, object Value)
+        private void set_163_ItemClass_Bonus(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.Bonus = (global::System.Boolean)Value;
         }
-        private object get_160_ItemClass_Recept(object instance)
+        private object get_164_ItemClass_Recept(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.Recept;
         }
-        private void set_160_ItemClass_Recept(object instance, object Value)
+        private void set_164_ItemClass_Recept(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.Recept = (global::System.Boolean)Value;
         }
-        private object get_161_ItemClass_ItemUsed(object instance)
+        private object get_165_ItemClass_ItemUsed(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.ItemUsed;
         }
-        private void set_161_ItemClass_ItemUsed(object instance, object Value)
+        private void set_165_ItemClass_ItemUsed(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.ItemUsed = (global::System.Boolean)Value;
         }
-        private object get_162_ItemClass_Name(object instance)
+        private object get_166_ItemClass_Name(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.Name;
         }
-        private void set_162_ItemClass_Name(object instance, object Value)
+        private void set_166_ItemClass_Name(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_163_ItemClass_Boots(object instance)
+        private object get_167_ItemClass_Boots(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.Boots;
         }
-        private void set_163_ItemClass_Boots(object instance, object Value)
+        private void set_167_ItemClass_Boots(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.Boots = (global::System.Boolean)Value;
         }
-        private object get_164_ItemClass_SellForFullPrice(object instance)
+        private object get_168_ItemClass_SellForFullPrice(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.SellForFullPrice;
         }
-        private void set_164_ItemClass_SellForFullPrice(object instance, object Value)
+        private void set_168_ItemClass_SellForFullPrice(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.SellForFullPrice = (global::System.Boolean)Value;
         }
-        private object get_165_ItemClass_PositionX(object instance)
+        private object get_169_ItemClass_PositionX(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.PositionX;
         }
-        private void set_165_ItemClass_PositionX(object instance, object Value)
+        private void set_169_ItemClass_PositionX(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.PositionX = (global::System.Int32)Value;
         }
-        private object get_166_ItemClass_PositionY(object instance)
+        private object get_170_ItemClass_PositionY(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.PositionY;
         }
-        private void set_166_ItemClass_PositionY(object instance, object Value)
+        private void set_170_ItemClass_PositionY(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.PositionY = (global::System.Int32)Value;
         }
-        private object get_167_ItemClass_ManaRegen(object instance)
+        private object get_171_ItemClass_ManaRegen(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.ManaRegen;
         }
-        private void set_167_ItemClass_ManaRegen(object instance, object Value)
+        private void set_171_ItemClass_ManaRegen(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.ManaRegen = (global::System.Double)Value;
         }
-        private object get_168_ItemClass_HealthRegen(object instance)
+        private object get_172_ItemClass_HealthRegen(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.HealthRegen;
         }
-        private void set_168_ItemClass_HealthRegen(object instance, object Value)
+        private void set_172_ItemClass_HealthRegen(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.HealthRegen = (global::System.Int32)Value;
         }
-        private object get_169_ItemClass_HealthBonus(object instance)
+        private object get_173_ItemClass_HealthBonus(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.HealthBonus;
         }
-        private void set_169_ItemClass_HealthBonus(object instance, object Value)
+        private void set_173_ItemClass_HealthBonus(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.HealthBonus = (global::System.Int32)Value;
         }
-        private object get_170_ItemClass_ManaBonus(object instance)
+        private object get_174_ItemClass_ManaBonus(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.ManaBonus;
         }
-        private void set_170_ItemClass_ManaBonus(object instance, object Value)
+        private void set_174_ItemClass_ManaBonus(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.ManaBonus = (global::System.Int32)Value;
         }
-        private object get_171_ItemClass_Strength(object instance)
+        private object get_175_ItemClass_Strength(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.Strength;
         }
-        private void set_171_ItemClass_Strength(object instance, object Value)
+        private void set_175_ItemClass_Strength(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.Strength = (global::System.Int32)Value;
         }
-        private object get_172_ItemClass_Agility(object instance)
+        private object get_176_ItemClass_Agility(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.Agility;
         }
-        private void set_172_ItemClass_Agility(object instance, object Value)
+        private void set_176_ItemClass_Agility(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.Agility = (global::System.Int32)Value;
         }
-        private object get_173_ItemClass_Intelligence(object instance)
+        private object get_177_ItemClass_Intelligence(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.Intelligence;
         }
-        private void set_173_ItemClass_Intelligence(object instance, object Value)
+        private void set_177_ItemClass_Intelligence(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.Intelligence = (global::System.Int32)Value;
         }
-        private object get_174_ItemClass_Demage(object instance)
+        private object get_178_ItemClass_Demage(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.Demage;
         }
-        private void set_174_ItemClass_Demage(object instance, object Value)
+        private void set_178_ItemClass_Demage(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.Demage = (global::System.Int32)Value;
         }
-        private object get_175_ItemClass_Armor(object instance)
+        private object get_179_ItemClass_Armor(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.Armor;
         }
-        private void set_175_ItemClass_Armor(object instance, object Value)
+        private void set_179_ItemClass_Armor(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.Armor = (global::System.Int32)Value;
         }
-        private object get_176_ItemClass_AttackSpeed(object instance)
+        private object get_180_ItemClass_AttackSpeed(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.AttackSpeed;
         }
-        private void set_176_ItemClass_AttackSpeed(object instance, object Value)
+        private void set_180_ItemClass_AttackSpeed(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.AttackSpeed = (global::System.Double)Value;
         }
-        private object get_177_ItemClass_Speed(object instance)
+        private object get_181_ItemClass_Speed(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.Speed;
         }
-        private void set_177_ItemClass_Speed(object instance, object Value)
+        private void set_181_ItemClass_Speed(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.Speed = (global::System.Double)Value;
         }
-        private object get_178_ItemClass_View(object instance)
+        private object get_182_ItemClass_View(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.View;
         }
-        private void set_178_ItemClass_View(object instance, object Value)
+        private void set_182_ItemClass_View(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.View = (global::Voins.UC_View_ItemImage)Value;
         }
-        private object get_179_ItemClass_Info(object instance)
+        private object get_183_ItemClass_Info(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.Info;
         }
-        private void set_179_ItemClass_Info(object instance, object Value)
+        private void set_183_ItemClass_Info(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.Info = (global::Voins.AppCode.ItemDescriptionClassInfo)Value;
         }
-        private object get_180_ItemClass_Parts(object instance)
+        private object get_184_ItemClass_Parts(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.Parts;
         }
-        private void set_180_ItemClass_Parts(object instance, object Value)
+        private void set_184_ItemClass_Parts(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.Parts = (global::System.Collections.Generic.List<global::Voins.AppCode.ItemClass>)Value;
         }
-        private object get_181_ItemClass_SpellItem(object instance)
+        private object get_185_ItemClass_SpellItem(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.SpellItem;
         }
-        private void set_181_ItemClass_SpellItem(object instance, object Value)
+        private void set_185_ItemClass_SpellItem(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.SpellItem = (global::Voins.AppCode.ISpell)Value;
         }
-        private object get_182_ItemClass_Buff(object instance)
+        private object get_186_ItemClass_Buff(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.Buff;
         }
-        private void set_182_ItemClass_Buff(object instance, object Value)
+        private void set_186_ItemClass_Buff(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.Buff = (global::Voins.AppCode.Buff)Value;
         }
-        private object get_183_ItemClass_Price(object instance)
+        private object get_187_ItemClass_Price(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.Price;
         }
-        private void set_183_ItemClass_Price(object instance, object Value)
+        private void set_187_ItemClass_Price(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.Price = (global::System.Int32)Value;
         }
-        private object get_184_ItemClass_BonusMagicDemage(object instance)
+        private object get_188_ItemClass_BonusMagicDemage(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.BonusMagicDemage;
         }
-        private void set_184_ItemClass_BonusMagicDemage(object instance, object Value)
+        private void set_188_ItemClass_BonusMagicDemage(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.BonusMagicDemage = (global::System.Double)Value;
         }
-        private object get_185_ItemClass_AuraItem(object instance)
+        private object get_189_ItemClass_AuraItem(object instance)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             return that.AuraItem;
         }
-        private void set_185_ItemClass_AuraItem(object instance, object Value)
+        private void set_189_ItemClass_AuraItem(object instance, object Value)
         {
             var that = (global::Voins.AppCode.ItemClass)instance;
             that.AuraItem = (global::Voins.Spell.SP_Item_AssaultCuirass)Value;
         }
-        private object get_186_Map_Cell_Block(object instance)
+        private object get_190_Map_Cell_Block(object instance)
         {
             var that = (global::Voins.AppCode.Map_Cell)instance;
             return that.Block;
         }
-        private void set_186_Map_Cell_Block(object instance, object Value)
+        private void set_190_Map_Cell_Block(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Map_Cell)instance;
             that.Block = (global::System.Boolean)Value;
         }
-        private object get_187_Map_Cell_Angel(object instance)
+        private object get_191_Map_Cell_Angel(object instance)
         {
             var that = (global::Voins.AppCode.Map_Cell)instance;
             return that.Angel;
         }
-        private void set_187_Map_Cell_Angel(object instance, object Value)
+        private void set_191_Map_Cell_Angel(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Map_Cell)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_188_Player_Level(object instance)
+        private object get_192_Player_Level(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.Level;
         }
-        private void set_188_Player_Level(object instance, object Value)
+        private void set_192_Player_Level(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.Level = (global::System.Int32)Value;
         }
-        private object get_189_Player_UpPoint(object instance)
+        private object get_193_Player_UpPoint(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.UpPoint;
         }
-        private void set_189_Player_UpPoint(object instance, object Value)
+        private void set_193_Player_UpPoint(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.UpPoint = (global::System.Int32)Value;
         }
-        private object get_190_Player_Exp(object instance)
+        private object get_194_Player_Exp(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.Exp;
         }
-        private void set_190_Player_Exp(object instance, object Value)
+        private void set_194_Player_Exp(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.Exp = (global::System.Int32)Value;
         }
-        private object get_191_Player_GroupType(object instance)
+        private object get_195_Player_GroupType(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.GroupType;
         }
-        private void set_191_Player_GroupType(object instance, object Value)
+        private void set_195_Player_GroupType(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.GroupType = (global::System.Int32)Value;
         }
-        private object get_192_Player_MaxExp(object instance)
+        private object get_196_Player_MaxExp(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.MaxExp;
         }
-        private void set_192_Player_MaxExp(object instance, object Value)
+        private void set_196_Player_MaxExp(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.MaxExp = (global::System.Int32)Value;
         }
-        private object get_193_Player_Gold(object instance)
+        private object get_197_Player_Gold(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.Gold;
         }
-        private void set_193_Player_Gold(object instance, object Value)
+        private void set_197_Player_Gold(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.Gold = (global::System.Int32)Value;
         }
-        private object get_194_Player_Silenced(object instance)
+        private object get_198_Player_Silenced(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.Silenced;
         }
-        private void set_194_Player_Silenced(object instance, object Value)
+        private void set_198_Player_Silenced(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.Silenced = (global::System.Boolean)Value;
         }
-        private object get_195_Player_Hexed(object instance)
+        private object get_199_Player_Hexed(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.Hexed;
         }
-        private void set_195_Player_Hexed(object instance, object Value)
+        private void set_199_Player_Hexed(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.Hexed = (global::System.Boolean)Value;
         }
-        private object get_196_Player_AI(object instance)
+        private object get_200_Player_AI(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.AI;
         }
-        private void set_196_Player_AI(object instance, object Value)
+        private void set_200_Player_AI(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.AI = (global::Voins.AppCode.IAI)Value;
         }
-        private object get_197_Player_PlayerGamePoint(object instance)
+        private object get_201_Player_PlayerGamePoint(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.PlayerGamePoint;
         }
-        private void set_197_Player_PlayerGamePoint(object instance, object Value)
+        private void set_201_Player_PlayerGamePoint(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.PlayerGamePoint = (global::System.Int32)Value;
         }
-        private object get_198_Player_NGamePoint(object instance)
+        private object get_202_Player_NGamePoint(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.NGamePoint;
         }
-        private void set_198_Player_NGamePoint(object instance, object Value)
+        private void set_202_Player_NGamePoint(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.NGamePoint = (global::System.Int32)Value;
         }
-        private object get_199_Player_NGold(object instance)
+        private object get_203_Player_NGold(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.NGold;
         }
-        private void set_199_Player_NGold(object instance, object Value)
+        private void set_203_Player_NGold(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.NGold = (global::System.Int32)Value;
         }
-        private object get_200_Player_NExp(object instance)
+        private object get_204_Player_NExp(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.NExp;
         }
-        private void set_200_Player_NExp(object instance, object Value)
+        private void set_204_Player_NExp(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.NExp = (global::System.Int32)Value;
         }
-        private object get_201_Player_NItem(object instance)
+        private object get_205_Player_NItem(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.NItem;
         }
-        private void set_201_Player_NItem(object instance, object Value)
+        private void set_205_Player_NItem(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.NItem = (global::Voins.AppCode.ItemClass)Value;
         }
-        private object get_202_Player_Items(object instance)
+        private object get_206_Player_Items(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.Items;
         }
-        private void set_202_Player_Items(object instance, object Value)
+        private void set_206_Player_Items(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.Items = (global::System.Collections.Generic.List<global::Voins.AppCode.ItemClass>)Value;
         }
-        private object get_203_Player_Demage(object instance)
+        private object get_207_Player_Demage(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.Demage;
         }
-        private void set_203_Player_Demage(object instance, object Value)
+        private void set_207_Player_Demage(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.Demage = (global::System.Int32)Value;
         }
-        private object get_204_Player_DemageStart(object instance)
+        private object get_208_Player_DemageStart(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.DemageStart;
         }
-        private void set_204_Player_DemageStart(object instance, object Value)
+        private void set_208_Player_DemageStart(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.DemageStart = (global::System.Int32)Value;
         }
-        private object get_205_Player_DemageItem(object instance)
+        private object get_209_Player_DemageItem(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.DemageItem;
         }
-        private void set_205_Player_DemageItem(object instance, object Value)
+        private void set_209_Player_DemageItem(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.DemageItem = (global::System.Int32)Value;
         }
-        private object get_206_Player_HeroType(object instance)
+        private object get_210_Player_HeroType(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.HeroType;
         }
-        private void set_206_Player_HeroType(object instance, object Value)
+        private void set_210_Player_HeroType(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.HeroType = (global::Voins.AppCode.EHeroType)Value;
         }
-        private object get_207_Player_Strength(object instance)
+        private object get_211_Player_Strength(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.Strength;
         }
-        private void set_207_Player_Strength(object instance, object Value)
+        private void set_211_Player_Strength(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.Strength = (global::System.Int32)Value;
         }
-        private object get_208_Player_Agility(object instance)
+        private object get_212_Player_Agility(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.Agility;
         }
-        private void set_208_Player_Agility(object instance, object Value)
+        private void set_212_Player_Agility(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.Agility = (global::System.Int32)Value;
         }
-        private object get_209_Player_Intelligence(object instance)
+        private object get_213_Player_Intelligence(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.Intelligence;
         }
-        private void set_209_Player_Intelligence(object instance, object Value)
+        private void set_213_Player_Intelligence(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.Intelligence = (global::System.Int32)Value;
         }
-        private object get_210_Player_AddStrength(object instance)
+        private object get_214_Player_AddStrength(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.AddStrength;
         }
-        private void set_210_Player_AddStrength(object instance, object Value)
+        private void set_214_Player_AddStrength(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.AddStrength = (global::System.Int32)Value;
         }
-        private object get_211_Player_AddAgility(object instance)
+        private object get_215_Player_AddAgility(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.AddAgility;
         }
-        private void set_211_Player_AddAgility(object instance, object Value)
+        private void set_215_Player_AddAgility(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.AddAgility = (global::System.Int32)Value;
         }
-        private object get_212_Player_AddIntelligence(object instance)
+        private object get_216_Player_AddIntelligence(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.AddIntelligence;
         }
-        private void set_212_Player_AddIntelligence(object instance, object Value)
+        private void set_216_Player_AddIntelligence(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.AddIntelligence = (global::System.Int32)Value;
         }
-        private object get_213_Player_Paused(object instance)
+        private object get_217_Player_Paused(object instance)
         {
             var that = (global::Voins.AppCode.Player)instance;
             return that.Paused;
         }
-        private void set_213_Player_Paused(object instance, object Value)
+        private void set_217_Player_Paused(object instance, object Value)
         {
             var that = (global::Voins.AppCode.Player)instance;
             that.Paused = (global::System.Boolean)Value;
         }
-        private object get_214_UC_View_SelectHeroy_InputTypeNumber(object instance)
+        private object get_218_UC_View_SelectHeroy_InputTypeNumber(object instance)
         {
             var that = (global::Voins.UC_View_SelectHeroy)instance;
             return that.InputTypeNumber;
         }
-        private void set_214_UC_View_SelectHeroy_InputTypeNumber(object instance, object Value)
+        private void set_218_UC_View_SelectHeroy_InputTypeNumber(object instance, object Value)
         {
             var that = (global::Voins.UC_View_SelectHeroy)instance;
             that.InputTypeNumber = (global::System.Int32)Value;
         }
-        private object get_215_UC_View_SelectHeroy_GroupNumber(object instance)
+        private object get_219_UC_View_SelectHeroy_GroupNumber(object instance)
         {
             var that = (global::Voins.UC_View_SelectHeroy)instance;
             return that.GroupNumber;
         }
-        private void set_215_UC_View_SelectHeroy_GroupNumber(object instance, object Value)
+        private void set_219_UC_View_SelectHeroy_GroupNumber(object instance, object Value)
         {
             var that = (global::Voins.UC_View_SelectHeroy)instance;
             that.GroupNumber = (global::System.Int32)Value;
         }
-        private object get_216_Editor_Call_IndexTop(object instance)
+        private object get_220_Editor_Call_IndexTop(object instance)
         {
             var that = (global::Voins.UserControlEditor.Editor_Call)instance;
             return that.IndexTop;
         }
-        private void set_216_Editor_Call_IndexTop(object instance, object Value)
+        private void set_220_Editor_Call_IndexTop(object instance, object Value)
         {
             var that = (global::Voins.UserControlEditor.Editor_Call)instance;
             that.IndexTop = (global::System.Int32)Value;
         }
-        private object get_217_Editor_Call_IndexLeft(object instance)
+        private object get_221_Editor_Call_IndexLeft(object instance)
         {
             var that = (global::Voins.UserControlEditor.Editor_Call)instance;
             return that.IndexLeft;
         }
-        private void set_217_Editor_Call_IndexLeft(object instance, object Value)
+        private void set_221_Editor_Call_IndexLeft(object instance, object Value)
         {
             var that = (global::Voins.UserControlEditor.Editor_Call)instance;
             that.IndexLeft = (global::System.Int32)Value;
         }
-        private object get_218_Editor_Call_ImageIndex(object instance)
+        private object get_222_Editor_Call_ImageIndex(object instance)
         {
             var that = (global::Voins.UserControlEditor.Editor_Call)instance;
             return that.ImageIndex;
         }
-        private void set_218_Editor_Call_ImageIndex(object instance, object Value)
+        private void set_222_Editor_Call_ImageIndex(object instance, object Value)
         {
             var that = (global::Voins.UserControlEditor.Editor_Call)instance;
             that.ImageIndex = (global::System.Int32)Value;
         }
-        private object get_219_UC_Nature_Wrath_RootCanvas(object instance)
+        private object get_223_UC_Model_H_Nature_RootCanvas(object instance)
+        {
+            var that = (global::Voins.UC_Model_H_Nature)instance;
+            return that.RootCanvas;
+        }
+        private void set_223_UC_Model_H_Nature_RootCanvas(object instance, object Value)
+        {
+            var that = (global::Voins.UC_Model_H_Nature)instance;
+            that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
+        }
+        private object get_224_UC_Model_H_Nature_PlayerNumber(object instance)
+        {
+            var that = (global::Voins.UC_Model_H_Nature)instance;
+            return that.PlayerNumber;
+        }
+        private void set_224_UC_Model_H_Nature_PlayerNumber(object instance, object Value)
+        {
+            var that = (global::Voins.UC_Model_H_Nature)instance;
+            that.PlayerNumber = (global::System.Int32)Value;
+        }
+        private object get_225_UC_Model_H_Nature_Angel(object instance)
+        {
+            var that = (global::Voins.UC_Model_H_Nature)instance;
+            return that.Angel;
+        }
+        private void set_225_UC_Model_H_Nature_Angel(object instance, object Value)
+        {
+            var that = (global::Voins.UC_Model_H_Nature)instance;
+            that.Angel = (global::Voins.AppCode.EAngel)Value;
+        }
+        private object get_226_UC_Skadi_RootCanvas(object instance)
+        {
+            var that = (global::Voins.UC_Skadi)instance;
+            return that.RootCanvas;
+        }
+        private void set_226_UC_Skadi_RootCanvas(object instance, object Value)
+        {
+            var that = (global::Voins.UC_Skadi)instance;
+            that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
+        }
+        private object get_227_UC_Skadi_Angel(object instance)
+        {
+            var that = (global::Voins.UC_Skadi)instance;
+            return that.Angel;
+        }
+        private void set_227_UC_Skadi_Angel(object instance, object Value)
+        {
+            var that = (global::Voins.UC_Skadi)instance;
+            that.Angel = (global::Voins.AppCode.EAngel)Value;
+        }
+        private object get_228_UC_Mob_BlackHunterBoss_RootCanvas(object instance)
+        {
+            var that = (global::Voins.UC_Mob_BlackHunterBoss)instance;
+            return that.RootCanvas;
+        }
+        private void set_228_UC_Mob_BlackHunterBoss_RootCanvas(object instance, object Value)
+        {
+            var that = (global::Voins.UC_Mob_BlackHunterBoss)instance;
+            that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
+        }
+        private object get_229_UC_Mob_BlackHunterBoss_Angel(object instance)
+        {
+            var that = (global::Voins.UC_Mob_BlackHunterBoss)instance;
+            return that.Angel;
+        }
+        private void set_229_UC_Mob_BlackHunterBoss_Angel(object instance, object Value)
+        {
+            var that = (global::Voins.UC_Mob_BlackHunterBoss)instance;
+            that.Angel = (global::Voins.AppCode.EAngel)Value;
+        }
+        private object get_230_UC_Mob_BlackHunter_RootCanvas(object instance)
+        {
+            var that = (global::Voins.UC_Mob_BlackHunter)instance;
+            return that.RootCanvas;
+        }
+        private void set_230_UC_Mob_BlackHunter_RootCanvas(object instance, object Value)
+        {
+            var that = (global::Voins.UC_Mob_BlackHunter)instance;
+            that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
+        }
+        private object get_231_UC_Mob_BlackHunter_Angel(object instance)
+        {
+            var that = (global::Voins.UC_Mob_BlackHunter)instance;
+            return that.Angel;
+        }
+        private void set_231_UC_Mob_BlackHunter_Angel(object instance, object Value)
+        {
+            var that = (global::Voins.UC_Mob_BlackHunter)instance;
+            that.Angel = (global::Voins.AppCode.EAngel)Value;
+        }
+        private object get_232_UC_Nature_Wrath_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Nature_Wrath)instance;
             return that.RootCanvas;
         }
-        private void set_219_UC_Nature_Wrath_RootCanvas(object instance, object Value)
+        private void set_232_UC_Nature_Wrath_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Nature_Wrath)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_220_UC_Nature_Wrath_Angel(object instance)
+        private object get_233_UC_Nature_Wrath_Angel(object instance)
         {
             var that = (global::Voins.UC_Nature_Wrath)instance;
             return that.Angel;
         }
-        private void set_220_UC_Nature_Wrath_Angel(object instance, object Value)
+        private void set_233_UC_Nature_Wrath_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Nature_Wrath)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_221_UC_Mob_1_Trent_RootCanvas(object instance)
+        private object get_234_UC_Mob_1_Trent_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Mob_1_Trent)instance;
             return that.RootCanvas;
         }
-        private void set_221_UC_Mob_1_Trent_RootCanvas(object instance, object Value)
+        private void set_234_UC_Mob_1_Trent_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Mob_1_Trent)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_222_UC_Mob_1_Trent_Angel(object instance)
+        private object get_235_UC_Mob_1_Trent_Angel(object instance)
         {
             var that = (global::Voins.UC_Mob_1_Trent)instance;
             return that.Angel;
         }
-        private void set_222_UC_Mob_1_Trent_Angel(object instance, object Value)
+        private void set_235_UC_Mob_1_Trent_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Mob_1_Trent)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_223_UC_Mob_1_Fire_RootCanvas(object instance)
+        private object get_236_UC_Mob_1_Fire_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Mob_1_Fire)instance;
             return that.RootCanvas;
         }
-        private void set_223_UC_Mob_1_Fire_RootCanvas(object instance, object Value)
+        private void set_236_UC_Mob_1_Fire_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Mob_1_Fire)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_224_UC_Mob_1_Fire_Angel(object instance)
+        private object get_237_UC_Mob_1_Fire_Angel(object instance)
         {
             var that = (global::Voins.UC_Mob_1_Fire)instance;
             return that.Angel;
         }
-        private void set_224_UC_Mob_1_Fire_Angel(object instance, object Value)
+        private void set_237_UC_Mob_1_Fire_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Mob_1_Fire)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_225_UC_Mob_1_Ball_Blue_RootCanvas(object instance)
+        private object get_238_UC_Mob_1_Ball_Blue_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Mob_1_Ball_Blue)instance;
             return that.RootCanvas;
         }
-        private void set_225_UC_Mob_1_Ball_Blue_RootCanvas(object instance, object Value)
+        private void set_238_UC_Mob_1_Ball_Blue_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Mob_1_Ball_Blue)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_226_UC_Mob_1_Ball_Blue_Angel(object instance)
+        private object get_239_UC_Mob_1_Ball_Blue_Angel(object instance)
         {
             var that = (global::Voins.UC_Mob_1_Ball_Blue)instance;
             return that.Angel;
         }
-        private void set_226_UC_Mob_1_Ball_Blue_Angel(object instance, object Value)
+        private void set_239_UC_Mob_1_Ball_Blue_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Mob_1_Ball_Blue)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_227_UC_Jakiro_LiquidFire_RootCanvas(object instance)
+        private object get_240_UC_Jakiro_LiquidFire_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Jakiro_LiquidFire)instance;
             return that.RootCanvas;
         }
-        private void set_227_UC_Jakiro_LiquidFire_RootCanvas(object instance, object Value)
+        private void set_240_UC_Jakiro_LiquidFire_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Jakiro_LiquidFire)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_228_UC_Jakiro_LiquidFire_Angel(object instance)
+        private object get_241_UC_Jakiro_LiquidFire_Angel(object instance)
         {
             var that = (global::Voins.UC_Jakiro_LiquidFire)instance;
             return that.Angel;
         }
-        private void set_228_UC_Jakiro_LiquidFire_Angel(object instance, object Value)
+        private void set_241_UC_Jakiro_LiquidFire_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Jakiro_LiquidFire)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_229_UC_Jakiro_Macropyre_RootCanvas(object instance)
+        private object get_242_UC_Jakiro_Macropyre_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Jakiro_Macropyre)instance;
             return that.RootCanvas;
         }
-        private void set_229_UC_Jakiro_Macropyre_RootCanvas(object instance, object Value)
+        private void set_242_UC_Jakiro_Macropyre_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Jakiro_Macropyre)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_230_UC_Jakiro_Macropyre_Angel(object instance)
+        private object get_243_UC_Jakiro_Macropyre_Angel(object instance)
         {
             var that = (global::Voins.UC_Jakiro_Macropyre)instance;
             return that.Angel;
         }
-        private void set_230_UC_Jakiro_Macropyre_Angel(object instance, object Value)
+        private void set_243_UC_Jakiro_Macropyre_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Jakiro_Macropyre)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_231_UC_Jakiro_IcePath_RootCanvas(object instance)
+        private object get_244_UC_Jakiro_IcePath_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Jakiro_IcePath)instance;
             return that.RootCanvas;
         }
-        private void set_231_UC_Jakiro_IcePath_RootCanvas(object instance, object Value)
+        private void set_244_UC_Jakiro_IcePath_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Jakiro_IcePath)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_232_UC_Jakiro_IcePath_Angel(object instance)
+        private object get_245_UC_Jakiro_IcePath_Angel(object instance)
         {
             var that = (global::Voins.UC_Jakiro_IcePath)instance;
             return that.Angel;
         }
-        private void set_232_UC_Jakiro_IcePath_Angel(object instance, object Value)
+        private void set_245_UC_Jakiro_IcePath_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Jakiro_IcePath)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_233_UC_Model_H_Jakiro_RootCanvas(object instance)
+        private object get_246_UC_Model_H_Jakiro_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Model_H_Jakiro)instance;
             return that.RootCanvas;
         }
-        private void set_233_UC_Model_H_Jakiro_RootCanvas(object instance, object Value)
+        private void set_246_UC_Model_H_Jakiro_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Jakiro)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_234_UC_Model_H_Jakiro_PlayerNumber(object instance)
+        private object get_247_UC_Model_H_Jakiro_PlayerNumber(object instance)
         {
             var that = (global::Voins.UC_Model_H_Jakiro)instance;
             return that.PlayerNumber;
         }
-        private void set_234_UC_Model_H_Jakiro_PlayerNumber(object instance, object Value)
+        private void set_247_UC_Model_H_Jakiro_PlayerNumber(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Jakiro)instance;
             that.PlayerNumber = (global::System.Int32)Value;
         }
-        private object get_235_UC_Model_H_Jakiro_Angel(object instance)
+        private object get_248_UC_Model_H_Jakiro_Angel(object instance)
         {
             var that = (global::Voins.UC_Model_H_Jakiro)instance;
             return that.Angel;
         }
-        private void set_235_UC_Model_H_Jakiro_Angel(object instance, object Value)
+        private void set_248_UC_Model_H_Jakiro_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Jakiro)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_236_UC_Super_Mega_Death_Rocket_RootCanvas(object instance)
+        private object get_249_UC_Super_Mega_Death_Rocket_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Super_Mega_Death_Rocket)instance;
             return that.RootCanvas;
         }
-        private void set_236_UC_Super_Mega_Death_Rocket_RootCanvas(object instance, object Value)
+        private void set_249_UC_Super_Mega_Death_Rocket_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Super_Mega_Death_Rocket)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_237_UC_Super_Mega_Death_Rocket_Angel(object instance)
+        private object get_250_UC_Super_Mega_Death_Rocket_Angel(object instance)
         {
             var that = (global::Voins.UC_Super_Mega_Death_Rocket)instance;
             return that.Angel;
         }
-        private void set_237_UC_Super_Mega_Death_Rocket_Angel(object instance, object Value)
+        private void set_250_UC_Super_Mega_Death_Rocket_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Super_Mega_Death_Rocket)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_238_UC_Jinx_Flame_Chompers_RootCanvas(object instance)
+        private object get_251_UC_Jinx_Flame_Chompers_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Jinx_Flame_Chompers)instance;
             return that.RootCanvas;
         }
-        private void set_238_UC_Jinx_Flame_Chompers_RootCanvas(object instance, object Value)
+        private void set_251_UC_Jinx_Flame_Chompers_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Jinx_Flame_Chompers)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_239_UC_Jinx_Flame_Chompers_Angel(object instance)
+        private object get_252_UC_Jinx_Flame_Chompers_Angel(object instance)
         {
             var that = (global::Voins.UC_Jinx_Flame_Chompers)instance;
             return that.Angel;
         }
-        private void set_239_UC_Jinx_Flame_Chompers_Angel(object instance, object Value)
+        private void set_252_UC_Jinx_Flame_Chompers_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Jinx_Flame_Chompers)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_240_UC_Jinx_Zap_Roket_RootCanvas(object instance)
+        private object get_253_UC_Jinx_Zap_Roket_ExplosionStyle(object instance)
+        {
+            var that = (global::Voins.UC_Jinx_Zap_Roket)instance;
+            return that.ExplosionStyle;
+        }
+        private void set_253_UC_Jinx_Zap_Roket_ExplosionStyle(object instance, object Value)
+        {
+            var that = (global::Voins.UC_Jinx_Zap_Roket)instance;
+            that.ExplosionStyle = (global::System.Int32)Value;
+        }
+        private object get_254_UC_Jinx_Zap_Roket_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Jinx_Zap_Roket)instance;
             return that.RootCanvas;
         }
-        private void set_240_UC_Jinx_Zap_Roket_RootCanvas(object instance, object Value)
+        private void set_254_UC_Jinx_Zap_Roket_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Jinx_Zap_Roket)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_241_UC_Jinx_Zap_Roket_Angel(object instance)
+        private object get_255_UC_Jinx_Zap_Roket_Angel(object instance)
         {
             var that = (global::Voins.UC_Jinx_Zap_Roket)instance;
             return that.Angel;
         }
-        private void set_241_UC_Jinx_Zap_Roket_Angel(object instance, object Value)
+        private void set_255_UC_Jinx_Zap_Roket_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Jinx_Zap_Roket)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_242_UC_Jinx_Zap_RootCanvas(object instance)
+        private object get_256_UC_Jinx_Zap_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Jinx_Zap)instance;
             return that.RootCanvas;
         }
-        private void set_242_UC_Jinx_Zap_RootCanvas(object instance, object Value)
+        private void set_256_UC_Jinx_Zap_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Jinx_Zap)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_243_UC_Jinx_Zap_Angel(object instance)
+        private object get_257_UC_Jinx_Zap_Angel(object instance)
         {
             var that = (global::Voins.UC_Jinx_Zap)instance;
             return that.Angel;
         }
-        private void set_243_UC_Jinx_Zap_Angel(object instance, object Value)
+        private void set_257_UC_Jinx_Zap_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Jinx_Zap)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_244_UC_Model_H_Jinx_RootCanvas(object instance)
+        private object get_258_UC_Model_H_Jinx_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Model_H_Jinx)instance;
             return that.RootCanvas;
         }
-        private void set_244_UC_Model_H_Jinx_RootCanvas(object instance, object Value)
+        private void set_258_UC_Model_H_Jinx_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Jinx)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_245_UC_Model_H_Jinx_PlayerNumber(object instance)
+        private object get_259_UC_Model_H_Jinx_PlayerNumber(object instance)
         {
             var that = (global::Voins.UC_Model_H_Jinx)instance;
             return that.PlayerNumber;
         }
-        private void set_245_UC_Model_H_Jinx_PlayerNumber(object instance, object Value)
+        private void set_259_UC_Model_H_Jinx_PlayerNumber(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Jinx)instance;
             that.PlayerNumber = (global::System.Int32)Value;
         }
-        private object get_246_UC_Model_H_Jinx_Angel(object instance)
+        private object get_260_UC_Model_H_Jinx_Angel(object instance)
         {
             var that = (global::Voins.UC_Model_H_Jinx)instance;
             return that.Angel;
         }
-        private void set_246_UC_Model_H_Jinx_Angel(object instance, object Value)
+        private void set_260_UC_Model_H_Jinx_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Jinx)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_247_UC_Mirana_SacredArrow_RootCanvas(object instance)
+        private object get_261_UC_Mirana_SacredArrow_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Mirana_SacredArrow)instance;
             return that.RootCanvas;
         }
-        private void set_247_UC_Mirana_SacredArrow_RootCanvas(object instance, object Value)
+        private void set_261_UC_Mirana_SacredArrow_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Mirana_SacredArrow)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_248_UC_Mirana_SacredArrow_Angel(object instance)
+        private object get_262_UC_Mirana_SacredArrow_Angel(object instance)
         {
             var that = (global::Voins.UC_Mirana_SacredArrow)instance;
             return that.Angel;
         }
-        private void set_248_UC_Mirana_SacredArrow_Angel(object instance, object Value)
+        private void set_262_UC_Mirana_SacredArrow_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Mirana_SacredArrow)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_249_UC_Mirana_Starstorm_RootCanvas(object instance)
+        private object get_263_UC_Mirana_Starstorm_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Mirana_Starstorm)instance;
             return that.RootCanvas;
         }
-        private void set_249_UC_Mirana_Starstorm_RootCanvas(object instance, object Value)
+        private void set_263_UC_Mirana_Starstorm_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Mirana_Starstorm)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_250_UC_Mirana_Starstorm_Angel(object instance)
+        private object get_264_UC_Mirana_Starstorm_Angel(object instance)
         {
             var that = (global::Voins.UC_Mirana_Starstorm)instance;
             return that.Angel;
         }
-        private void set_250_UC_Mirana_Starstorm_Angel(object instance, object Value)
+        private void set_264_UC_Mirana_Starstorm_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Mirana_Starstorm)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_251_UC_Model_H_Mirana_RootCanvas(object instance)
+        private object get_265_UC_Model_H_Mirana_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Model_H_Mirana)instance;
             return that.RootCanvas;
         }
-        private void set_251_UC_Model_H_Mirana_RootCanvas(object instance, object Value)
+        private void set_265_UC_Model_H_Mirana_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Mirana)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_252_UC_Model_H_Mirana_PlayerNumber(object instance)
+        private object get_266_UC_Model_H_Mirana_PlayerNumber(object instance)
         {
             var that = (global::Voins.UC_Model_H_Mirana)instance;
             return that.PlayerNumber;
         }
-        private void set_252_UC_Model_H_Mirana_PlayerNumber(object instance, object Value)
+        private void set_266_UC_Model_H_Mirana_PlayerNumber(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Mirana)instance;
             that.PlayerNumber = (global::System.Int32)Value;
         }
-        private object get_253_UC_Model_H_Mirana_Angel(object instance)
+        private object get_267_UC_Model_H_Mirana_Angel(object instance)
         {
             var that = (global::Voins.UC_Model_H_Mirana)instance;
             return that.Angel;
         }
-        private void set_253_UC_Model_H_Mirana_Angel(object instance, object Value)
+        private void set_267_UC_Model_H_Mirana_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Mirana)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_254_UC_Nature_Sprout_RootCanvas(object instance)
+        private object get_268_UC_Nature_Sprout_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Nature_Sprout)instance;
             return that.RootCanvas;
         }
-        private void set_254_UC_Nature_Sprout_RootCanvas(object instance, object Value)
+        private void set_268_UC_Nature_Sprout_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Nature_Sprout)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_255_UC_Nature_Sprout_Angel(object instance)
+        private object get_269_UC_Nature_Sprout_Angel(object instance)
         {
             var that = (global::Voins.UC_Nature_Sprout)instance;
             return that.Angel;
         }
-        private void set_255_UC_Nature_Sprout_Angel(object instance, object Value)
+        private void set_269_UC_Nature_Sprout_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Nature_Sprout)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_256_UC_Alchemist_AcidSpray_RootCanvas(object instance)
+        private object get_270_UC_Alchemist_AcidSpray_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Alchemist_AcidSpray)instance;
             return that.RootCanvas;
         }
-        private void set_256_UC_Alchemist_AcidSpray_RootCanvas(object instance, object Value)
+        private void set_270_UC_Alchemist_AcidSpray_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Alchemist_AcidSpray)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_257_UC_Alchemist_AcidSpray_Angel(object instance)
+        private object get_271_UC_Alchemist_AcidSpray_Angel(object instance)
         {
             var that = (global::Voins.UC_Alchemist_AcidSpray)instance;
             return that.Angel;
         }
-        private void set_257_UC_Alchemist_AcidSpray_Angel(object instance, object Value)
+        private void set_271_UC_Alchemist_AcidSpray_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Alchemist_AcidSpray)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_258_UC_Model_H_Sniper_RootCanvas(object instance)
+        private object get_272_UC_Model_H_Sniper_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Model_H_Sniper)instance;
             return that.RootCanvas;
         }
-        private void set_258_UC_Model_H_Sniper_RootCanvas(object instance, object Value)
+        private void set_272_UC_Model_H_Sniper_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Sniper)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_259_UC_Model_H_Sniper_PlayerNumber(object instance)
+        private object get_273_UC_Model_H_Sniper_PlayerNumber(object instance)
         {
             var that = (global::Voins.UC_Model_H_Sniper)instance;
             return that.PlayerNumber;
         }
-        private void set_259_UC_Model_H_Sniper_PlayerNumber(object instance, object Value)
+        private void set_273_UC_Model_H_Sniper_PlayerNumber(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Sniper)instance;
             that.PlayerNumber = (global::System.Int32)Value;
         }
-        private object get_260_UC_Model_H_Sniper_Angel(object instance)
+        private object get_274_UC_Model_H_Sniper_Angel(object instance)
         {
             var that = (global::Voins.UC_Model_H_Sniper)instance;
             return that.Angel;
         }
-        private void set_260_UC_Model_H_Sniper_Angel(object instance, object Value)
+        private void set_274_UC_Model_H_Sniper_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Sniper)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_261_UC_Model_H_Alhim_RootCanvas(object instance)
+        private object get_275_UC_Model_H_Alhim_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Model_H_Alhim)instance;
             return that.RootCanvas;
         }
-        private void set_261_UC_Model_H_Alhim_RootCanvas(object instance, object Value)
+        private void set_275_UC_Model_H_Alhim_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Alhim)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_262_UC_Model_H_Alhim_PlayerNumber(object instance)
+        private object get_276_UC_Model_H_Alhim_PlayerNumber(object instance)
         {
             var that = (global::Voins.UC_Model_H_Alhim)instance;
             return that.PlayerNumber;
         }
-        private void set_262_UC_Model_H_Alhim_PlayerNumber(object instance, object Value)
+        private void set_276_UC_Model_H_Alhim_PlayerNumber(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Alhim)instance;
             that.PlayerNumber = (global::System.Int32)Value;
         }
-        private object get_263_UC_Model_H_Alhim_Angel(object instance)
+        private object get_277_UC_Model_H_Alhim_Angel(object instance)
         {
             var that = (global::Voins.UC_Model_H_Alhim)instance;
             return that.Angel;
         }
-        private void set_263_UC_Model_H_Alhim_Angel(object instance, object Value)
+        private void set_277_UC_Model_H_Alhim_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Alhim)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_264_UC_Model_H_Bonik_RootCanvas(object instance)
+        private object get_278_UC_Model_H_Bonik_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Model_H_Bonik)instance;
             return that.RootCanvas;
         }
-        private void set_264_UC_Model_H_Bonik_RootCanvas(object instance, object Value)
+        private void set_278_UC_Model_H_Bonik_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Bonik)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_265_UC_Model_H_Bonik_PlayerNumber(object instance)
+        private object get_279_UC_Model_H_Bonik_PlayerNumber(object instance)
         {
             var that = (global::Voins.UC_Model_H_Bonik)instance;
             return that.PlayerNumber;
         }
-        private void set_265_UC_Model_H_Bonik_PlayerNumber(object instance, object Value)
+        private void set_279_UC_Model_H_Bonik_PlayerNumber(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Bonik)instance;
             that.PlayerNumber = (global::System.Int32)Value;
         }
-        private object get_266_UC_Model_H_Bonik_Angel(object instance)
+        private object get_280_UC_Model_H_Bonik_Angel(object instance)
         {
             var that = (global::Voins.UC_Model_H_Bonik)instance;
             return that.Angel;
         }
-        private void set_266_UC_Model_H_Bonik_Angel(object instance, object Value)
+        private void set_280_UC_Model_H_Bonik_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_H_Bonik)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_267_UC_Model_Player_RootCanvas(object instance)
+        private object get_281_UC_Model_Player_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Model_Player)instance;
             return that.RootCanvas;
         }
-        private void set_267_UC_Model_Player_RootCanvas(object instance, object Value)
+        private void set_281_UC_Model_Player_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_Player)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_268_UC_Model_Player_PlayerNumber(object instance)
+        private object get_282_UC_Model_Player_PlayerNumber(object instance)
         {
             var that = (global::Voins.UC_Model_Player)instance;
             return that.PlayerNumber;
         }
-        private void set_268_UC_Model_Player_PlayerNumber(object instance, object Value)
+        private void set_282_UC_Model_Player_PlayerNumber(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_Player)instance;
             that.PlayerNumber = (global::System.Int32)Value;
         }
-        private object get_269_UC_Model_Player_Angel(object instance)
+        private object get_283_UC_Model_Player_Angel(object instance)
         {
             var that = (global::Voins.UC_Model_Player)instance;
             return that.Angel;
         }
-        private void set_269_UC_Model_Player_Angel(object instance, object Value)
+        private void set_283_UC_Model_Player_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Model_Player)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_270_UC_EasyMobAttackBall_RootCanvas(object instance)
+        private object get_284_UC_EasyMobAttackBall_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_EasyMobAttackBall)instance;
             return that.RootCanvas;
         }
-        private void set_270_UC_EasyMobAttackBall_RootCanvas(object instance, object Value)
+        private void set_284_UC_EasyMobAttackBall_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_EasyMobAttackBall)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_271_UC_EasyMobAttackBall_Angel(object instance)
+        private object get_285_UC_EasyMobAttackBall_Angel(object instance)
         {
             var that = (global::Voins.UC_EasyMobAttackBall)instance;
             return that.Angel;
         }
-        private void set_271_UC_EasyMobAttackBall_Angel(object instance, object Value)
+        private void set_285_UC_EasyMobAttackBall_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_EasyMobAttackBall)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_272_UC_Sniper_Headshot_RootCanvas(object instance)
+        private object get_286_UC_Sniper_Headshot_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Sniper_Headshot)instance;
             return that.RootCanvas;
         }
-        private void set_272_UC_Sniper_Headshot_RootCanvas(object instance, object Value)
+        private void set_286_UC_Sniper_Headshot_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Sniper_Headshot)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_273_UC_Sniper_Headshot_Angel(object instance)
+        private object get_287_UC_Sniper_Headshot_Angel(object instance)
         {
             var that = (global::Voins.UC_Sniper_Headshot)instance;
             return that.Angel;
         }
-        private void set_273_UC_Sniper_Headshot_Angel(object instance, object Value)
+        private void set_287_UC_Sniper_Headshot_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Sniper_Headshot)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_274_UC_Sniper_Shrapnel_RootCanvas(object instance)
+        private object get_288_UC_Sniper_Shrapnel_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Sniper_Shrapnel)instance;
             return that.RootCanvas;
         }
-        private void set_274_UC_Sniper_Shrapnel_RootCanvas(object instance, object Value)
+        private void set_288_UC_Sniper_Shrapnel_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Sniper_Shrapnel)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_275_UC_Sniper_Shrapnel_Angel(object instance)
+        private object get_289_UC_Sniper_Shrapnel_Angel(object instance)
         {
             var that = (global::Voins.UC_Sniper_Shrapnel)instance;
             return that.Angel;
         }
-        private void set_275_UC_Sniper_Shrapnel_Angel(object instance, object Value)
+        private void set_289_UC_Sniper_Shrapnel_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Sniper_Shrapnel)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_276_UC_Maelstrom_RootCanvas(object instance)
+        private object get_290_UC_Maelstrom_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Maelstrom)instance;
             return that.RootCanvas;
         }
-        private void set_276_UC_Maelstrom_RootCanvas(object instance, object Value)
+        private void set_290_UC_Maelstrom_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Maelstrom)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_277_UC_Maelstrom_Angel(object instance)
+        private object get_291_UC_Maelstrom_Angel(object instance)
         {
             var that = (global::Voins.UC_Maelstrom)instance;
             return that.Angel;
         }
-        private void set_277_UC_Maelstrom_Angel(object instance, object Value)
+        private void set_291_UC_Maelstrom_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Maelstrom)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_278_UC_Alchemist_UnstableConcoction_RootCanvas(object instance)
+        private object get_292_UC_Alchemist_UnstableConcoction_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Alchemist_UnstableConcoction)instance;
             return that.RootCanvas;
         }
-        private void set_278_UC_Alchemist_UnstableConcoction_RootCanvas(object instance, object Value)
+        private void set_292_UC_Alchemist_UnstableConcoction_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Alchemist_UnstableConcoction)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_279_UC_Alchemist_UnstableConcoction_Angel(object instance)
+        private object get_293_UC_Alchemist_UnstableConcoction_Angel(object instance)
         {
             var that = (global::Voins.UC_Alchemist_UnstableConcoction)instance;
             return that.Angel;
         }
-        private void set_279_UC_Alchemist_UnstableConcoction_Angel(object instance, object Value)
+        private void set_293_UC_Alchemist_UnstableConcoction_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Alchemist_UnstableConcoction)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_280_UC_Jakiro_DualBreath_RootCanvas(object instance)
+        private object get_294_UC_Jakiro_DualBreath_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Jakiro_DualBreath)instance;
             return that.RootCanvas;
         }
-        private void set_280_UC_Jakiro_DualBreath_RootCanvas(object instance, object Value)
+        private void set_294_UC_Jakiro_DualBreath_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Jakiro_DualBreath)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_281_UC_Jakiro_DualBreath_Angel(object instance)
+        private object get_295_UC_Jakiro_DualBreath_Angel(object instance)
         {
             var that = (global::Voins.UC_Jakiro_DualBreath)instance;
             return that.Angel;
         }
-        private void set_281_UC_Jakiro_DualBreath_Angel(object instance, object Value)
+        private void set_295_UC_Jakiro_DualBreath_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Jakiro_DualBreath)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_282_UC_CrushBlock_RootCanvas(object instance)
+        private object get_296_UC_CrushBlock_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_CrushBlock)instance;
             return that.RootCanvas;
         }
-        private void set_282_UC_CrushBlock_RootCanvas(object instance, object Value)
+        private void set_296_UC_CrushBlock_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_CrushBlock)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_283_UC_CrushBlock_Angel(object instance)
+        private object get_297_UC_CrushBlock_Angel(object instance)
         {
             var that = (global::Voins.UC_CrushBlock)instance;
             return that.Angel;
         }
-        private void set_283_UC_CrushBlock_Angel(object instance, object Value)
+        private void set_297_UC_CrushBlock_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_CrushBlock)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_284_UC_FireArrow_RootCanvas(object instance)
+        private object get_298_UC_FireArrow_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_FireArrow)instance;
             return that.RootCanvas;
         }
-        private void set_284_UC_FireArrow_RootCanvas(object instance, object Value)
+        private void set_298_UC_FireArrow_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_FireArrow)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_285_UC_FireArrow_Angel(object instance)
+        private object get_299_UC_FireArrow_Angel(object instance)
         {
             var that = (global::Voins.UC_FireArrow)instance;
             return that.Angel;
         }
-        private void set_285_UC_FireArrow_Angel(object instance, object Value)
+        private void set_299_UC_FireArrow_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_FireArrow)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_286_UC_Mob_1_Ball_RootCanvas(object instance)
+        private object get_300_UC_Mob_1_Ball_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Mob_1_Ball)instance;
             return that.RootCanvas;
         }
-        private void set_286_UC_Mob_1_Ball_RootCanvas(object instance, object Value)
+        private void set_300_UC_Mob_1_Ball_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Mob_1_Ball)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_287_UC_Mob_1_Ball_Angel(object instance)
+        private object get_301_UC_Mob_1_Ball_Angel(object instance)
         {
             var that = (global::Voins.UC_Mob_1_Ball)instance;
             return that.Angel;
         }
-        private void set_287_UC_Mob_1_Ball_Angel(object instance, object Value)
+        private void set_301_UC_Mob_1_Ball_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Mob_1_Ball)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_288_UC_Player_RootCanvas(object instance)
+        private object get_302_UC_Player_RootCanvas(object instance)
         {
             var that = (global::Voins.UC_Player)instance;
             return that.RootCanvas;
         }
-        private void set_288_UC_Player_RootCanvas(object instance, object Value)
+        private void set_302_UC_Player_RootCanvas(object instance, object Value)
         {
             var that = (global::Voins.UC_Player)instance;
             that.RootCanvas = (global::Windows.UI.Xaml.Controls.Canvas)Value;
         }
-        private object get_289_UC_Player_PlayerNumber(object instance)
+        private object get_303_UC_Player_PlayerNumber(object instance)
         {
             var that = (global::Voins.UC_Player)instance;
             return that.PlayerNumber;
         }
-        private void set_289_UC_Player_PlayerNumber(object instance, object Value)
+        private void set_303_UC_Player_PlayerNumber(object instance, object Value)
         {
             var that = (global::Voins.UC_Player)instance;
             that.PlayerNumber = (global::System.Int32)Value;
         }
-        private object get_290_UC_Player_Angel(object instance)
+        private object get_304_UC_Player_Angel(object instance)
         {
             var that = (global::Voins.UC_Player)instance;
             return that.Angel;
         }
-        private void set_290_UC_Player_Angel(object instance, object Value)
+        private void set_304_UC_Player_Angel(object instance, object Value)
         {
             var that = (global::Voins.UC_Player)instance;
             that.Angel = (global::Voins.AppCode.EAngel)Value;
         }
-        private object get_291_UC_Player_ImageStoryboardList(object instance)
+        private object get_305_UC_Player_ImageStoryboardList(object instance)
         {
             var that = (global::Voins.UC_Player)instance;
             return that.ImageStoryboardList;
         }
-        private void set_291_UC_Player_ImageStoryboardList(object instance, object Value)
+        private void set_305_UC_Player_ImageStoryboardList(object instance, object Value)
         {
             var that = (global::Voins.UC_Player)instance;
             that.ImageStoryboardList = (global::System.Collections.Generic.List<global::Windows.UI.Xaml.Controls.Image>)Value;
         }
-        private object get_292_UC_View_ItemImage_ImageIndex(object instance)
+        private object get_306_UC_View_ItemImage_ImageIndex(object instance)
         {
             var that = (global::Voins.UC_View_ItemImage)instance;
             return that.ImageIndex;
         }
-        private void set_292_UC_View_ItemImage_ImageIndex(object instance, object Value)
+        private void set_306_UC_View_ItemImage_ImageIndex(object instance, object Value)
         {
             var that = (global::Voins.UC_View_ItemImage)instance;
             that.ImageIndex = (global::System.Int32)Value;
         }
-        private object get_293_UC_View_ItemImage_Spell(object instance)
+        private object get_307_UC_View_ItemImage_Spell(object instance)
         {
             var that = (global::Voins.UC_View_ItemImage)instance;
             return that.Spell;
         }
-        private void set_293_UC_View_ItemImage_Spell(object instance, object Value)
+        private void set_307_UC_View_ItemImage_Spell(object instance, object Value)
         {
             var that = (global::Voins.UC_View_ItemImage)instance;
             that.Spell = (global::Voins.AppCode.ISpell)Value;
         }
-        private object get_294_UC_View_ImageTileControl_Spell(object instance)
+        private object get_308_UC_View_ImageTileControl_Spell(object instance)
         {
             var that = (global::Voins.UC_View_ImageTileControl)instance;
             return that.Spell;
         }
-        private void set_294_UC_View_ImageTileControl_Spell(object instance, object Value)
+        private void set_308_UC_View_ImageTileControl_Spell(object instance, object Value)
         {
             var that = (global::Voins.UC_View_ImageTileControl)instance;
             that.Spell = (global::Voins.AppCode.ISpell)Value;
         }
-        private object get_295_UC_View_ItemsPanel_CurrentPlayer(object instance)
+        private object get_309_UC_View_ItemsPanel_CurrentPlayer(object instance)
         {
             var that = (global::Voins.UC_View_ItemsPanel)instance;
             return that.CurrentPlayer;
         }
-        private void set_295_UC_View_ItemsPanel_CurrentPlayer(object instance, object Value)
+        private void set_309_UC_View_ItemsPanel_CurrentPlayer(object instance, object Value)
         {
             var that = (global::Voins.UC_View_ItemsPanel)instance;
             that.CurrentPlayer = (global::Voins.AppCode.Player)Value;
         }
-        private object get_296_UC_View_SpellControl_CurrentPlayer(object instance)
+        private object get_310_UC_View_SpellControl_CurrentPlayer(object instance)
         {
             var that = (global::Voins.UC_View_SpellControl)instance;
             return that.CurrentPlayer;
         }
-        private void set_296_UC_View_SpellControl_CurrentPlayer(object instance, object Value)
+        private void set_310_UC_View_SpellControl_CurrentPlayer(object instance, object Value)
         {
             var that = (global::Voins.UC_View_SpellControl)instance;
             that.CurrentPlayer = (global::Voins.AppCode.Player)Value;
@@ -5228,839 +5402,923 @@ namespace Voins.Voins_XamlTypeInfo
                 xamlMember.Getter = get_157_Bullet_GrassDamage;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "Voins.AppCode.Bullet.RemoveUnit":
+                userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Bullet");
+                xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RemoveUnit", "Voins.AppCode.IUnit");
+                xamlMember.Getter = get_158_Bullet_RemoveUnit;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Voins.AppCode.Bullet.TrentDamage":
+                userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Bullet");
+                xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "TrentDamage", "Int32");
+                xamlMember.Getter = get_159_Bullet_TrentDamage;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Voins.AppCode.Bullet.TrentArmor":
+                userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Bullet");
+                xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "TrentArmor", "Int32");
+                xamlMember.Getter = get_160_Bullet_TrentArmor;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Voins.AppCode.Bullet.LifeTime":
+                userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Bullet");
+                xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "LifeTime", "Int32");
+                xamlMember.Getter = get_161_Bullet_LifeTime;
+                xamlMember.SetIsReadOnly();
+                break;
             case "Voins.AppCode.Map_Cell.Item":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Map_Cell");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Item", "System.Collections.Generic.List`1<Voins.AppCode.ItemClass>");
-                xamlMember.Getter = get_158_Map_Cell_Item;
-                xamlMember.Setter = set_158_Map_Cell_Item;
+                xamlMember.Getter = get_162_Map_Cell_Item;
+                xamlMember.Setter = set_162_Map_Cell_Item;
                 break;
             case "Voins.AppCode.ItemClass.Bonus":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Bonus", "Boolean");
-                xamlMember.Getter = get_159_ItemClass_Bonus;
-                xamlMember.Setter = set_159_ItemClass_Bonus;
+                xamlMember.Getter = get_163_ItemClass_Bonus;
+                xamlMember.Setter = set_163_ItemClass_Bonus;
                 break;
             case "Voins.AppCode.ItemClass.Recept":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Recept", "Boolean");
-                xamlMember.Getter = get_160_ItemClass_Recept;
-                xamlMember.Setter = set_160_ItemClass_Recept;
+                xamlMember.Getter = get_164_ItemClass_Recept;
+                xamlMember.Setter = set_164_ItemClass_Recept;
                 break;
             case "Voins.AppCode.ItemClass.ItemUsed":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "ItemUsed", "Boolean");
-                xamlMember.Getter = get_161_ItemClass_ItemUsed;
-                xamlMember.Setter = set_161_ItemClass_ItemUsed;
+                xamlMember.Getter = get_165_ItemClass_ItemUsed;
+                xamlMember.Setter = set_165_ItemClass_ItemUsed;
                 break;
             case "Voins.AppCode.ItemClass.Name":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_162_ItemClass_Name;
-                xamlMember.Setter = set_162_ItemClass_Name;
+                xamlMember.Getter = get_166_ItemClass_Name;
+                xamlMember.Setter = set_166_ItemClass_Name;
                 break;
             case "Voins.AppCode.ItemClass.Boots":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Boots", "Boolean");
-                xamlMember.Getter = get_163_ItemClass_Boots;
-                xamlMember.Setter = set_163_ItemClass_Boots;
+                xamlMember.Getter = get_167_ItemClass_Boots;
+                xamlMember.Setter = set_167_ItemClass_Boots;
                 break;
             case "Voins.AppCode.ItemClass.SellForFullPrice":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "SellForFullPrice", "Boolean");
-                xamlMember.Getter = get_164_ItemClass_SellForFullPrice;
-                xamlMember.Setter = set_164_ItemClass_SellForFullPrice;
+                xamlMember.Getter = get_168_ItemClass_SellForFullPrice;
+                xamlMember.Setter = set_168_ItemClass_SellForFullPrice;
                 break;
             case "Voins.AppCode.ItemClass.PositionX":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "PositionX", "Int32");
-                xamlMember.Getter = get_165_ItemClass_PositionX;
-                xamlMember.Setter = set_165_ItemClass_PositionX;
+                xamlMember.Getter = get_169_ItemClass_PositionX;
+                xamlMember.Setter = set_169_ItemClass_PositionX;
                 break;
             case "Voins.AppCode.ItemClass.PositionY":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "PositionY", "Int32");
-                xamlMember.Getter = get_166_ItemClass_PositionY;
-                xamlMember.Setter = set_166_ItemClass_PositionY;
+                xamlMember.Getter = get_170_ItemClass_PositionY;
+                xamlMember.Setter = set_170_ItemClass_PositionY;
                 break;
             case "Voins.AppCode.ItemClass.ManaRegen":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "ManaRegen", "Double");
-                xamlMember.Getter = get_167_ItemClass_ManaRegen;
-                xamlMember.Setter = set_167_ItemClass_ManaRegen;
+                xamlMember.Getter = get_171_ItemClass_ManaRegen;
+                xamlMember.Setter = set_171_ItemClass_ManaRegen;
                 break;
             case "Voins.AppCode.ItemClass.HealthRegen":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "HealthRegen", "Int32");
-                xamlMember.Getter = get_168_ItemClass_HealthRegen;
-                xamlMember.Setter = set_168_ItemClass_HealthRegen;
+                xamlMember.Getter = get_172_ItemClass_HealthRegen;
+                xamlMember.Setter = set_172_ItemClass_HealthRegen;
                 break;
             case "Voins.AppCode.ItemClass.HealthBonus":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "HealthBonus", "Int32");
-                xamlMember.Getter = get_169_ItemClass_HealthBonus;
-                xamlMember.Setter = set_169_ItemClass_HealthBonus;
+                xamlMember.Getter = get_173_ItemClass_HealthBonus;
+                xamlMember.Setter = set_173_ItemClass_HealthBonus;
                 break;
             case "Voins.AppCode.ItemClass.ManaBonus":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "ManaBonus", "Int32");
-                xamlMember.Getter = get_170_ItemClass_ManaBonus;
-                xamlMember.Setter = set_170_ItemClass_ManaBonus;
+                xamlMember.Getter = get_174_ItemClass_ManaBonus;
+                xamlMember.Setter = set_174_ItemClass_ManaBonus;
                 break;
             case "Voins.AppCode.ItemClass.Strength":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Strength", "Int32");
-                xamlMember.Getter = get_171_ItemClass_Strength;
-                xamlMember.Setter = set_171_ItemClass_Strength;
+                xamlMember.Getter = get_175_ItemClass_Strength;
+                xamlMember.Setter = set_175_ItemClass_Strength;
                 break;
             case "Voins.AppCode.ItemClass.Agility":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Agility", "Int32");
-                xamlMember.Getter = get_172_ItemClass_Agility;
-                xamlMember.Setter = set_172_ItemClass_Agility;
+                xamlMember.Getter = get_176_ItemClass_Agility;
+                xamlMember.Setter = set_176_ItemClass_Agility;
                 break;
             case "Voins.AppCode.ItemClass.Intelligence":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Intelligence", "Int32");
-                xamlMember.Getter = get_173_ItemClass_Intelligence;
-                xamlMember.Setter = set_173_ItemClass_Intelligence;
+                xamlMember.Getter = get_177_ItemClass_Intelligence;
+                xamlMember.Setter = set_177_ItemClass_Intelligence;
                 break;
             case "Voins.AppCode.ItemClass.Demage":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Demage", "Int32");
-                xamlMember.Getter = get_174_ItemClass_Demage;
-                xamlMember.Setter = set_174_ItemClass_Demage;
+                xamlMember.Getter = get_178_ItemClass_Demage;
+                xamlMember.Setter = set_178_ItemClass_Demage;
                 break;
             case "Voins.AppCode.ItemClass.Armor":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Armor", "Int32");
-                xamlMember.Getter = get_175_ItemClass_Armor;
-                xamlMember.Setter = set_175_ItemClass_Armor;
+                xamlMember.Getter = get_179_ItemClass_Armor;
+                xamlMember.Setter = set_179_ItemClass_Armor;
                 break;
             case "Voins.AppCode.ItemClass.AttackSpeed":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "AttackSpeed", "Double");
-                xamlMember.Getter = get_176_ItemClass_AttackSpeed;
-                xamlMember.Setter = set_176_ItemClass_AttackSpeed;
+                xamlMember.Getter = get_180_ItemClass_AttackSpeed;
+                xamlMember.Setter = set_180_ItemClass_AttackSpeed;
                 break;
             case "Voins.AppCode.ItemClass.Speed":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Speed", "Double");
-                xamlMember.Getter = get_177_ItemClass_Speed;
-                xamlMember.Setter = set_177_ItemClass_Speed;
+                xamlMember.Getter = get_181_ItemClass_Speed;
+                xamlMember.Setter = set_181_ItemClass_Speed;
                 break;
             case "Voins.AppCode.ItemClass.View":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "View", "Voins.UC_View_ItemImage");
-                xamlMember.Getter = get_178_ItemClass_View;
-                xamlMember.Setter = set_178_ItemClass_View;
+                xamlMember.Getter = get_182_ItemClass_View;
+                xamlMember.Setter = set_182_ItemClass_View;
                 break;
             case "Voins.AppCode.ItemClass.Info":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Info", "Voins.AppCode.ItemDescriptionClassInfo");
-                xamlMember.Getter = get_179_ItemClass_Info;
-                xamlMember.Setter = set_179_ItemClass_Info;
+                xamlMember.Getter = get_183_ItemClass_Info;
+                xamlMember.Setter = set_183_ItemClass_Info;
                 break;
             case "Voins.AppCode.ItemClass.Parts":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Parts", "System.Collections.Generic.List`1<Voins.AppCode.ItemClass>");
-                xamlMember.Getter = get_180_ItemClass_Parts;
-                xamlMember.Setter = set_180_ItemClass_Parts;
+                xamlMember.Getter = get_184_ItemClass_Parts;
+                xamlMember.Setter = set_184_ItemClass_Parts;
                 break;
             case "Voins.AppCode.ItemClass.SpellItem":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "SpellItem", "Voins.AppCode.ISpell");
-                xamlMember.Getter = get_181_ItemClass_SpellItem;
-                xamlMember.Setter = set_181_ItemClass_SpellItem;
+                xamlMember.Getter = get_185_ItemClass_SpellItem;
+                xamlMember.Setter = set_185_ItemClass_SpellItem;
                 break;
             case "Voins.AppCode.ItemClass.Buff":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Buff", "Voins.AppCode.Buff");
-                xamlMember.Getter = get_182_ItemClass_Buff;
-                xamlMember.Setter = set_182_ItemClass_Buff;
+                xamlMember.Getter = get_186_ItemClass_Buff;
+                xamlMember.Setter = set_186_ItemClass_Buff;
                 break;
             case "Voins.AppCode.ItemClass.Price":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Price", "Int32");
-                xamlMember.Getter = get_183_ItemClass_Price;
-                xamlMember.Setter = set_183_ItemClass_Price;
+                xamlMember.Getter = get_187_ItemClass_Price;
+                xamlMember.Setter = set_187_ItemClass_Price;
                 break;
             case "Voins.AppCode.ItemClass.BonusMagicDemage":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "BonusMagicDemage", "Double");
-                xamlMember.Getter = get_184_ItemClass_BonusMagicDemage;
-                xamlMember.Setter = set_184_ItemClass_BonusMagicDemage;
+                xamlMember.Getter = get_188_ItemClass_BonusMagicDemage;
+                xamlMember.Setter = set_188_ItemClass_BonusMagicDemage;
                 break;
             case "Voins.AppCode.ItemClass.AuraItem":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.ItemClass");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "AuraItem", "Voins.Spell.SP_Item_AssaultCuirass");
-                xamlMember.Getter = get_185_ItemClass_AuraItem;
-                xamlMember.Setter = set_185_ItemClass_AuraItem;
+                xamlMember.Getter = get_189_ItemClass_AuraItem;
+                xamlMember.Setter = set_189_ItemClass_AuraItem;
                 break;
             case "Voins.AppCode.Map_Cell.Block":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Map_Cell");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Block", "Boolean");
-                xamlMember.Getter = get_186_Map_Cell_Block;
-                xamlMember.Setter = set_186_Map_Cell_Block;
+                xamlMember.Getter = get_190_Map_Cell_Block;
+                xamlMember.Setter = set_190_Map_Cell_Block;
                 break;
             case "Voins.AppCode.Map_Cell.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Map_Cell");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_187_Map_Cell_Angel;
-                xamlMember.Setter = set_187_Map_Cell_Angel;
+                xamlMember.Getter = get_191_Map_Cell_Angel;
+                xamlMember.Setter = set_191_Map_Cell_Angel;
                 break;
             case "Voins.AppCode.Player.Level":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Level", "Int32");
-                xamlMember.Getter = get_188_Player_Level;
-                xamlMember.Setter = set_188_Player_Level;
+                xamlMember.Getter = get_192_Player_Level;
+                xamlMember.Setter = set_192_Player_Level;
                 break;
             case "Voins.AppCode.Player.UpPoint":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "UpPoint", "Int32");
-                xamlMember.Getter = get_189_Player_UpPoint;
-                xamlMember.Setter = set_189_Player_UpPoint;
+                xamlMember.Getter = get_193_Player_UpPoint;
+                xamlMember.Setter = set_193_Player_UpPoint;
                 break;
             case "Voins.AppCode.Player.Exp":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Exp", "Int32");
-                xamlMember.Getter = get_190_Player_Exp;
-                xamlMember.Setter = set_190_Player_Exp;
+                xamlMember.Getter = get_194_Player_Exp;
+                xamlMember.Setter = set_194_Player_Exp;
                 break;
             case "Voins.AppCode.Player.GroupType":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "GroupType", "Int32");
-                xamlMember.Getter = get_191_Player_GroupType;
-                xamlMember.Setter = set_191_Player_GroupType;
+                xamlMember.Getter = get_195_Player_GroupType;
+                xamlMember.Setter = set_195_Player_GroupType;
                 break;
             case "Voins.AppCode.Player.MaxExp":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "MaxExp", "Int32");
-                xamlMember.Getter = get_192_Player_MaxExp;
-                xamlMember.Setter = set_192_Player_MaxExp;
+                xamlMember.Getter = get_196_Player_MaxExp;
+                xamlMember.Setter = set_196_Player_MaxExp;
                 break;
             case "Voins.AppCode.Player.Gold":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Gold", "Int32");
-                xamlMember.Getter = get_193_Player_Gold;
-                xamlMember.Setter = set_193_Player_Gold;
+                xamlMember.Getter = get_197_Player_Gold;
+                xamlMember.Setter = set_197_Player_Gold;
                 break;
             case "Voins.AppCode.Player.Silenced":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Silenced", "Boolean");
-                xamlMember.Getter = get_194_Player_Silenced;
-                xamlMember.Setter = set_194_Player_Silenced;
+                xamlMember.Getter = get_198_Player_Silenced;
+                xamlMember.Setter = set_198_Player_Silenced;
                 break;
             case "Voins.AppCode.Player.Hexed":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Hexed", "Boolean");
-                xamlMember.Getter = get_195_Player_Hexed;
-                xamlMember.Setter = set_195_Player_Hexed;
+                xamlMember.Getter = get_199_Player_Hexed;
+                xamlMember.Setter = set_199_Player_Hexed;
                 break;
             case "Voins.AppCode.Player.AI":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "AI", "Voins.AppCode.IAI");
-                xamlMember.Getter = get_196_Player_AI;
-                xamlMember.Setter = set_196_Player_AI;
+                xamlMember.Getter = get_200_Player_AI;
+                xamlMember.Setter = set_200_Player_AI;
                 break;
             case "Voins.AppCode.Player.PlayerGamePoint":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "PlayerGamePoint", "Int32");
-                xamlMember.Getter = get_197_Player_PlayerGamePoint;
-                xamlMember.Setter = set_197_Player_PlayerGamePoint;
+                xamlMember.Getter = get_201_Player_PlayerGamePoint;
+                xamlMember.Setter = set_201_Player_PlayerGamePoint;
                 break;
             case "Voins.AppCode.Player.NGamePoint":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "NGamePoint", "Int32");
-                xamlMember.Getter = get_198_Player_NGamePoint;
-                xamlMember.Setter = set_198_Player_NGamePoint;
+                xamlMember.Getter = get_202_Player_NGamePoint;
+                xamlMember.Setter = set_202_Player_NGamePoint;
                 break;
             case "Voins.AppCode.Player.NGold":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "NGold", "Int32");
-                xamlMember.Getter = get_199_Player_NGold;
-                xamlMember.Setter = set_199_Player_NGold;
+                xamlMember.Getter = get_203_Player_NGold;
+                xamlMember.Setter = set_203_Player_NGold;
                 break;
             case "Voins.AppCode.Player.NExp":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "NExp", "Int32");
-                xamlMember.Getter = get_200_Player_NExp;
-                xamlMember.Setter = set_200_Player_NExp;
+                xamlMember.Getter = get_204_Player_NExp;
+                xamlMember.Setter = set_204_Player_NExp;
                 break;
             case "Voins.AppCode.Player.NItem":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "NItem", "Voins.AppCode.ItemClass");
-                xamlMember.Getter = get_201_Player_NItem;
-                xamlMember.Setter = set_201_Player_NItem;
+                xamlMember.Getter = get_205_Player_NItem;
+                xamlMember.Setter = set_205_Player_NItem;
                 break;
             case "Voins.AppCode.Player.Items":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Items", "System.Collections.Generic.List`1<Voins.AppCode.ItemClass>");
-                xamlMember.Getter = get_202_Player_Items;
-                xamlMember.Setter = set_202_Player_Items;
+                xamlMember.Getter = get_206_Player_Items;
+                xamlMember.Setter = set_206_Player_Items;
                 break;
             case "Voins.AppCode.Player.Demage":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Demage", "Int32");
-                xamlMember.Getter = get_203_Player_Demage;
-                xamlMember.Setter = set_203_Player_Demage;
+                xamlMember.Getter = get_207_Player_Demage;
+                xamlMember.Setter = set_207_Player_Demage;
                 break;
             case "Voins.AppCode.Player.DemageStart":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "DemageStart", "Int32");
-                xamlMember.Getter = get_204_Player_DemageStart;
-                xamlMember.Setter = set_204_Player_DemageStart;
+                xamlMember.Getter = get_208_Player_DemageStart;
+                xamlMember.Setter = set_208_Player_DemageStart;
                 break;
             case "Voins.AppCode.Player.DemageItem":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "DemageItem", "Int32");
-                xamlMember.Getter = get_205_Player_DemageItem;
-                xamlMember.Setter = set_205_Player_DemageItem;
+                xamlMember.Getter = get_209_Player_DemageItem;
+                xamlMember.Setter = set_209_Player_DemageItem;
                 break;
             case "Voins.AppCode.Player.HeroType":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "HeroType", "Voins.AppCode.EHeroType");
-                xamlMember.Getter = get_206_Player_HeroType;
-                xamlMember.Setter = set_206_Player_HeroType;
+                xamlMember.Getter = get_210_Player_HeroType;
+                xamlMember.Setter = set_210_Player_HeroType;
                 break;
             case "Voins.AppCode.Player.Strength":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Strength", "Int32");
-                xamlMember.Getter = get_207_Player_Strength;
-                xamlMember.Setter = set_207_Player_Strength;
+                xamlMember.Getter = get_211_Player_Strength;
+                xamlMember.Setter = set_211_Player_Strength;
                 break;
             case "Voins.AppCode.Player.Agility":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Agility", "Int32");
-                xamlMember.Getter = get_208_Player_Agility;
-                xamlMember.Setter = set_208_Player_Agility;
+                xamlMember.Getter = get_212_Player_Agility;
+                xamlMember.Setter = set_212_Player_Agility;
                 break;
             case "Voins.AppCode.Player.Intelligence":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Intelligence", "Int32");
-                xamlMember.Getter = get_209_Player_Intelligence;
-                xamlMember.Setter = set_209_Player_Intelligence;
+                xamlMember.Getter = get_213_Player_Intelligence;
+                xamlMember.Setter = set_213_Player_Intelligence;
                 break;
             case "Voins.AppCode.Player.AddStrength":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "AddStrength", "Int32");
-                xamlMember.Getter = get_210_Player_AddStrength;
-                xamlMember.Setter = set_210_Player_AddStrength;
+                xamlMember.Getter = get_214_Player_AddStrength;
+                xamlMember.Setter = set_214_Player_AddStrength;
                 break;
             case "Voins.AppCode.Player.AddAgility":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "AddAgility", "Int32");
-                xamlMember.Getter = get_211_Player_AddAgility;
-                xamlMember.Setter = set_211_Player_AddAgility;
+                xamlMember.Getter = get_215_Player_AddAgility;
+                xamlMember.Setter = set_215_Player_AddAgility;
                 break;
             case "Voins.AppCode.Player.AddIntelligence":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "AddIntelligence", "Int32");
-                xamlMember.Getter = get_212_Player_AddIntelligence;
-                xamlMember.Setter = set_212_Player_AddIntelligence;
+                xamlMember.Getter = get_216_Player_AddIntelligence;
+                xamlMember.Setter = set_216_Player_AddIntelligence;
                 break;
             case "Voins.AppCode.Player.Paused":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.AppCode.Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Paused", "Boolean");
-                xamlMember.Getter = get_213_Player_Paused;
-                xamlMember.Setter = set_213_Player_Paused;
+                xamlMember.Getter = get_217_Player_Paused;
+                xamlMember.Setter = set_217_Player_Paused;
                 break;
             case "Voins.UC_View_SelectHeroy.InputTypeNumber":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_View_SelectHeroy");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "InputTypeNumber", "Int32");
-                xamlMember.Getter = get_214_UC_View_SelectHeroy_InputTypeNumber;
-                xamlMember.Setter = set_214_UC_View_SelectHeroy_InputTypeNumber;
+                xamlMember.Getter = get_218_UC_View_SelectHeroy_InputTypeNumber;
+                xamlMember.Setter = set_218_UC_View_SelectHeroy_InputTypeNumber;
                 break;
             case "Voins.UC_View_SelectHeroy.GroupNumber":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_View_SelectHeroy");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "GroupNumber", "Int32");
-                xamlMember.Getter = get_215_UC_View_SelectHeroy_GroupNumber;
-                xamlMember.Setter = set_215_UC_View_SelectHeroy_GroupNumber;
+                xamlMember.Getter = get_219_UC_View_SelectHeroy_GroupNumber;
+                xamlMember.Setter = set_219_UC_View_SelectHeroy_GroupNumber;
                 break;
             case "Voins.UserControlEditor.Editor_Call.IndexTop":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UserControlEditor.Editor_Call");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "IndexTop", "Int32");
-                xamlMember.Getter = get_216_Editor_Call_IndexTop;
-                xamlMember.Setter = set_216_Editor_Call_IndexTop;
+                xamlMember.Getter = get_220_Editor_Call_IndexTop;
+                xamlMember.Setter = set_220_Editor_Call_IndexTop;
                 break;
             case "Voins.UserControlEditor.Editor_Call.IndexLeft":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UserControlEditor.Editor_Call");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "IndexLeft", "Int32");
-                xamlMember.Getter = get_217_Editor_Call_IndexLeft;
-                xamlMember.Setter = set_217_Editor_Call_IndexLeft;
+                xamlMember.Getter = get_221_Editor_Call_IndexLeft;
+                xamlMember.Setter = set_221_Editor_Call_IndexLeft;
                 break;
             case "Voins.UserControlEditor.Editor_Call.ImageIndex":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UserControlEditor.Editor_Call");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "ImageIndex", "Int32");
-                xamlMember.Getter = get_218_Editor_Call_ImageIndex;
-                xamlMember.Setter = set_218_Editor_Call_ImageIndex;
+                xamlMember.Getter = get_222_Editor_Call_ImageIndex;
+                xamlMember.Setter = set_222_Editor_Call_ImageIndex;
+                break;
+            case "Voins.UC_Model_H_Nature.RootCanvas":
+                userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Nature");
+                xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
+                xamlMember.Getter = get_223_UC_Model_H_Nature_RootCanvas;
+                xamlMember.Setter = set_223_UC_Model_H_Nature_RootCanvas;
+                break;
+            case "Voins.UC_Model_H_Nature.PlayerNumber":
+                userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Nature");
+                xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "PlayerNumber", "Int32");
+                xamlMember.Getter = get_224_UC_Model_H_Nature_PlayerNumber;
+                xamlMember.Setter = set_224_UC_Model_H_Nature_PlayerNumber;
+                break;
+            case "Voins.UC_Model_H_Nature.Angel":
+                userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Nature");
+                xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
+                xamlMember.Getter = get_225_UC_Model_H_Nature_Angel;
+                xamlMember.Setter = set_225_UC_Model_H_Nature_Angel;
+                break;
+            case "Voins.UC_Skadi.RootCanvas":
+                userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Skadi");
+                xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
+                xamlMember.Getter = get_226_UC_Skadi_RootCanvas;
+                xamlMember.Setter = set_226_UC_Skadi_RootCanvas;
+                break;
+            case "Voins.UC_Skadi.Angel":
+                userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Skadi");
+                xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
+                xamlMember.Getter = get_227_UC_Skadi_Angel;
+                xamlMember.Setter = set_227_UC_Skadi_Angel;
+                break;
+            case "Voins.UC_Mob_BlackHunterBoss.RootCanvas":
+                userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Mob_BlackHunterBoss");
+                xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
+                xamlMember.Getter = get_228_UC_Mob_BlackHunterBoss_RootCanvas;
+                xamlMember.Setter = set_228_UC_Mob_BlackHunterBoss_RootCanvas;
+                break;
+            case "Voins.UC_Mob_BlackHunterBoss.Angel":
+                userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Mob_BlackHunterBoss");
+                xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
+                xamlMember.Getter = get_229_UC_Mob_BlackHunterBoss_Angel;
+                xamlMember.Setter = set_229_UC_Mob_BlackHunterBoss_Angel;
+                break;
+            case "Voins.UC_Mob_BlackHunter.RootCanvas":
+                userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Mob_BlackHunter");
+                xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
+                xamlMember.Getter = get_230_UC_Mob_BlackHunter_RootCanvas;
+                xamlMember.Setter = set_230_UC_Mob_BlackHunter_RootCanvas;
+                break;
+            case "Voins.UC_Mob_BlackHunter.Angel":
+                userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Mob_BlackHunter");
+                xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
+                xamlMember.Getter = get_231_UC_Mob_BlackHunter_Angel;
+                xamlMember.Setter = set_231_UC_Mob_BlackHunter_Angel;
                 break;
             case "Voins.UC_Nature_Wrath.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Nature_Wrath");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_219_UC_Nature_Wrath_RootCanvas;
-                xamlMember.Setter = set_219_UC_Nature_Wrath_RootCanvas;
+                xamlMember.Getter = get_232_UC_Nature_Wrath_RootCanvas;
+                xamlMember.Setter = set_232_UC_Nature_Wrath_RootCanvas;
                 break;
             case "Voins.UC_Nature_Wrath.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Nature_Wrath");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_220_UC_Nature_Wrath_Angel;
-                xamlMember.Setter = set_220_UC_Nature_Wrath_Angel;
+                xamlMember.Getter = get_233_UC_Nature_Wrath_Angel;
+                xamlMember.Setter = set_233_UC_Nature_Wrath_Angel;
                 break;
             case "Voins.UC_Mob_1_Trent.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Mob_1_Trent");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_221_UC_Mob_1_Trent_RootCanvas;
-                xamlMember.Setter = set_221_UC_Mob_1_Trent_RootCanvas;
+                xamlMember.Getter = get_234_UC_Mob_1_Trent_RootCanvas;
+                xamlMember.Setter = set_234_UC_Mob_1_Trent_RootCanvas;
                 break;
             case "Voins.UC_Mob_1_Trent.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Mob_1_Trent");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_222_UC_Mob_1_Trent_Angel;
-                xamlMember.Setter = set_222_UC_Mob_1_Trent_Angel;
+                xamlMember.Getter = get_235_UC_Mob_1_Trent_Angel;
+                xamlMember.Setter = set_235_UC_Mob_1_Trent_Angel;
                 break;
             case "Voins.UC_Mob_1_Fire.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Mob_1_Fire");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_223_UC_Mob_1_Fire_RootCanvas;
-                xamlMember.Setter = set_223_UC_Mob_1_Fire_RootCanvas;
+                xamlMember.Getter = get_236_UC_Mob_1_Fire_RootCanvas;
+                xamlMember.Setter = set_236_UC_Mob_1_Fire_RootCanvas;
                 break;
             case "Voins.UC_Mob_1_Fire.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Mob_1_Fire");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_224_UC_Mob_1_Fire_Angel;
-                xamlMember.Setter = set_224_UC_Mob_1_Fire_Angel;
+                xamlMember.Getter = get_237_UC_Mob_1_Fire_Angel;
+                xamlMember.Setter = set_237_UC_Mob_1_Fire_Angel;
                 break;
             case "Voins.UC_Mob_1_Ball_Blue.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Mob_1_Ball_Blue");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_225_UC_Mob_1_Ball_Blue_RootCanvas;
-                xamlMember.Setter = set_225_UC_Mob_1_Ball_Blue_RootCanvas;
+                xamlMember.Getter = get_238_UC_Mob_1_Ball_Blue_RootCanvas;
+                xamlMember.Setter = set_238_UC_Mob_1_Ball_Blue_RootCanvas;
                 break;
             case "Voins.UC_Mob_1_Ball_Blue.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Mob_1_Ball_Blue");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_226_UC_Mob_1_Ball_Blue_Angel;
-                xamlMember.Setter = set_226_UC_Mob_1_Ball_Blue_Angel;
+                xamlMember.Getter = get_239_UC_Mob_1_Ball_Blue_Angel;
+                xamlMember.Setter = set_239_UC_Mob_1_Ball_Blue_Angel;
                 break;
             case "Voins.UC_Jakiro_LiquidFire.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Jakiro_LiquidFire");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_227_UC_Jakiro_LiquidFire_RootCanvas;
-                xamlMember.Setter = set_227_UC_Jakiro_LiquidFire_RootCanvas;
+                xamlMember.Getter = get_240_UC_Jakiro_LiquidFire_RootCanvas;
+                xamlMember.Setter = set_240_UC_Jakiro_LiquidFire_RootCanvas;
                 break;
             case "Voins.UC_Jakiro_LiquidFire.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Jakiro_LiquidFire");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_228_UC_Jakiro_LiquidFire_Angel;
-                xamlMember.Setter = set_228_UC_Jakiro_LiquidFire_Angel;
+                xamlMember.Getter = get_241_UC_Jakiro_LiquidFire_Angel;
+                xamlMember.Setter = set_241_UC_Jakiro_LiquidFire_Angel;
                 break;
             case "Voins.UC_Jakiro_Macropyre.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Jakiro_Macropyre");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_229_UC_Jakiro_Macropyre_RootCanvas;
-                xamlMember.Setter = set_229_UC_Jakiro_Macropyre_RootCanvas;
+                xamlMember.Getter = get_242_UC_Jakiro_Macropyre_RootCanvas;
+                xamlMember.Setter = set_242_UC_Jakiro_Macropyre_RootCanvas;
                 break;
             case "Voins.UC_Jakiro_Macropyre.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Jakiro_Macropyre");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_230_UC_Jakiro_Macropyre_Angel;
-                xamlMember.Setter = set_230_UC_Jakiro_Macropyre_Angel;
+                xamlMember.Getter = get_243_UC_Jakiro_Macropyre_Angel;
+                xamlMember.Setter = set_243_UC_Jakiro_Macropyre_Angel;
                 break;
             case "Voins.UC_Jakiro_IcePath.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Jakiro_IcePath");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_231_UC_Jakiro_IcePath_RootCanvas;
-                xamlMember.Setter = set_231_UC_Jakiro_IcePath_RootCanvas;
+                xamlMember.Getter = get_244_UC_Jakiro_IcePath_RootCanvas;
+                xamlMember.Setter = set_244_UC_Jakiro_IcePath_RootCanvas;
                 break;
             case "Voins.UC_Jakiro_IcePath.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Jakiro_IcePath");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_232_UC_Jakiro_IcePath_Angel;
-                xamlMember.Setter = set_232_UC_Jakiro_IcePath_Angel;
+                xamlMember.Getter = get_245_UC_Jakiro_IcePath_Angel;
+                xamlMember.Setter = set_245_UC_Jakiro_IcePath_Angel;
                 break;
             case "Voins.UC_Model_H_Jakiro.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Jakiro");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_233_UC_Model_H_Jakiro_RootCanvas;
-                xamlMember.Setter = set_233_UC_Model_H_Jakiro_RootCanvas;
+                xamlMember.Getter = get_246_UC_Model_H_Jakiro_RootCanvas;
+                xamlMember.Setter = set_246_UC_Model_H_Jakiro_RootCanvas;
                 break;
             case "Voins.UC_Model_H_Jakiro.PlayerNumber":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Jakiro");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "PlayerNumber", "Int32");
-                xamlMember.Getter = get_234_UC_Model_H_Jakiro_PlayerNumber;
-                xamlMember.Setter = set_234_UC_Model_H_Jakiro_PlayerNumber;
+                xamlMember.Getter = get_247_UC_Model_H_Jakiro_PlayerNumber;
+                xamlMember.Setter = set_247_UC_Model_H_Jakiro_PlayerNumber;
                 break;
             case "Voins.UC_Model_H_Jakiro.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Jakiro");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_235_UC_Model_H_Jakiro_Angel;
-                xamlMember.Setter = set_235_UC_Model_H_Jakiro_Angel;
+                xamlMember.Getter = get_248_UC_Model_H_Jakiro_Angel;
+                xamlMember.Setter = set_248_UC_Model_H_Jakiro_Angel;
                 break;
             case "Voins.UC_Super_Mega_Death_Rocket.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Super_Mega_Death_Rocket");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_236_UC_Super_Mega_Death_Rocket_RootCanvas;
-                xamlMember.Setter = set_236_UC_Super_Mega_Death_Rocket_RootCanvas;
+                xamlMember.Getter = get_249_UC_Super_Mega_Death_Rocket_RootCanvas;
+                xamlMember.Setter = set_249_UC_Super_Mega_Death_Rocket_RootCanvas;
                 break;
             case "Voins.UC_Super_Mega_Death_Rocket.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Super_Mega_Death_Rocket");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_237_UC_Super_Mega_Death_Rocket_Angel;
-                xamlMember.Setter = set_237_UC_Super_Mega_Death_Rocket_Angel;
+                xamlMember.Getter = get_250_UC_Super_Mega_Death_Rocket_Angel;
+                xamlMember.Setter = set_250_UC_Super_Mega_Death_Rocket_Angel;
                 break;
             case "Voins.UC_Jinx_Flame_Chompers.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Jinx_Flame_Chompers");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_238_UC_Jinx_Flame_Chompers_RootCanvas;
-                xamlMember.Setter = set_238_UC_Jinx_Flame_Chompers_RootCanvas;
+                xamlMember.Getter = get_251_UC_Jinx_Flame_Chompers_RootCanvas;
+                xamlMember.Setter = set_251_UC_Jinx_Flame_Chompers_RootCanvas;
                 break;
             case "Voins.UC_Jinx_Flame_Chompers.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Jinx_Flame_Chompers");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_239_UC_Jinx_Flame_Chompers_Angel;
-                xamlMember.Setter = set_239_UC_Jinx_Flame_Chompers_Angel;
+                xamlMember.Getter = get_252_UC_Jinx_Flame_Chompers_Angel;
+                xamlMember.Setter = set_252_UC_Jinx_Flame_Chompers_Angel;
+                break;
+            case "Voins.UC_Jinx_Zap_Roket.ExplosionStyle":
+                userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Jinx_Zap_Roket");
+                xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "ExplosionStyle", "Int32");
+                xamlMember.Getter = get_253_UC_Jinx_Zap_Roket_ExplosionStyle;
+                xamlMember.Setter = set_253_UC_Jinx_Zap_Roket_ExplosionStyle;
                 break;
             case "Voins.UC_Jinx_Zap_Roket.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Jinx_Zap_Roket");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_240_UC_Jinx_Zap_Roket_RootCanvas;
-                xamlMember.Setter = set_240_UC_Jinx_Zap_Roket_RootCanvas;
+                xamlMember.Getter = get_254_UC_Jinx_Zap_Roket_RootCanvas;
+                xamlMember.Setter = set_254_UC_Jinx_Zap_Roket_RootCanvas;
                 break;
             case "Voins.UC_Jinx_Zap_Roket.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Jinx_Zap_Roket");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_241_UC_Jinx_Zap_Roket_Angel;
-                xamlMember.Setter = set_241_UC_Jinx_Zap_Roket_Angel;
+                xamlMember.Getter = get_255_UC_Jinx_Zap_Roket_Angel;
+                xamlMember.Setter = set_255_UC_Jinx_Zap_Roket_Angel;
                 break;
             case "Voins.UC_Jinx_Zap.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Jinx_Zap");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_242_UC_Jinx_Zap_RootCanvas;
-                xamlMember.Setter = set_242_UC_Jinx_Zap_RootCanvas;
+                xamlMember.Getter = get_256_UC_Jinx_Zap_RootCanvas;
+                xamlMember.Setter = set_256_UC_Jinx_Zap_RootCanvas;
                 break;
             case "Voins.UC_Jinx_Zap.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Jinx_Zap");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_243_UC_Jinx_Zap_Angel;
-                xamlMember.Setter = set_243_UC_Jinx_Zap_Angel;
+                xamlMember.Getter = get_257_UC_Jinx_Zap_Angel;
+                xamlMember.Setter = set_257_UC_Jinx_Zap_Angel;
                 break;
             case "Voins.UC_Model_H_Jinx.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Jinx");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_244_UC_Model_H_Jinx_RootCanvas;
-                xamlMember.Setter = set_244_UC_Model_H_Jinx_RootCanvas;
+                xamlMember.Getter = get_258_UC_Model_H_Jinx_RootCanvas;
+                xamlMember.Setter = set_258_UC_Model_H_Jinx_RootCanvas;
                 break;
             case "Voins.UC_Model_H_Jinx.PlayerNumber":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Jinx");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "PlayerNumber", "Int32");
-                xamlMember.Getter = get_245_UC_Model_H_Jinx_PlayerNumber;
-                xamlMember.Setter = set_245_UC_Model_H_Jinx_PlayerNumber;
+                xamlMember.Getter = get_259_UC_Model_H_Jinx_PlayerNumber;
+                xamlMember.Setter = set_259_UC_Model_H_Jinx_PlayerNumber;
                 break;
             case "Voins.UC_Model_H_Jinx.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Jinx");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_246_UC_Model_H_Jinx_Angel;
-                xamlMember.Setter = set_246_UC_Model_H_Jinx_Angel;
+                xamlMember.Getter = get_260_UC_Model_H_Jinx_Angel;
+                xamlMember.Setter = set_260_UC_Model_H_Jinx_Angel;
                 break;
             case "Voins.UC_Mirana_SacredArrow.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Mirana_SacredArrow");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_247_UC_Mirana_SacredArrow_RootCanvas;
-                xamlMember.Setter = set_247_UC_Mirana_SacredArrow_RootCanvas;
+                xamlMember.Getter = get_261_UC_Mirana_SacredArrow_RootCanvas;
+                xamlMember.Setter = set_261_UC_Mirana_SacredArrow_RootCanvas;
                 break;
             case "Voins.UC_Mirana_SacredArrow.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Mirana_SacredArrow");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_248_UC_Mirana_SacredArrow_Angel;
-                xamlMember.Setter = set_248_UC_Mirana_SacredArrow_Angel;
+                xamlMember.Getter = get_262_UC_Mirana_SacredArrow_Angel;
+                xamlMember.Setter = set_262_UC_Mirana_SacredArrow_Angel;
                 break;
             case "Voins.UC_Mirana_Starstorm.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Mirana_Starstorm");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_249_UC_Mirana_Starstorm_RootCanvas;
-                xamlMember.Setter = set_249_UC_Mirana_Starstorm_RootCanvas;
+                xamlMember.Getter = get_263_UC_Mirana_Starstorm_RootCanvas;
+                xamlMember.Setter = set_263_UC_Mirana_Starstorm_RootCanvas;
                 break;
             case "Voins.UC_Mirana_Starstorm.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Mirana_Starstorm");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_250_UC_Mirana_Starstorm_Angel;
-                xamlMember.Setter = set_250_UC_Mirana_Starstorm_Angel;
+                xamlMember.Getter = get_264_UC_Mirana_Starstorm_Angel;
+                xamlMember.Setter = set_264_UC_Mirana_Starstorm_Angel;
                 break;
             case "Voins.UC_Model_H_Mirana.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Mirana");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_251_UC_Model_H_Mirana_RootCanvas;
-                xamlMember.Setter = set_251_UC_Model_H_Mirana_RootCanvas;
+                xamlMember.Getter = get_265_UC_Model_H_Mirana_RootCanvas;
+                xamlMember.Setter = set_265_UC_Model_H_Mirana_RootCanvas;
                 break;
             case "Voins.UC_Model_H_Mirana.PlayerNumber":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Mirana");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "PlayerNumber", "Int32");
-                xamlMember.Getter = get_252_UC_Model_H_Mirana_PlayerNumber;
-                xamlMember.Setter = set_252_UC_Model_H_Mirana_PlayerNumber;
+                xamlMember.Getter = get_266_UC_Model_H_Mirana_PlayerNumber;
+                xamlMember.Setter = set_266_UC_Model_H_Mirana_PlayerNumber;
                 break;
             case "Voins.UC_Model_H_Mirana.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Mirana");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_253_UC_Model_H_Mirana_Angel;
-                xamlMember.Setter = set_253_UC_Model_H_Mirana_Angel;
+                xamlMember.Getter = get_267_UC_Model_H_Mirana_Angel;
+                xamlMember.Setter = set_267_UC_Model_H_Mirana_Angel;
                 break;
             case "Voins.UC_Nature_Sprout.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Nature_Sprout");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_254_UC_Nature_Sprout_RootCanvas;
-                xamlMember.Setter = set_254_UC_Nature_Sprout_RootCanvas;
+                xamlMember.Getter = get_268_UC_Nature_Sprout_RootCanvas;
+                xamlMember.Setter = set_268_UC_Nature_Sprout_RootCanvas;
                 break;
             case "Voins.UC_Nature_Sprout.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Nature_Sprout");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_255_UC_Nature_Sprout_Angel;
-                xamlMember.Setter = set_255_UC_Nature_Sprout_Angel;
+                xamlMember.Getter = get_269_UC_Nature_Sprout_Angel;
+                xamlMember.Setter = set_269_UC_Nature_Sprout_Angel;
                 break;
             case "Voins.UC_Alchemist_AcidSpray.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Alchemist_AcidSpray");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_256_UC_Alchemist_AcidSpray_RootCanvas;
-                xamlMember.Setter = set_256_UC_Alchemist_AcidSpray_RootCanvas;
+                xamlMember.Getter = get_270_UC_Alchemist_AcidSpray_RootCanvas;
+                xamlMember.Setter = set_270_UC_Alchemist_AcidSpray_RootCanvas;
                 break;
             case "Voins.UC_Alchemist_AcidSpray.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Alchemist_AcidSpray");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_257_UC_Alchemist_AcidSpray_Angel;
-                xamlMember.Setter = set_257_UC_Alchemist_AcidSpray_Angel;
+                xamlMember.Getter = get_271_UC_Alchemist_AcidSpray_Angel;
+                xamlMember.Setter = set_271_UC_Alchemist_AcidSpray_Angel;
                 break;
             case "Voins.UC_Model_H_Sniper.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Sniper");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_258_UC_Model_H_Sniper_RootCanvas;
-                xamlMember.Setter = set_258_UC_Model_H_Sniper_RootCanvas;
+                xamlMember.Getter = get_272_UC_Model_H_Sniper_RootCanvas;
+                xamlMember.Setter = set_272_UC_Model_H_Sniper_RootCanvas;
                 break;
             case "Voins.UC_Model_H_Sniper.PlayerNumber":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Sniper");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "PlayerNumber", "Int32");
-                xamlMember.Getter = get_259_UC_Model_H_Sniper_PlayerNumber;
-                xamlMember.Setter = set_259_UC_Model_H_Sniper_PlayerNumber;
+                xamlMember.Getter = get_273_UC_Model_H_Sniper_PlayerNumber;
+                xamlMember.Setter = set_273_UC_Model_H_Sniper_PlayerNumber;
                 break;
             case "Voins.UC_Model_H_Sniper.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Sniper");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_260_UC_Model_H_Sniper_Angel;
-                xamlMember.Setter = set_260_UC_Model_H_Sniper_Angel;
+                xamlMember.Getter = get_274_UC_Model_H_Sniper_Angel;
+                xamlMember.Setter = set_274_UC_Model_H_Sniper_Angel;
                 break;
             case "Voins.UC_Model_H_Alhim.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Alhim");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_261_UC_Model_H_Alhim_RootCanvas;
-                xamlMember.Setter = set_261_UC_Model_H_Alhim_RootCanvas;
+                xamlMember.Getter = get_275_UC_Model_H_Alhim_RootCanvas;
+                xamlMember.Setter = set_275_UC_Model_H_Alhim_RootCanvas;
                 break;
             case "Voins.UC_Model_H_Alhim.PlayerNumber":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Alhim");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "PlayerNumber", "Int32");
-                xamlMember.Getter = get_262_UC_Model_H_Alhim_PlayerNumber;
-                xamlMember.Setter = set_262_UC_Model_H_Alhim_PlayerNumber;
+                xamlMember.Getter = get_276_UC_Model_H_Alhim_PlayerNumber;
+                xamlMember.Setter = set_276_UC_Model_H_Alhim_PlayerNumber;
                 break;
             case "Voins.UC_Model_H_Alhim.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Alhim");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_263_UC_Model_H_Alhim_Angel;
-                xamlMember.Setter = set_263_UC_Model_H_Alhim_Angel;
+                xamlMember.Getter = get_277_UC_Model_H_Alhim_Angel;
+                xamlMember.Setter = set_277_UC_Model_H_Alhim_Angel;
                 break;
             case "Voins.UC_Model_H_Bonik.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Bonik");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_264_UC_Model_H_Bonik_RootCanvas;
-                xamlMember.Setter = set_264_UC_Model_H_Bonik_RootCanvas;
+                xamlMember.Getter = get_278_UC_Model_H_Bonik_RootCanvas;
+                xamlMember.Setter = set_278_UC_Model_H_Bonik_RootCanvas;
                 break;
             case "Voins.UC_Model_H_Bonik.PlayerNumber":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Bonik");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "PlayerNumber", "Int32");
-                xamlMember.Getter = get_265_UC_Model_H_Bonik_PlayerNumber;
-                xamlMember.Setter = set_265_UC_Model_H_Bonik_PlayerNumber;
+                xamlMember.Getter = get_279_UC_Model_H_Bonik_PlayerNumber;
+                xamlMember.Setter = set_279_UC_Model_H_Bonik_PlayerNumber;
                 break;
             case "Voins.UC_Model_H_Bonik.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_H_Bonik");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_266_UC_Model_H_Bonik_Angel;
-                xamlMember.Setter = set_266_UC_Model_H_Bonik_Angel;
+                xamlMember.Getter = get_280_UC_Model_H_Bonik_Angel;
+                xamlMember.Setter = set_280_UC_Model_H_Bonik_Angel;
                 break;
             case "Voins.UC_Model_Player.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_267_UC_Model_Player_RootCanvas;
-                xamlMember.Setter = set_267_UC_Model_Player_RootCanvas;
+                xamlMember.Getter = get_281_UC_Model_Player_RootCanvas;
+                xamlMember.Setter = set_281_UC_Model_Player_RootCanvas;
                 break;
             case "Voins.UC_Model_Player.PlayerNumber":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "PlayerNumber", "Int32");
-                xamlMember.Getter = get_268_UC_Model_Player_PlayerNumber;
-                xamlMember.Setter = set_268_UC_Model_Player_PlayerNumber;
+                xamlMember.Getter = get_282_UC_Model_Player_PlayerNumber;
+                xamlMember.Setter = set_282_UC_Model_Player_PlayerNumber;
                 break;
             case "Voins.UC_Model_Player.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Model_Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_269_UC_Model_Player_Angel;
-                xamlMember.Setter = set_269_UC_Model_Player_Angel;
+                xamlMember.Getter = get_283_UC_Model_Player_Angel;
+                xamlMember.Setter = set_283_UC_Model_Player_Angel;
                 break;
             case "Voins.UC_EasyMobAttackBall.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_EasyMobAttackBall");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_270_UC_EasyMobAttackBall_RootCanvas;
-                xamlMember.Setter = set_270_UC_EasyMobAttackBall_RootCanvas;
+                xamlMember.Getter = get_284_UC_EasyMobAttackBall_RootCanvas;
+                xamlMember.Setter = set_284_UC_EasyMobAttackBall_RootCanvas;
                 break;
             case "Voins.UC_EasyMobAttackBall.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_EasyMobAttackBall");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_271_UC_EasyMobAttackBall_Angel;
-                xamlMember.Setter = set_271_UC_EasyMobAttackBall_Angel;
+                xamlMember.Getter = get_285_UC_EasyMobAttackBall_Angel;
+                xamlMember.Setter = set_285_UC_EasyMobAttackBall_Angel;
                 break;
             case "Voins.UC_Sniper_Headshot.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Sniper_Headshot");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_272_UC_Sniper_Headshot_RootCanvas;
-                xamlMember.Setter = set_272_UC_Sniper_Headshot_RootCanvas;
+                xamlMember.Getter = get_286_UC_Sniper_Headshot_RootCanvas;
+                xamlMember.Setter = set_286_UC_Sniper_Headshot_RootCanvas;
                 break;
             case "Voins.UC_Sniper_Headshot.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Sniper_Headshot");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_273_UC_Sniper_Headshot_Angel;
-                xamlMember.Setter = set_273_UC_Sniper_Headshot_Angel;
+                xamlMember.Getter = get_287_UC_Sniper_Headshot_Angel;
+                xamlMember.Setter = set_287_UC_Sniper_Headshot_Angel;
                 break;
             case "Voins.UC_Sniper_Shrapnel.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Sniper_Shrapnel");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_274_UC_Sniper_Shrapnel_RootCanvas;
-                xamlMember.Setter = set_274_UC_Sniper_Shrapnel_RootCanvas;
+                xamlMember.Getter = get_288_UC_Sniper_Shrapnel_RootCanvas;
+                xamlMember.Setter = set_288_UC_Sniper_Shrapnel_RootCanvas;
                 break;
             case "Voins.UC_Sniper_Shrapnel.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Sniper_Shrapnel");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_275_UC_Sniper_Shrapnel_Angel;
-                xamlMember.Setter = set_275_UC_Sniper_Shrapnel_Angel;
+                xamlMember.Getter = get_289_UC_Sniper_Shrapnel_Angel;
+                xamlMember.Setter = set_289_UC_Sniper_Shrapnel_Angel;
                 break;
             case "Voins.UC_Maelstrom.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Maelstrom");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_276_UC_Maelstrom_RootCanvas;
-                xamlMember.Setter = set_276_UC_Maelstrom_RootCanvas;
+                xamlMember.Getter = get_290_UC_Maelstrom_RootCanvas;
+                xamlMember.Setter = set_290_UC_Maelstrom_RootCanvas;
                 break;
             case "Voins.UC_Maelstrom.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Maelstrom");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_277_UC_Maelstrom_Angel;
-                xamlMember.Setter = set_277_UC_Maelstrom_Angel;
+                xamlMember.Getter = get_291_UC_Maelstrom_Angel;
+                xamlMember.Setter = set_291_UC_Maelstrom_Angel;
                 break;
             case "Voins.UC_Alchemist_UnstableConcoction.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Alchemist_UnstableConcoction");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_278_UC_Alchemist_UnstableConcoction_RootCanvas;
-                xamlMember.Setter = set_278_UC_Alchemist_UnstableConcoction_RootCanvas;
+                xamlMember.Getter = get_292_UC_Alchemist_UnstableConcoction_RootCanvas;
+                xamlMember.Setter = set_292_UC_Alchemist_UnstableConcoction_RootCanvas;
                 break;
             case "Voins.UC_Alchemist_UnstableConcoction.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Alchemist_UnstableConcoction");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_279_UC_Alchemist_UnstableConcoction_Angel;
-                xamlMember.Setter = set_279_UC_Alchemist_UnstableConcoction_Angel;
+                xamlMember.Getter = get_293_UC_Alchemist_UnstableConcoction_Angel;
+                xamlMember.Setter = set_293_UC_Alchemist_UnstableConcoction_Angel;
                 break;
             case "Voins.UC_Jakiro_DualBreath.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Jakiro_DualBreath");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_280_UC_Jakiro_DualBreath_RootCanvas;
-                xamlMember.Setter = set_280_UC_Jakiro_DualBreath_RootCanvas;
+                xamlMember.Getter = get_294_UC_Jakiro_DualBreath_RootCanvas;
+                xamlMember.Setter = set_294_UC_Jakiro_DualBreath_RootCanvas;
                 break;
             case "Voins.UC_Jakiro_DualBreath.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Jakiro_DualBreath");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_281_UC_Jakiro_DualBreath_Angel;
-                xamlMember.Setter = set_281_UC_Jakiro_DualBreath_Angel;
+                xamlMember.Getter = get_295_UC_Jakiro_DualBreath_Angel;
+                xamlMember.Setter = set_295_UC_Jakiro_DualBreath_Angel;
                 break;
             case "Voins.UC_CrushBlock.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_CrushBlock");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_282_UC_CrushBlock_RootCanvas;
-                xamlMember.Setter = set_282_UC_CrushBlock_RootCanvas;
+                xamlMember.Getter = get_296_UC_CrushBlock_RootCanvas;
+                xamlMember.Setter = set_296_UC_CrushBlock_RootCanvas;
                 break;
             case "Voins.UC_CrushBlock.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_CrushBlock");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_283_UC_CrushBlock_Angel;
-                xamlMember.Setter = set_283_UC_CrushBlock_Angel;
+                xamlMember.Getter = get_297_UC_CrushBlock_Angel;
+                xamlMember.Setter = set_297_UC_CrushBlock_Angel;
                 break;
             case "Voins.UC_FireArrow.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_FireArrow");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_284_UC_FireArrow_RootCanvas;
-                xamlMember.Setter = set_284_UC_FireArrow_RootCanvas;
+                xamlMember.Getter = get_298_UC_FireArrow_RootCanvas;
+                xamlMember.Setter = set_298_UC_FireArrow_RootCanvas;
                 break;
             case "Voins.UC_FireArrow.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_FireArrow");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_285_UC_FireArrow_Angel;
-                xamlMember.Setter = set_285_UC_FireArrow_Angel;
+                xamlMember.Getter = get_299_UC_FireArrow_Angel;
+                xamlMember.Setter = set_299_UC_FireArrow_Angel;
                 break;
             case "Voins.UC_Mob_1_Ball.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Mob_1_Ball");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_286_UC_Mob_1_Ball_RootCanvas;
-                xamlMember.Setter = set_286_UC_Mob_1_Ball_RootCanvas;
+                xamlMember.Getter = get_300_UC_Mob_1_Ball_RootCanvas;
+                xamlMember.Setter = set_300_UC_Mob_1_Ball_RootCanvas;
                 break;
             case "Voins.UC_Mob_1_Ball.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Mob_1_Ball");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_287_UC_Mob_1_Ball_Angel;
-                xamlMember.Setter = set_287_UC_Mob_1_Ball_Angel;
+                xamlMember.Getter = get_301_UC_Mob_1_Ball_Angel;
+                xamlMember.Setter = set_301_UC_Mob_1_Ball_Angel;
                 break;
             case "Voins.UC_Player.RootCanvas":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "RootCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_288_UC_Player_RootCanvas;
-                xamlMember.Setter = set_288_UC_Player_RootCanvas;
+                xamlMember.Getter = get_302_UC_Player_RootCanvas;
+                xamlMember.Setter = set_302_UC_Player_RootCanvas;
                 break;
             case "Voins.UC_Player.PlayerNumber":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "PlayerNumber", "Int32");
-                xamlMember.Getter = get_289_UC_Player_PlayerNumber;
-                xamlMember.Setter = set_289_UC_Player_PlayerNumber;
+                xamlMember.Getter = get_303_UC_Player_PlayerNumber;
+                xamlMember.Setter = set_303_UC_Player_PlayerNumber;
                 break;
             case "Voins.UC_Player.Angel":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Angel", "Voins.AppCode.EAngel");
-                xamlMember.Getter = get_290_UC_Player_Angel;
-                xamlMember.Setter = set_290_UC_Player_Angel;
+                xamlMember.Getter = get_304_UC_Player_Angel;
+                xamlMember.Setter = set_304_UC_Player_Angel;
                 break;
             case "Voins.UC_Player.ImageStoryboardList":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_Player");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "ImageStoryboardList", "System.Collections.Generic.List`1<Windows.UI.Xaml.Controls.Image>");
-                xamlMember.Getter = get_291_UC_Player_ImageStoryboardList;
-                xamlMember.Setter = set_291_UC_Player_ImageStoryboardList;
+                xamlMember.Getter = get_305_UC_Player_ImageStoryboardList;
+                xamlMember.Setter = set_305_UC_Player_ImageStoryboardList;
                 break;
             case "Voins.UC_View_ItemImage.ImageIndex":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_View_ItemImage");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "ImageIndex", "Int32");
-                xamlMember.Getter = get_292_UC_View_ItemImage_ImageIndex;
-                xamlMember.Setter = set_292_UC_View_ItemImage_ImageIndex;
+                xamlMember.Getter = get_306_UC_View_ItemImage_ImageIndex;
+                xamlMember.Setter = set_306_UC_View_ItemImage_ImageIndex;
                 break;
             case "Voins.UC_View_ItemImage.Spell":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_View_ItemImage");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Spell", "Voins.AppCode.ISpell");
-                xamlMember.Getter = get_293_UC_View_ItemImage_Spell;
-                xamlMember.Setter = set_293_UC_View_ItemImage_Spell;
+                xamlMember.Getter = get_307_UC_View_ItemImage_Spell;
+                xamlMember.Setter = set_307_UC_View_ItemImage_Spell;
                 break;
             case "Voins.UC_View_ImageTileControl.Spell":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_View_ImageTileControl");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "Spell", "Voins.AppCode.ISpell");
-                xamlMember.Getter = get_294_UC_View_ImageTileControl_Spell;
-                xamlMember.Setter = set_294_UC_View_ImageTileControl_Spell;
+                xamlMember.Getter = get_308_UC_View_ImageTileControl_Spell;
+                xamlMember.Setter = set_308_UC_View_ImageTileControl_Spell;
                 break;
             case "Voins.UC_View_ItemsPanel.CurrentPlayer":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_View_ItemsPanel");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "CurrentPlayer", "Voins.AppCode.Player");
-                xamlMember.Getter = get_295_UC_View_ItemsPanel_CurrentPlayer;
-                xamlMember.Setter = set_295_UC_View_ItemsPanel_CurrentPlayer;
+                xamlMember.Getter = get_309_UC_View_ItemsPanel_CurrentPlayer;
+                xamlMember.Setter = set_309_UC_View_ItemsPanel_CurrentPlayer;
                 break;
             case "Voins.UC_View_SpellControl.CurrentPlayer":
                 userType = (global::Voins.Voins_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Voins.UC_View_SpellControl");
                 xamlMember = new global::Voins.Voins_XamlTypeInfo.XamlMember(this, "CurrentPlayer", "Voins.AppCode.Player");
-                xamlMember.Getter = get_296_UC_View_SpellControl_CurrentPlayer;
-                xamlMember.Setter = set_296_UC_View_SpellControl_CurrentPlayer;
+                xamlMember.Getter = get_310_UC_View_SpellControl_CurrentPlayer;
+                xamlMember.Setter = set_310_UC_View_SpellControl_CurrentPlayer;
                 break;
             }
             return xamlMember;

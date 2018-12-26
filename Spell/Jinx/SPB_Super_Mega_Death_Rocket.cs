@@ -258,9 +258,9 @@ namespace Voins.Spell
                     bullArrow.Speed = 0;
 
                     if (i != 8)
-                        bullArrow.DemagePhys = _bullet.DemagePhys;
+                        bullArrow.DemageMagic = _bullet.DemageMagic;
                     else
-                        bullArrow.DemagePhys = (int)(_bullet.DemagePhys * 0.8);
+                        bullArrow.DemageMagic = (int)(_bullet.DemageMagic * 0.8);
 
                     bullArrow.CurrentMap = _map;
                     bullArrow.Angel = _bullet.UnitUsed.Angel;
