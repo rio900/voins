@@ -149,6 +149,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Spell\Aurs\SP_Item_AssaultCuirass.cs" />
     <Compile Include="Spell\Items\SP_Aghanim.cs" />
+    <Compile Include="Spell\Items\SP_TrevelBoots_Teleport.cs" />
     <Compile Include="Spell\Mobs\SP_HunterBoss.cs" />
     <Compile Include="Spell\Nature\SP_Nature_Teleport.cs" />
     <Compile Include="Spell\Mobs\SP_EasyMobArrowRoket.cs" />
@@ -454,6 +455,8 @@
     <Content Include="Image\45_mystic_staff.png" />
     <Content Include="Image\46_skythe_of_vyse.png" />
     <Content Include="Image\47_skadi.png" />
+    <Content Include="Image\48_trevelboots.png" />
+    <Content Include="Image\49_trevelboots2.png" />
     <Content Include="Image\4_oStuff.png" />
     <Content Include="Image\4_skill.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

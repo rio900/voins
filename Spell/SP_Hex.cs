@@ -108,7 +108,7 @@ namespace Voins.Spell
                                 {
                                     Buff alchBuff = new Buff()
                                     {
-                                        SpeedSlow = 0.4,
+                                        SpeedSlow = 0.5,
                                         Duration = Duration,
                                         Name = "Hex Slow"
                                     };

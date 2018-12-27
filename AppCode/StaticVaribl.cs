@@ -35,7 +35,7 @@ namespace Voins.AppCode
         /// <summary>
         /// Константа, максимальная скорость атаки для милишных атак
         /// </summary>
-        public static double AttackSpeedMeleMaximum = 0.30;
+        public static double AttackSpeedMeleMaximum = 0.35;
         /// <summary>
         /// Константа, максимальная скорость атаки для ренжовых атак
         /// </summary>

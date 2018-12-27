@@ -11,7 +11,7 @@ using Windows.UI.Xaml.Media.Animation;
 
 namespace Voins.Spell
 {
-    public class SP_Nature_Teleport : ISpell, IMoveSpell
+    public class SP_TrevelBoots_Teleport : ISpell, IMoveSpell
     {
         public event EventHandler StartUseSpell;
         public event EventHandler CompletedUseSpell;
@@ -39,15 +39,14 @@ namespace Voins.Spell
 
         double _speed = 0.3;
         public double Speed { get { return _speed; } set { _speed = value; } }
-
-        double _duration = 1;
+        double _duration = 2;
 
         public double Duration { get { return _duration; } set { _duration = value; } }
 
         bool _isUlt = false;
         public bool IsUlt { get { return _isUlt; } set { _isUlt = value; } }
 
-        int _levelCast = 0;
+        int _levelCast = 1;
         public int LevelCast { get { return _levelCast; } set { _levelCast = value; } }
         int _maxLevelCast = 3;
         public int MaxLevelCast { get { return _maxLevelCast; } set { _maxLevelCast = value; } }
@@ -67,23 +66,20 @@ namespace Voins.Spell
         double _bonusSpeed = 0.15;
         double _bonusAttackSpeed = 0.25;
 
-        public SP_Nature_Teleport()
+        public SP_TrevelBoots_Teleport()
         {
             _imageTile = new UC_View_ImageTileControl("SP_Nature_Teleport", this);
         }
 
-       
+
         public void UseSpall(Map map, Game_Object_In_Call obj, IUnit unit, object property)
         {
             _unit = unit;
             _map = map;
-            bool upSpell = UnitGenerator.UpPlayerSpell(unit, this);
 
             if (unit.UnitFrozen == false &&
                 !_culdaunBool && LevelCast != 0 &&
-                !upSpell && !unit.Silenced &&
-                !unit.Hexed &&
-                !Paused)
+                !unit.Hexed)
             {
                 if (unit.Mana >= ManaCost)
                 ///Проверка есть ли мана на каст
@@ -96,16 +92,13 @@ namespace Voins.Spell
                     _size = 100;
                     if (LevelCast == 1)
                     {
-                        _culdaun = 15;
+                        _culdaun = 20;
                     }
                     else if (LevelCast == 2)
                     {
                         _culdaun = 12;
                     }
-                    else if (LevelCast == 3)
-                    {
-                        _culdaun = 10;
-                    }
+
 
                     ///Выбираем клетку куда прыгнуть
                     ///Тут кординаты ячеек в которых действует тучка
@@ -157,24 +150,23 @@ namespace Voins.Spell
                     ///Выбираем ячейку куда прыгать
                     foreach (var item in _callsPoints)
                     {
-                        _activeCall = map.Calls.FirstOrDefault(p => p.IndexLeft == item.X && p.IndexTop == item.Y);
-                        if (_activeCall != null &&
-                            !_activeCall.Block &&
-                            !_activeCall.Used &&
-                            !_activeCall.Using)
+                       Map_Cell activeCall = map.Calls.FirstOrDefault(p => p.IndexLeft == item.X && p.IndexTop == item.Y);
+                        if (activeCall != null &&
+                            !activeCall.Block &&
+                            activeCall.IUnits.Any(p => p.UnitType == EUnitType.Grass))
                         {
+                            _activeCall = activeCall;
                             ///Прыгаем, в первую дальнюю ячейку
                             _activeCall.Using = true;
                             break;
                         }
                     }
+
                     if (_activeCall != null)
                     {
                         _unit.UnitFrozen = true;
-
-
-
                     }
+
                     ///Таймер время кастования телепорта
                     _firstTimer = new Storyboard() { Duration = TimeSpan.FromSeconds(Duration) };
                     _firstTimer.Completed += _firstTimer_Completed;
@@ -235,6 +227,7 @@ namespace Voins.Spell
 
             if (_activeCall != null)
                 _activeCall.Using = false;
+
             _unit.UnitFrozen = false;
         }
 

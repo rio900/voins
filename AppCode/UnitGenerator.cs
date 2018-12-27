@@ -1648,6 +1648,90 @@ namespace Voins.AppCode
             return item;
         }
 
+        public static ItemClass I44_TrevelBootsRecep()
+        {
+            ItemClass item = new ItemClass()
+            {
+                Name = "Trevel Boots Recep",
+                Recept = true,
+                Price = 200
+            };
+            item.Info.ShortDescription = "Trevel Boots Recep Description";
+
+            item.View = new UC_View_ItemImage(48);
+            item.View.Recept();
+            return item;
+        }
+
+       
+
+        public static ItemClass I45_TrevelBoots()
+        {
+            ItemClass item = new ItemClass()
+            {
+                Name = "Trevel Boots",
+                Speed = 0.35,
+                Boots = true,
+                Price = 275
+            };
+            item.Info.ShortDescription = "Trevel Boots Description";
+            item.Info.BuffDescription = "Teleport to grass.";
+
+            SP_TrevelBoots_Teleport teleport = new SP_TrevelBoots_Teleport() { Name = " Trevel Boots Teleport" };
+            item.SpellItem = teleport;
+
+            item.Parts = new List<ItemClass>() {
+                        I6_BootsOfSpeed(),
+                        I44_TrevelBootsRecep()
+            };
+
+            item.View = new UC_View_ItemImage(48);
+            item.View.UsingItem(item.SpellItem);
+            return item;
+        }
+
+        public static ItemClass I46_TrevelBoots2Recep()
+        {
+            ItemClass item = new ItemClass()
+            {
+                Name = "Trevel Boots 2 Recep",
+                Recept = true,
+                Price = 200
+            };
+            item.Info.ShortDescription = "Trevel Boots 2 Recep Description";
+
+            item.View = new UC_View_ItemImage(49);
+            item.View.Recept();
+            return item;
+        }
+
+        public static ItemClass I47_TrevelBoots2()
+        {
+            ItemClass item = new ItemClass()
+            {
+                Name = "Trevel Boots 2",
+                Speed = 0.37,
+                Boots = true,
+                Price = 475
+            };
+            item.Info.ShortDescription = "Trevel Boots 2 Description";
+            item.Info.BuffDescription = "Faster teleport to grass.";
+
+            SP_TrevelBoots_Teleport teleport = new SP_TrevelBoots_Teleport() { Name = " Trevel Boots 2 Teleport" };
+            teleport.LevelCast = 2;
+
+            item.SpellItem = teleport;
+
+            item.Parts = new List<ItemClass>() {
+                        I45_TrevelBoots(),
+                        I46_TrevelBoots2Recep()
+            };
+
+            item.View = new UC_View_ItemImage(49);
+            item.View.UsingItem(item.SpellItem);
+            return item;
+        }
+
         #region Power items
         /// <summary>
         /// Итемы разового использования
@@ -1704,7 +1788,6 @@ namespace Voins.AppCode
         }
         #endregion
         #endregion
-
 
 
         /// <summary>
@@ -1921,6 +2004,28 @@ namespace Voins.AppCode
                 player.RemoveItem(player.Items.First(p => p.Name == "Point Booster"), true);
 
                 retItem = I43_Skadi();
+            }
+
+            ///I45_TrevelBoots
+            if ( player.Items.Any(p => p.Name == "Boots Of Speed") &&
+                 player.Items.Any(p => p.Name == "Trevel Boots Recep")
+               )
+            {
+                player.RemoveItem(player.Items.First(p => p.Name == "Boots Of Speed"), true);
+                player.RemoveItem(player.Items.First(p => p.Name == "Trevel Boots Recep"), true);
+
+                retItem = I45_TrevelBoots();
+            }
+
+            ///I47_TrevelBoots2
+            if (player.Items.Any(p => p.Name == "Trevel Boots") &&
+                 player.Items.Any(p => p.Name == "Trevel Boots 2 Recep")
+               )
+            {
+                player.RemoveItem(player.Items.First(p => p.Name == "Trevel Boots"), true);
+                player.RemoveItem(player.Items.First(p => p.Name == "Trevel Boots 2 Recep"), true);
+
+                retItem = I47_TrevelBoots2();
             }
 
             ///Если новы предмет сложен не был, то удаляем предмет добавленный в инвинтарь

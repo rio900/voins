@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Unity\VoinGit\voins\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-26T23:00:11.984</Modified>
+      <Modified>2018-12-27T13:18:33.444</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\Voins.exe">
       <PackagePath>Voins.exe</PackagePath>
-      <Modified>2018-12-26T23:26:33.130</Modified>
+      <Modified>2018-12-27T13:18:33.025</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\MonoGame.Framework.dll">
       <PackagePath>MonoGame.Framework.dll</PackagePath>
@@ -355,6 +355,14 @@
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\47_skadi.png">
       <PackagePath>Image\47_skadi.png</PackagePath>
       <Modified>2018-12-26T21:51:16.131</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\48_trevelboots.png">
+      <PackagePath>Image\48_trevelboots.png</PackagePath>
+      <Modified>2018-12-27T11:28:27.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\49_trevelboots2.png">
+      <PackagePath>Image\49_trevelboots2.png</PackagePath>
+      <Modified>2018-12-27T13:17:29.849</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\4_oStuff.png">
       <PackagePath>Image\4_oStuff.png</PackagePath>
@@ -1098,7 +1106,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\Items\UC_Skadi.xbf">
       <PackagePath>UserControl\Items\UC_Skadi.xbf</PackagePath>
-      <Modified>2018-12-26T23:00:10.700</Modified>
+      <Modified>2018-12-27T13:18:32.167</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\UC_Mob_BlackHunterBoss.xbf">
       <PackagePath>UserControl\UC_Mob_BlackHunterBoss.xbf</PackagePath>
@@ -1266,7 +1274,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\UC_View_ItemImage.xbf">
       <PackagePath>UserControl\UC_View_ItemImage.xbf</PackagePath>
-      <Modified>2018-12-26T22:17:03.381</Modified>
+      <Modified>2018-12-27T13:18:32.168</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\UC_View_ItemsPanel.xbf">
       <PackagePath>UserControl\UC_View_ItemsPanel.xbf</PackagePath>
@@ -1287,7 +1295,7 @@
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-26T23:26:33.394</Modified>
+      <Modified>2018-12-27T13:18:33.258</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

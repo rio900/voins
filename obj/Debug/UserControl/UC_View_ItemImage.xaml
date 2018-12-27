@@ -95,6 +95,8 @@
             <Image x:Name="Item_45" Source="ms-appx:///Image/45_mystic_staff.png" Stretch="Fill" Margin="0" Visibility="Collapsed"/>
             <Image x:Name="Item_46" Source="ms-appx:///Image/46_skythe_of_vyse.png" Stretch="Fill" Margin="0" Visibility="Collapsed"/>
             <Image x:Name="Item_47" Source="ms-appx:///Image/47_skadi.png" Stretch="Fill" Margin="0" Visibility="Collapsed"/>
+            <Image x:Name="Item_48" Source="ms-appx:///Image/48_trevelboots.png" Stretch="Fill" Margin="0" Visibility="Collapsed"/>
+            <Image x:Name="Item_49" Source="ms-appx:///Image/49_trevelboots2.png" Stretch="Fill" Margin="0" Visibility="Collapsed"/>
             <Grid x:Name="C_Culdaun" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Background="#97FFFFFF" Visibility="Collapsed">
                 <Grid.RenderTransform>
                     <CompositeTransform/>

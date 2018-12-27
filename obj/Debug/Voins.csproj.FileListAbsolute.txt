@@ -1330,11 +1330,3 @@ D:\Unity\VoinGit\voins\obj\Debug\UserControl\Items\UC_Skadi.g.i.cs
 D:\Unity\VoinGit\voins\obj\Debug\UserControl\Items\UC_Skadi.g.cs
 D:\Unity\VoinGit\voins\obj\Debug\UserControl\Items\UC_Skadi.xaml
 D:\Unity\VoinGit\voins\obj\Debug\UserControl\Items\UC_Skadi.xbf
-D:\Unity\VoinGit\voins\obj\Debug\SharpDX\layout.resfiles
-D:\Unity\VoinGit\voins\obj\Debug\SharpDX\layout.resfiles.intermediate
-D:\Unity\VoinGit\voins\obj\Debug\SharpDX\Resources.resfiles
-D:\Unity\VoinGit\voins\obj\Debug\SharpDX\Resources.resfiles.intermediate
-D:\Unity\VoinGit\voins\obj\Debug\SharpDX\pri.resfiles
-D:\Unity\VoinGit\voins\obj\Debug\SharpDX\pri.resfiles.intermediate
-D:\Unity\VoinGit\voins\obj\Debug\SharpDX\priconfig.xml
-D:\Unity\VoinGit\voins\obj\Debug\SharpDX\priconfig.xml.intermediate

@@ -70,8 +70,9 @@ namespace Voins
              UnitGenerator.I27_Sange(),
              UnitGenerator.I13_Hyperstone(),
              UnitGenerator.I38_Platemail(),
-            UnitGenerator.I40_Ultimate_Orb(),
-            UnitGenerator.I41_Mystic_Staff()
+             UnitGenerator.I40_Ultimate_Orb(),
+             UnitGenerator.I41_Mystic_Staff(),
+             UnitGenerator.I45_TrevelBoots()
 
             };
 
@@ -86,7 +87,8 @@ namespace Voins
              UnitGenerator.I36_Desolator(),
              UnitGenerator.I38_AssaultCuirass(),
              UnitGenerator.I42_Scythe_Of_Vyse(),
-             UnitGenerator.I43_Skadi()
+             UnitGenerator.I43_Skadi(),
+             UnitGenerator.I47_TrevelBoots2()
             };
 
             foreach (var item in _itemsEasy)
@@ -430,8 +432,9 @@ namespace Voins
                         case 7: itemBuing = UnitGenerator.I27_Sange(); break;
                         case 8: itemBuing = UnitGenerator.I13_Hyperstone(); break;
                         case 9: itemBuing = UnitGenerator.I38_Platemail(); break;
-                        case 11: itemBuing = UnitGenerator.I41_Mystic_Staff(); break;
                         case 10: itemBuing = UnitGenerator.I40_Ultimate_Orb(); break;
+                        case 11: itemBuing = UnitGenerator.I41_Mystic_Staff(); break;
+                        case 12: itemBuing = UnitGenerator.I45_TrevelBoots(); break;
                     }
 
                 }
@@ -450,6 +453,7 @@ namespace Voins
                         case 8: itemBuing = UnitGenerator.I38_AssaultCuirass(); break;
                         case 9: itemBuing = UnitGenerator.I42_Scythe_Of_Vyse(); break;
                         case 10: itemBuing = UnitGenerator.I43_Skadi(); break;
+                        case 11: itemBuing = UnitGenerator.I47_TrevelBoots2(); break;
                     }
                 }
 

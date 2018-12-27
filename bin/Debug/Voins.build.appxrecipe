@@ -266,6 +266,12 @@
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\47_skadi.png">
       <PackagePath>Image\47_skadi.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\48_trevelboots.png">
+      <PackagePath>Image\48_trevelboots.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\49_trevelboots2.png">
+      <PackagePath>Image\49_trevelboots2.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\4_oStuff.png">
       <PackagePath>Image\4_oStuff.png</PackagePath>
     </AppxPackagedFile>
