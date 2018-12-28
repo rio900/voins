@@ -92,6 +92,9 @@
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\1_Bum2.png">
       <PackagePath>Image\1_Bum2.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\1_ChemicalRage.png">
+      <PackagePath>Image\1_ChemicalRage.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\1_Hex.png">
       <PackagePath>Image\1_Hex.png</PackagePath>
     </AppxPackagedFile>
@@ -164,6 +167,9 @@
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\2_Bum_mil.png">
       <PackagePath>Image\2_Bum_mil.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\2_Nature_Teleport.png">
+      <PackagePath>Image\2_Nature_Teleport.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\2_robOfMagi.png">
       <PackagePath>Image\2_robOfMagi.png</PackagePath>
     </AppxPackagedFile>
@@ -187,6 +193,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\2_Trent_Left.png">
       <PackagePath>Image\2_Trent_Left.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\2_Trevel_Boots.png">
+      <PackagePath>Image\2_Trevel_Boots.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\30_sange_and_yasha.png">
       <PackagePath>Image\30_sange_and_yasha.png</PackagePath>
@@ -671,8 +680,68 @@
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Nature\Kust_33.PNG">
       <PackagePath>Image\Nature\Kust_33.PNG</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sf\1_Sf_Ult.png">
+      <PackagePath>Image\Sf\1_Sf_Ult.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sf\BoomCoilCenter.png">
+      <PackagePath>Image\Sf\BoomCoilCenter.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sf\BoomCoilLeft.png">
+      <PackagePath>Image\Sf\BoomCoilLeft.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sf\Img_Sf_Attack.png">
+      <PackagePath>Image\Sf\Img_Sf_Attack.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sf\Sf13.PNG">
+      <PackagePath>Image\Sf\Sf13.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sf\Sf14.PNG">
+      <PackagePath>Image\Sf\Sf14.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sf\Sf15.PNG">
+      <PackagePath>Image\Sf\Sf15.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sf\Sf16.PNG">
+      <PackagePath>Image\Sf\Sf16.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sf\Sf17.PNG">
+      <PackagePath>Image\Sf\Sf17.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sf\Sf18.PNG">
+      <PackagePath>Image\Sf\Sf18.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sf\Sf_0_11.PNG">
+      <PackagePath>Image\Sf\Sf_0_11.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sf\Sf_0_12.PNG">
+      <PackagePath>Image\Sf\Sf_0_12.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sf\Sf_0_2.PNG">
+      <PackagePath>Image\Sf\Sf_0_2.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sf\Sf_31.PNG">
+      <PackagePath>Image\Sf\Sf_31.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sf\Sf_32.PNG">
+      <PackagePath>Image\Sf\Sf_32.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sf\Sf_33.PNG">
+      <PackagePath>Image\Sf\Sf_33.PNG</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Sk.png">
       <PackagePath>Image\Sk.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Skill\1_skill_Sf.png">
+      <PackagePath>Image\Skill\1_skill_Sf.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Skill\2_skill_Sf.png">
+      <PackagePath>Image\Skill\2_skill_Sf.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Skill\3_skill_Sf.png">
+      <PackagePath>Image\Skill\3_skill_Sf.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\Skill\4_skill_Sf.png">
+      <PackagePath>Image\Skill\4_skill_Sf.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\Image\SkillImage\Jakiro_Bot.png">
       <PackagePath>Image\SkillImage\Jakiro_Bot.png</PackagePath>
@@ -829,6 +898,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\Items\UC_Skadi.xbf">
       <PackagePath>UserControl\Items\UC_Skadi.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\Sf\UC_Model_H_Sf.xbf">
+      <PackagePath>UserControl\Sf\UC_Model_H_Sf.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\Sf\UC_Sf_Ult.xbf">
+      <PackagePath>UserControl\Sf\UC_Sf_Ult.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\Sf\UC_Sf_Bullet.xbf">
+      <PackagePath>UserControl\Sf\UC_Sf_Bullet.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Unity\VoinGit\voins\bin\Debug\UserControl\UC_Mob_BlackHunterBoss.xbf">
       <PackagePath>UserControl\UC_Mob_BlackHunterBoss.xbf</PackagePath>

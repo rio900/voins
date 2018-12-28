@@ -173,6 +173,9 @@
     <Compile Include="Spell\Mirana\SPB_Mirana_SacredArrow.cs" />
     <Compile Include="Spell\Mirana\SP_Mirana_SacredArrow.cs" />
     <Compile Include="Spell\Mirana\SP_Mirana_Starstorm.cs" />
+    <Compile Include="Spell\Sf\SP_Sf_Attack.cs" />
+    <Compile Include="Spell\Sf\SP_Sf_Ult.cs" />
+    <Compile Include="Spell\Sf\SP_Sf_Coil.cs" />
     <Compile Include="Spell\SPB_EasyMobArrow.cs" />
     <Compile Include="Spell\Mobs\SP_EasyMobArrow.cs" />
     <Compile Include="Spell\Nature\SP_Nature_Wrath.cs" />
@@ -214,6 +217,15 @@
     </Compile>
     <Compile Include="UserControl\Items\UC_Skadi.xaml.cs">
       <DependentUpon>UC_Skadi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Sf\UC_Model_H_Sf.xaml.cs">
+      <DependentUpon>UC_Model_H_Sf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Sf\UC_Sf_Ult.xaml.cs">
+      <DependentUpon>UC_Sf_Ult.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Sf\UC_Sf_Bullet.xaml.cs">
+      <DependentUpon>UC_Sf_Bullet.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\UC_Mob_BlackHunterBoss.xaml.cs">
       <DependentUpon>UC_Mob_BlackHunterBoss.xaml</DependentUpon>
@@ -378,6 +390,7 @@
     <Content Include="Image\1_Alchemist_Colb.png" />
     <Content Include="Image\1_Bum.png" />
     <Content Include="Image\1_Bum2.png" />
+    <Content Include="Image\1_ChemicalRage.png" />
     <Content Include="Image\1_hero.jpg" />
     <Content Include="Image\1_Hex.png" />
     <Content Include="Image\1_maelstrom.png" />
@@ -408,6 +421,7 @@
     <Content Include="Image\29_sange.png" />
     <Content Include="Image\2_Bum_mil.png" />
     <Content Include="Image\2_hero.jpg" />
+    <Content Include="Image\2_Nature_Teleport.png" />
     <Content Include="Image\2_robOfMagi.png" />
     <Content Include="Image\2_skill.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -418,6 +432,7 @@
     <Content Include="Image\2_test2.png" />
     <Content Include="Image\2_test3.png" />
     <Content Include="Image\2_Trent_Left.png" />
+    <Content Include="Image\2_Trevel_Boots.png" />
     <Content Include="Image\30_sange_and_yasha.png" />
     <Content Include="Image\31_shadow_amulet.png" />
     <Content Include="Image\32_claymore.png" />
@@ -594,7 +609,27 @@
     <Content Include="Image\Nature\Kust_31.PNG" />
     <Content Include="Image\Nature\Kust_32.PNG" />
     <Content Include="Image\Nature\Kust_33.PNG" />
+    <Content Include="Image\Sf\1_Sf_Ult.png" />
+    <Content Include="Image\Sf\BoomCoilCenter.png" />
+    <Content Include="Image\Sf\BoomCoilLeft.png" />
+    <Content Include="Image\Sf\Img_Sf_Attack.png" />
+    <Content Include="Image\Sf\Sf13.PNG" />
+    <Content Include="Image\Sf\Sf14.PNG" />
+    <Content Include="Image\Sf\Sf15.PNG" />
+    <Content Include="Image\Sf\Sf16.PNG" />
+    <Content Include="Image\Sf\Sf17.PNG" />
+    <Content Include="Image\Sf\Sf18.PNG" />
+    <Content Include="Image\Sf\Sf_0_11.PNG" />
+    <Content Include="Image\Sf\Sf_0_12.PNG" />
+    <Content Include="Image\Sf\Sf_0_2.PNG" />
+    <Content Include="Image\Sf\Sf_31.PNG" />
+    <Content Include="Image\Sf\Sf_32.PNG" />
+    <Content Include="Image\Sf\Sf_33.PNG" />
     <Content Include="Image\Sk.png" />
+    <Content Include="Image\Skill\1_skill_Sf.png" />
+    <Content Include="Image\Skill\2_skill_Sf.png" />
+    <Content Include="Image\Skill\3_skill_Sf.png" />
+    <Content Include="Image\Skill\4_skill_Sf.png" />
     <Content Include="Image\SkillImage\Jakiro_Bot.png" />
     <Content Include="Image\SkillImage\Jakiro_IcePass.png" />
     <Content Include="Image\SkillImage\Jakiro_Left.png" />
@@ -663,6 +698,18 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserControl\Items\UC_Skadi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Sf\UC_Model_H_Sf.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Sf\UC_Sf_Ult.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControl\Sf\UC_Sf_Bullet.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

@@ -64,7 +64,7 @@ namespace Voins.Spell
         /// На сколько увеличить урон после отбивания магии
         /// </summary>
         public int Multiply { get; set; }
-
+        public bool IsSfUlt { get; set; }
         Storyboard _storyboard;
         DoubleAnimation _animation;
         UC_View_ImageTileControl _imageTile;
@@ -72,7 +72,7 @@ namespace Voins.Spell
 
         public Storyboard _firstTimer;
         public Storyboard _secondTimer;
-
+        int _moveCount;
 
         public SPB_Item_Maelstrom()
         {
@@ -103,6 +103,11 @@ namespace Voins.Spell
         }
         private void BulletMuve(Bullet bullArrow)
         {
+            _moveCount++;
+
+            if (IsSfUlt)
+            SfUlt(bullArrow.Angel);
+
             int xNew = 0;
             int yNew = 0;
             if (bullArrow.Angel == EAngel.Left)
@@ -143,19 +148,37 @@ namespace Voins.Spell
                 }
                 else
                 {
-                    if (_bullet.Angel == (EAngel)0)
-                        _bullet.Angel = (EAngel)3;
+
+                    if (bullArrow.Angel == (EAngel)0)
+                        bullArrow.Angel = (EAngel)3;
                     else
-                        _bullet.Angel = _bullet.Angel - 1;
+                        bullArrow.Angel = _bullet.Angel - 1;
 
-                    _bullet.DemageMagic += Multiply;
+                    bullArrow.DemageMagic += Multiply;
 
-                    BulletMuve(_bullet);
+
+                    BulletMuve(bullArrow);
                 }
             }
             else
                 StartStoryboard(bullArrow, xNew, yNew);
         }
+
+        private void SfUlt(EAngel angle)
+        {
+            if (_bullet.Mode == 1 && _moveCount == 3 && (angle == EAngel.Left || angle == EAngel.Right))
+                _bullet.Angel = EAngel.Top;
+
+            if (_bullet.Mode == 2 && _moveCount == 3 && (angle == EAngel.Left || angle == EAngel.Right))
+                _bullet.Angel = EAngel.Bottom;
+
+            if (_bullet.Mode == 3 && _moveCount == 3 && (angle == EAngel.Left || angle == EAngel.Right))
+                _bullet.Angel = EAngel.Left;
+
+            if (_bullet.Mode == 4 && _moveCount == 3 && (angle == EAngel.Left || angle == EAngel.Right))
+                _bullet.Angel = EAngel.Right;
+        }
+
         private void StartStoryboard(Bullet bullet, int xNew, int yNew)
         {
             (bullet.GameObject.View as IGameControl).ChengAngel(_bullet.Angel);
@@ -286,6 +309,20 @@ namespace Voins.Spell
                         _bullet.Exept = UnitGenerator.AddDamage(call, _bullet);
                     else
                         UnitGenerator.AddDamage(call, _bullet);
+
+
+                    #region IsSfUlt
+                    if (IsSfUlt) { 
+                    for (int i = 0; i < call.IUnits.Count; i++)
+                    {
+                        if (call.IUnits[i] != _bullet.UnitUsed &&
+                            call.IUnits[i].GroupType != _bullet.UnitUsed.GroupType)
+                        {
+                            UnitGenerator.SfUlt(_bullet.UnitUsed, call.IUnits[i]);
+                        }
+                    }
+                    }
+                    #endregion
                 }
                 else
                     _bullet.Exept = true;

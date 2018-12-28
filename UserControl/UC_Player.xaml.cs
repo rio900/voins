@@ -92,6 +92,8 @@ namespace Voins
                 C_Model_H_Jinx.ChengAngel(angel);
             else if (PlayerNumber == 7)
                 C_Model_H_Nature.ChengAngel(angel);
+            else if (PlayerNumber == 8)
+                C_Model_H_Sf.ChengAngel(angel);
             else
                 C_Model_Player1.ChengAngel(angel);
 
@@ -114,6 +116,8 @@ namespace Voins
                 C_Model_H_Jinx.StartMuveAnimation(duration);
             else if (PlayerNumber == 7)
                 C_Model_H_Nature.StartMuveAnimation(duration);
+            else if (PlayerNumber == 8)
+                C_Model_H_Sf.StartMuveAnimation(duration);
             else
                 C_Model_Player1.StartMuveAnimation(duration);
         }
@@ -154,6 +158,17 @@ namespace Voins
             C_LeftAttack.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             C_RightAttack.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             C_BotAttack.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+        }
+
+        public void ShowEffect(int num, bool visible)
+        {
+            Image[] effects = { C_Alchemist_UnstableConcoction , C_Alchemist_ChemicalRage, SP_Nature_Teleport, SP_Trevel_Boots, C_BonikUlt , SP_Sf_Ult };
+
+            if (visible)
+                effects[num].Visibility = Visibility.Visible;
+            else
+                effects[num].Visibility = Visibility.Collapsed;
+
         }
 
         public void UpLevel()

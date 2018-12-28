@@ -58,6 +58,7 @@ namespace Voins.Spell
         public Storyboard _secondTimer;
         public Storyboard _storyboard;
 
+        Player _player;
         IUnit _unit;
         List<Point> _callsPoints;
         Map_Cell _activeCall;
@@ -76,6 +77,7 @@ namespace Voins.Spell
         {
             _unit = unit;
             _map = map;
+            _player = _unit as Player;
 
             if (unit.UnitFrozen == false &&
                 !_culdaunBool && LevelCast != 0 &&
@@ -99,6 +101,8 @@ namespace Voins.Spell
                         _culdaun = 12;
                     }
 
+                    if (_player != null)
+                        (_player.GameObject.View as UC_Player).ShowEffect(3, true);
 
                     ///Выбираем клетку куда прыгнуть
                     ///Тут кординаты ячеек в которых действует тучка
@@ -235,6 +239,9 @@ namespace Voins.Spell
         {
             _firstTimer.Completed -= _firstTimer_Completed;
             _firstTimer = null;
+
+            if (_player != null)
+                (_player.GameObject.View as UC_Player).ShowEffect(3, false);
 
             if (!_unit.Dead &&
                 _activeCall != null &&

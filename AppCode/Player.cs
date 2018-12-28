@@ -809,7 +809,7 @@ namespace Voins.AppCode
             Dead = true;
             IsUnitStun = false;
 
-            IUnit returnUnit = null;
+            IUnit returnUnit = this;
             if (demagedUnit != null)
                 demagedUnit.Kills += 1;
             Player player = demagedUnit as Player;
@@ -843,8 +843,6 @@ namespace Voins.AppCode
                 item.ItemPosition();
                 item.View.ApplayMargin(new Thickness(8));
                 CurrentMap.MapCanvas.Children.Add(item.View);
-
-                returnUnit = this;
             }
             #endregion
 
@@ -868,6 +866,8 @@ namespace Voins.AppCode
                 _respaumTimer.Completed += _respaumTimer_Tick;
                 _respaumTimer.Begin();
             }
+
+            UnitGenerator.Soul(demagedUnit, this);
 
             return returnUnit;
         }
@@ -1037,9 +1037,7 @@ namespace Voins.AppCode
                 Mana += item.ManaBonus;
 
                 if ((item.Boots && Items.Count(p => p.Boots) > 1) ||
-
-                   (item.Name == "Sange And Yasha" && Items.Count(p => p.Name == "Sange And Yasha") > 1) ||
-                   (item.Name == "Yasha" && Items.Count(p => p.Name == "Yasha") > 1))
+                    (item.IsYasha && Items.Count(p => p.IsYasha) > 1))
                 { }
                 else
                 {
@@ -1122,12 +1120,10 @@ namespace Voins.AppCode
                 OrijManaRegeneration -= (int)item.ManaRegen;
 
                 if ((item.Boots && Items.Count(p => p.Boots) > 1) ||
-                    (item.Name == "Sange And Yasha" && Items.Count(p => p.Name == "Sange And Yasha") > 1) ||
-                    (item.Name == "Yasha" && Items.Count(p => p.Name == "Yasha") > 1))
+                   (item.IsYasha && Items.Count(p => p.IsYasha) > 1))
                 { }
                 else
                 {
-
                     OrijSpeed += item.Speed;
                 }
 

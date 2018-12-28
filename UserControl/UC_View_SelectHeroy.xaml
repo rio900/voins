@@ -101,6 +101,16 @@
                     </Border.BorderBrush>
                     <Image Margin="8,4,10,4" Source="ms-appx:///Image/Nature/Kust_0_2.PNG"/>
                 </Border>
+                <Border BorderThickness="5,1" Height="75" Width="75" CornerRadius="10" Background="#FF228120">
+                    <Border.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF747474" Offset="0.416"/>
+                            <GradientStop Color="Blue"/>
+                            <GradientStop Color="#FFACACAC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+                    <Image Margin="8,4,10,4" Source="ms-appx:///Image/Sf/Sf_0_2.PNG"/>
+                </Border>
             </ListView>
         </Border>
         <TextBox Name="C_NameTextBox" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Player1" VerticalAlignment="Top" FontSize="24" Height="48" Width="261"/>

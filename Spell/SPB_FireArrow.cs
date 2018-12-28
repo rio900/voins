@@ -230,11 +230,14 @@ namespace Voins.Spell
                     {
                         UnitGenerator.Desolator(_bullet.UnitUsed, call.IUnits[i]);
                         UnitGenerator.Skadi(_bullet.UnitUsed, call.IUnits[i]);
+
+                        if (_bullet.MinusArmor != 0)
+                            UnitGenerator.UnitDesolator(_bullet.UnitUsed, call.IUnits[i], _bullet.MinusArmor);
                     }
                 }
                 #endregion
 
-              
+
 
                 if (!call.Block)
                 {

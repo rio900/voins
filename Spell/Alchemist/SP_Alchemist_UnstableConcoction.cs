@@ -63,6 +63,8 @@ namespace Voins.Spell
         /// </summary>
         bool _startShut;
         IUnit _unit;
+        Player _player;
+
         Map _map;
         public SP_Alchemist_UnstableConcoction()
         {
@@ -76,6 +78,8 @@ namespace Voins.Spell
         {
             _unit = unit;
             _map = map;
+            _player = _unit as Player;
+
             bool upSpell = UnitGenerator.UpPlayerSpell(unit, this);
 
             if (unit.UnitFrozen == false &&
@@ -98,6 +102,10 @@ namespace Voins.Spell
                     unit.Mana -= ManaCost;
 
                     _power = 1;
+
+                    if (_player != null)
+                        (_player.GameObject.View as UC_Player).ShowEffect(0,true);
+
                     ///Запуск накастовки банки
                     _secondTimer = new Storyboard() { Duration = TimeSpan.FromSeconds(1) };
                     _secondTimer.Completed += _secondTimer_Completed; 
@@ -147,6 +155,9 @@ namespace Voins.Spell
 
         void _secondTimer_Completed(object sender, object e)
         {
+            if (_player != null)
+                (_player.GameObject.View as UC_Player).ShowEffect(0, false);
+
             ///Если это не максимум силы накача банки, и ее не запустили
             if (_power < Duration && !_startShut)
             {

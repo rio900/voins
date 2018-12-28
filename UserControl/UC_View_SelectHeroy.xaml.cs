@@ -62,7 +62,8 @@ namespace Voins
             UnitGenerator.Player_Jakiro("Jakiro",0,null),
             UnitGenerator.Player_Mirana("Mirana",0,null),
             UnitGenerator.Player_Jinx("Jinx",0,null),
-            UnitGenerator.Player_Nature("Nature",0,null)
+            UnitGenerator.Player_Nature("Nature",0,null),
+            UnitGenerator.Player_Sf("Sf",0,null)
             };
             C_HeroList.SelectionChanged += C_HeroList_SelectionChanged;
             C_HeroList.SelectedIndex = 1;
@@ -153,6 +154,7 @@ namespace Voins
                     case 4: retPlayer = UnitGenerator.Player_Mirana("Mirana", 5, null); break;
                     case 5: retPlayer = UnitGenerator.Player_Jinx("Jinx", 6, null); break;
                     case 6: retPlayer = UnitGenerator.Player_Nature("Nature", 7, null); break;
+                    case 7: retPlayer = UnitGenerator.Player_Sf("Sf", 8, null); break;
                 }
             }
 

@@ -157,7 +157,7 @@ namespace Voins.AppCode
 
             SP_Jakiro_Liquid_Fire liquidFire = new SP_Jakiro_Liquid_Fire() { Name = "LiquidFire" };
             jakiro.Spells.Add(liquidFire);
-//               liquidFire.UpSpell(jakiro);
+            //               liquidFire.UpSpell(jakiro);
 
             SP_Jakiro_Macropyre macropyre = new SP_Jakiro_Macropyre() { Name = "Macropyre" };
             jakiro.Spells.Add(macropyre);
@@ -227,6 +227,59 @@ namespace Voins.AppCode
             return nature;
         }
 
+        public static Player Player_Sf(string name, int number, Map map)
+        {
+            Player sf = new Player()
+            {
+                PlayerNumber = number,
+                CurrentMap = map,
+                Agility = 14,
+                Intelligence = 12,
+                Strength = 10,
+                Mana = 12 * 5,
+                Health = 10 * 5,
+                MaxExp = 100,
+                HeroType = EHeroType.Agility,
+                Name = name,
+                AddAgility = 2,
+                AddIntelligence = 2,
+                AddStrength = 2,
+                Gold = 100,
+                OrijAttackSpeed = 1.0 - 14 * StaticVaribl.AgilityAttackSpeed,
+                Angel = EAngel.Bottom,
+                NExp = 100,
+                Range = 6
+            };
+
+            SP_Move move = new SP_Move() { Name = "Move" };
+            sf.Spells.Add(move);
+
+            SP_Sf_Coil sfCoil = new SP_Sf_Coil(1) { Name = "SP_Sf_Coil" };
+            sf.Spells.Add(sfCoil);
+            //sfCoil.UpSpell(sf);
+
+            SP_Sf_Coil sfCoil2 = new SP_Sf_Coil(2) { Name = "SP_Sf_Coil2" };
+            sf.Spells.Add(sfCoil2);
+            //sfCoil2.UpSpell(sf);
+
+            SP_Sf_Attack sfAttack = new SP_Sf_Attack() { Name = "SP_Sf_Attack" };
+            sf.Spells.Add(sfAttack);
+            sfAttack.UpSpell(sf);
+
+            SP_Sf_Ult sfUlt = new SP_Sf_Ult() { Name = "SP_Sf_Ult" };
+            sf.Spells.Add(sfUlt);
+            //sfUlt.UpSpell(sf);
+
+            UC_Player ucPlayer = new UC_Player();
+            ucPlayer.PlayerNumber = number;
+            ucPlayer.ChengAngel(EAngel.Bottom);
+
+            Game_Object_In_Call gameObj = new Game_Object_In_Call() { EnumCallType = EnumCallType.Player, View = ucPlayer };
+            sf.GameObject = gameObj;
+
+            return sf;
+        }
+
 
         public static Player Player_Sniper(string name, int number, Map map)
         {
@@ -244,7 +297,7 @@ namespace Voins.AppCode
                 Name = name,
                 AddAgility = 3,
                 AddIntelligence = 2,
-                AddStrength = 2,
+                AddStrength = 1,
                 Gold = 100,
                 OrijAttackSpeed = 1.0 - 14 * StaticVaribl.AgilityAttackSpeed,
                 Angel = EAngel.Bottom,
@@ -1201,6 +1254,7 @@ namespace Voins.AppCode
                 Agility = 10,
                 AttackSpeed = 0.075,
                 Speed = 0.1,
+                IsYasha = true,
                 Price = 300
             };
             item.Info.ShortDescription = "Yasha Description";
@@ -1289,6 +1343,7 @@ namespace Voins.AppCode
                 AttackSpeed = 0.08,
                 Speed = 0.1,
                 Demage = 5,
+                IsYasha = true,
                 Price = 575
             };
             item.Info.ShortDescription = "Sange And Yasha Description";
@@ -1624,12 +1679,12 @@ namespace Voins.AppCode
 
             item.Info.ShortDescription = "Skadi Description";
 
-            item.Info.BuffDescription = "Speed/Attack slow: 0.2";
+            item.Info.BuffDescription = "Speed slow: 0.25\nAttack slow: 0.2";
 
             Buff skadiBuff = new Buff()
             {
                 Passive = true,
-                SpeedSlow = 0.2,
+                SpeedSlow = 0.25,
                 AttackSpeedSlow = 0.2,
                 Duration = 3,
                 Name = "SkadiSelf"
@@ -1663,7 +1718,7 @@ namespace Voins.AppCode
             return item;
         }
 
-       
+
 
         public static ItemClass I45_TrevelBoots()
         {
@@ -2007,7 +2062,7 @@ namespace Voins.AppCode
             }
 
             ///I45_TrevelBoots
-            if ( player.Items.Any(p => p.Name == "Boots Of Speed") &&
+            if (player.Items.Any(p => p.Name == "Boots Of Speed") &&
                  player.Items.Any(p => p.Name == "Trevel Boots Recep")
                )
             {
@@ -2399,10 +2454,41 @@ namespace Voins.AppCode
                     IUnit unitRmoved = call.IUnits[i].GatDamage(bullet.DemagePhys, bullet.DemageMagic, bullet.DemagePure, bullet.UnitUsed);
 
                     bullet.RemoveUnit = unitRmoved;
+
                 }
             }
             return exept;
         }
+
+        public static void Soul(IUnit attackerUnit, IUnit unitRmoved)
+        {
+            #region Soul
+            if (unitRmoved != null)
+            {
+                Buff buff = attackerUnit.Buffs.FirstOrDefault(p => p.Name == "SoulCount");
+                if (buff != null)
+                {
+                    int addSoul = buff.SoulCount + 1;
+                    if (unitRmoved is Player)
+                        addSoul = buff.SoulCount + StaticVaribl.HeroSoulCount;
+
+                    if (addSoul <= buff.MaxSoulCount)
+                        buff.SoulCount = addSoul;
+                    (attackerUnit as Player).UpdateView();
+                }
+
+                Buff buffRemove = unitRmoved.Buffs.FirstOrDefault(p => p.Name == "SoulCount");
+                if (buffRemove != null)
+                {
+                    buffRemove.SoulCount = buffRemove.SoulCount / 2;
+                    (unitRmoved as Player).UpdateView();
+                }
+            }
+            #endregion
+        }
+
+
+
         /// <summary>
         /// Only Hero
         /// </summary>
@@ -2672,7 +2758,51 @@ namespace Voins.AppCode
             }
         }
 
+        /// <summary>
+        /// Sf Ult
+        /// </summary>
+        public static void SfUlt(IUnit unit, IUnit goal)
+        {
+            Buff buffGoal = goal.Buffs.FirstOrDefault(p => p.Name == "SfUlt");
+            if (buffGoal != null)
+            {
+                buffGoal.Duration = 4;
+            }
+            else
+            {
+                Buff alchBuff = new Buff()
+                {
+                    Duration = 4,
+                    SpeedSlow = 0.25,
+                    Name = "SfUlt"
+                };
+                // goal.Buffs.Add(alchBuff);
+                goal.UseBuff(alchBuff);
+            }
 
+        }
+
+        /// <summary>
+        /// Дезоль
+        /// </summary>
+        public static void UnitDesolator(IUnit unit, IUnit goal, int minusArrmor)
+        {
+                Buff buffGoal = goal.Buffs.FirstOrDefault(p => p.Name == "UnitDesolator");
+                if (buffGoal != null)
+                {
+                    buffGoal.Duration = 4;
+                }
+                else
+                {
+                    Buff alchBuff = new Buff()
+                    {
+                        Duration = 4,
+                        MinusArmor = minusArrmor,
+                        Name = "UnitDesolator"
+                    };
+                    goal.UseBuff(alchBuff);
+                }
+        }
 
         /// <summary>
         /// Добавить баф c использованием

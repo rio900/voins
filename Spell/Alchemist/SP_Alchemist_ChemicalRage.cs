@@ -12,18 +12,18 @@ namespace Voins.Spell
 {
     class SP_Alchemist_ChemicalRage : ISpell
     {
-        Player _unit = new Player() {   };
+        Player _unit = new Player() { };
         public event EventHandler StartUseSpell;
         public event EventHandler CompletedUseSpell;
         SpellDescriptionInfo _spellDescriptionInfo = new SpellDescriptionInfo()
         {
             Description = "Chemical Rage, Culdaun 21 sec. Duration 11 sec. Mana cost - 20",
             LevelDescription =
-            "Level1: Speed +15, Attack Speed +25, Health regeneration +30"+Environment.NewLine+
+            "Level1: Speed +15, Attack Speed +25, Health regeneration +30" + Environment.NewLine +
             "Mana regeneration +25"
         };
         public SpellDescriptionInfo SpellDescriptionInfo { get { return _spellDescriptionInfo; } set { _spellDescriptionInfo = value; } }
-      
+
         bool _culdaunBool;
         public bool CuldaunBool { get { return _culdaunBool; } set { _culdaunBool = value; } }
 
@@ -68,7 +68,7 @@ namespace Voins.Spell
         double _bonusAttackSpeed = 0.25;
         double _hpRegen = 30;
         int _manaRegen = 25;
-    
+
         /// <summary>
         /// Ульт алхимика, усиливает героя
         /// </summary>
@@ -76,10 +76,11 @@ namespace Voins.Spell
         {
             bool upSpell = UnitGenerator.UpPlayerSpell(unit, this);
             _unit = unit as Player;
+
             if (unit.UnitFrozen == false &&
-                !_culdaunBool && 
-                LevelCast != 0 && 
-                !upSpell && 
+                !_culdaunBool &&
+                LevelCast != 0 &&
+                !upSpell &&
                 !unit.Silenced &&
                 !unit.Hexed &&
                 _unit != null)
@@ -93,9 +94,9 @@ namespace Voins.Spell
                     ///Отнимаем нужное количество
                     unit.Mana -= ManaCost;
 
-                 
-                   _unit.OrijSpeed -= _bonusSpeed;
-                   
+
+                    _unit.OrijSpeed -= _bonusSpeed;
+
 
                     ///Реген здоровъя
                     _unit.OrijHealthRegeneration += _hpRegen;
@@ -104,13 +105,14 @@ namespace Voins.Spell
                     ///Бонусная скорость атаки
                     _unit.OrijAttackSpeed -= _bonusAttackSpeed;
 
+                    (_unit.GameObject.View as UC_Player).ShowEffect(1, true);
 
                     _firstTimer = new Storyboard() { Duration = TimeSpan.FromSeconds(Duration) };
                     _firstTimer.Completed += mouveTimer_Tick;
                     _firstTimer.Begin();
 
                     _secondTimer = new Storyboard() { Duration = TimeSpan.FromSeconds(Culdaun) };
-                    _secondTimer.Completed +=  mouveTimerCuldaun_Tick;
+                    _secondTimer.Completed += mouveTimerCuldaun_Tick;
                     _secondTimer.Begin();
 
                     if (Paused)
@@ -132,12 +134,14 @@ namespace Voins.Spell
 
         private void mouveTimer_Tick(object sender, object e)
         {
+            (_unit.GameObject.View as UC_Player).ShowEffect(1, false);
+
             _firstTimer.Completed -= mouveTimer_Tick;
             _firstTimer = null;
 
-         
-           _unit.OrijSpeed += _bonusSpeed;
-          
+
+            _unit.OrijSpeed += _bonusSpeed;
+
 
             ///Реген здоровъя
             _unit.OrijHealthRegeneration -= _hpRegen;
@@ -149,7 +153,7 @@ namespace Voins.Spell
             UnitGenerator.UpdatePlayerView(_unit);
         }
 
-       
+
 
         /// <summary>
         /// Изучить способность хоть один раз

@@ -280,7 +280,7 @@ namespace Voins
                 _player4 = C_View_SelectHeroy5.ReturnHero();
 
             if (playerCount >= 1)
-                _player.Gold = 10000;
+                _player.Gold = 100;
             if (playerCount >= 2)
                 _player2.Gold = 100;
             if (playerCount >= 3)

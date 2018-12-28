@@ -57,6 +57,7 @@ namespace Voins.Spell
 
         public Storyboard _firstTimer;
         public Storyboard _secondTimer;
+        Player _player;
 
         public SP_BonikUlt()
         {
@@ -71,6 +72,9 @@ namespace Voins.Spell
         /// 0 - множетель на здорове, 1 - на урон</param>
         public void UseSpall(Map map, Game_Object_In_Call obj, IUnit unit, object property)
         {
+            _unit = unit;
+            _player = _unit as Player;
+
             bool upSpell = UnitGenerator.UpPlayerSpell(unit, this);
 
             /// Если есть аганим
@@ -79,6 +83,7 @@ namespace Voins.Spell
                 /// То ульт у боника работает столько же сколько и кулдаун спела
                 _culdaun = _duration;
             }
+
 
             if (unit.UnitFrozen == false &&
             !_culdaunBool && LevelCast != 0 && !upSpell && !unit.Silenced &&
@@ -102,7 +107,6 @@ namespace Voins.Spell
 
                             ///Отнимаем нужное количество
                             unit.Mana -= ManaCost;
-                            _unit = unit;
 
                             ///Берем первого попавшегося юнита
                             IUnit unitCrush = call.IUnits.FirstOrDefault(p => p.GameObject.EnumCallType == EnumCallType.UnitBlock ||
@@ -126,6 +130,9 @@ namespace Voins.Spell
                                 _adddDamage = 50;
 
                             unit.DemageItem = unit.DemageItem + _adddDamage;
+
+                            if (_player != null)
+                                (_player.GameObject.View as UC_Player).ShowEffect(4, true);
 
                             _firstTimer = new Storyboard() { Duration = TimeSpan.FromSeconds(Duration) };
                             _firstTimer.Completed += mouveTimer_Tick;
@@ -156,6 +163,9 @@ namespace Voins.Spell
 
         void mouveTimer_Tick(object sender, object e)
         {
+            if (_player != null)
+                (_player.GameObject.View as UC_Player).ShowEffect(4, false);
+
             _firstTimer.Completed -= mouveTimer_Tick;
             _firstTimer = null;
             _unit.DemageItem -= _adddDamage;

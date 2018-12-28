@@ -221,5 +221,6 @@ namespace Voins.AppCode
         public double BonusMagicDemage { get; set; }
 
         public Spell.SP_Item_AssaultCuirass AuraItem { get; set; }
+        public bool IsYasha { get; internal set; }
     }
 }

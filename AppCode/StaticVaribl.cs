@@ -40,7 +40,7 @@ namespace Voins.AppCode
         /// Константа, максимальная скорость атаки для ренжовых атак
         /// </summary>
         public static double AttackSpeedRangeMaximum = 0.25;
-
+        
         public static double StartSpeed = 0.85;
         public static double SpeedMaximum = 0.3;
 
@@ -66,5 +66,7 @@ namespace Voins.AppCode
             return phisic;
         }
         public static MainPage MainPage;
+
+        public static int HeroSoulCount = 6;
     }
 }

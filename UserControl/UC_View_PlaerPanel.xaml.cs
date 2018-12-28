@@ -115,7 +115,14 @@ namespace Voins
             C_ExpPr.Value = (double)CurrentPlayer.Exp;
             C_Exp.Text = "Exp: " + CurrentPlayer.Exp.ToString() + "//" + CurrentPlayer.MaxExp.ToString();
 
-            C_Attack.Text = CurrentPlayer.Demage.ToString();
+            Buff buff = CurrentPlayer.Buffs.FirstOrDefault(p => p.Name == "SoulCount");
+            if (buff != null && buff.SoulCount != 0)
+            {
+                C_Attack.Text = CurrentPlayer.Demage.ToString() + " + " + buff.SoulCount;
+            }
+            else
+                C_Attack.Text = CurrentPlayer.Demage.ToString();
+
             C_Speed.Text = CurrentPlayer.Speed.ToString();
             C_Arrmor.Text = CurrentPlayer.Arrmor.ToString();
 

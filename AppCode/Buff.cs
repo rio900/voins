@@ -90,5 +90,7 @@ namespace Voins.AppCode
         public int Armor { get; set; }
 
         public double AttackSpeed { get; set; }
+        public int SoulCount { get; internal set; }
+        public int MaxSoulCount { get; internal set; }
     }
 }

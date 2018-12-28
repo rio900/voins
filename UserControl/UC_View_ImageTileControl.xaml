@@ -81,6 +81,12 @@
             <Image x:Name="C_SP_Nature_Teleport" Source="ms-appx:///Image/Skill/2_skill_Nature.png" Stretch="Fill" Visibility="Collapsed"/>
             <Image x:Name="C_SP_Nature_Trent" Source="ms-appx:///Image/Skill/3_skill_Nature.png" Stretch="Fill" Visibility="Collapsed"/>
             <Image x:Name="C_SP_Nature_Wrath" Source="ms-appx:///Image/Skill/4_skill_Nature.png" Stretch="Fill" Visibility="Collapsed"/>
+
+            <Image x:Name="C_SP_Sf_Coil" Source="ms-appx:///Image/Skill/1_skill_Sf.png" Stretch="Fill" Visibility="Collapsed"/>
+            <Image x:Name="C_SP_Sf_Coil2" Source="ms-appx:///Image/Skill/2_skill_Sf.png" Stretch="Fill" Visibility="Collapsed"/>
+            <Image x:Name="C_SP_Sf_Attack" Source="ms-appx:///Image/Skill/3_skill_Sf.png" Stretch="Fill" Visibility="Collapsed"/>
+            <Image x:Name="C_SP_Sf_Ult" Source="ms-appx:///Image/Skill/4_skill_Sf.png" Stretch="Fill" Visibility="Collapsed"/>
+            
             <!--<Image x:Name="C_SP_Super_Mega_Death_Rocket" Source="ms-appx:///Image/Skill/2_skill_Nature.png" Stretch="Fill" Visibility="Collapsed"/>
             <Image x:Name="C_SP_Super_Mega_Death_Rocket" Source="ms-appx:///Image/Skill/3_skill_Nature.png" Stretch="Fill" Visibility="Collapsed"/>
             <Image x:Name="C_SP_Super_Mega_Death_Rocket" Source="ms-appx:///Image/Skill/4_skill_Nature.png" Stretch="Fill" Visibility="Collapsed"/>-->

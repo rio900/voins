@@ -573,6 +573,8 @@ namespace Voins.AppCode
             }
             DeleteUnit();
 
+            UnitGenerator.Soul(demagedUnit, this);
+
             return returnUnit;
         }
 

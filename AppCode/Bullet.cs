@@ -226,5 +226,6 @@ namespace Voins.AppCode
         public int TrentDamage { get; internal set; }
         public int TrentArmor { get; internal set; }
         public int LifeTime { get; internal set; }
+        public int Mode { get; internal set; }
     }
 }
